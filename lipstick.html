@@ -130,6 +130,26 @@
   .fsocial a:hover{color:var(--red-lt);}
   .foot-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;color:rgba(239,231,214,.5);letter-spacing:.04em;}
   .foot-bottom a:hover{color:#fff;}
+
+  /* MOBILE */
+  @media (max-width:820px){
+    .wrap{padding:0 20px;}
+    .nav-in{padding:12px 20px;flex-wrap:wrap;gap:10px;}
+    .nav-links{display:none;}
+    .nav-sub{display:inline-flex !important;}
+    .hero{padding:48px 0 56px;}
+    .hero h1,.feature h2,.premise h2{font-size:44px !important;line-height:1;}
+    .hero .rule{flex-direction:column;gap:14px;}
+    .premise .wrap{grid-template-columns:1fr;gap:30px;}
+    .scale{grid-template-columns:repeat(5,1fr);font-size:10px;}
+    .cat-grid{grid-template-columns:1fr;gap:14px;}
+    section{padding:60px 0;}
+    .feature h2{font-size:42px !important;}
+    .feature p{font-size:16px;}
+    .ctas{flex-wrap:wrap;gap:10px;}
+    .foot-grid{flex-direction:column;align-items:flex-start;gap:18px;}
+    .foot-bottom{flex-direction:column;gap:8px;align-items:flex-start;}
+  }
 </style>
 </head>
 <body data-screen-label="Lipstick on My Fork">
