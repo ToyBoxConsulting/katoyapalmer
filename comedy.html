@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>No Filter — Katoya, off the record</title>
+<meta name="description" content="The comedy of Katoya Palmer — no brand, no filter, just the truth funnier. Observational, fearless, a little horror-camp." />
+<meta name="author" content="Katoya Raquell Palmer" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://katoyapalmer.com/comedy.html" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Katoya Palmer" />
+<meta property="og:title" content="No Filter — Katoya, off the record" />
+<meta property="og:description" content="The comedy of Katoya Palmer — no brand, no filter, just the truth funnier." />
+<meta property="og:image" content="https://katoyapalmer.com/assets/katoya-headshot-web.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1799" />
+<meta property="og:image:alt" content="Katoya Palmer" />
+<meta property="og:url" content="https://katoyapalmer.com/comedy.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="No Filter — Katoya, off the record" />
+<meta name="twitter:description" content="No brand, no filter, just the truth funnier." />
+<meta name="twitter:image" content="https://katoyapalmer.com/assets/katoya-headshot-web.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --noir:#0E0B0D; --coal:#17120F; --coal-2:#1F1815;
+    --brick:#591F22; --brick-lt:#7E2A2E;
+    --spot:#E8C57A; --spot-deep:#C79A45;
+    --blood:#C81E1E; --blood-lt:#E23B30; --neon:#9BC24A;
+    --bone:#ECE4D6; --bone-soft:rgba(236,228,214,.64);
+    --disp:"Anton", Impact, sans-serif;
+    --sans:"Mulish", system-ui, sans-serif;
+    --mono:"Space Mono", monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--noir);color:var(--bone);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 52px;}
+  a{color:inherit;text-decoration:none;}
+  .disp{font-family:var(--disp);text-transform:uppercase;letter-spacing:.01em;line-height:.92;}
+  .mono{font-family:var(--mono);}
+  .tag{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--spot);}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:15px 26px;border-radius:2px;cursor:pointer;transition:.18s;}
+  .btn-blood{background:var(--blood);color:#fff;} .btn-blood:hover{background:var(--blood-lt);}
+  .btn-spot{background:var(--spot);color:var(--noir);} .btn-spot:hover{background:#fff;}
+  .btn-ghost{border:1px solid rgba(236,228,214,.4);color:var(--bone);} .btn-ghost:hover{background:var(--bone);color:var(--noir);}
+  .arrow{transition:transform .18s;} .btn:hover .arrow,a:hover .arrow{transform:translateX(3px);}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(14,11,13,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(236,228,214,.12);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 52px;max-width:1240px;margin:0 auto;}
+  .nav-back{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--bone-soft);}
+  .nav-back:hover{color:var(--spot);}
+  .nav-mark{font-family:var(--disp);font-size:23px;color:var(--bone);}
+  .nav-mark .x{color:var(--blood);}
+  .nav-links{display:flex;gap:24px;align-items:center;}
+  .nav-links a{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bone-soft);}
+  .nav-links a:hover{color:var(--spot);}
+  .nav-tt{background:var(--blood)!important;color:#fff!important;padding:9px 15px;border-radius:2px;}
+  .nav-tt:hover{background:var(--blood-lt)!important;}
+
+  /* HERO — the stage */
+  .hero{position:relative;text-align:center;padding:70px 0 80px;overflow:hidden;
+    background:
+      radial-gradient(60% 70% at 50% -8%, rgba(232,197,122,.30), transparent 60%),
+      repeating-linear-gradient(90deg, #1a1310 0 64px, #150f0d 64px 66px),
+      repeating-linear-gradient(0deg, #1a1310 0 30px, #160f0d 30px 32px);}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 0%, transparent 40%, rgba(14,11,13,.85) 100%);pointer-events:none;}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .tag{display:inline-block;margin-bottom:22px;}
+  .hero h1{font-family:var(--disp);text-transform:uppercase;font-size:170px;line-height:.82;letter-spacing:-.01em;color:var(--bone);text-shadow:0 0 50px rgba(232,197,122,.25);}
+  .hero h1 .blood{color:var(--blood-lt);}
+  .hero .sub{font-family:var(--mono);font-size:16px;color:var(--spot);margin-top:18px;letter-spacing:.06em;}
+  .hero p{font-size:18px;color:var(--bone-soft);max-width:560px;margin:22px auto 30px;}
+  .hero .cta{display:flex;gap:13px;justify-content:center;}
+
+  /* MARQUEE */
+  .marq{background:var(--blood);overflow:hidden;white-space:nowrap;border-top:2px solid var(--noir);border-bottom:2px solid var(--noir);}
+  .marq .tr{display:inline-block;padding:12px 0;animation:sc 24s linear infinite;}
+  .marq span{font-family:var(--disp);text-transform:uppercase;font-size:22px;color:#fff;margin:0 22px;letter-spacing:.02em;}
+  .marq .o{color:var(--spot);}
+  @keyframes sc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  section{padding:84px 0;}
+  /* PREMISE */
+  .premise .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;}
+  .premise .tag{display:block;margin-bottom:14px;}
+  .premise h2{font-family:var(--disp);text-transform:uppercase;font-size:62px;line-height:.92;color:var(--bone);}
+  .premise h2 em{font-style:normal;color:var(--blood-lt);}
+  .premise p{font-size:17px;color:var(--bone-soft);margin-bottom:16px;}
+  .premise .names{font-family:var(--mono);font-size:13px;color:var(--spot);line-height:2;border-top:1px solid rgba(236,228,214,.16);padding-top:16px;margin-top:8px;}
+
+  /* RIFFS */
+  .riffs{background:var(--coal);border-top:1px solid rgba(236,228,214,.1);border-bottom:1px solid rgba(236,228,214,.1);}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 46px;}
+  .sec-head .tag{display:block;margin-bottom:12px;}
+  .sec-head h2{font-family:var(--disp);text-transform:uppercase;font-size:54px;color:var(--bone);}
+  .sec-head h2 .o{color:var(--spot);}
+  .riff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .riff{position:relative;background:var(--coal-2);border:1px solid rgba(236,228,214,.12);border-radius:4px;padding:26px 24px;transition:.18s;overflow:hidden;}
+  .riff:hover{border-color:var(--blood);transform:translateY(-4px);}
+  .riff .no{font-family:var(--mono);font-size:12px;color:var(--spot);}
+  .riff h3{font-family:var(--disp);text-transform:uppercase;font-size:27px;color:var(--bone);margin:8px 0 8px;line-height:.96;}
+  .riff p{font-size:13.5px;color:var(--bone-soft);}
+  .riff.horror{border-color:rgba(155,194,74,.4);}
+  .riff.horror h3{color:var(--neon);}
+  .riff.horror:hover{border-color:var(--neon);}
+
+  /* STAGE / WATCH */
+  .stage{text-align:center;}
+  .stage .tag{display:block;margin-bottom:14px;}
+  .stage h2{font-family:var(--disp);text-transform:uppercase;font-size:78px;line-height:.9;color:var(--bone);max-width:900px;margin:0 auto 16px;}
+  .stage h2 .blood{color:var(--blood-lt);}
+  .stage p{font-size:18px;color:var(--bone-soft);max-width:520px;margin:0 auto 30px;}
+  .stage .cta{display:flex;gap:13px;justify-content:center;}
+
+  /* FOOTER */
+  footer{background:#080608;color:var(--bone-soft);padding:50px 0 32px;border-top:1px solid rgba(236,228,214,.1);}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:26px;border-bottom:1px solid rgba(236,228,214,.1);flex-wrap:wrap;}
+  footer .fmark{font-family:var(--disp);text-transform:uppercase;font-size:34px;color:var(--bone);}
+  footer .fmark .x{color:var(--blood);}
+  footer .ftag{font-family:var(--mono);font-size:12px;color:var(--bone-soft);margin-top:8px;}
+  .fsocial{display:flex;gap:20px;}
+  .fsocial a{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--bone);}
+  .fsocial a:hover{color:var(--spot);}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:18px;font-family:var(--mono);font-size:11px;color:rgba(236,228,214,.4);}
+  .foot-bottom a:hover{color:var(--spot);}
+</style>
+</head>
+<body data-screen-label="No Filter — Katoya comedy">
+
+  <nav>
+    <div class="nav-in">
+      <a class="nav-back" href="index.html">&larr; katoya palmer</a>
+      <div class="nav-links">
+        <a href="#premise">The Premise</a>
+        <a href="#riffs">What I Riff On</a>
+        <a href="#stage">Watch</a>
+        <a class="nav-tt" href="https://tiktok.com/@katoyapalmer">TikTok</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="tag">// no brand · no filter · just the truth, funnier</span>
+      <h1>No <span class="blood">Filter</span></h1>
+      <div class="sub">Katoya — off the record.</div>
+      <p>This is the part of me that lives outside the persona and the brands: how I actually look at life. Sharp, fearless, a little dangerous, and funny because it's true.</p>
+      <div class="cta">
+        <a class="btn btn-blood" href="https://tiktok.com/@katoyapalmer">Watch on TikTok</a>
+        <a class="btn btn-ghost" href="#premise">Read the room</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="marq">
+    <div class="tr">
+      <span>say the quiet part <span class="o">loud</span></span><span class="o">✦</span><span>laugh at the real</span><span class="o">✦</span><span>no persona, no <span class="o">permission</span></span><span class="o">✦</span><span>the truth is the bit</span><span class="o">✦</span><span>say the quiet part <span class="o">loud</span></span><span class="o">✦</span><span>laugh at the real</span><span class="o">✦</span><span>no persona, no <span class="o">permission</span></span><span class="o">✦</span><span>the truth is the bit</span><span class="o">✦</span>
+    </div>
+  </div>
+
+  <!-- PREMISE -->
+  <section class="premise" id="premise">
+    <div class="wrap">
+      <div>
+        <span class="tag">the premise</span>
+        <h2>It's not a brand. It's me with the <em>gloss off</em>.</h2>
+      </div>
+      <div>
+        <p>I don't call myself a comedian. People just keep telling me I should be one — usually right after someone else swears I should've been a lawyer. They're clocking the same thing: I can't <em>not</em> say the true thing, and I can make the case for it.</p>
+        <p>So this is that voice with no filter on it — the observations, the hot takes, the stuff that's funny precisely because it's real. Raised on the fearless ones: truth-tellers who made you laugh and flinch in the same breath, satire that held a mirror to the whole circus, and horror that knew it was hilarious.</p>
+        <div class="names">EDDIE MURPHY · MARTIN · PAUL MOONEY · HOLLYWOOD SHUFFLE<br>ROBERT TOWNSEND · THE WAYANS · DEF COMEDY JAM · FUNNY HORROR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIFFS -->
+  <section class="riffs" id="riffs">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">the material</span>
+        <h2>What I <span class="o">riff</span> on.</h2>
+      </div>
+      <div class="riff-grid">
+        <div class="riff"><div class="no">01</div><h3>The Corporate Room</h3><p>Two decades of meetings that could've been an email — and the faces nobody admits they're making.</p></div>
+        <div class="riff"><div class="no">02</div><h3>Code-Switch Chronicles</h3><p>The five accents I keep on the ring of keys, and exactly when each one comes out.</p></div>
+        <div class="riff"><div class="no">03</div><h3>Southern by Birth</h3><p>Louisiana raised me; the Northwest confused me. Field notes from both.</p></div>
+        <div class="riff"><div class="no">04</div><h3>Grown &amp; Unbothered</h3><p>Dating, dignity, and the comedy of knowing exactly what you will not be doing.</p></div>
+        <div class="riff"><div class="no">05</div><h3>Body Talk</h3><p>Sexy, plus-sized, and funnier than the room expects. The confidence is the punchline.</p></div>
+        <div class="riff horror"><div class="no">06</div><h3>Funny Horror</h3><p>Movie or game, I'm yelling at the screen — and I'd have survived. A running autopsy of every bad decision from the haunted house to Raccoon City.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE -->
+  <section class="stage" id="stage">
+    <div class="wrap">
+      <span class="tag">now showing</span>
+      <h2>The stage is <span class="blood">TikTok</span>.</h2>
+      <p>Short sets, real takes, and the occasional horror-movie review nobody asked for. Pull up a seat.</p>
+      <div class="cta">
+        <a class="btn btn-spot" href="https://tiktok.com/@katoyapalmer">Watch on TikTok</a>
+        <a class="btn btn-ghost" href="https://katoyapalmer.substack.com">Read it on Substack</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="fmark">No <span class="x">Filter</span></div>
+          <div class="ftag">// katoya palmer, off the record</div>
+        </div>
+        <div class="fsocial">
+          <a href="https://tiktok.com/@katoyapalmer">TIKTOK</a>
+          <a href="https://katoyapalmer.substack.com">SUBSTACK</a>
+          <a href="index.html">KATOYAPALMER.COM</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 KATOYA RAQUELL PALMER</span>
+        <a href="index.html">&larr; back to the hub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
