@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Katoya Palmer — Thought, Taste &amp; Presence</title>
+<meta name="description" content="The personal home of Katoya Raquell Palmer — writer, systems strategist, and maker. A multidisciplinary life of thought, taste, and presence." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#F6F1E8; --paper-2:#FBF8F1; --card:#FFFFFF;
+    --ink:#241F22; --ink-soft:#6E665F; --ink-faint:#A79E92;
+    --line:#E4DBCC;
+    --clay:#B5654A; --clay-deep:#94503A;      /* taste */
+    --lavender:#8E82B8; --lavender-deep:#6F639B; /* presence / SZND */
+    --sage:#778C72; --sage-deep:#5E7259;        /* mindfulness */
+    --berry:#9E3B52;                             /* lipstick */
+    --rust:#B73A1A;                              /* toybox */
+    --gold:#C2A24E;
+    --serif:"Cormorant Garamond", Georgia, serif;
+    --sans:"Mulish", system-ui, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 56px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.04;letter-spacing:-.005em;}
+  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);}
+  .serif-it{font-family:var(--serif);font-style:italic;}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(246,241,232,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:18px 56px;max-width:1280px;margin:0 auto;}
+  .brand{font-family:var(--serif);font-size:25px;font-weight:600;letter-spacing:.01em;}
+  .brand .dot{color:var(--clay);}
+  .nav-links{display:flex;gap:30px;align-items:center;}
+  .nav-links a{font-size:13.5px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);transition:.18s;}
+  .nav-links a:hover{color:var(--clay);}
+  .nav-sub{font-size:13px!important;font-weight:700!important;color:var(--ink)!important;border:1px solid var(--ink);padding:9px 18px;border-radius:40px;transition:.2s;}
+  .nav-sub:hover{background:var(--ink);color:var(--paper)!important;}
+
+  /* HERO */
+  .hero{padding:78px 0 70px;}
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:60px;align-items:center;}
+  .hero .kicker{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:22px;}
+  .hero h1{font-size:74px;line-height:.98;letter-spacing:-.01em;margin-bottom:26px;}
+  .hero h1 .a{color:var(--ink);}
+  .hero h1 .b{font-style:italic;color:var(--clay);}
+  .hero h1 .c{font-style:italic;color:var(--lavender-deep);}
+  .hero h1 .d{font-style:italic;color:var(--sage-deep);}
+  .hero p{font-size:18.5px;color:var(--ink-soft);max-width:500px;margin-bottom:30px;}
+  .hero-actions{display:flex;gap:16px;align-items:center;}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:14.5px;padding:14px 26px;border-radius:40px;cursor:pointer;transition:.2s;}
+  .btn-ink{background:var(--ink);color:var(--paper);}
+  .btn-ink:hover{background:#000;}
+  .btn-line{border:1px solid var(--line);color:var(--ink);}
+  .btn-line:hover{border-color:var(--ink);}
+  .arrow{transition:transform .2s;} .btn:hover .arrow,a:hover .arrow{transform:translateX(3px);}
+  /* portrait */
+  .portrait{position:relative;}
+  .portrait .img{aspect-ratio:4/5;border-radius:160px 160px 14px 14px;overflow:hidden;background:var(--line);box-shadow:0 40px 70px -40px rgba(36,31,34,.5);}
+  .portrait .img img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;}
+  .portrait .tag{position:absolute;left:-22px;bottom:40px;background:var(--paper);border:1px solid var(--line);border-radius:40px;padding:11px 20px;font-family:var(--serif);font-style:italic;font-size:19px;box-shadow:0 14px 30px -16px rgba(0,0,0,.25);}
+  .portrait .tag b{color:var(--clay);font-style:normal;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.02em;}
+
+  /* TRIAD */
+  .triad{padding:30px 0 90px;}
+  .triad-head{text-align:center;max-width:720px;margin:0 auto 46px;}
+  .triad-head .eyebrow{color:var(--ink-faint);}
+  .triad-head h2{font-size:40px;margin:14px 0 0;}
+  .triad-head h2 em{font-style:italic;}
+  .triad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .facet{position:relative;border-radius:16px;padding:38px 34px 34px;overflow:hidden;border:1px solid var(--line);background:var(--card);transition:.2s;}
+  .facet:hover{transform:translateY(-5px);box-shadow:0 30px 50px -34px rgba(36,31,34,.4);}
+  .facet .n{font-family:var(--serif);font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .facet h3{font-size:34px;margin:6px 0 12px;}
+  .facet p{font-size:15px;color:var(--ink-soft);margin-bottom:20px;}
+  .facet .has{list-style:none;border-top:1px solid var(--line);padding-top:14px;}
+  .facet .has li{font-size:14px;font-weight:600;color:var(--ink);padding:7px 0;display:flex;align-items:center;gap:9px;}
+  .facet .has li::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5;}
+  .facet.thought{--c:var(--ink);} .facet.taste{--c:var(--clay);} .facet.presence{--c:var(--sage-deep);}
+  .facet .n,.facet h3{color:var(--c);}
+  .facet::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--c);}
+
+  /* VENTURES */
+  .ventures{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:88px 0;}
+  .sec-head{max-width:700px;margin-bottom:44px;}
+  .sec-head h2{font-size:40px;margin:14px 0 14px;}
+  .sec-head p{font-size:17px;color:var(--ink-soft);}
+  .v-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  .venture{display:grid;grid-template-columns:1fr 150px;gap:24px;align-items:center;border-radius:16px;border:1px solid var(--line);background:var(--card);padding:28px 30px;transition:.2s;}
+  .venture:hover{transform:translateY(-5px);box-shadow:0 30px 54px -34px rgba(36,31,34,.45);}
+  .venture .cat{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--vc);}
+  .venture h3{font-size:27px;margin:9px 0 9px;color:var(--ink);line-height:1.06;}
+  .venture p{font-size:13.5px;color:var(--ink-soft);}
+  .venture .go{display:inline-flex;align-items:center;gap:8px;margin-top:15px;font-size:13px;font-weight:700;color:var(--vc);}
+  .vplate{height:132px;border-radius:12px;background:#FBF8F1;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:15px;}
+  .vplate img{max-width:100%;max-height:100%;object-fit:contain;}
+  .venture.toybox{--vc:var(--rust);} .venture.mind{--vc:var(--sage-deep);}
+  .venture.sznd{--vc:var(--lavender-deep);} .venture.lip{--vc:#CE2C2C;}
+
+  /* STORY */
+  .story{padding:92px 0;}
+  .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
+  .story-portrait{aspect-ratio:5/6;border-radius:14px;overflow:hidden;background:var(--line);box-shadow:0 30px 60px -38px rgba(0,0,0,.45);}
+  .story-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;}
+  .story .eyebrow{color:var(--lavender-deep);}
+  .story h2{font-size:38px;margin:14px 0 20px;}
+  .story p{font-size:17px;color:var(--ink-soft);margin-bottom:16px;}
+  .story .pq{font-family:var(--serif);font-style:italic;font-size:25px;line-height:1.32;color:var(--ink);border-left:2px solid var(--clay);padding-left:22px;margin:24px 0;}
+
+  /* JOURNAL */
+  .journal{background:var(--ink);color:var(--paper);padding:90px 0;}
+  .journal .eyebrow{color:var(--gold);}
+  .journal-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .journal h2{color:var(--paper);font-size:40px;margin:14px 0 16px;}
+  .journal p{color:rgba(246,241,232,.78);font-size:17px;margin-bottom:22px;max-width:440px;}
+  .journal .btn-paper{background:var(--paper);color:var(--ink);}
+  .journal .btn-paper:hover{background:#fff;}
+  .windows{list-style:none;background:rgba(255,255,255,.04);border:1px solid rgba(246,241,232,.16);border-radius:14px;padding:10px 26px;}
+  .windows li{display:flex;gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(246,241,232,.12);font-size:15.5px;color:var(--paper);}
+  .windows li:last-child{border-bottom:none;}
+  .windows li span{font-family:var(--serif);font-size:16px;color:var(--gold);flex:none;}
+  .windows li em{color:rgba(246,241,232,.5);font-style:italic;}
+  .windows .ser{font-family:var(--serif);font-size:13px;letter-spacing:.04em;}
+
+  /* FOLLOW */
+  .follow{padding:86px 0;text-align:center;}
+  .follow .eyebrow{color:var(--clay);}
+  .follow h2{font-size:48px;margin:16px 0 14px;}
+  .follow h2 em{font-style:italic;color:var(--clay);}
+  .follow p{font-size:18px;color:var(--ink-soft);max-width:520px;margin:0 auto 30px;}
+  .social{display:flex;gap:14px;justify-content:center;}
+
+  /* FOOTER */
+  footer{background:var(--paper-2);border-top:1px solid var(--line);padding:54px 0 36px;}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;padding-bottom:34px;border-bottom:1px solid var(--line);}
+  footer .fbrand{font-family:var(--serif);font-size:26px;font-weight:600;margin-bottom:8px;}
+  footer .fbrand .dot{color:var(--clay);}
+  footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--ink-soft);max-width:280px;}
+  .fcol h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px;font-weight:700;}
+  .fcol a{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px;font-weight:600;}
+  .fcol a:hover{color:var(--clay);}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:22px;font-size:12.5px;color:var(--ink-faint);}
+</style>
+</head>
+<body data-screen-label="Katoya Palmer — Personal Hub">
+
+  <nav>
+    <div class="nav-in">
+      <a class="brand" href="#top">Katoya Palmer<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#triad">Thought · Taste · Presence</a>
+        <a href="#ventures">The Work</a>
+        <a href="#story">About</a>
+        <a href="#journal">Writing</a>
+        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Katoya Raquell Palmer</div>
+        <h1><span class="a">A life lived in</span> <span class="b">thought</span><span class="a">,</span> <span class="c">taste</span> <span class="a">&amp;</span> <span class="d">presence</span><span class="a">.</span></h1>
+        <p>Writer, systems strategist, and maker. I move between the boardroom and the kitchen, the essay and the breath — and I build things that help people see clearly and live well.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#triad">Get to know me <span class="arrow">→</span></a>
+          <a class="btn btn-line" href="https://katoyapalmer.substack.com">Read the journal</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="img"><img src="assets/katoya-headshot-web.jpg" alt="Katoya Palmer" /></div>
+        <div class="tag"><b>LOUISIANA-BORN</b> &nbsp;·&nbsp; Pacific Northwest</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRIAD -->
+  <section class="triad" id="triad">
+    <div class="wrap">
+      <div class="triad-head">
+        <div class="eyebrow">The throughline</div>
+        <h2>One person, three <em>appetites</em>.</h2>
+      </div>
+      <div class="triad-grid">
+        <div class="facet thought">
+          <div class="n">Thought</div>
+          <h3>How systems hold — or fail.</h3>
+          <p>Commentary, storytelling, and the operating mind behind two decades of leadership. Where ideas become infrastructure.</p>
+          <ul class="has">
+            <li>Five Windows into a Fragile Economy</li>
+            <li>ToyBox Consulting &amp; Management</li>
+          </ul>
+        </div>
+        <div class="facet taste">
+          <div class="n">Taste</div>
+          <h3>Eating well, on purpose.</h3>
+          <p>From restaurant tables to my own kitchen and garden — eating well, cooking in, and the rituals of a life lived deliciously.</p>
+          <ul class="has">
+            <li>Lipstick on My Fork</li>
+            <li>SZND by Katoya</li>
+          </ul>
+        </div>
+        <div class="facet presence">
+          <div class="n">Presence</div>
+          <h3>Staying whole in the middle.</h3>
+          <p>Mindfulness for people living in the thick of it — leadership, caregiving, and the long, messy middle of a life.</p>
+          <ul class="has">
+            <li>Mindfulness in the Middle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section class="ventures" id="ventures">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" style="color:var(--ink-faint);">The work &amp; the brands</div>
+        <h2>Everything I'm building.</h2>
+        <p>Different rooms, one sensibility — rigor and warmth, in equal measure. Step into whichever is calling you.</p>
+      </div>
+      <div class="v-grid">
+        <a class="venture toybox" href="https://www.toyboxconsulting.net">
+          <div>
+            <div class="cat">Thought · Consulting</div>
+            <h3>ToyBox Consulting &amp; Management</h3>
+            <p>The operational infrastructure that lets mission-driven organizations do their work. My systems mind, for hire.</p>
+            <span class="go">Visit ToyBox <span class="arrow">→</span></span>
+          </div>
+          <div class="vplate"><img src="assets/logo-rust.png" alt="ToyBox Consulting and Management" /></div>
+        </a>
+        <a class="venture mind" href="mindfulness.html">
+          <div>
+            <div class="cat">Presence · Mindfulness</div>
+            <h3>Mindfulness in the Middle</h3>
+            <p>Grounding practice for people leading, caregiving, and holding it together in the thick of it.</p>
+            <span class="go">Explore <span class="arrow">→</span></span>
+          </div>
+          <div class="vplate"><img src="assets/brand-mitm.webp" alt="Mindfulness in the Middle" /></div>
+        </a>
+        <a class="venture sznd" href="sznd.html">
+          <div>
+            <div class="cat">Taste · Home &amp; Garden</div>
+            <h3>SZND by Katoya</h3>
+            <p>My recipes, my garden, my DIY — the homemade, seasonal life, made by hand and in season.</p>
+            <span class="go">Explore <span class="arrow">→</span></span>
+          </div>
+          <div class="vplate"><img src="assets/brand-sznd.png" alt="SZND by Katoya" /></div>
+        </a>
+        <a class="venture lip" href="lipstick.html">
+          <div>
+            <div class="cat">Taste · Dining Out</div>
+            <h3>Lipstick on My Fork</h3>
+            <p>Flirty, gluttonous, decadent — eating my way through the restaurant scene, lipstick intact.</p>
+            <span class="go">Explore <span class="arrow">→</span></span>
+          </div>
+          <div class="vplate"><img src="assets/brand-lipstick.webp" alt="Lipstick on My Fork" /></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-grid">
+      <div class="story-portrait"><img src="assets/katoya-keynote.jpg" alt="Katoya Palmer speaking" /></div>
+      <div>
+        <div class="eyebrow">Who I am</div>
+        <h2>I've lived both sides of almost everything.</h2>
+        <p>I've held a Section 8 voucher and I've sat in the COO's chair of a $12M organization. I've built financial systems and I've built a really good pot of greens. The range isn't a contradiction — it's the whole point.</p>
+        <p>I was born in Shreveport and grew up in Minden, Louisiana — until 1990, when I moved to Auburn, Washington, then Seattle, and Bellevue since 2020. I've built a life, and a body of work, in every one of those rooms.</p>
+        <div class="pq">“Inclusion is not charity. It is infrastructure.”</div>
+        <p>I'm a writer, a systems strategist, a researcher, and a maker — appointed three times by the State of Washington, published, peer-selected to speak, and endlessly curious about how people and systems stay whole.</p>
+        <a class="btn btn-line" href="https://katoyapalmer.substack.com">More of my story <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="journal" id="journal">
+    <div class="wrap journal-grid">
+      <div>
+        <div class="eyebrow">The journal</div>
+        <h2>Katoya's Substack.</h2>
+        <p>A multidisciplinary journal of thought, taste, and presence — commentary, storytelling, mindfulness, and recipes. It's where all of this begins.</p>
+        <a class="btn btn-paper" href="https://katoyapalmer.substack.com">Subscribe free <span class="arrow">→</span></a>
+      </div>
+      <ul class="windows">
+        <li><span class="ser">Series</span><em style="margin-left:auto;">2025</em></li>
+        <li><span>01</span> Housing</li>
+        <li><span>02</span> Community Safety</li>
+        <li><span>03</span> Nonprofit Fragility: Passion Isn't a System</li>
+        <li><span>04</span> Technology &amp; Digital Literacy</li>
+        <li><span>05</span> The Final Window <em>· forthcoming</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOLLOW -->
+  <section class="follow">
+    <div class="wrap">
+      <div class="eyebrow">Come along</div>
+      <h2>Thought, taste &amp; <em>presence</em> — in your inbox.</h2>
+      <p>No funnel, no pitch. Just the writing, the recipes, and the practice — wherever you like to find me.</p>
+      <div class="social">
+        <a class="btn btn-ink" href="https://katoyapalmer.substack.com">Subscribe on Substack</a>
+        <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Follow on TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="fbrand">Katoya Palmer<span class="dot">.</span></div>
+          <div class="ftag">A multidisciplinary life of thought, taste &amp; presence.</div>
+        </div>
+        <div class="fcol">
+          <h4>The work</h4>
+          <a href="https://www.toyboxconsulting.net">ToyBox Consulting</a>
+          <a href="https://katoyapalmer.substack.com">Mindfulness in the Middle</a>
+          <a href="https://katoyapalmer.substack.com">SZND by Katoya</a>
+          <a href="https://katoyapalmer.substack.com">Lipstick on My Fork</a>
+        </div>
+        <div class="fcol">
+          <h4>Find me</h4>
+          <a href="https://katoyapalmer.substack.com">Substack</a>
+          <a href="https://tiktok.com/@katoyapalmer">TikTok</a>
+          <a href="https://www.linkedin.com/in/katoya318">LinkedIn</a>
+          <a href="mailto:katoya@toyboxconsulting.net">Email</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Katoya Raquell Palmer</span>
+        <span>katoyapalmer.com</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

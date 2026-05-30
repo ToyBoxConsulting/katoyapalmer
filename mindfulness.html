@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mindfulness in the Middle — staying whole in the thick of it</title>
+<meta name="description" content="Mindfulness for people living in the thick of it — leadership, caregiving, and the long middle of a life. From Katoya Palmer. #MITM" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#F0ECE3; --cream-2:#F7F4ED; --paper:#FBF9F3;
+    --ink:#23262A; --ink-soft:#5C616A; --ink-faint:#9CA0A8;
+    --teal:#5C8A82; --teal-deep:#436B64; --teal-soft:#DEE9E5;
+    --sand:#C9B79A; --line:#E2DCD1;
+    --serif:"Cormorant Garamond", Georgia, serif;
+    --sans:"Mulish", system-ui, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.7;}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 54px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:.002em;}
+  .lab{font-size:11.5px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-deep);}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(240,236,227,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 54px;max-width:1180px;margin:0 auto;}
+  .nav-back{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-back:hover{color:var(--teal-deep);}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-size:13px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--teal-deep);}
+  .nav-sub{background:var(--teal-deep)!important;color:#fff!important;padding:9px 17px;border-radius:40px;}
+  .nav-sub:hover{background:var(--teal)!important;}
+
+  /* HERO */
+  .hero{padding:80px 0 78px;text-align:center;}
+  .hero-logo{width:128px;margin:0 auto 26px;border-radius:50%;background:var(--paper);border:1px solid var(--line);padding:20px;}
+  .hero h1{font-size:64px;line-height:1.02;margin:0 auto 22px;max-width:740px;}
+  .hero h1 em{font-style:italic;color:var(--teal-deep);}
+  .hero p{font-size:19px;color:var(--ink-soft);max-width:560px;margin:0 auto 30px;}
+  .hero .cta{display:flex;gap:14px;justify-content:center;}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:13px 24px;border-radius:40px;cursor:pointer;transition:.2s;}
+  .btn-teal{background:var(--teal-deep);color:#fff;} .btn-teal:hover{background:var(--teal);}
+  .btn-line{border:1px solid var(--ink);color:var(--ink);} .btn-line:hover{background:var(--ink);color:var(--cream);}
+
+  section{padding:80px 0;}
+  /* PREMISE */
+  .premise{background:var(--teal-deep);color:var(--cream);text-align:center;}
+  .premise .lab{color:var(--teal-soft);}
+  .premise blockquote{font-family:var(--serif);font-style:italic;font-size:38px;line-height:1.3;color:#fff;max-width:820px;margin:18px auto 0;}
+  .premise .by{margin-top:22px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-soft);}
+
+  /* MIDDLE OF */
+  .midhead{max-width:640px;margin:0 auto 44px;text-align:center;}
+  .midhead h2{font-size:42px;margin:14px 0 12px;}
+  .midhead h2 em{font-style:italic;color:var(--teal-deep);}
+  .midhead p{font-size:16.5px;color:var(--ink-soft);}
+  .mid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:880px;margin:0 auto;}
+  .mid{display:flex;gap:18px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 28px;}
+  .mid .dot{width:11px;height:11px;border-radius:50%;background:var(--teal);flex:none;margin-top:9px;}
+  .mid h3{font-size:23px;margin-bottom:5px;}
+  .mid p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* PRACTICES */
+  .practices{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .pr{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 26px;}
+  .pr .num{font-family:var(--serif);font-size:30px;color:var(--teal);line-height:1;}
+  .pr h3{font-size:22px;margin:10px 0 8px;}
+  .pr p{font-size:14px;color:var(--ink-soft);}
+
+  /* BEGIN */
+  .begin{text-align:center;}
+  .begin .lab{color:var(--teal-deep);}
+  .begin h2{font-size:50px;margin:16px auto 14px;max-width:720px;}
+  .begin h2 em{font-style:italic;color:var(--teal-deep);}
+  .begin p{font-size:18px;color:var(--ink-soft);max-width:500px;margin:0 auto 28px;}
+  .begin .cta{display:flex;gap:14px;justify-content:center;}
+  .begin .hash{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:20px;color:var(--teal-deep);}
+
+  footer{background:var(--ink);color:var(--cream);padding:52px 0 32px;}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:28px;border-bottom:1px solid rgba(240,236,227,.18);flex-wrap:wrap;}
+  footer .fmark{font-family:var(--serif);font-size:30px;color:#fff;}
+  footer .ftag{font-size:13px;color:rgba(240,236,227,.6);margin-top:6px;}
+  .fsocial{display:flex;gap:22px;}
+  .fsocial a{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cream);}
+  .fsocial a:hover{color:var(--teal);}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;color:rgba(240,236,227,.5);}
+  .foot-bottom a:hover{color:#fff;}
+</style>
+</head>
+<body data-screen-label="Mindfulness in the Middle">
+
+  <nav>
+    <div class="nav-in">
+      <a class="nav-back" href="index.html">← Katoya Palmer</a>
+      <div class="nav-links">
+        <a href="#premise">The Practice</a>
+        <a href="#middle">For the Middle</a>
+        <a href="#begin">Begin</a>
+        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <img class="hero-logo" src="assets/brand-mitm.webp" alt="Mindfulness in the Middle" />
+      <h1>Staying whole in the <em>thick of it</em>.</h1>
+      <p>Mindfulness for the people holding everything together — leaders, caregivers, and anyone deep in the long, unglamorous middle of a life.</p>
+      <div class="cta">
+        <a class="btn btn-teal" href="https://katoyapalmer.substack.com">Start here</a>
+        <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Find me on TikTok</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PREMISE -->
+  <section class="premise" id="premise">
+    <div class="wrap">
+      <div class="lab">The practice</div>
+      <blockquote>“Not the mountaintop. The middle — where the work, the people, and the worry actually live.”</blockquote>
+      <div class="by">Mindfulness in the Middle</div>
+    </div>
+  </section>
+
+  <!-- MIDDLE OF -->
+  <section id="middle">
+    <div class="wrap">
+      <div class="midhead">
+        <div class="lab">For the middle of…</div>
+        <h2>This is for you if you're in <em>the thick</em>.</h2>
+        <p>Not a retreat you have to escape to. A practice you can carry into the room you're already in.</p>
+      </div>
+      <div class="mid-grid">
+        <div class="mid"><div class="dot"></div><div><h3>The middle of leading</h3><p>Carrying a team, a mission, and a hundred decisions that are quietly yours alone.</p></div></div>
+        <div class="mid"><div class="dot"></div><div><h3>The middle of caregiving</h3><p>Holding up the people you love while no one's quite holding up you.</p></div></div>
+        <div class="mid"><div class="dot"></div><div><h3>The middle of a life</h3><p>Past the beginning, not near the end — the long stretch where it's easy to disappear.</p></div></div>
+        <div class="mid"><div class="dot"></div><div><h3>The middle of the mess</h3><p>Transition, overwhelm, the hard season — when staying present is the whole battle.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICES -->
+  <section class="practices">
+    <div class="wrap">
+      <div class="midhead">
+        <div class="lab">Small practices</div>
+        <h2>Things you can do <em>right now</em>.</h2>
+        <p>Sixty seconds, no cushion required. Grounding you can do at your desk, in the car, mid-shift.</p>
+      </div>
+      <div class="pr-grid">
+        <div class="pr"><div class="num">01</div><h3>One full breath</h3><p>In for four, hold for four, out for six. One round resets more than you'd think.</p></div>
+        <div class="pr"><div class="num">02</div><h3>Name five things</h3><p>Five you can see, four you can touch. Pull yourself back into the room you're in.</p></div>
+        <div class="pr"><div class="num">03</div><h3>The honest pause</h3><p>Before you answer, react, or send — one beat to choose instead of just respond.</p></div>
+        <div class="pr"><div class="num">04</div><h3>Put it down</h3><p>Name the one worry you're carrying that isn't yours to hold today. Set it down.</p></div>
+        <div class="pr"><div class="num">05</div><h3>Hand on heart</h3><p>A palm to the chest, three breaths. Steadiness you can give yourself, anywhere.</p></div>
+        <div class="pr"><div class="num">06</div><h3>Light the candle</h3><p>One small ritual to mark the shift from doing to being. Begin and end on purpose.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEGIN -->
+  <section class="begin" id="begin">
+    <div class="wrap">
+      <div class="lab">Begin where you are</div>
+      <h2>A little steadiness, <em>delivered</em>.</h2>
+      <p>Short reflections and practices for staying whole in the thick of it — no guru, no pressure, just company for the middle.</p>
+      <div class="cta">
+        <a class="btn btn-teal" href="https://katoyapalmer.substack.com">Subscribe free</a>
+        <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Follow on TikTok</a>
+      </div>
+      <div class="hash">#MITM</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="fmark">Mindfulness in the Middle</div>
+          <div class="ftag">A Katoya Palmer practice · staying whole in the thick of it.</div>
+        </div>
+        <div class="fsocial">
+          <a href="https://katoyapalmer.substack.com">Substack</a>
+          <a href="https://tiktok.com/@katoyapalmer">TikTok</a>
+          <a href="index.html">Katoya Palmer</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Katoya Raquell Palmer</span>
+        <a href="index.html">katoyapalmer.com →</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

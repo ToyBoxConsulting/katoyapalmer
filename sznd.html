@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SZND by Katoya — a well-seasoned life</title>
+<meta name="description" content="Recipes, garden, and DIY from Katoya Palmer. A well-seasoned life — made by hand, in season." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#F1EDE3; --cream-2:#F8F5ED; --paper:#FCFAF4;
+    --ink:#2E2A33; --ink-soft:#6B6470; --ink-faint:#A49DAB;
+    --lav:#8E82B8; --lav-deep:#6F639B; --lav-soft:#EAE5F2;
+    --sage:#7E9576; --sage-deep:#5E7259; --sage-soft:#E4EADD;
+    --line:#E5DFD3;
+    --serif:"Cormorant Garamond", Georgia, serif;
+    --sans:"Mulish", system-ui, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.62;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 54px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacing:-.005em;}
+  .lab{font-size:11.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--lav-deep);}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(241,237,227,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 54px;max-width:1240px;margin:0 auto;}
+  .nav-back{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-back:hover{color:var(--lav-deep);}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--lav-deep);}
+  .nav-sub{background:var(--lav-deep)!important;color:#fff!important;padding:9px 17px;border-radius:40px;}
+  .nav-sub:hover{background:var(--lav)!important;}
+
+  /* HERO */
+  .hero{padding:54px 0 66px;position:relative;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:center;}
+  .hero .lab{margin-bottom:18px;}
+  .hero h1{font-size:78px;line-height:.96;margin-bottom:22px;}
+  .hero h1 em{font-style:italic;color:var(--lav-deep);}
+  .hero p{font-size:18.5px;color:var(--ink-soft);max-width:480px;margin-bottom:28px;}
+  .hero .cta{display:flex;gap:14px;}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:13px 24px;border-radius:40px;cursor:pointer;transition:.2s;}
+  .btn-lav{background:var(--lav-deep);color:#fff;} .btn-lav:hover{background:var(--lav);}
+  .btn-line{border:1px solid var(--ink);color:var(--ink);} .btn-line:hover{background:var(--ink);color:var(--cream);}
+  .hero-logo{display:flex;align-items:center;justify-content:center;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:46px;box-shadow:0 30px 60px -40px rgba(110,99,155,.5);}
+  .hero-logo img{max-width:100%;}
+
+  section{padding:78px 0;}
+  .sec-head{max-width:680px;margin-bottom:42px;}
+  .sec-head h2{font-size:42px;margin:14px 0 14px;}
+  .sec-head h2 em{font-style:italic;color:var(--sage-deep);}
+  .sec-head p{font-size:17px;color:var(--ink-soft);}
+
+  /* IDEA */
+  .idea{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .idea .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;}
+  .idea .big{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.32;color:var(--ink);}
+  .idea .big .u{color:var(--lav-deep);font-style:normal;}
+  .idea p{font-size:17px;color:var(--ink-soft);margin-bottom:16px;}
+
+  /* SEASONS */
+  .season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .season{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px;transition:.2s;}
+  .season:hover{transform:translateY(-5px);box-shadow:0 26px 46px -34px rgba(94,114,89,.4);}
+  .season .s{font-family:var(--serif);font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-deep);}
+  .season h3{font-size:25px;margin:8px 0 9px;}
+  .season p{font-size:14px;color:var(--ink-soft);}
+
+  /* MAKES */
+  .makes{background:var(--lav-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .make-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .make{display:block;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 26px;transition:.2s;}
+  .make:hover{transform:translateY(-4px);box-shadow:0 24px 44px -32px rgba(110,99,155,.45);border-color:var(--lav);}
+  .make .n{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--lav-deep);}
+  .make h3{font-size:24px;margin:7px 0 8px;}
+  .make p{font-size:14px;color:var(--ink-soft);}
+  .make .go{display:inline-block;margin-top:13px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--lav-deep);}
+
+  /* SUBSCRIBE */
+  .sub{text-align:center;}
+  .sub .lab{color:var(--sage-deep);}
+  .sub h2{font-size:52px;margin:16px auto 14px;max-width:760px;}
+  .sub h2 em{font-style:italic;color:var(--lav-deep);}
+  .sub p{font-size:18px;color:var(--ink-soft);max-width:520px;margin:0 auto 28px;}
+  .sub .cta{display:flex;gap:14px;justify-content:center;}
+
+  footer{background:var(--ink);color:var(--cream);padding:52px 0 32px;}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:28px;border-bottom:1px solid rgba(241,237,227,.18);flex-wrap:wrap;}
+  footer .fmark{font-family:var(--serif);font-weight:600;font-size:30px;color:#fff;}
+  footer .ftag{font-size:13px;color:rgba(241,237,227,.6);margin-top:6px;}
+  .fsocial{display:flex;gap:22px;}
+  .fsocial a{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cream);}
+  .fsocial a:hover{color:var(--lav);}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;color:rgba(241,237,227,.5);}
+  .foot-bottom a:hover{color:#fff;}
+</style>
+</head>
+<body data-screen-label="SZND by Katoya">
+
+  <nav>
+    <div class="nav-in">
+      <a class="nav-back" href="index.html">← Katoya Palmer</a>
+      <div class="nav-links">
+        <a href="#idea">The Idea</a>
+        <a href="#seasons">By Season</a>
+        <a href="#makes">Recipes &amp; Projects</a>
+        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="lab">Recipes · Garden · DIY</div>
+        <h1>A well-<em>seasoned</em> life.</h1>
+        <p>The homemade side of me — what I cook, what I grow, and what I make with my hands. Seasonal, unhurried, and rooted in the turn of the year.</p>
+        <div class="cta">
+          <a class="btn btn-lav" href="https://katoyapalmer.substack.com">Read on Substack</a>
+          <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Watch on TikTok</a>
+        </div>
+      </div>
+      <div class="hero-logo"><img src="assets/brand-sznd.png" alt="SZND by Katoya" /></div>
+    </div>
+  </header>
+
+  <!-- IDEA -->
+  <section class="idea" id="idea">
+    <div class="wrap">
+      <div>
+        <div class="lab">The idea</div>
+        <p class="big" style="margin-top:14px;">SZND is short for <span class="u">seasoned</span> — and for <span class="u">season</span>. The same word for a life with flavor and a life lived in rhythm with the year.</p>
+      </div>
+      <div>
+        <p>Where Lipstick on My Fork is the night out, SZND is the night in: a pot on the stove, seedlings on the sill, a project half-finished on the table. It's the slow, satisfying work of tending to your own life.</p>
+        <p>Recipes from the garden, simple projects for the home, and the small rituals that make a season feel marked. Made by hand, in season, on purpose.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONS -->
+  <section id="seasons">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="lab">By season</div>
+        <h2>The year, in <em>four movements</em>.</h2>
+        <p>What's growing, what's cooking, and what's worth making — month by month.</p>
+      </div>
+      <div class="season-grid">
+        <div class="season"><div class="s">Spring</div><h3>Plant &amp; begin</h3><p>Seed starting, first greens, and the clean optimism of a garden going in.</p></div>
+        <div class="season"><div class="s">Summer</div><h3>Harvest &amp; host</h3><p>Peak tomatoes, herbs by the fistful, and meals that barely need a stove.</p></div>
+        <div class="season"><div class="s">Autumn</div><h3>Preserve &amp; gather</h3><p>Putting it up — canning, drying, and the deep-pot cooking the cold asks for.</p></div>
+        <div class="season"><div class="s">Winter</div><h3>Tend &amp; make</h3><p>Slow projects, the DIY list, and keeping something green alive indoors.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAKES -->
+  <section class="makes" id="makes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="lab">Recipes &amp; projects</div>
+        <h2>Things worth <em>making yourself</em>.</h2>
+      </div>
+      <div class="make-grid">
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">From the garden</div><h3>Grow Your Own</h3><p>Raised beds, containers, and what actually thrives in the Pacific Northwest.</p><span class="go">See more →</span></a>
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">In the kitchen</div><h3>Garden-to-Table Recipes</h3><p>Honest, seasonal cooking built around whatever's ripe and on hand.</p><span class="go">See more →</span></a>
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">Put it up</div><h3>Preserve &amp; Store</h3><p>Jams, pickles, and the quiet satisfaction of a full pantry shelf.</p><span class="go">See more →</span></a>
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">Around the house</div><h3>DIY &amp; Home Projects</h3><p>Small builds, fixes, and refreshes — made with your own two hands.</p><span class="go">See more →</span></a>
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">Set the scene</div><h3>Seasonal Rituals</h3><p>The simple touches that make a table, a room, or a moment feel tended-to.</p><span class="go">See more →</span></a>
+        <a class="make" href="https://katoyapalmer.substack.com"><div class="n">Hands &amp; soil</div><h3>Field Notes</h3><p>What's working, what failed, and what I'm learning as I go.</p><span class="go">See more →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="sub">
+    <div class="wrap">
+      <div class="lab">Come grow with me</div>
+      <h2>Seasonal living, in your <em>inbox</em>.</h2>
+      <p>Recipes, garden notes, and projects — sent at the pace of the seasons, never faster.</p>
+      <div class="cta">
+        <a class="btn btn-lav" href="https://katoyapalmer.substack.com">Subscribe free</a>
+        <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Follow on TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="fmark">SZND by Katoya</div>
+          <div class="ftag">A Katoya Palmer brand · made by hand, in season.</div>
+        </div>
+        <div class="fsocial">
+          <a href="https://katoyapalmer.substack.com">Substack</a>
+          <a href="https://tiktok.com/@katoyapalmer">TikTok</a>
+          <a href="index.html">Katoya Palmer</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Katoya Raquell Palmer</span>
+        <a href="index.html">katoyapalmer.com →</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
