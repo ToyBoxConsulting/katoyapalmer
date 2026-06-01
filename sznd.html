@@ -136,7 +136,354 @@
     .foot-bottom{flex-direction:column;gap:8px;align-items:flex-start;}
   }
 </style>
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wzujhv34kc");</script>
+<!--
+  ToyBox Cookie Consent Banner
+  Single-file vanilla JS — no dependencies.
+  Drop into the <head> of each site, ABOVE GA4 / Bing UET / Clarity / Albacross.
+  Trackers will only load after consent is granted for their category.
+
+  Recommended posture: opt-in by default (analytics, advertising, B2B id are OFF until accepted).
+  Why opt-in by default: WA is leaning stricter (MHMDA), CCPA "share" opt-outs apply, GPC is honored,
+  and Mindfulness vertical raises the bar. Cleaner posture for SMB serving WA + CA traffic.
+
+  Replace the placeholder IDs marked with TODO.
+-->
+
+<style>
+  /* ====== Cookie Consent Banner styles ====== */
+  #tb-cookie-banner, #tb-cookie-modal {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  #tb-cookie-banner *, #tb-cookie-modal * { box-sizing: border-box; }
+  #tb-cookie-banner {
+    position: fixed; bottom: 16px; left: 16px; right: 16px;
+    max-width: 760px; margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e3dbcd;
+    border-radius: 8px;
+    padding: 18px 22px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    z-index: 9999;
+    display: none;
+  }
+  #tb-cookie-banner.visible { display: block; }
+  #tb-cookie-banner p {
+    margin: 0 0 14px;
+    font-size: 14.5px;
+    color: #333;
+  }
+  #tb-cookie-banner .tb-cookie-actions {
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  #tb-cookie-banner button, #tb-cookie-modal button {
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: #fff;
+    color: #1a1a1a;
+    transition: background 0.18s, border-color 0.18s;
+  }
+  #tb-cookie-banner .tb-btn-primary, #tb-cookie-modal .tb-btn-primary {
+    background: #B73A1A; color: #fff; border-color: #B73A1A;
+  }
+  #tb-cookie-banner .tb-btn-primary:hover, #tb-cookie-modal .tb-btn-primary:hover {
+    background: #9c2f15; border-color: #9c2f15;
+  }
+  #tb-cookie-banner .tb-btn-secondary, #tb-cookie-modal .tb-btn-secondary {
+    border-color: #c4b9a8;
+  }
+  #tb-cookie-banner .tb-btn-secondary:hover, #tb-cookie-modal .tb-btn-secondary:hover {
+    border-color: #1a1a1a;
+  }
+  #tb-cookie-banner a { color: #B73A1A; text-decoration: underline; }
+  #tb-cookie-modal {
+    position: fixed; inset: 0;
+    background: rgba(16, 36, 58, 0.6);
+    display: none; align-items: center; justify-content: center;
+    z-index: 10000;
+    padding: 16px;
+  }
+  #tb-cookie-modal.visible { display: flex; }
+  #tb-cookie-modal .tb-modal-inner {
+    background: #fff; border-radius: 8px;
+    max-width: 560px; width: 100%;
+    padding: 28px 28px 22px;
+    max-height: 90vh; overflow-y: auto;
+  }
+  #tb-cookie-modal h2 { margin: 0 0 10px; font-size: 20px; }
+  #tb-cookie-modal p { margin: 0 0 16px; font-size: 14px; color: #333; }
+  #tb-cookie-modal .tb-cat {
+    border: 1px solid #e3dbcd; border-radius: 6px;
+    padding: 14px 16px; margin-bottom: 12px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  #tb-cookie-modal .tb-cat-text { flex: 1; }
+  #tb-cookie-modal .tb-cat-text strong { display: block; margin-bottom: 4px; font-size: 14.5px; }
+  #tb-cookie-modal .tb-cat-text span { font-size: 13px; color: #555; }
+  #tb-cookie-modal .tb-cat input[type="checkbox"] {
+    width: 18px; height: 18px; margin-top: 3px;
+  }
+  #tb-cookie-modal .tb-cat input[disabled] { opacity: 0.5; }
+  #tb-cookie-modal .tb-modal-actions {
+    display: flex; gap: 10px; justify-content: flex-end; margin-top: 18px; flex-wrap: wrap;
+  }
+  @media (max-width: 520px) {
+    #tb-cookie-banner .tb-cookie-actions button { flex: 1 1 auto; }
+  }
+</style>
+
+<!-- Banner (initial state) -->
+<div id="tb-cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <p>
+    We use cookies to operate this site (required) and, with your consent, to measure usage, improve the experience, and personalize advertising. See our
+    <a href="/cookie-notice.html">Cookie Notice</a> and <a href="/privacy.html">Privacy Policy</a>.
+  </p>
+  <div class="tb-cookie-actions">
+    <button class="tb-btn-primary" id="tb-accept-all">Accept all</button>
+    <button class="tb-btn-secondary" id="tb-reject-all">Reject non-essential</button>
+    <button class="tb-btn-secondary" id="tb-customize">Customize</button>
+  </div>
+</div>
+
+<!-- Customize modal -->
+<div id="tb-cookie-modal" role="dialog" aria-modal="true" aria-labelledby="tb-modal-title">
+  <div class="tb-modal-inner">
+    <h2 id="tb-modal-title">Cookie settings</h2>
+    <p>Choose which categories to allow. You can change this anytime via the "Cookie settings" link in the footer.</p>
+
+    <label class="tb-cat">
+      <input type="checkbox" checked disabled aria-label="Strictly necessary cookies (always on)" />
+      <span class="tb-cat-text">
+        <strong>Strictly necessary (always on)</strong>
+        <span>Required for the site to function and to remember your cookie choice.</span>
+      </span>
+    </label>
+
+    <label class="tb-cat">
+      <input type="checkbox" id="tb-cat-analytics" />
+      <span class="tb-cat-text">
+        <strong>Analytics</strong>
+        <span>Google Analytics 4, Microsoft Clarity, Cloudflare Web Analytics — to understand site usage.</span>
+      </span>
+    </label>
+
+    <label class="tb-cat">
+      <input type="checkbox" id="tb-cat-ads" />
+      <span class="tb-cat-text">
+        <strong>Advertising</strong>
+        <span>Microsoft Advertising UET — for conversion measurement and audience targeting. CCPA "sharing."</span>
+      </span>
+    </label>
+
+    <label class="tb-cat">
+      <input type="checkbox" id="tb-cat-b2b" />
+      <span class="tb-cat-text">
+        <strong>Visitor identification (B2B)</strong>
+        <span>Albacross — resolves visitor company by IP where possible.</span>
+      </span>
+    </label>
+
+    <div class="tb-modal-actions">
+      <button class="tb-btn-secondary" id="tb-modal-cancel">Cancel</button>
+      <button class="tb-btn-primary" id="tb-modal-save">Save preferences</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ===== Config — live IDs as of 2026-06-01 =====
+  var CONFIG = {
+    ga4MeasurementId:   'G-XXXXXXXXXX',                                   // TODO when GA4 properties are created (file 04 process)
+    bingUetTagId:       '00000000',                                       // TODO when UET tag retrieved
+    clarityProjectId:   'wzujhv34kc',                                     // ToyBox Clarity project (live)
+    albacrossId:        '89849633',                                       // ToyBox Albacross workspace (live)
+    cloudflareAnalyticsToken: '9566326c26dc4f728f2136efbd6a8d38',        // ToyBox CF Web Analytics (live)
+    cookieName:         'toybox_consent',
+    cookieDays:         365
+  };
+
+  // ===== Cookie helpers =====
+  function readCookie(name) {
+    var match = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+  function writeCookie(name, value, days) {
+    var expires = '';
+    if (days) {
+      var d = new Date(); d.setTime(d.getTime() + days * 86400000);
+      expires = '; expires=' + d.toUTCString();
+    }
+    document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/; SameSite=Lax';
+  }
+  function readConsent() {
+    var raw = readCookie(CONFIG.cookieName);
+    if (!raw) return null;
+    try { return JSON.parse(raw); } catch (e) { return null; }
+  }
+  function saveConsent(obj) {
+    obj.ts = new Date().toISOString();
+    obj.v  = 1;
+    writeCookie(CONFIG.cookieName, JSON.stringify(obj), CONFIG.cookieDays);
+  }
+
+  // ===== Global Privacy Control =====
+  function gpcOn() {
+    return (typeof navigator !== 'undefined' && navigator.globalPrivacyControl === true);
+  }
+
+  // ===== Tracker loaders (called only after consent) =====
+  function loadGA4() {
+    if (window.__tbGA4Loaded || !CONFIG.ga4MeasurementId || CONFIG.ga4MeasurementId.indexOf('XXXX') > -1) return;
+    window.__tbGA4Loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.ga4MeasurementId;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', CONFIG.ga4MeasurementId, { anonymize_ip: true });
+  }
+  function loadBingUET() {
+    if (window.__tbUETLoaded || !CONFIG.bingUetTagId || CONFIG.bingUetTagId.indexOf('0000') === 0) return;
+    window.__tbUETLoaded = true;
+    (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:CONFIG.bingUetTagId,enableAutoSpaTracking:true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+  }
+  function loadClarity() {
+    if (window.__tbClarityLoaded || !CONFIG.clarityProjectId || CONFIG.clarityProjectId.indexOf('xxxx') === 0) return;
+    window.__tbClarityLoaded = true;
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",CONFIG.clarityProjectId);
+  }
+  function loadAlbacross() {
+    if (window.__tbAlbaLoaded || !CONFIG.albacrossId || CONFIG.albacrossId === '000000000') return;
+    window.__tbAlbaLoaded = true;
+    window._nQc = CONFIG.albacrossId;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://serve.albacross.com/track.js';
+    document.head.appendChild(s);
+  }
+  function loadCloudflareAnalytics() {
+    if (window.__tbCFLoaded || !CONFIG.cloudflareAnalyticsToken) return;
+    window.__tbCFLoaded = true;
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', '{"token": "' + CONFIG.cloudflareAnalyticsToken + '"}');
+    document.body.appendChild(s);
+  }
+
+  // ===== Apply consent decisions =====
+  function applyConsent(c) {
+    if (c.analytics) { loadGA4(); loadClarity(); loadCloudflareAnalytics(); }
+    if (c.ads)       { loadBingUET(); }
+    if (c.b2b)       { loadAlbacross(); }
+    // No tear-down for already-loaded trackers — page reload may be needed if user withdraws.
+  }
+
+  // ===== UI wiring =====
+  function showBanner() { document.getElementById('tb-cookie-banner').classList.add('visible'); }
+  function hideBanner() { document.getElementById('tb-cookie-banner').classList.remove('visible'); }
+  function showModal()  { document.getElementById('tb-cookie-modal').classList.add('visible'); }
+  function hideModal()  { document.getElementById('tb-cookie-modal').classList.remove('visible'); }
+
+  function consentFromModal() {
+    return {
+      analytics: document.getElementById('tb-cat-analytics').checked,
+      ads:       document.getElementById('tb-cat-ads').checked,
+      b2b:       document.getElementById('tb-cat-b2b').checked
+    };
+  }
+  function setModalState(c) {
+    document.getElementById('tb-cat-analytics').checked = !!c.analytics;
+    document.getElementById('tb-cat-ads').checked       = !!c.ads;
+    document.getElementById('tb-cat-b2b').checked       = !!c.b2b;
+  }
+
+  function init() {
+    var existing = readConsent();
+
+    // Honor GPC as an opt-out of "sharing" (ads, b2b).
+    if (gpcOn() && existing) {
+      existing.ads = false;
+      existing.b2b = false;
+      saveConsent(existing);
+    }
+
+    if (existing) {
+      applyConsent(existing);
+    } else {
+      showBanner();
+    }
+
+    document.getElementById('tb-accept-all').addEventListener('click', function () {
+      var c = gpcOn() ? { analytics: true, ads: false, b2b: false } : { analytics: true, ads: true, b2b: true };
+      saveConsent(c); applyConsent(c); hideBanner();
+    });
+
+    document.getElementById('tb-reject-all').addEventListener('click', function () {
+      var c = { analytics: false, ads: false, b2b: false };
+      saveConsent(c); hideBanner();
+    });
+
+    document.getElementById('tb-customize').addEventListener('click', function () {
+      setModalState(existing || { analytics: false, ads: false, b2b: false });
+      showModal();
+    });
+
+    document.getElementById('tb-modal-cancel').addEventListener('click', hideModal);
+
+    document.getElementById('tb-modal-save').addEventListener('click', function () {
+      var c = consentFromModal();
+      if (gpcOn()) { c.ads = false; c.b2b = false; }
+      saveConsent(c); applyConsent(c); hideModal(); hideBanner();
+    });
+
+    // Footer "Cookie settings" link should call window.tbReopenConsent()
+    window.tbReopenConsent = function () {
+      setModalState(readConsent() || { analytics: false, ads: false, b2b: false });
+      showModal();
+    };
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<!--
+  HOW TO USE
+  ----------
+  1. Paste this entire block (style + banner + modal + script) into the <head> of each repo's index/layout,
+     ABOVE any tracking snippets. Do NOT also add raw GA4 / UET / Clarity / Albacross snippets elsewhere;
+     this file loads them itself, on consent.
+  2. Fill in CONFIG with the real IDs per site. Keep CONFIG per-site (different GA4 ID per site).
+  3. In the site footer, add a link: <a href="#" onclick="tbReopenConsent(); return false;">Cookie settings</a>
+  4. Add footer links: Privacy Policy, Terms of Use, Accessibility Statement.
+  5. Test:
+       - First visit -> banner appears, no tracking loads in Network tab.
+       - Accept all -> trackers load, banner disappears.
+       - Refresh -> banner does not reappear; consent persisted in `toybox_consent` cookie.
+       - Reject -> only the consent cookie is set; no tracker requests.
+       - GPC on (e.g., Brave with GPC enabled) -> ads + b2b stay off even on "Accept all."
+  6. Privacy Policy + Cookie Notice files must be live before this banner ships.
+
+  Not legal advice. Confirm vendor snippet URLs (bing UET, GA4, Clarity, Albacross) against current docs
+  before launch; vendors revise endpoints occasionally.
+-->
+
 </head>
 <body data-screen-label="SZND by Katoya">
 
@@ -242,14 +589,19 @@
           <a href="https://tiktok.com/@katoyapalmer">TikTok</a>
           <a href="index.html">Katoya Palmer</a>
         </div>
+      <div class="fcol">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="cookies.html">Cookie Notice</a>
+        <a href="#" onclick="tbReopenConsent(); return false;">Cookie settings</a>
       </div>
+    </div>
       <div class="foot-bottom">
         <span>© 2026 Katoya Raquell Palmer</span>
         <a href="index.html">katoyapalmer.com →</a>
       </div>
     </div>
   </footer>
-
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9566326c26dc4f728f2136efbd6a8d38"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
