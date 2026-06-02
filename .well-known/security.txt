@@ -1,0 +1,5 @@
+Contact: mailto:katoya@toyboxconsulting.net
+Expires: 2027-06-02T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.toyboxconsulting.net/.well-known/security.txt
+Policy: https://github.com/ToyBoxConsulting/toyboxconsulting/blob/main/SECURITY.md
