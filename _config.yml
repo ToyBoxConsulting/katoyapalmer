@@ -1,0 +1,5 @@
+# GitHub Pages: ensure .well-known directory is included in build output
+# so /.well-known/security.txt (RFC 9116) and any future well-known files
+# (like assetlinks.json, apple-app-site-association) are served.
+include:
+  - ".well-known"
