@@ -163,6 +163,17 @@
   <div class="footer-note">
     This Privacy Policy is published in good faith and reviewed periodically. If you have a question or concern that's not answered here, email us and we'll respond. For complete legal interpretation, please consult counsel.
   </div>
+
+  <h2>Browser-Level Visitor Protections</h2>
+  <p>We use a layered set of browser security mechanisms to protect visitors using our Sites. These measures do not collect any new data — they restrict what the browser will do on our pages.</p>
+  <ul>
+    <li><strong>Content-Security-Policy (CSP)</strong> restricts the sources from which scripts, styles, frames, and other resources may load. This blocks injected malicious scripts and limits third-party data exposure.</li>
+    <li><strong>frame-ancestors directive</strong> prevents any other site from embedding our pages in a hidden iframe (clickjacking protection).</li>
+    <li><strong>Permissions-Policy</strong> explicitly disables browser APIs our pages do not need: camera, microphone, geolocation, payment, USB, MIDI, motion sensors, ambient light, autoplay, encrypted media, screen capture, and picture-in-picture. Even if our site were compromised, an attacker could not use it to request access to your camera or microphone.</li>
+    <li><strong>Referrer-Policy: strict-origin-when-cross-origin</strong> limits what URL information is shared with third-party services (Calendly, Crisp, embedded content) when a visitor follows a link away from our Sites.</li>
+    <li><strong>HTTPS-only with HSTS</strong> enforces encrypted connections between you and our Sites.</li>
+    <li><strong>Bot protection</strong> via Cloudflare Turnstile on all form submissions reduces spam and automated abuse.</li>
+  </ul>
 </main>
 </body>
 </html>
