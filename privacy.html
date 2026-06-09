@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="Privacy Policy — ToyBox Consulting & Management">
 <meta name="twitter:description" content="Privacy Policy for ToyBox Consulting & Management, LLC, covering toyboxconsulting.net, katoyapalmer.com, and the Golden Hour Unboxed event landing page.">
 <meta name="twitter:image" content="https://www.katoyapalmer.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root { --ink:#1a1a1a; --soft:#5a544b; --faint:#938b7d; --rust:#B73A1A; --line:#e3dbcd; --paper:#fbf8f2; }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -56,12 +59,28 @@
 <!-- Crisp Live Chat -->
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e80e613-fbba-47f3-95d8-f68cc1e7a8a4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <!-- End Crisp Live Chat -->
-<script src="/tb-events.js" defer></script>
+<script src="tb-events.js" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ToyBox Consulting & Management","alternateName":"TBCM","url":"https://www.toyboxconsulting.net","logo":"https://www.toyboxconsulting.net/assets/logo.png","founder":{"@type":"Person","name":"Katoya Raquell Palmer","jobTitle":"Founder, Systems Strategist, Fractional COO","url":"https://www.katoyapalmer.com"},"address":{"@type":"PostalAddress","addressLocality":"Bellevue","addressRegion":"WA","postalCode":"98007","addressCountry":"US"},"email":"katoya@toyboxconsulting.net","areaServed":"United States","knowsAbout":["Fractional COO","Operations Strategy","Governance","Nonprofit Operations","Financial Controls","Board Governance"]}</script>
+<style id="kp-brand">
+  :root{
+    --syne:"Syne", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --grot:"Space Grotesk", system-ui, sans-serif;
+    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A; --rust:#A81F1A;
+  }
+  body{font-family:var(--grot)!important;}
+  h1,h2,h3{font-family:var(--syne)!important;font-weight:800!important;letter-spacing:-.02em!important;}
+  .lede{font-family:var(--jost)!important;font-weight:600!important;color:var(--scarlet-deep)!important;letter-spacing:.26em!important;}
+  .wm-mini{font-family:var(--syne);font-weight:800;font-size:14px;letter-spacing:-.01em;color:var(--ink);display:inline-flex;align-items:center;text-transform:uppercase;}
+  .wm-mini .bo{display:inline-flex;align-items:center;margin:0 -1px;}
+  nav.back a{display:inline-flex;align-items:center;color:var(--ink);}
+  nav.back a:hover .wm-mini{color:var(--scarlet-deep);}
+</style>
 </head>
 <body>
 <main class="wrap">
-  <nav class="back"><a href="/">← Home</a></nav>
+  <nav class="back"><a href="/"><span class="wm-mini"><span>&larr; KAT</span><i class="bo" data-size="13"></i><span>YA PALMER</span></span></a></nav>
   <div class="lede">Privacy</div>
   <h1>Privacy Policy</h1>
 
@@ -189,5 +208,39 @@
     <li><strong>Bot protection</strong> via Cloudflare Turnstile on all form submissions reduces spam and automated abuse.</li>
   </ul>
 </main>
+<script>
+(function(){
+  function caneRing(cx,cy,Rm,half,bulge,N,phase){
+    var STEPS=160,outer=[],inner=[],i,a,t;
+    for(i=0;i<=STEPS;i++){a=i/STEPS*Math.PI*2;t=half+bulge*Math.cos(N*(a-phase));
+      outer.push([cx+(Rm+t)*Math.cos(a),cy+(Rm+t)*Math.sin(a)]);
+      inner.push([cx+(Rm-t)*Math.cos(a),cy+(Rm-t)*Math.sin(a)]);}
+    inner.reverse();
+    return 'M '+outer.map(function(p){return p.join(' ');}).join(' L ')+' M '+inner.map(function(p){return p.join(' ');}).join(' L ')+' Z';
+  }
+  function bamboo(size,seg){
+    seg=seg||7;var id='bo'+Math.floor(Math.random()*1e6);
+    var cx=50,cy=50,Rm=40,half=2.9,bulge=0.82,phase=-Math.PI/2;
+    var d=caneRing(cx,cy,Rm,half,bulge,seg,phase),kn='',i;
+    for(i=0;i<seg;i++){var a=phase+Math.PI+(i/seg)*Math.PI*2;
+      var t=half+bulge*Math.cos(seg*(a-phase))+0.6;
+      var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
+      var dl=0.9/Rm;
+      var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+          '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
+    }
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
+      '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
+      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
+      '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
+  }
+  function render(){var n=document.querySelectorAll('.bo');for(var i=0;i<n.length;i++){var s=parseFloat(n[i].getAttribute('data-size'))||14;n[i].innerHTML=bamboo(s,7);}}
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',render);}else{render();}
+})();
+</script>
 </body>
 </html>

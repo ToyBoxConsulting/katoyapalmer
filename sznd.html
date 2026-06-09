@@ -27,16 +27,20 @@
 <meta name="twitter:image" content="https://katoyapalmer.com/assets/brand-sznd.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --cream:#F1EDE3; --cream-2:#F8F5ED; --paper:#FCFAF4;
-    --ink:#2E2A33; --ink-soft:#6B6470; --ink-faint:#A49DAB;
+    --cream:#F3EBDB; --cream-2:#EDE3CF; --paper:#FCF8EF;
+    --ink:#161210; --ink-soft:#6B6470; --ink-faint:#A49DAB;
     --lav:#8E82B8; --lav-deep:#6F639B; --lav-soft:#EAE5F2;
     --sage:#7E9576; --sage-deep:#5E7259; --sage-soft:#E4EADD;
     --line:#E5DFD3;
-    --serif:"Cormorant Garamond", Georgia, serif;
-    --sans:"Mulish", system-ui, sans-serif;
+    --serif:"Syne", system-ui, sans-serif;
+    --sans:"Space Grotesk", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A;
+    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -490,14 +494,45 @@
 <!-- Crisp Live Chat -->
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e80e613-fbba-47f3-95d8-f68cc1e7a8a4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <!-- End Crisp Live Chat -->
-<script src="/tb-events.js" defer></script>
+<script src="tb-events.js" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ToyBox Consulting & Management","alternateName":"TBCM","url":"https://www.toyboxconsulting.net","logo":"https://www.toyboxconsulting.net/assets/logo.png","founder":{"@type":"Person","name":"Katoya Raquell Palmer","jobTitle":"Founder, Systems Strategist, Fractional COO","url":"https://www.katoyapalmer.com"},"address":{"@type":"PostalAddress","addressLocality":"Bellevue","addressRegion":"WA","postalCode":"98007","addressCountry":"US"},"email":"katoya@toyboxconsulting.net","areaServed":"United States","knowsAbout":["Fractional COO","Operations Strategy","Governance","Nonprofit Operations","Financial Controls","Board Governance"]}</script>
+<style id="kp-brand">
+  :root{
+    --syne:"Syne", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --grot:"Space Grotesk", system-ui, sans-serif;
+    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A;
+    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+  }
+  body{font-family:var(--grot)!important;}
+  .big,blockquote,.idea .big,.premise blockquote{font-family:var(--syne)!important;font-weight:700!important;font-style:normal!important;letter-spacing:-.01em;}
+  .wm-mini{font-family:var(--syne);font-weight:800;font-size:15px;letter-spacing:-.01em;color:var(--ink);display:inline-flex;align-items:center;text-transform:uppercase;}
+  .wm-mini .bo{display:inline-flex;align-items:center;margin:0 -1px;}
+  .nav-back{display:inline-flex;align-items:center;}
+  h1,h2,h3{font-family:var(--syne)!important;font-weight:800!important;letter-spacing:-.018em!important;line-height:1.04!important;}
+  h1 em,h2 em,h3 em,.idea .big .u,.idea .big{font-style:normal!important;}
+  h1 em,h2 em,h3 em{background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent!important;}
+  .lab,.eyebrow{font-family:var(--jost)!important;font-weight:600!important;letter-spacing:.3em!important;color:var(--scarlet-deep)!important;}
+  .premise .lab,.idea .lab{color:var(--champ)!important;}
+  .btn,.nav-links a,.nav-back,.fsocial a,.foot-bottom,.listen-row a,.listen-lab,.nav-sub,.season .s,.make .go,.pr .num{font-family:var(--jost)!important;}
+  .pr .num{font-weight:700!important;}
+  body{font-family:var(--sans);}
+  footer .fmark{font-family:var(--syne)!important;font-weight:800!important;letter-spacing:-.012em;}
+  .nav-sub{background:var(--scarlet)!important;color:#fff!important;}
+  .nav-sub:hover{background:var(--scarlet-deep)!important;}
+  .rope{height:8px;border-radius:5px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.65) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45);}
+  .rope-rule{display:flex;justify-content:center;}
+  .rope-rule .rope{width:74px;height:7px;}
+  footer{position:relative;}
+  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.6) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);}
+</style>
 </head>
 <body data-screen-label="SZND by Katoya">
 
   <nav>
     <div class="nav-in">
-      <a class="nav-back" href="index.html">← Katoya Palmer</a>
+      <a class="nav-back" href="index.html"><span class="wm-mini"><span>&larr; KAT</span><i class="bo" data-size="14"></i><span>YA PALMER</span></span></a>
       <div class="nav-links">
         <a href="#idea">The Idea</a>
         <a href="#seasons">By Season</a>
@@ -611,5 +646,39 @@
       </div>
     </div>
   </footer>
+<script>
+(function(){
+  function caneRing(cx,cy,Rm,half,bulge,N,phase){
+    var STEPS=160,outer=[],inner=[],i,a,t;
+    for(i=0;i<=STEPS;i++){a=i/STEPS*Math.PI*2;t=half+bulge*Math.cos(N*(a-phase));
+      outer.push([cx+(Rm+t)*Math.cos(a),cy+(Rm+t)*Math.sin(a)]);
+      inner.push([cx+(Rm-t)*Math.cos(a),cy+(Rm-t)*Math.sin(a)]);}
+    inner.reverse();
+    return 'M '+outer.map(function(p){return p.join(' ');}).join(' L ')+' M '+inner.map(function(p){return p.join(' ');}).join(' L ')+' Z';
+  }
+  function bamboo(size,seg){
+    seg=seg||7;var id='bo'+Math.floor(Math.random()*1e6);
+    var cx=50,cy=50,Rm=40,half=2.9,bulge=0.82,phase=-Math.PI/2;
+    var d=caneRing(cx,cy,Rm,half,bulge,seg,phase),kn='',i;
+    for(i=0;i<seg;i++){var a=phase+Math.PI+(i/seg)*Math.PI*2;
+      var t=half+bulge*Math.cos(seg*(a-phase))+0.6;
+      var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
+      var dl=0.9/Rm;
+      var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+          '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
+    }
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
+      '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
+      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
+      '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
+  }
+  function render(){var n=document.querySelectorAll('.bo');for(var i=0;i<n.length;i++){var s=parseFloat(n[i].getAttribute('data-size'))||16;n[i].innerHTML=bamboo(s,7);}}
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',render);}else{render();}
+})();
+</script>
 </body>
 </html>
