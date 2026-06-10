@@ -79,8 +79,23 @@
   nav.back a{display:inline-flex;align-items:center;color:var(--ink);}
   nav.back a:hover .wm-mini{color:var(--scarlet-deep);}
 </style>
+<style>
+.botbn-bar{display:none;background:linear-gradient(90deg,#9E3B52 0%,#8B4513 100%);color:#FBF6EA;font-family:"Jost",sans-serif;font-size:14px;font-weight:400;padding:11px 60px 11px 24px;text-align:center;position:relative;line-height:1.4;z-index:100;}
+.botbn-bar strong{font-weight:600;}
+.botbn-bar .script{font-family:"Italianno",cursive;font-size:24px;line-height:0;vertical-align:-3px;margin:0 4px;color:#EAD79F;font-weight:400;}
+.botbn-bar a.botbn-cta{color:#FBF6EA;font-weight:600;text-decoration:underline;text-underline-offset:3px;margin-left:8px;white-space:nowrap;}
+.botbn-bar a.botbn-cta:hover{color:#EAD79F;}
+.botbn-bar .botbn-dismiss{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:transparent;border:0;color:#FBF6EA;font-size:22px;cursor:pointer;line-height:1;opacity:.7;padding:6px 12px;font-weight:300;}
+.botbn-bar .botbn-dismiss:hover{opacity:1;}
+@media (max-width:820px){.botbn-bar{font-size:12.5px;padding:10px 46px 10px 18px;}.botbn-bar a.botbn-cta{display:inline-block;margin-top:2px;}}
+</style>
 </head>
 <body>
+<div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
+  I’ve been nominated for <strong>Best Community Leader</strong> <span class="script">in</span> The Seattle Medium’s Best of the Best Northwest
+  <a class="botbn-cta" id="botbn-vote" href="https://www.bestofthebestnorthwest.com/?utm_source=katoyapalmer&utm_medium=announcement_bar&utm_campaign=botbn_vote_2026" target="_blank" rel="noopener noreferrer">Cast your vote by June 19 →</a>
+  <button class="botbn-dismiss" id="botbn-dismiss" aria-label="Dismiss announcement">×</button>
+</div>
 <main class="wrap">
   <nav class="back"><a href="/"><span class="wm-mini"><span>&larr; KAT</span><i class="bo" data-size="13"></i><span>YA PALMER</span></span></a></nav>
   <div class="lede">Cookies</div>
@@ -207,5 +222,16 @@
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',render);}else{render();}
 })();
 </script>
+<script>(function(){var EXPIRE=new Date('2026-06-20T06:59:59Z');/* Jun 19 23:59:59 PT */
+if(new Date()>EXPIRE)return;
+if(localStorage.getItem('botbn_dismissed_2026'))return;
+var bar=document.getElementById('botbn-bar');if(!bar)return;
+bar.style.display='block';
+document.body.classList.add('botbn-visible');
+var d=document.getElementById('botbn-dismiss');
+if(d)d.addEventListener('click',function(e){e.preventDefault();localStorage.setItem('botbn_dismissed_2026','1');bar.style.display='none';document.body.classList.remove('botbn-visible');});
+var v=document.getElementById('botbn-vote');
+if(v)v.addEventListener('click',function(){if(window.gtag)gtag('event','vote_click',{campaign:'botbn_2026',source:bar.dataset.source||''});});
+})();</script>
 </body>
 </html>
