@@ -359,15 +359,25 @@
 
   // ===== Tracker loaders (called only after consent) =====
   function loadGA4() {
+    // Loads UNCONDITIONALLY with Consent Mode v2 (default denied).
+    // Sends anonymous cookieless pings even before consent — pageview count visible in GA4.
     if (window.__tbGA4Loaded || !CONFIG.ga4MeasurementId || CONFIG.ga4MeasurementId.indexOf('XXXX') > -1) return;
     window.__tbGA4Loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    // Consent Mode v2 — default DENIED. Cookieless pings still record pageviews.
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
     var s = document.createElement('script');
     s.async = true;
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.ga4MeasurementId;
     document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ window.dataLayer.push(arguments); }
-    window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', CONFIG.ga4MeasurementId, { anonymize_ip: true });
   }
@@ -402,7 +412,7 @@
 
   // ===== Apply consent decisions =====
   function applyConsent(c) {
-    if (c.analytics) { loadGA4(); loadClarity(); loadCloudflareAnalytics(); }
+    if (c.analytics) { if (window.gtag) gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied' }); loadClarity(); }
     if (c.ads)       { loadBingUET(); }
     if (c.b2b)       { loadAlbacross(); }
     // No tear-down for already-loaded trackers — page reload may be needed if user withdraws.
@@ -428,6 +438,12 @@
   }
 
   function init() {
+    // ALWAYS-ON cookieless trackers (no consent needed under GDPR/CCPA):
+    // Cloudflare Web Analytics — privacy-first, no cookies, no PII.
+    // GA4 with Consent Mode v2 — cookieless pings until consent upgrades.
+    loadCloudflareAnalytics();
+    loadGA4();
+
     var existing = readConsent();
 
     // Honor GPC as an opt-out of "sharing" (ads, b2b).
