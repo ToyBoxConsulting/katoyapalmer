@@ -401,7 +401,7 @@
 
   // ===== Apply consent decisions =====
   function applyConsent(c) {
-    if (c.analytics) { if (window.gtag) gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied' }); loadClarity(); }
+    if (c.analytics) { if (window.gtag) gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied' }); if (window.clarity) clarity('consent'); }
     if (c.ads)       { loadBingUET(); }
     if (c.b2b)       { loadAlbacross(); }
     // No tear-down for already-loaded trackers — page reload may be needed if user withdraws.
@@ -430,8 +430,10 @@
     // ALWAYS-ON cookieless trackers (no consent needed under GDPR/CCPA):
     // Cloudflare Web Analytics — privacy-first, no cookies, no PII.
     // GA4 with Consent Mode v2 — cookieless pings until consent upgrades.
+    // Clarity — loads in cookieless mode (Dashboard → Advanced → Cookies OFF); upgrades to full tracking on consent.
     loadCloudflareAnalytics();
     loadGA4();
+    loadClarity();
 
     var existing = readConsent();
 
