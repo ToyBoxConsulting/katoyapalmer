@@ -135,7 +135,7 @@
 --clay:#B5654A; --clay-deep:#94503A; /* taste */
 --lavender:#8E82B8; --lavender-deep:#6F639B; /* presence / SZND */
 --sage:#778C72; --sage-deep:#5E7259; /* mindfulness */
---berry:#9E3B52; /* lipstick */
+--berry:#9E3B52; --lipstick:#CE2029; --lipstick-deep:#A30F18; /* lipstick on my fork */
 --rust:#B73A1A; /* toybox */
 --gold:#C2A24E;
 --serif:"Cormorant Garamond", Georgia, serif;
@@ -169,8 +169,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(246,241,232,.85);backdrop-f
 .hero .kicker{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:22px;}
 .hero h1{font-size:74px;line-height:.98;letter-spacing:-.01em;margin-bottom:26px;}
 .hero h1 .a{color:var(--ink);}
-.hero h1 .b{font-style:italic;color:var(--clay);}
-.hero h1 .c{font-style:italic;color:var(--lavender-deep);}
+.hero h1 .b{font-style:italic;color:var(--lavender-deep);}
+.hero h1 .c{font-style:italic;color:var(--lipstick);}
 .hero h1 .d{font-style:italic;color:var(--sage-deep);}
 .hero p{font-size:18.5px;color:var(--ink-soft);max-width:500px;margin-bottom:30px;}
 .hero-actions{display:flex;gap:16px;align-items:center;}
@@ -202,7 +202,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(246,241,232,.85);backdrop-f
 .facet .has{list-style:none;border-top:1px solid var(--line);padding-top:14px;}
 .facet .has li{font-size:14px;font-weight:600;color:var(--ink);padding:7px 0;display:flex;align-items:center;gap:9px;}
 .facet .has li::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5;}
-.facet.thought{--c:var(--ink);} .facet.taste{--c:var(--clay);} .facet.presence{--c:var(--sage-deep);}
+.facet.thought{--c:var(--lavender-deep);} .facet.taste{--c:var(--lipstick);} .facet.presence{--c:var(--sage-deep);}
 .facet .n,.facet h3{color:var(--c);}
 .facet::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--c);}
 
@@ -428,7 +428,7 @@ footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var
 <div id="tb-cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
   <p>
     We use cookies to operate this site (required) and, with your consent, to measure usage, improve the experience, and personalize advertising. See our
-    <a href="cookies.html">Cookie Notice</a> and <a href="privacy.html">Privacy Policy</a>.
+    <a href="/cookies">Cookie Notice</a> and <a href="/privacy">Privacy Policy</a>.
   </p>
   <div class="tb-cookie-actions">
     <button class="tb-btn-primary" id="tb-accept-all">Accept all</button>
@@ -784,7 +784,7 @@ footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var
 </div>
 <div class="vplate"><img src="assets/logo-rust.png" alt="ToyBox Consulting and Management logo" /></div>
 </a>
-<a class="venture mind" href="mindfulness.html">
+<a class="venture mind" href="/mindfulness">
 <div>
 <div class="cat">Presence · Mindfulness</div>
 <h3>Mindfulness in the Middle</h3>
@@ -793,7 +793,7 @@ footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var
 </div>
 <div class="vplate"><img src="assets/brand-mitm.webp" alt="Mindfulness in the Middle podcast mark" /></div>
 </a>
-<a class="venture sznd" href="sznd.html">
+<a class="venture sznd" href="/sznd">
 <div>
 <div class="cat">Taste · Home &amp; Garden</div>
 <h3>SZND by Katoya</h3>
@@ -802,7 +802,7 @@ footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var
 </div>
 <div class="vplate"><img src="assets/brand-sznd.png" alt="SZND by Katoya brand mark" /></div>
 </a>
-<a class="venture lip" href="lipstick.html">
+<a class="venture lip" href="/lipstick">
 <div>
 <div class="cat">Taste · Dining Out</div>
 <h3>Lipstick on My Fork</h3>
@@ -905,9 +905,9 @@ footer .ftag{font-family:var(--serif);font-style:italic;font-size:17px;color:var
 <div class="fcol">
 <h4>The work</h4>
 <a href="https://www.toyboxconsulting.net">ToyBox Consulting</a>
-<a href="mindfulness.html">Mindfulness in the Middle</a>
-<a href="sznd.html">SZND by Katoya</a>
-<a href="lipstick.html">Lipstick on My Fork</a>
+<a href="/mindfulness">Mindfulness in the Middle</a>
+<a href="/sznd">SZND by Katoya</a>
+<a href="/lipstick">Lipstick on My Fork</a>
 </div>
 <div class="fcol">
 <h4>Find me</h4>
