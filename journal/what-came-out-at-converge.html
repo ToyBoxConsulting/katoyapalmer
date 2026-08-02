@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://serve.albacross.com https://track.albacross.com https://www.googletagmanager.com https://www.google-analytics.com https://client.crisp.chat https://widget.crisp.chat https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://client.crisp.chat https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com https://client.crisp.chat; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://client.crisp.chat https://image.crisp.chat https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://serve.albacross.com https://track.albacross.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://client.crisp.chat https://image.crisp.chat wss://client.relay.crisp.chat wss://*.crisp.chat; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What Came Out at Converge — Katoya Palmer</title>
+<meta name="description" content="A reflection on sitting down with Eric Calligraphy at Converge Media — what came out that I did not plan to say, and what it means to be witnessed after a decade of building." />
+<meta name="author" content="Katoya Raquell Palmer" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://katoyapalmer.com/journal/what-came-out-at-converge.html" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Katoya Palmer" />
+<meta property="og:title" content="What Came Out at Converge — Katoya Palmer" />
+<meta property="og:description" content="A reflection on sitting down with Eric Calligraphy — what came out that I did not plan, and what it means to be witnessed after a decade of building." />
+<meta property="og:image" content="https://katoyapalmer.com/assets/katoya-headshot-web.jpg" />
+<meta property="og:url" content="https://katoyapalmer.com/journal/what-came-out-at-converge.html" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --paper:#F3EBDB; --paper-2:#FBF6EA; --card:#FCF8EF;
+    --ink:#161210; --ink-soft:#6E665F; --ink-faint:#A79E92;
+    --line:#E4DBCC;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A;
+    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --clay:#B5654A; --clay-deep:#94503A;
+    --lavender:#8E82B8; --lavender-deep:#6F639B;
+    --sage:#778C72; --sage-deep:#5E7259;
+    --syne:"Syne", system-ui, sans-serif;
+    --grot:"Space Grotesk", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --script:"Italianno", cursive;
+    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--grot);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 56px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--syne);font-weight:800;line-height:1.02;letter-spacing:-.018em;}
+  .eyebrow{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--scarlet-deep);}
+  .foil{background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(243,235,219,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:15px 56px;max-width:1280px;margin:0 auto;}
+  .brand{display:inline-flex;align-items:center;gap:11px;}
+  .wm{display:inline-flex;align-items:center;font-family:var(--syne);font-weight:800;font-size:25px;letter-spacing:-.01em;color:var(--ink);line-height:1;}
+  .brand-sur{font-family:var(--jost);font-weight:600;font-size:12px;letter-spacing:.36em;color:var(--gold-deep);padding-top:2px;}
+  .nav-links{display:flex;gap:28px;align-items:center;}
+  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;letter-spacing:.05em;color:var(--ink-soft);transition:.18s;}
+  .nav-links a:hover{color:var(--scarlet);}
+  .nav-links a.active{color:var(--scarlet);}
+  .nav-sub{font-size:12.5px!important;font-weight:700!important;color:#fff!important;background:var(--scarlet);padding:10px 20px;border-radius:40px;transition:.2s;letter-spacing:.04em;}
+  .nav-sub:hover{background:var(--scarlet-deep);}
+
+  /* HERO */
+  .m-hero{padding:80px 0 40px;text-align:center;}
+  .m-hero h1{font-size:72px;line-height:.96;letter-spacing:-.022em;margin:18px 0 20px;text-transform:uppercase;}
+  .m-hero h1 em{font-style:normal;background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+  .m-hero p{font-size:18px;color:var(--ink-soft);max-width:600px;margin:0 auto;}
+
+  /* FEATURED */
+  .feat{padding:50px 0 30px;}
+  .feat-card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 30px 70px -50px rgba(22,18,16,.4);}
+  .feat-embed{position:relative;padding-bottom:56.25%;height:0;background:var(--ink);}
+  .feat-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+  .feat-body{padding:38px 44px 44px;}
+  .feat-eyebrow{font-family:var(--jost);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--scarlet-deep);margin-bottom:12px;}
+  .feat-body h2{font-size:34px;line-height:1.08;margin-bottom:14px;text-transform:uppercase;}
+  .feat-body h2 em{font-style:italic;color:var(--scarlet);font-family:var(--syne);}
+  .feat-host{font-family:var(--jost);font-size:14px;font-weight:600;color:var(--ink-soft);margin-bottom:22px;}
+  .feat-host b{color:var(--ink);font-weight:700;}
+  .feat-body p{font-size:16px;color:var(--ink-soft);margin-bottom:14px;line-height:1.65;}
+  .feat-meta{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 24px;}
+  .feat-meta span{font-family:var(--jost);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:30px;}
+  .feat-meta .m-run{color:var(--scarlet-deep);background:rgba(214,54,42,.09);}
+  .feat-meta .m-year{color:var(--gold-deep);background:rgba(198,162,76,.14);}
+  .feat-meta .m-net{color:var(--ink-soft);background:rgba(22,18,16,.06);}
+  .feat-meta .m-topic{color:var(--sage-deep);background:rgba(94,114,89,.14);}
+
+  /* PULL QUOTES */
+  .pulls{padding:60px 0 30px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px;}
+  .pulls-head{max-width:700px;margin-bottom:36px;}
+  .pulls-head h2{font-size:32px;text-transform:uppercase;margin:10px 0;}
+  .pull-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .pull{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 30px;position:relative;}
+  .pull::before{content:"\201C";position:absolute;top:6px;left:16px;font-family:var(--syne);font-size:80px;color:var(--gold);opacity:.35;line-height:1;}
+  .pull p{font-family:var(--syne);font-weight:700;font-size:19px;line-height:1.32;color:var(--ink);letter-spacing:-.008em;padding-left:12px;}
+  .pull .att{display:block;margin-top:14px;font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);padding-left:12px;}
+
+  /* MORE COMING */
+  .coming{padding:60px 0 100px;}
+  .coming-head{max-width:600px;margin-bottom:26px;}
+  .coming-head h2{font-size:28px;text-transform:uppercase;margin:10px 0;}
+  .coming-head p{font-size:15px;color:var(--ink-soft);}
+  .coming-ph{background:var(--paper-2);border:1px dashed var(--gold);border-radius:14px;padding:38px 30px;text-align:center;}
+  .coming-ph p{font-family:var(--jost);font-size:13.5px;font-weight:600;color:var(--ink-faint);letter-spacing:.05em;}
+  .coming-ph .em{color:var(--scarlet);}
+
+  /* FOOTER */
+  footer{background:var(--paper-2);border-top:1px solid var(--line);padding:44px 0 32px;margin-top:40px;font-family:var(--jost);font-size:12px;color:var(--ink-faint);letter-spacing:.02em;text-align:center;}
+  footer a{color:var(--ink-soft);}
+  footer a:hover{color:var(--scarlet);}
+
+  /* MOBILE */
+  @media (max-width:820px){
+    .wrap{padding:0 22px;}
+    .nav-in{padding:13px 22px;flex-wrap:wrap;gap:10px;}
+    .nav-links{display:none;}
+    .nav-sub{display:inline-flex !important;}
+    .brand-sur{display:none;}
+    .m-hero{padding:50px 0 30px;}
+    .m-hero h1{font-size:42px !important;line-height:1.02;}
+    .feat-body{padding:26px 22px 30px;}
+    .feat-body h2{font-size:24px !important;}
+    .pull-grid{grid-template-columns:1fr;gap:14px;}
+    .pull p{font-size:17px;}
+  }
+</style>
+</head>
+
+<style>
+  .essay-hero{padding:80px 0 30px;text-align:center;}
+  .essay-hero .cat{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--scarlet-deep);margin-bottom:14px;}
+  .essay-hero h1{font-family:var(--syne);font-weight:800;font-size:58px;line-height:1;letter-spacing:-.022em;margin:14px 0 18px;text-transform:uppercase;color:var(--ink);}
+  .essay-hero h1 em{font-style:normal;background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+  .essay-hero .attrib{font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.05em;}
+
+  article.essay{padding:20px 0 80px;}
+  article.essay .body{max-width:680px;margin:0 auto;font-family:var(--grot);font-size:18px;line-height:1.72;color:var(--ink);}
+  article.essay .body p{margin-bottom:20px;}
+  article.essay .body p:first-of-type::first-letter{font-family:var(--syne);font-size:64px;font-weight:800;color:var(--scarlet);float:left;line-height:1;padding:6px 12px 0 0;}
+  article.essay .body h2{font-family:var(--syne);font-weight:700;font-size:26px;letter-spacing:-.01em;text-transform:uppercase;color:var(--ink);margin:36px 0 14px;line-height:1.15;}
+  article.essay .body em{color:var(--scarlet-deep);font-style:italic;}
+  article.essay .body strong{font-weight:600;color:var(--ink);}
+  article.essay .body blockquote{border-left:3px solid var(--gold);padding:6px 0 6px 20px;margin:26px 0;font-family:var(--syne);font-weight:600;font-style:italic;font-size:22px;color:var(--ink);line-height:1.4;letter-spacing:-.008em;}
+
+  .back-to-media{max-width:680px;margin:36px auto 0;padding-top:30px;border-top:1px solid var(--line);text-align:center;font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.03em;}
+  .back-to-media a{color:var(--scarlet);font-weight:600;}
+  .back-to-media a:hover{text-decoration:underline;}
+</style>
+
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="../">
+      <span class="wm">KATOYA</span>
+      <span class="brand-sur">PALMER</span>
+    </a>
+    <div class="nav-links">
+      <a href="../#triad">Thought · Taste · Presence</a>
+      <a href="../#ventures">The Work</a>
+      <a href="../#events">Events</a>
+      <a href="../media/">Media</a>
+      <a href="../#story">About</a>
+      <a href="../#journal">Writing</a>
+      <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="essay-hero">
+  <div class="wrap">
+    <div class="cat">Journal · A reflection</div>
+    <h1>What Came Out at <em>Converge</em></h1>
+    <div class="attrib">Katoya Raquell Palmer · August 2026</div>
+  </div>
+</header>
+
+
+<article class="essay">
+  <div class="wrap">
+    <div class="body">
+      <p>I have known Eric for ten years. In that time, we have made rooms together, put words together, cried together, laughed until we wheezed, and had exactly the number of hard conversations any friendship worth keeping requires. He was there for the mixtape I promoted years ago that pulled almost ninety thousand downloads back when moving information online was still a craft. So when he asked me to sit down at Converge Media — in front of a real camera, in a real studio, on his show — I said yes fast and then spent a week not thinking about it.</p>
+
+      <p>Then I sat in the chair and something happened.</p>
+
+      <h2>The question I did not prepare for</h2>
+
+      <p>Eric asked me who I am. Not what I do. <em>Who I am.</em></p>
+
+      <p>I said I am a mom. I said I am a friend, a daughter, a chef, a community person. I said <em>this is a lot.</em> And it was — because the shape of the answer is different when the person asking has watched you build.</p>
+
+      <p>Most professional descriptions of me are efficient. Fractional COO. Operations consultant. Founder. Public-sector consultant. Those are all true, and they land quickly in a discovery call, and I use them because they work. But the person across from me at Converge does not need the discovery-call version. He needs the version that includes Kam growing into a young man, and my mother almost showing up to crash the interview, and the food in his fridge in Tupperware because I cook when I am thinking.</p>
+
+      <p>What I did not expect was how hard it would be to stay in that version out loud.</p>
+
+<h2>Where I actually come from</h2>
+
+<p>Louisiana, first. Small town outside of Shreveport, born there, moved here at eight years old in 1990. I remember the first thing I said stepping off the plane at Sea-Tac: <em>Mom, there are a lot of white people here.</em> True observation from an eight-year-old, still true observation from a forty-four-year-old with a firm.</p>
+
+<p>Then ten years on the Muckleshoot Indian Reservation, which taught me — before I had language for it — what it looked like for a culture to hold onto itself and to benefit from the fruits of its own struggle. I did not know how much of my adult worldview came from those ten years until I was already an adult. Now I know.</p>
+
+<p>Then Auburn. Then Federal Way. Then a decade of Seattle. Then Bellevue. Then the corner. Then the boardroom. Then back.</p>
+
+<h2>The metamorphosis language</h2>
+
+<p>Eric asked me what I had to shed to become the version of me who does what I do. I said: not like a snake. Like a butterfly. Metamorph. I want us to get our nature facts correct.</p>
+
+<p>The joke landed and the truth held. Snakes shed a whole self and move on with the same body. That is not what happened. What happened is what happens to a caterpillar — the body itself rearranges. The mom, the friend, the daughter, the operator, the writer — those are all still here. But the version of me who confused approval-seeking with goal-setting is genuinely gone. That version does not live in this body anymore.</p>
+
+<p>The thing about metamorphosis is you do not choose the timing. You just recognize, one morning, that the wings work.
+
+      <h2>The phrase that came out</h2>
+
+      <p>He asked me to explain what I do without saying what I do. I laughed. I stalled. Then I said:</p>
+
+      <blockquote>I take nothing and make it into something.</blockquote>
+
+      <p>That is not a line I had rehearsed. It is not on the website. It is not in the pitch deck. It came out because someone I trust asked me a question I had never let myself answer plainly.</p>
+
+      <p>Since then I have been trying to figure out whether that sentence is the one, or whether it is only a doorway to the sentence that is. What I know is that it landed in the room, and it landed with me, and I do not want to talk myself out of it just because it is simple.</p>
+
+      <h2>Ten years is a long time to be seen</h2>
+
+      <p>The specific gift of being interviewed by someone who has been watching you build for a decade is that you cannot lie. Not because they will fact-check you — because they will just <em>know</em>. Eric knows the version of me that was hustling in 2015 with a MacBook that overheated. He knows the version that got knocked flat by a corporate role a couple of years back and had to spend months figuring out how to breathe again. He knows the version that started publishing on Substack under the Five Windows series because writing was the only thing that kept me from screaming.</p>
+
+      <p>So when he asked me what is bringing me joy, I could not say the polished thing. I said: the autonomy. The version of me who no longer sets goals based on someone else's approval. The pouring-into-myself part. And I meant it, because he would have known if I did not.</p>
+
+      <h2>What I had to let go of</h2>
+
+      <p>He asked me the sneakiest question toward the end — <em>what did you have to let go of to become who you are today?</em> — and I answered without thinking:</p>
+
+      <blockquote>Myself.</blockquote>
+
+      <p>That is not a line I would have offered a stranger. But it is the truest answer, and I stand by it. Not the whole self. Not the mom or the friend or the operator. But the earlier version of me who had confused other people's opinions with my own goals. The version who was still, even at forty-four, doing some of her thinking for an audience that was not in the room.</p>
+
+      <p>Letting that version go is the reason ToyBox is scaling. The reason I said yes to the ten Seattle rosters. The reason Golden Hour Unboxed exists. The reason there is a blog now. The reason I sat in a studio chair with a friend and told him things that will be watched by other people.</p>
+
+      <h2>Watch it if you want to</h2>
+
+      <p>The full interview is on the <a href="../media/">Media page</a>. It is an hour and twenty-three minutes. Eric is a good host. I laughed a lot. I said one thing I probably should not have said, and I will not tell you which one — you can find it yourself. There is also a story about Gucci Mane's memoir and one about a mixtape I once helped promote that pulled almost ninety thousand downloads before algorithms took over the internet.</p>
+
+      <p>If you have ten years of me to catch up on, this is a decent place to start.</p>
+
+      <p><em>— K</em></p>
+
+      <div class="back-to-media">
+        <a href="../media/">← Back to Media &amp; Appearances</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<footer>
+  <div class="wrap">
+    <p>© <script>document.write(new Date().getFullYear())</script> Katoya Raquell Palmer · <a href="../">Home</a> · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
