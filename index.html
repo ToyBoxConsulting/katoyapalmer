@@ -605,6 +605,7 @@
 </style>
 </head>
 <body data-screen-label="Katoya Palmer — Personal Hub">
+<div class="botbn-bar ghu-bar" id="ghu-bar" style="display:block;">I produced <strong>Golden Hour Unboxed</strong> on August 23 at Bellevue Botanical Garden. The full record is live now &mdash; the numbers, the night, and everyone who made it. <a class="botbn-cta" id="ghu-recap-link" href="https://goldenhourunboxed.com/" target="_blank" rel="noopener">See the recap &rarr;</a><button class="botbn-dismiss" id="ghu-dismiss" aria-label="Dismiss announcement">&times;</button></div>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
   <img class="botbn-icon" src="assets/badges/botbn-icon.png" alt="Best of the Best Northwest" width="48" height="31" />
   I've been named <strong>1st Runner-Up</strong> for Best Community Leader <span class="script">in</span> The Seattle Medium's Best of the Best Northwest 2026
@@ -969,5 +970,6 @@ if(d)d.addEventListener('click',function(e){e.preventDefault();localStorage.setI
 var v=document.getElementById('botbn-vote');
 if(v)v.addEventListener('click',function(){if(window.gtag)gtag('event','vote_click',{campaign:'botbn_2026',source:bar.dataset.source||''});});
 })();</script>
+<script>(function(){var K='ghu_recap_dismissed_2026';var bar=document.getElementById('ghu-bar');if(!bar)return;if(localStorage.getItem(K)){bar.style.display='none';return;}var d=document.getElementById('ghu-dismiss');if(d)d.addEventListener('click',function(e){e.preventDefault();try{localStorage.setItem(K,'1');}catch(err){}bar.style.display='none';});var a=document.getElementById('ghu-recap-link');if(a)a.addEventListener('click',function(){if(window.gtag)gtag('event','ghu_recap_click',{source:document.title});});})();</script>
 </body>
 </html>
