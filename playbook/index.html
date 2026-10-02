@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://serve.albacross.com https://track.albacross.com https://www.googletagmanager.com https://www.google-analytics.com https://client.crisp.chat https://widget.crisp.chat https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://client.crisp.chat https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com https://client.crisp.chat; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://client.crisp.chat https://image.crisp.chat https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://serve.albacross.com https://track.albacross.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://client.crisp.chat https://image.crisp.chat wss://client.relay.crisp.chat wss://*.crisp.chat; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://serve.albacross.com https://track.albacross.com https://www.googletagmanager.com https://www.google-analytics.com https://client.crisp.chat https://widget.crisp.chat https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://client.crisp.chat https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com https://client.crisp.chat; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://client.crisp.chat https://image.crisp.chat https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://serve.albacross.com https://track.albacross.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://client.crisp.chat https://image.crisp.chat wss://client.relay.crisp.chat wss://*.crisp.chat https://tracker.metricool.com; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=()">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +10,19 @@
 <meta name="description" content="A growing series of free playbooks from Katoya Palmer — on writing, podcasting, mindfulness, and the rituals behind a creative life that holds." />
 <meta name="author" content="Katoya Raquell Palmer" />
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://katoyapalmer.com/playbook/" />
+<link rel="canonical" href="https://www.katoyapalmer.com/playbook/" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Katoya Palmer" />
 <meta property="og:title" content="Playbooks — Katoya Palmer" />
 <meta property="og:description" content="Free playbooks on writing, podcasting, mindfulness, and the rituals behind a creative life that holds." />
-<meta property="og:image" content="https://katoyapalmer.com/assets/og-image.png" />
-<meta property="og:url" content="https://katoyapalmer.com/playbook/" />
+<meta property="og:url" content="https://www.katoyapalmer.com/playbook/" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://www.katoyapalmer.com/assets/og-katoya.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Katoya Palmer, writer, systems strategist and maker" />
+<meta name="twitter:image" content="https://www.katoyapalmer.com/assets/og-katoya.jpg" />
 <meta name="twitter:title" content="Playbooks — Katoya Palmer" />
 <meta name="twitter:description" content="Free playbooks on writing, podcasting, mindfulness, and the rituals behind a creative life that holds." />
 
@@ -136,8 +140,13 @@
 .botbn-bar .botbn-dismiss:hover{opacity:1;}
 @media (max-width:820px){.botbn-bar{font-size:12.5px;padding:10px 46px 10px 18px;}.botbn-bar a.botbn-cta{display:inline-block;margin-top:2px;}}
 </style>
+<script src="/tb-events.js" defer></script>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/consent.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
   I’ve been nominated for <strong>Best Community Leader</strong> <span class="script">in</span> The Seattle Medium’s Best of the Best Northwest
   <a class="botbn-cta" id="botbn-vote" href="https://www.bestofthebestnorthwest.com/?utm_source=katoyapalmer&utm_medium=announcement_bar&utm_campaign=botbn_vote_2026" target="_blank" rel="noopener noreferrer">Cast your vote by June 19 →</a>
@@ -151,17 +160,17 @@
       <span class="last">PALMER</span>
     </a>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/lipstick.html">Lipstick</a>
-      <a href="/sznd.html">SZND</a>
-      <a href="/mindfulness.html">Mindfulness</a>
-      <a href="/media/">Media</a>
-      <a href="/journal/">Journal</a>
-      <a href="/playbook/" class="current">Playbooks</a>
-      <a href="https://katoyapalmer.substack.com">Subscribe</a>
-    </div>
+        <a href="/#story">About</a>
+        <a href="/#ventures">The Work</a>
+        <a href="/media/">Media</a>
+        <a href="/journal/">Journal</a>
+        <a href="/links/">Links</a>
+        <a href="https://calendly.com/toyboxcm/30">Work with me</a>
+        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+      </div>
   </div>
 </nav>
+<span id="main"></span>
 
 <section class="hero">
   <div class="wrap">
@@ -271,16 +280,11 @@
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Use</a>
       <a href="/cookies.html">Cookie Notice</a>
+      <a href="#" onclick="tbReopenConsent(); return false;">Cookie settings</a>
     </div>
     <div class="copy">© 2026 Katoya Raquell Palmer · katoyapalmer.com</div>
   </div>
 </footer>
-
-<!-- Analytics (matches sitewide) -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9566326c26dc4f728f2136efbd6a8d38"}'></script>
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wzujhv34kc");</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CMWS1E09J7"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CMWS1E09J7');</script>
 
 <script>(function(){var EXPIRE=new Date('2026-06-20T06:59:59Z');/* Jun 19 23:59:59 PT */
 if(new Date()>EXPIRE)return;
