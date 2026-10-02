@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://katoyapalmer.com/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.katoyapalmer.com/</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://katoyapalmer.com/lipstick</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://www.katoyapalmer.com/links/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/media/</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://katoyapalmer.com/sznd</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://www.katoyapalmer.com/journal/</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://katoyapalmer.com/mindfulness</loc>
-    <lastmod>2026-05-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.katoyapalmer.com/journal/what-came-out-at-converge.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://katoyapalmer.com/playbook/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <loc>https://www.katoyapalmer.com/mindfulness.html</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/sznd.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/lipstick.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/playbook/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/privacy.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/terms.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/cookies.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>
