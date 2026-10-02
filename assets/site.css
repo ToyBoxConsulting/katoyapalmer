@@ -1,0 +1,26 @@
+/* katoyapalmer.com shared fixes (2026-10-02). Loaded after each page's own <style>.
+   Palette-neutral on purpose: the brand pages keep their own colors. */
+
+/* Accessibility */
+.skip-link{position:absolute;left:12px;top:-60px;z-index:200;background:#161210;color:#fff;padding:10px 16px;border-radius:30px;font:600 14px/1 system-ui,sans-serif;transition:top .15s}
+.skip-link:focus{top:12px}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid #C6A24C;outline-offset:3px;border-radius:4px}
+h1,h2,h3{overflow-wrap:break-word}
+img{max-width:100%}
+
+/* Mobile: the nav used to vanish under 820px. Now it becomes a swipeable strip under the wordmark. */
+@media (max-width:820px){
+  nav .nav-in{flex-wrap:wrap;row-gap:8px}
+  nav .nav-links{display:flex!important;order:3;width:100%;gap:20px;overflow-x:auto;white-space:nowrap;padding:2px 2px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  nav .nav-links::-webkit-scrollbar{display:none}
+  nav .nav-links a{flex:none;font-size:13px}
+  nav .nav-links .nav-sub{padding:7px 14px}
+  /* The hero headline was 406px wide on a 390px phone. */
+  body .hero h1,body .m-hero h1{font-size:clamp(30px,9.4vw,42px)!important}
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
