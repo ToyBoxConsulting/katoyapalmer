@@ -105,6 +105,19 @@
   .make p{font-size:14px;color:var(--ink-soft);}
   .make .go{display:inline-block;margin-top:13px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--lav-deep);}
 
+  /* LATEST RECIPES */
+  .latest{padding:66px 0 10px;}
+  .recipe-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .rcard{display:block;background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s;}
+  .rcard:hover{transform:translateY(-4px);box-shadow:0 24px 44px -32px rgba(110,99,155,.45);border-color:var(--lav);}
+  .rcard img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .rcard .rc-in{padding:20px 22px 22px;}
+  .rcard .n{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--lav-deep);}
+  .rcard h3{font-size:23px;margin:6px 0 6px;}
+  .rcard p{font-size:14px;color:var(--ink-soft);}
+  .rcard .go{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--lav-deep);}
+  @media (max-width:820px){.recipe-list{grid-template-columns:1fr;}.latest{padding:50px 0 0;}}
+
   /* SUBSCRIBE */
   .sub{text-align:center;}
   .sub .lab{color:var(--sage-deep);}
@@ -204,7 +217,8 @@
       <div class="nav-links">
         <a href="#idea">The Idea</a>
         <a href="#seasons">By Season</a>
-        <a href="#makes">Recipes &amp; Projects</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#makes">Projects</a>
         <a href="/media/">Media</a>
       <a href="/journal/">Journal</a>
         <a class="nav-sub" href="https://katoyapalmer.substack.com/s/sznd-by-katoya">Subscribe</a>
@@ -256,6 +270,21 @@
         <div class="season"><div class="s">Summer</div><h3>Harvest &amp; host</h3><p>Peak tomatoes, herbs by the fistful, and meals that barely need a stove.</p></div>
         <div class="season"><div class="s">Autumn</div><h3>Preserve &amp; gather</h3><p>Putting it up — canning, drying, and the deep-pot cooking the cold asks for.</p></div>
         <div class="season"><div class="s">Winter</div><h3>Tend &amp; make</h3><p>Slow projects, the DIY list, and keeping something green alive indoors.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST RECIPES -->
+  <section class="latest" id="recipes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="lab">From my kitchen</div>
+        <h2>Latest <em>recipes</em>.</h2>
+        <p>Everything I post on SZND lives here too, so you can find it when you need it.</p>
+      </div>
+      <div class="recipe-list">
+        <a class="rcard" href="/recipes/kitchen-extras-soup.html"><img loading="lazy" decoding="async" width="992" height="558" src="/media/sznd/kitchen-extras-soup-og.jpg" alt="Creamy chicken, mushroom and carrot soup" /><div class="rc-in"><div class="n">Thanksgiving prep · Fall</div><h3>Kitchen-Extras Soup</h3><p>A pot built from prep leftovers, plus my homemade cream of mushroom.</p><span class="go">Get the recipe →</span></div></a>
+        <a class="rcard" href="/recipes/split-pea-soup.html"><img loading="lazy" decoding="async" width="1200" height="676" src="/media/sznd/split-pea-soup-og.jpg" alt="Split pea soup with ham and carrots in a slow cooker" /><div class="rc-in"><div class="n">Slow cooker · Fall</div><h3>Split Pea Soup</h3><p>So good I made it two nights in a row. Freezes well for fall.</p><span class="go">Get the recipe →</span></div></a>
       </div>
     </div>
   </section>
