@@ -63,7 +63,7 @@
     --syne:"Syne", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
     --grot:"Space Grotesk", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A; --rust:#A81F1A;
   }
   body{font-family:var(--grot)!important;}
@@ -245,14 +245,14 @@
       var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
       var dl=0.9/Rm;
       var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
-      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.2"/>'+
           '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
     }
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
       '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
-      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<stop offset="0" stop-color="#D2B064"/><stop offset="0.45" stop-color="#B8923F"/><stop offset="1" stop-color="#8A6A22"/></linearGradient>'+
       '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
-      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.2"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
       '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
       '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
   }
