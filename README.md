@@ -51,3 +51,24 @@ Edit `index.html` in the repo (or re-upload) — GitHub Pages redeploys on every
 
 ---
 Built for Katoya Raquell Palmer · katoyapalmer.com
+
+## Music on the site (added 2026-10-08)
+
+A small tap-to-play pill (bottom-left) plays one instrumental per section. It stays off until a visitor taps it,
+remembers their on/off choice (localStorage `kp-music`), fades in over 1.5s to volume 0.35, loops, and pauses
+while the tab is hidden. Code: `assets/kp-music.js` + `assets/kp-music.css`. Each page picks its track with
+`<body data-track="...">`. Audio is served from `/media/music/` (CSP: `media-src 'self'`).
+
+| data-track | Pages | Track | File |
+|---|---|---|---|
+| `home` | home, journal/, links/, playbook/, media/, letters/, 404, privacy, terms, cookies | Build a Foundation (Instrumental Version), Nyck Caution | `media/music/build-a-foundation.mp3` |
+| `lipstick` | lipstick.html, reviews/ | MOJO (Instrumental Version), Nic Hanson | `media/music/mojo.mp3` |
+| `sznd` | sznd.html, recipes/ | Randle (Instrumental Version), Nyck Caution | `media/music/randle.mp3` |
+| `mindfulness` | mindfulness.html | Dreamlike, Megan Wofford (solo piano) | `media/music/dreamlike.mp3` |
+
+Web copies: 128 kbps stereo MP3, loudness-normalized to about -18 LUFS, 2s fade-in and 3s fade-out, full length.
+
+**License:** Music: Epidemic Sound. Katoya's Epidemic Sound Creator plan covers websites, and katoyapalmer.com is a
+safelisted channel. **The plan (trial) ends Nov 7, 2026.** Decide before then whether to keep the plan or take the
+music down; new uses can't be added after the plan ends. Instrumentals only. Any track with lyrics needs Katoya's
+listen before it goes on the site.
