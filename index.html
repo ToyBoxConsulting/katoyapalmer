@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com https://www.youtube.com https://www.youtube-nocookie.com https://youtube.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), encrypted-media=(), fullscreen=(self), picture-in-picture=(), display-capture=()">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
     /* primary brand accent — culture-magazine scarlet */
     --scarlet:#D6362A; --scarlet-deep:#A81F1A;
     /* gold, used as JEWELRY */
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     /* supporting editorial tones (kept for facet/venture coding) */
     --clay:#B5654A; --clay-deep:#94503A;
     --lavender:#8E82B8; --lavender-deep:#6F639B;
@@ -50,7 +50,7 @@
     --grot:"Space Grotesk", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
     --script:"Italianno", cursive;
-    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%); --foil-dark:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -65,9 +65,9 @@
   /* gold rope rule — twisted, responsive (tiles to any width) */
   .rope{height:9px;border-radius:5px;
     background:
-      repeating-linear-gradient(116deg, rgba(120,90,30,.9) 0 1.4px, transparent 1.4px 3px, rgba(255,246,214,.65) 3px 4px, transparent 4px 5.6px),
-      linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);
-    box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45), inset 0 -1px 1px rgba(120,90,30,.35), inset 0 1px 1px rgba(255,246,214,.5);}
+      repeating-linear-gradient(116deg, rgba(120,90,30,.9) 0 1.4px, transparent 1.4px 3px, rgba(255,246,214,.2) 3px 4px, transparent 4px 5.6px),
+      linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);
+    box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45), inset 0 -1px 1px rgba(120,90,30,.35), inset 0 1px 1px rgba(255,246,214,.2);}
   .rope-rule{display:flex;justify-content:center;}
   .rope-rule .rope{width:74px;height:7px;}
 
@@ -173,7 +173,7 @@
   .story p{font-size:16.5px;color:var(--ink-soft);margin-bottom:16px;}
   .story .pq{position:relative;font-family:var(--syne);font-weight:700;font-size:23px;line-height:1.28;color:var(--ink);padding-left:24px;margin:26px 0;letter-spacing:-.01em;}
   .story .pq::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:4px;border-radius:3px;
-    background:repeating-linear-gradient(116deg, rgba(120,90,30,.9) 0 1.4px, transparent 1.4px 3px, rgba(255,246,214,.65) 3px 4px, transparent 4px 5.6px), linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);}
+    background:repeating-linear-gradient(116deg, rgba(120,90,30,.9) 0 1.4px, transparent 1.4px 3px, rgba(255,246,214,.2) 3px 4px, transparent 4px 5.6px), linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);}
 
   /* JOURNAL */
   .journal{background:var(--ink);color:var(--paper);padding:88px 0;}
@@ -260,8 +260,10 @@
 <script src="/assets/consent.js" defer></script>
 <link rel="stylesheet" href="/assets/motion.css" />
 <script src="/assets/motion.js" defer></script>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
 </head>
-<body data-screen-label="Katoya Palmer — Personal Hub">
+<body data-screen-label="Katoya Palmer — Personal Hub" data-track="home">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="botbn-bar ghu-bar" id="ghu-bar" style="display:block;">I produced <strong>Golden Hour Unboxed</strong> on August 23 at Bellevue Botanical Garden. <a class="botbn-cta" id="ghu-recap-link" href="https://goldenhourunboxed.com/" target="_blank" rel="noopener">See the event recap &rarr;</a><button class="botbn-dismiss" id="ghu-dismiss" aria-label="Dismiss announcement">&times;</button></div>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
@@ -284,7 +286,7 @@
         <a href="/journal/">Journal</a>
         <a href="/links/">Links</a>
         <a href="https://calendly.com/toyboxcm/30">Work with me</a>
-        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+        <a class="nav-sub" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=ttp_weekly&amp;utm_content=nav">Subscribe</a>
       </div>
     </div>
   </nav>
@@ -298,7 +300,7 @@
         <h1><span class="a">A life lived in</span> <span class="b">thought</span><span class="a">,</span> <span class="c">taste</span> <span class="a">&amp;</span> <span class="d">presence</span><span class="a">.</span></h1>
         <p>Writer, systems strategist, and maker. I move between the boardroom and the kitchen, the essay and the breath — and I build things that help people see clearly and live well.</p>
         <div class="hero-actions">
-          <a class="btn btn-ink" href="https://katoyapalmer.substack.com">Subscribe free <span class="arrow">→</span></a>
+          <a class="btn btn-ink" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=ttp_weekly&amp;utm_content=hero">Get my weekly letter <span class="arrow">→</span></a>
           <a class="btn btn-line" href="https://calendly.com/toyboxcm/30">Work with Katoya</a>
         </div>
         <div class="next">
@@ -419,7 +421,7 @@
           <div>
             <div class="cat">Presence · Mindfulness</div>
             <h3>Mindfulness in the Middle</h3>
-            <p>Grounding practice for people leading, caregiving, and holding it together in the thick of it.</p>
+            <p>Where it started: my healing journey, a path to finding myself again. Grounding practice for people leading, caregiving, and holding it together in the thick of it.</p>
             <span class="go">Explore <span class="arrow">→</span></span>
           </div>
           <div class="vplate"><img width="160" height="160" decoding="async" loading="lazy" src="assets/brand-mitm.webp" alt="Mindfulness in the Middle" /></div>
@@ -505,10 +507,11 @@
   <section class="journal" id="journal">
     <div class="wrap journal-grid">
       <div>
-        <div class="eyebrow">The newsletter</div>
-        <h2>Katoya's Substack.</h2>
-        <p>A multidisciplinary journal of thought, taste, and presence — commentary, storytelling, mindfulness, and recipes. It's where all of this begins.</p>
-        <a class="btn btn-paper" href="https://katoyapalmer.substack.com">Subscribe free <span class="arrow">→</span></a>
+        <div class="eyebrow">The weekly letter</div>
+        <h2>Thought, Taste &amp; Presence.</h2>
+        <p>Every Monday, one email with everything I shared that week: essays, ToyBox lessons, SZND recipes and Lipstick on My Fork reviews, plus where I'll be next.</p>
+        <a class="btn btn-paper" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=ttp_weekly&amp;utm_content=journal">Get my weekly letter <span class="arrow">→</span></a>
+        <p style="margin-top:14px;">Run a nonprofit or small business? ToyBox's <a href="https://ee4a3130.sibforms.com/serve/MUIFAHD7T6bz4b98WGJrRC8opOmtbAESrvTeMq-830K1ISwZeIUZKcxBNDKG_CZnItZLrQaEg_4bAnfIc-jxgNWtetX2OhAVKydTgLwiXM0tKjBjFHsgr_QqXMOvV_i_QHcQxrTIqwd1HTS3-tgVnMR-v9o4_YWdRG6uXgb1gbkELNIlUQMLzCMOGLhh8AUs6ZTJTZjyI96ATSDhcw==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=out_the_box">Out the Box</a> arrives once a month.</p>
       </div>
       <ul class="windows">
         <li><span class="ser">Series</span><em style="margin-left:auto;">2025</em></li>
@@ -528,7 +531,7 @@
       <h2>Thought, taste &amp; <em>presence</em> — in your inbox.</h2>
       <p>No funnel, no pitch. Just the writing, the recipes, and the practice — wherever you like to find me.</p>
       <div class="social">
-        <a class="btn btn-ink" href="https://katoyapalmer.substack.com">Subscribe on Substack</a>
+        <a class="btn btn-ink" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=ttp_weekly&amp;utm_content=follow">Get my weekly letter</a>
         <a class="btn btn-line" href="https://tiktok.com/@katoyapalmer">Follow on TikTok</a>
       </div>
     </div>
@@ -575,6 +578,7 @@
         </div>
         <div class="fcol">
           <h4>Find me</h4>
+          <a href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=home&amp;utm_campaign=ttp_weekly&amp;utm_content=footer">Weekly letter</a>
           <a href="https://katoyapalmer.substack.com">Substack</a>
           <a href="https://tiktok.com/@katoyapalmer">TikTok</a>
           <a href="https://www.instagram.com/katoyapalmer/">Instagram</a>
@@ -625,14 +629,14 @@
         var dl=0.9/Rm;
         var lx1=cx+(Rm-t)*Math.cos(a-dl), ly1=cy+(Rm-t)*Math.sin(a-dl);
         var lx2=cx+(Rm+t)*Math.cos(a-dl), ly2=cy+(Rm+t)*Math.sin(a-dl);
-        kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+        kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.2"/>'+
             '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
       }
       return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
         '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
-        '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+        '<stop offset="0" stop-color="#D2B064"/><stop offset="0.45" stop-color="#B8923F"/><stop offset="1" stop-color="#8A6A22"/></linearGradient>'+
         '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
-        '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+        '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.2"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
         '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
         '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
     }

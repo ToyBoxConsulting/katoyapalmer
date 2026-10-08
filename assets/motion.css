@@ -72,7 +72,7 @@
 
   /* 04 Gold-leaf hover on the venture cards */
   .venture{position:relative;overflow:hidden}
-  .venture::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(241,221,149,.5) 50%,transparent 65%);transform:translateX(-110%);transition:transform .7s cubic-bezier(.2,.7,.1,1);pointer-events:none}
+  .venture::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(241,221,149,.2) 50%,transparent 65%);transform:translateX(-110%);transition:transform .7s cubic-bezier(.2,.7,.1,1);pointer-events:none}
   .venture:hover::after,.venture:focus-visible::after{transform:translateX(110%)}
 
   /* 06 Strip scrolls; pauses on hover or keyboard focus */

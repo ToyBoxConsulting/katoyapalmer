@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), encrypted-media=(), fullscreen=(self), picture-in-picture=(), display-capture=()">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,9 +38,9 @@
     --serif:"Syne", system-ui, sans-serif;
     --sans:"Space Grotesk", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A;
-    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%); --foil-dark:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -163,9 +163,9 @@
     --syne:"Syne", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
     --grot:"Space Grotesk", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A;
-    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%); --foil-dark:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   body{font-family:var(--grot)!important;}
   .big,blockquote,.idea .big,.premise blockquote{font-family:var(--syne)!important;font-weight:700!important;font-style:normal!important;letter-spacing:-.01em;}
@@ -176,18 +176,18 @@
   h1 em,h2 em,h3 em,.idea .big .u,.idea .big{font-style:normal!important;}
   h1 em,h2 em,h3 em{background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent!important;}
   .lab,.eyebrow{font-family:var(--jost)!important;font-weight:600!important;letter-spacing:.3em!important;color:var(--scarlet-deep)!important;}
-  .premise .lab,.idea .lab{color:var(--champ)!important;}
+  .premise .lab{color:var(--champ)!important;} .idea .lab{color:var(--gold-deep)!important;}
   .btn,.nav-links a,.nav-back,.fsocial a,.foot-bottom,.listen-row a,.listen-lab,.nav-sub,.season .s,.make .go,.pr .num{font-family:var(--jost)!important;}
   .pr .num{font-weight:700!important;}
   body{font-family:var(--sans);}
   footer .fmark{font-family:var(--syne)!important;font-weight:800!important;letter-spacing:-.012em;}
   .nav-sub{background:var(--scarlet)!important;color:#fff!important;}
   .nav-sub:hover{background:var(--scarlet-deep)!important;}
-  .rope{height:8px;border-radius:5px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.65) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45);}
+  .rope{height:8px;border-radius:5px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.2) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45);}
   .rope-rule{display:flex;justify-content:center;}
   .rope-rule .rope{width:74px;height:7px;}
   footer{position:relative;}
-  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.6) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);}
+  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.2) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);}
 </style>
 <style>
 .botbn-bar{display:none;background:linear-gradient(90deg,#9E3B52 0%,#8B4513 100%);color:#FBF6EA;font-family:"Jost",sans-serif;font-size:14px;font-weight:400;padding:11px 60px 11px 24px;text-align:center;position:relative;line-height:1.4;z-index:100;}
@@ -202,8 +202,10 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/consent.js" defer></script>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
 </head>
-<body data-screen-label="SZND by Katoya">
+<body data-screen-label="SZND by Katoya" data-track="sznd">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
   I’ve been nominated for <strong>Best Community Leader</strong> <span class="script">in</span> The Seattle Medium’s Best of the Best Northwest
@@ -221,7 +223,7 @@
         <a href="#makes">Projects</a>
         <a href="/media/">Media</a>
       <a href="/journal/">Journal</a>
-        <a class="nav-sub" href="https://katoyapalmer.substack.com/s/sznd-by-katoya">Subscribe</a>
+        <a class="nav-sub" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=sznd&amp;utm_campaign=ttp_weekly&amp;utm_content=nav">Subscribe</a>
       </div>
     </div>
   </nav>
@@ -235,7 +237,7 @@
         <h1>A well-<em>seasoned</em> life.</h1>
         <p>The homemade side of me — what I cook, what I grow, and what I make with my hands. Seasonal, unhurried, and rooted in the turn of the year.</p>
         <div class="cta">
-          <a class="btn btn-lav" href="https://katoyapalmer.substack.com/s/sznd-by-katoya">Read on Substack</a>
+          <a class="btn btn-lav" href="#recipes">See the recipes</a>
           <a class="btn btn-line" href="https://www.tiktok.com/@szndbykatoya">Watch on TikTok</a>
         </div>
       </div>
@@ -312,9 +314,9 @@
     <div class="wrap">
       <div class="lab">Come grow with me</div>
       <h2>Seasonal living, in your <em>inbox</em>.</h2>
-      <p>Recipes, garden notes, and projects — sent at the pace of the seasons, never faster.</p>
+      <p>SZND by Katoya: cooking in season. Recipes, garden notes and projects land in my weekly letter, Thought, Taste &amp; Presence, every Monday.</p>
       <div class="cta">
-        <a class="btn btn-lav" href="https://katoyapalmer.substack.com/s/sznd-by-katoya">Subscribe free</a>
+        <a class="btn btn-lav" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=sznd&amp;utm_campaign=ttp_weekly&amp;utm_content=subscribe">Get my weekly letter</a>
         <a class="btn btn-line" href="https://www.tiktok.com/@szndbykatoya">Follow on TikTok</a>
       </div>
     </div>
@@ -328,9 +330,10 @@
           <div class="ftag">A Katoya Palmer brand · made by hand, in season.</div>
         </div>
         <div class="fsocial">
-          <a href="https://katoyapalmer.substack.com/s/sznd-by-katoya">Substack</a>
+          <a href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=sznd&amp;utm_campaign=ttp_weekly&amp;utm_content=footer">Weekly letter</a>
           <a href="https://www.tiktok.com/@szndbykatoya">TikTok</a>
-          <a href="https://www.instagram.com/katoyapalmer/">Instagram</a>
+          <a href="https://www.instagram.com/szndbykatoya">Instagram</a>
+          <a href="https://www.instagram.com/katoyapalmer/">@katoyapalmer</a>
           <a href="https://www.facebook.com/katoyapalmer">Facebook</a>
           <a href="https://www.linkedin.com/in/katoya318/">LinkedIn</a>
           <a href="index.html">Katoya Palmer</a>
@@ -368,14 +371,14 @@
       var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
       var dl=0.9/Rm;
       var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
-      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.2"/>'+
           '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
     }
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
       '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
-      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<stop offset="0" stop-color="#D2B064"/><stop offset="0.45" stop-color="#B8923F"/><stop offset="1" stop-color="#8A6A22"/></linearGradient>'+
       '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
-      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.2"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
       '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
       '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
   }

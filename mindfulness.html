@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), encrypted-media=(), fullscreen=(self), picture-in-picture=(), display-capture=()">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,9 +37,9 @@
     --serif:"Syne", system-ui, sans-serif;
     --sans:"Space Grotesk", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A;
-    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%); --foil-dark:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -61,7 +61,7 @@
 
   /* HERO */
   .hero{padding:80px 0 78px;text-align:center;}
-  .hero-logo{width:128px;margin:0 auto 26px;border-radius:50%;background:var(--paper);border:1px solid var(--line);padding:20px;}
+  .hero-logo{width:128px;height:auto;aspect-ratio:1/1;object-fit:contain;margin:0 auto 26px;border-radius:50%;background:var(--paper);border:1px solid var(--line);padding:20px;}
   .hero h1{font-size:64px;line-height:1.02;margin:0 auto 22px;max-width:740px;}
   .hero h1 em{font-style:italic;color:var(--teal-deep);}
   .hero p{font-size:19px;color:var(--ink-soft);max-width:560px;margin:0 auto 30px;}
@@ -150,9 +150,9 @@
     --syne:"Syne", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
     --grot:"Space Grotesk", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A;
-    --foil:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%); --foil-dark:linear-gradient(118deg,#8a6a22 0%,#c9a24c 20%,#f1dd95 37%,#fff7da 47%,#d8b659 61%,#9c7a2e 80%,#ead08a 100%);
   }
   body{font-family:var(--grot)!important;}
   .big,blockquote,.idea .big,.premise blockquote{font-family:var(--syne)!important;font-weight:700!important;font-style:normal!important;letter-spacing:-.01em;}
@@ -170,11 +170,11 @@
   footer .fmark{font-family:var(--syne)!important;font-weight:800!important;letter-spacing:-.012em;}
   .nav-sub{background:var(--scarlet)!important;color:#fff!important;}
   .nav-sub:hover{background:var(--scarlet-deep)!important;}
-  .rope{height:8px;border-radius:5px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.65) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45);}
+  .rope{height:8px;border-radius:5px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.2) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);box-shadow:inset 0 0 0 .7px rgba(120,90,30,.45);}
   .rope-rule{display:flex;justify-content:center;}
   .rope-rule .rope{width:74px;height:7px;}
   footer{position:relative;}
-  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.6) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#EAD79F,#C6A24C 50%,#9C7A2E);}
+  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(116deg,rgba(120,90,30,.9) 0 1.4px,transparent 1.4px 3px,rgba(255,246,214,.2) 3px 4px,transparent 4px 5.6px),linear-gradient(180deg,#D2B064,#B8923F 50%,#8A6A22);}
 </style>
 <style>
 .botbn-bar{display:none;background:linear-gradient(90deg,#9E3B52 0%,#8B4513 100%);color:#FBF6EA;font-family:"Jost",sans-serif;font-size:14px;font-weight:400;padding:11px 60px 11px 24px;text-align:center;position:relative;line-height:1.4;z-index:100;}
@@ -189,8 +189,38 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/consent.js" defer></script>
+<style id="mitm-landing">
+  .intro{max-width:640px;margin:0 auto;}
+  .intro p{font-size:17px;color:var(--ink-soft);margin-bottom:16px;}
+  .intro p strong{color:var(--ink);font-weight:600;}
+  .breath{max-width:720px;margin:0 auto 44px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:34px 34px;text-align:center;}
+  .breath .steps{display:flex;gap:14px;justify-content:center;margin:18px 0;flex-wrap:wrap;}
+  .breath .step{min-width:120px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--cream);}
+  .breath .step .n{font-family:var(--syne);font-weight:800;font-size:34px;color:var(--teal-deep);line-height:1;}
+  .breath .step .w{font-family:var(--jost);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px;}
+  .breath p{font-size:15.5px;color:var(--ink-soft);}
+  .list{max-width:880px;margin:0 auto;display:grid;gap:14px;}
+  .item{display:flex;gap:18px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 26px;transition:.2s;}
+  a.item:hover{border-color:var(--teal);}
+  .item .dot{width:11px;height:11px;border-radius:50%;background:var(--teal);flex:none;margin-top:9px;}
+  .item .meta{font-family:var(--jost);font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);}
+  .item h3{font-size:20px;margin:4px 0 6px;}
+  .item p{font-size:14.5px;color:var(--ink-soft);}
+  .list-foot{text-align:center;margin-top:28px;}
+  .socials{max-width:640px;margin:0 auto;text-align:center;}
+  .socials p{font-size:16px;color:var(--ink-soft);margin-bottom:18px;}
+  .care{max-width:640px;margin:26px auto 0;font-size:13px;color:var(--ink-faint);text-align:center;}
+  @media (max-width:480px){ body .hero h1{font-size:clamp(26px,8.2vw,34px) !important;} }
+  @media (max-width:820px){
+    .breath{padding:26px 20px;}
+    .item{padding:18px 20px;}
+    .item h3{font-size:18px;}
+  }
+</style>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
 </head>
-<body data-screen-label="Mindfulness in the Middle">
+<body data-screen-label="Mindfulness in the Middle" data-track="mindfulness">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
   I’ve been nominated for <strong>Best Community Leader</strong> <span class="script">in</span> The Seattle Medium’s Best of the Best Northwest
@@ -202,12 +232,13 @@
     <div class="nav-in">
       <a class="nav-back" href="index.html"><span class="wm-mini"><span>&larr; KAT</span><i class="bo" data-size="14"></i><span>YA PALMER</span></span></a>
       <div class="nav-links">
-        <a href="#premise">The Practice</a>
-        <a href="#middle">For the Middle</a>
-        <a href="#begin">Begin</a>
+        <a href="#about">About</a>
+        <a href="#practice">The Practice</a>
+        <a href="#essays">Essays</a>
+        <a href="#watch">Watch</a>
         <a href="/media/">Media</a>
-      <a href="/journal/">Journal</a>
-        <a class="nav-sub" href="https://katoyapalmer.substack.com">Subscribe</a>
+        <a href="/journal/">Journal</a>
+        <a class="nav-sub" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=mindfulness&amp;utm_campaign=ttp_weekly&amp;utm_content=nav">Subscribe</a>
       </div>
     </div>
   </nav>
@@ -217,11 +248,11 @@
   <header class="hero">
     <div class="wrap">
       <img width="160" height="160" decoding="async" fetchpriority="high" class="hero-logo" src="assets/brand-mitm.webp" alt="Mindfulness in the Middle" />
-      <h1>Staying whole in the <em>thick of it</em>.</h1>
-      <p>Mindfulness for the people holding everything together — leaders, caregivers, and anyone deep in the long, unglamorous middle of a life.</p>
+      <h1>Mindfulness in the Middle has a <em>home</em> here now.</h1>
+      <p>It began as my healing journey, a path to finding myself again. Small practices for staying whole in the thick of it: the middle of change, the middle of recovery, the middle of trying again.</p>
       <div class="cta">
-        <a class="btn btn-teal" href="https://katoyapalmer.substack.com">Start here</a>
-        <a class="btn btn-line" href="https://podcasts.apple.com/us/podcast/in-real-time-with-katoya-palmer/id1852388336">Listen on In Real Time</a>
+        <a class="btn btn-teal" href="#practice">Start with one breath</a>
+        <a class="btn btn-line" href="#essays">Read the essays</a>
       </div>
     </div>
   </header>
@@ -230,55 +261,113 @@
   <section class="premise" id="premise">
     <div class="wrap">
       <div class="lab">The practice</div>
-      <blockquote>“Not the mountaintop. The middle — where the work, the people, and the worry actually live.”</blockquote>
-      <div class="by">Mindfulness in the Middle</div>
+      <blockquote>“This isn't about expertise. I'm not a guru. It's about practice.”</blockquote>
+      <div class="by">Katoya Palmer, July 2025</div>
     </div>
   </section>
 
-  <!-- MIDDLE OF -->
-  <section id="middle">
+  <!-- ABOUT / WHERE IT STARTED -->
+  <section id="about">
     <div class="wrap">
       <div class="midhead">
-        <div class="lab">For the middle of…</div>
-        <h2>This is for you if you're in <em>the thick</em>.</h2>
-        <p>Not a retreat you have to escape to. A practice you can carry into the room you're already in.</p>
+        <div class="lab">What it is</div>
+        <h2>The space I come back to when I need to <em>anchor</em>.</h2>
       </div>
-      <div class="mid-grid">
-        <div class="mid"><div class="dot"></div><div><h3>The middle of leading</h3><p>Carrying a team, a mission, and a hundred decisions that are quietly yours alone.</p></div></div>
-        <div class="mid"><div class="dot"></div><div><h3>The middle of caregiving</h3><p>Holding up the people you love while no one's quite holding up you.</p></div></div>
-        <div class="mid"><div class="dot"></div><div><h3>The middle of a life</h3><p>Past the beginning, not near the end — the long stretch where it's easy to disappear.</p></div></div>
-        <div class="mid"><div class="dot"></div><div><h3>The middle of the mess</h3><p>Transition, overwhelm, the hard season — when staying present is the whole battle.</p></div></div>
+      <div class="intro">
+        <p>I started Mindfulness in the Middle on TikTok in the summer of 2025. I needed something simple and steady to hold onto. A deck of mindfulness cards gave me the structure: one card, one theme, one reflection.</p>
+        <p>Somewhere along the way, I wasn't just following the cards anymore. I was journaling in public.</p>
+        <p>The middle isn't just middle age. It's <strong>the middle of change, the middle of recovery, the middle of uncertainty, the middle of trying again.</strong> It's about care before crisis, rest as resistance, and remembering that authenticity matters more than performance.</p>
+        <p>Mindfulness in the Middle was my healing journey, a path to finding myself again. That same path is what inspired Lipstick on My Fork and SZND by Katoya.</p>
+        <p>Last year I said I didn't know if this series would end at 10 episodes or 100. What I did know is that I was still here. I still am, and so is the practice. Now it has a home here, and one practice lands in my weekly letter every Monday.</p>
       </div>
     </div>
   </section>
 
   <!-- PRACTICES -->
-  <section class="practices">
+  <section class="practices" id="practice">
     <div class="wrap">
       <div class="midhead">
-        <div class="lab">Small practices</div>
-        <h2>Things you can do <em>right now</em>.</h2>
+        <div class="lab">The practice</div>
+        <h2>One full <em>breath</em>.</h2>
+        <p>It's what I do before every speaking engagement or presentation.</p>
+      </div>
+      <div class="breath">
+        <div class="steps">
+          <div class="step"><div class="n">4</div><div class="w">In</div></div>
+          <div class="step"><div class="n">4</div><div class="w">Hold</div></div>
+          <div class="step"><div class="n">6</div><div class="w">Out</div></div>
+        </div>
+        <p>In for four, hold for four, out for six. One round resets more than you'd think.</p>
+      </div>
+      <div class="midhead" style="margin-bottom:28px;">
+        <h2 style="font-size:30px;">More small <em>practices</em>.</h2>
         <p>Sixty seconds, no cushion required. Grounding you can do at your desk, in the car, mid-shift.</p>
       </div>
       <div class="pr-grid">
-        <div class="pr"><div class="num">01</div><h3>One full breath</h3><p>In for four, hold for four, out for six. One round resets more than you'd think.</p></div>
-        <div class="pr"><div class="num">02</div><h3>Name five things</h3><p>Five you can see, four you can touch. Pull yourself back into the room you're in.</p></div>
-        <div class="pr"><div class="num">03</div><h3>The honest pause</h3><p>Before you answer, react, or send — one beat to choose instead of just respond.</p></div>
-        <div class="pr"><div class="num">04</div><h3>Put it down</h3><p>Name the one worry you're carrying that isn't yours to hold today. Set it down.</p></div>
-        <div class="pr"><div class="num">05</div><h3>Hand on heart</h3><p>A palm to the chest, three breaths. Steadiness you can give yourself, anywhere.</p></div>
-        <div class="pr"><div class="num">06</div><h3>Light the candle</h3><p>One small ritual to mark the shift from doing to being. Begin and end on purpose.</p></div>
+        <div class="pr"><div class="num">01</div><h3>Name five things</h3><p>Five you can see, four you can touch. Pull yourself back into the room you're in.</p></div>
+        <div class="pr"><div class="num">02</div><h3>The honest pause</h3><p>Before you answer, react, or send, one beat to choose instead of just respond.</p></div>
+        <div class="pr"><div class="num">03</div><h3>Put it down</h3><p>Name the one worry you're carrying that isn't yours to hold today. Set it down.</p></div>
+        <div class="pr"><div class="num">04</div><h3>Hand on heart</h3><p>A palm to the chest, three breaths. Steadiness you can give yourself, anywhere.</p></div>
+        <div class="pr"><div class="num">05</div><h3>Light the candle</h3><p>One small ritual to mark the shift from doing to being. Begin and end on purpose.</p></div>
+        <div class="pr"><div class="num">06</div><h3>Ask for help</h3><p>Notice one place you're carrying more than you need to. Ask: what would shift if I let someone help me?</p></div>
       </div>
     </div>
   </section>
 
-  <!-- BEGIN -->
+  <!-- ESSAYS -->
+  <section id="essays">
+    <div class="wrap">
+      <div class="midhead">
+        <div class="lab">Read the essays</div>
+        <h2>Written from <em>the middle</em>.</h2>
+        <p>Each essay started as a card or an episode. All nine are public on my Substack.</p>
+      </div>
+      <div class="list">
+        <a class="item" href="https://katoyapalmer.substack.com/p/reclaiming-myself-how-mindfulness" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 14, 2025 · Where it started</div><h3>Reclaiming Myself: How Mindfulness Helped Me Rebuild From Rock Bottom</h3><p>Why I went back to a card deck that sat on my shelf for years, and why this is about practice, not expertise.</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/notice-dislike-mindfulness-ptsd-and" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 15, 2025 · Notice Dislike</div><h3>How Mindfulness Helped Me Face Resentment and Find My Way Back to Love</h3><p>"Anger doesn't dissolve through more anger. It dissolves when love is poured into the cracks."</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/loving-kindness-for-the-body" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 21, 2025 · Loving-Kindness for the Body</div><h3>How Mindfulness Helped Me Treat Rest as Resistance and Beauty as Legacy</h3><p>Rest before crisis, an "everything shower," and the beauty rituals of the women in my family.</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/defending-and-defining" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 5, 2025 · Defending and Defining</div><h3>How Mindfulness Helped Me Shed Labels and Choose Curiosity Over Rigidity</h3><p>"Now, I defend less. I listen more."</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/endless-desire" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 14, 2025 · Endless Desire</div><h3>How Mindfulness Helped Me Embrace Pleasure, Taboo, and the Compass of Wanting</h3><p>"It's not dangerous. It's information."</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/say-yes" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 22, 2025 · Say Yes</div><h3>How Mindfulness Helped Me Set Boundaries, Build Connections, and Value Myself</h3><p>"Being wanted isn't the same as being valued."</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/what-mindfulness-in-the-middle-is" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Sep 15, 2025</div><h3>What Mindfulness in the Middle Is (and Why I'm Still Here)</h3><p>The cards were the doorway. The real work has been showing up with honesty.</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/when-mindfulness-meets-the-performance" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Nov 12, 2025 · Episode 8</div><h3>When Mindfulness Meets the Performance of Success</h3><p>"Who am I when I stop performing and simply allow myself to be?"</p></div></a>
+        <a class="item" href="https://katoyapalmer.substack.com/p/mindfulness-preparedness-and-the" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Dec 30, 2025</div><h3>Mindfulness, Preparedness, and the Cost of Perfection</h3><p>"Preparedness is situational. Perfection is defensive."</p></div></a>
+      </div>
+      <div class="list-foot"><a class="btn btn-line" href="https://katoyapalmer.substack.com/s/mindfulness-in-the-middle" target="_blank" rel="noopener">Read the essays on Substack</a></div>
+    </div>
+  </section>
+
+  <!-- WATCH -->
+  <section class="practices" id="watch">
+    <div class="wrap">
+      <div class="midhead">
+        <div class="lab">Watch</div>
+        <h2>Where it <em>started</em>.</h2>
+        <p>The original series ran on my TikTok from July to December 2025. Tap through to watch.</p>
+      </div>
+      <div class="list">
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7527022563109784863" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 14, 2025 · Episode 1</div><h3>Starting the journey</h3><p>A card deck from my first season of deep healing, and why I picked it up again.</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7529975448046963998" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 22, 2025 · Episode 2</div><h3>Loving-kindness for the body</h3><p>"We began with a pause. We made rest a practice."</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7532310142847667486" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Jul 29, 2025 · Episode 3</div><h3>Things I wish I knew when I was younger</h3><p>Career lessons, aging, and gratitude, in three parts.</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7535293265084517663" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 6, 2025 · Episode 4</div><h3>Defining and defending</h3><p>"We grow up defending labels like armor, but they can hold us back."</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7538621264663940383" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 15, 2025 · Episode 5</div><h3>Endless desire</h3><p>"Desire isn't dangerous… it's information."</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7541506967102098719" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Aug 22, 2025 · Episode 6</div><h3>Say yes</h3><p>"It's not about yes being easy, it's about yes being the doorway."</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7553202521628593438" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Sep 23, 2025 · Episode 7</div><h3>Asking for help</h3><p>"Hyper-independence isn't strength, it's survival mode."</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7574220790426520862" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Nov 19, 2025 · Episode 8</div><h3>Authenticity and performance</h3><p>The rooms we edit ourselves for, in four parts.</p></div></a>
+        <a class="item" href="https://www.tiktok.com/@katoyapalmer/video/7584344427041164574" target="_blank" rel="noopener"><div class="dot"></div><div><div class="meta">Dec 16, 2025</div><h3>Ready, not perfect</h3><p>"When uncertainty lasts too long, perfection starts to feel safe."</p></div></a>
+      </div>
+      <div class="list-foot"><a class="btn btn-line" href="https://www.tiktok.com/@katoyapalmer/collection/Mindfulness%20in%20the%20Middle-7528099283699043103" target="_blank" rel="noopener">Watch the full series on TikTok</a></div>
+    </div>
+  </section>
+
+  <!-- BEGIN / SUBSCRIBE -->
   <section class="begin" id="begin">
     <div class="wrap">
       <div class="lab">Begin where you are</div>
       <h2>A little steadiness, <em>delivered</em>.</h2>
-      <p>Short reflections and practices for staying whole in the thick of it — no guru, no pressure, just company for the middle.</p>
+      <p>One practice every Monday in my weekly letter, Thought, Taste &amp; Presence. No guru, no pressure, just company for the middle.</p>
       <div class="cta">
-        <a class="btn btn-teal" href="https://katoyapalmer.substack.com">Subscribe free</a>
+        <a class="btn btn-teal" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=mindfulness&amp;utm_campaign=ttp_weekly&amp;utm_content=begin">Get my weekly letter</a>
         <a class="btn btn-line" href="https://podcasts.apple.com/us/podcast/in-real-time-with-katoya-palmer/id1852388336">Listen on In Real Time</a>
       </div>
       <div class="listen">
@@ -290,7 +379,24 @@
           <a href="https://www.youtube.com/playlist?list=PLf8jh-uMOD1DJcGJlKGqZvbT2UoAgtcWC">YouTube</a>
         </div>
       </div>
-      <div class="hash">#MITM</div>
+      <div class="hash">#MindfulnessInTheMiddle</div>
+    </div>
+  </section>
+
+  <!-- SOCIALS NOTE -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="socials">
+        <div class="lab">Follow along</div>
+        <p style="margin-top:12px;">For now, Mindfulness in the Middle shares through my personal socials. No separate accounts. Just me, in the middle, in real time.</p>
+        <div class="listen-row">
+          <a href="https://www.tiktok.com/@katoyapalmer">TikTok</a>
+          <a href="https://www.instagram.com/katoyapalmer/">Instagram</a>
+          <a href="https://www.facebook.com/katoyapalmer">Facebook</a>
+          <a href="https://www.linkedin.com/in/katoya318/">LinkedIn</a>
+        </div>
+        <p class="care">These are practices I use in my own life. They're not therapy or medical advice. If you're in crisis, call or text 988.</p>
+      </div>
     </div>
   </section>
 
@@ -302,7 +408,7 @@
           <div class="ftag">A Katoya Palmer practice · staying whole in the thick of it.</div>
         </div>
         <div class="fsocial">
-          <a href="https://katoyapalmer.substack.com">Substack</a>
+          <a href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=mindfulness&amp;utm_campaign=ttp_weekly&amp;utm_content=footer">Weekly letter</a>
           <a href="https://podcasts.apple.com/us/podcast/in-real-time-with-katoya-palmer/id1852388336">Podcast</a>
           <a href="https://www.instagram.com/katoyapalmer/">Instagram</a>
           <a href="https://www.facebook.com/katoyapalmer">Facebook</a>
@@ -342,14 +448,14 @@
       var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
       var dl=0.9/Rm;
       var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
-      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.2"/>'+
           '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
     }
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
       '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
-      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<stop offset="0" stop-color="#D2B064"/><stop offset="0.45" stop-color="#B8923F"/><stop offset="1" stop-color="#8A6A22"/></linearGradient>'+
       '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
-      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.2"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
       '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
       '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
   }

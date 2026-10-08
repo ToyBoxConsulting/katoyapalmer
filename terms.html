@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="canonical" href="https://www.katoyapalmer.com/terms.html">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), encrypted-media=(), fullscreen=(self), picture-in-picture=(), display-capture=()">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,7 @@
     --syne:"Syne", system-ui, sans-serif;
     --jost:"Jost", system-ui, sans-serif;
     --grot:"Space Grotesk", system-ui, sans-serif;
-    --gold:#C6A24C; --gold-deep:#9C7A2E; --champ:#EAD79F;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
     --scarlet:#D6362A; --scarlet-deep:#A81F1A; --rust:#A81F1A;
   }
   body{font-family:var(--grot)!important;}
@@ -81,8 +81,10 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/consent.js" defer></script>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
 </head>
-<body>
+<body data-track="home">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="botbn-bar" id="botbn-bar" data-source="katoyapalmer" style="display:none;">
   I’ve been nominated for <strong>Best Community Leader</strong> <span class="script">in</span> The Seattle Medium’s Best of the Best Northwest
@@ -201,14 +203,14 @@
       var ix=cx+(Rm-t)*Math.cos(a),iy=cy+(Rm-t)*Math.sin(a),ox=cx+(Rm+t)*Math.cos(a),oy=cy+(Rm+t)*Math.sin(a);
       var dl=0.9/Rm;
       var lx1=cx+(Rm-t)*Math.cos(a-dl),ly1=cy+(Rm-t)*Math.sin(a-dl),lx2=cx+(Rm+t)*Math.cos(a-dl),ly2=cy+(Rm+t)*Math.sin(a-dl);
-      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.85"/>'+
+      kn+='<line x1="'+lx1+'" y1="'+ly1+'" x2="'+lx2+'" y2="'+ly2+'" stroke="#FFF6D6" stroke-width="0.7" opacity="0.2"/>'+
           '<line x1="'+ix+'" y1="'+iy+'" x2="'+ox+'" y2="'+oy+'" stroke="#9C7A2E" stroke-width="1.5" opacity="0.95"/>';
     }
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 100 100" style="display:block;overflow:visible">'+
       '<defs><linearGradient id="'+id+'" x1="0.15" y1="0" x2="0.7" y2="1">'+
-      '<stop offset="0" stop-color="#EAD79F"/><stop offset="0.4" stop-color="#C6A24C"/><stop offset="1" stop-color="#9C7A2E"/></linearGradient>'+
+      '<stop offset="0" stop-color="#D2B064"/><stop offset="0.45" stop-color="#B8923F"/><stop offset="1" stop-color="#8A6A22"/></linearGradient>'+
       '<radialGradient id="'+id+'s" cx="0.36" cy="0.28" r="0.62">'+
-      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.85"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
+      '<stop offset="0" stop-color="#FFF9E2" stop-opacity="0.2"/><stop offset="0.55" stop-color="#FFF9E2" stop-opacity="0"/></radialGradient></defs>'+
       '<path d="'+d+'" fill="url(#'+id+')" fill-rule="evenodd"/>'+
       '<path d="'+d+'" fill="url(#'+id+'s)" fill-rule="evenodd"/>'+kn+'</svg>';
   }
