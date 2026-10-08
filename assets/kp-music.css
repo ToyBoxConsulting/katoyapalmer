@@ -30,6 +30,10 @@
   .kp-music__btn{min-height:34px;font-size:12px;padding:0 10px 0 8px;}
   .kp-music__track{max-width:150px;font-size:11.5px;}
   .kp-music__credit{font-size:10px;}
+  /* phones: when off, shrink to a round 44px note button so it covers as little as possible */
+  .kp-music:not(.is-on){padding:4px;}
+  .kp-music:not(.is-on) .kp-music__btn{width:40px;min-height:40px;padding:0;justify-content:center;}
+  .kp-music:not(.is-on) .kp-music__label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
   /* spacer after the footer (painted in the footer's colour) so the pill never covers the page's last line */
   .kp-music-spacer{display:block;height:64px;}
 }
