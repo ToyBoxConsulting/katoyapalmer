@@ -37,7 +37,7 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/lipstick.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -68,6 +68,11 @@
   <url>
     <loc>https://www.katoyapalmer.com/recipes/kitchen-extras-soup.html</loc>
     <lastmod>2026-10-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/reviews/primos-bellevue.html</loc>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
