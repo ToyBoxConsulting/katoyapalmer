@@ -118,6 +118,12 @@
   .cat-card:hover{background:var(--red);color:#fff;transform:translateY(-4px);}
   .cat-card:hover .num,.cat-card:hover p{color:rgba(255,255,255,.85);}
   .cat-card:hover h3{color:#fff;}
+  .cat-card.is-soon{cursor:default;}
+  .cat-card.is-soon:hover{background:var(--paper);color:inherit;transform:none;}
+  .cat-card.is-soon:hover .num{color:var(--red);}
+  .cat-card.is-soon:hover p{color:var(--ink-soft);}
+  .cat-card.is-soon:hover h3{color:inherit;}
+  .cat-card .soon{display:block;margin-top:12px;font-family:var(--jost);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
   .cat-card .num{font-family:var(--disp);font-style:italic;font-size:15px;color:var(--red);}
   .cat-card h3{font-size:27px;margin:8px 0 8px;line-height:1.04;}
   .cat-card p{font-size:13.5px;color:var(--ink-soft);}
@@ -302,12 +308,12 @@
         <h2>Where the <em>cravings</em> take me.</h2>
       </div>
       <div class="cat-grid">
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">01</div><h3>Date-Night Decadence</h3></div><p>White tablecloths, low light, and a plate worth dressing up for.</p></a>
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">02</div><h3>Hole-in-the-Wall Gems</h3></div><p>The unmarked door, the ten-table room, the best thing I ate all month.</p></a>
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">03</div><h3>The Splurge</h3></div><p>The tasting menu. The wine pairing. The bill I'd do again.</p></a>
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">04</div><h3>Brunch With Bite</h3></div><p>Bottomless something, a little decadent, a little unserious.</p></a>
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">05</div><h3>Cocktails &amp; Courage</h3></div><p>The bar program worth sitting at alone, dressed up, unbothered.</p></a>
-        <a class="cat-card" href="https://katoyapalmer.substack.com/s/lipstick-on-my-fork"><div><div class="num">06</div><h3>Eastside Eats</h3></div><p>Bellevue and beyond — proving the suburbs can absolutely cook.</p></a>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">01</div><h3>Date-Night Decadence</h3></div><p>White tablecloths, low light, and a plate worth dressing up for.</p><span class="soon">Coming soon</span></div>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">02</div><h3>Hole-in-the-Wall Gems</h3></div><p>The unmarked door, the ten-table room, the best thing I ate all month.</p><span class="soon">Coming soon</span></div>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">03</div><h3>The Splurge</h3></div><p>The tasting menu. The wine pairing. The bill I'd do again.</p><span class="soon">Coming soon</span></div>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">04</div><h3>Brunch With Bite</h3></div><p>Bottomless something, a little decadent, a little unserious.</p><span class="soon">Coming soon</span></div>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">05</div><h3>Cocktails &amp; Courage</h3></div><p>The bar program worth sitting at alone, dressed up, unbothered.</p><span class="soon">Coming soon</span></div>
+        <div class="cat-card is-soon" aria-disabled="true"><div><div class="num">06</div><h3>Eastside Eats</h3></div><p>Bellevue and beyond — proving the suburbs can absolutely cook.</p><span class="soon">Coming soon</span></div>
       </div>
     </div>
   </section>

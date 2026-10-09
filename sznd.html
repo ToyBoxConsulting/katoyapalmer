@@ -103,6 +103,9 @@
   .make .n{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--lav-deep);}
   .make h3{font-size:24px;margin:7px 0 8px;}
   .make p{font-size:14px;color:var(--ink-soft);}
+  .make.is-soon{cursor:default;}
+  .make.is-soon:hover{transform:none;box-shadow:none;border-color:var(--line);}
+  .make .go.soon{color:var(--ink-soft);letter-spacing:.12em;text-transform:uppercase;font-size:11.5px;}
   .make .go{display:inline-block;margin-top:13px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--lav-deep);}
 
   /* LATEST RECIPES */
@@ -110,7 +113,7 @@
   .recipe-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   .rcard{display:block;background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s;}
   .rcard:hover{transform:translateY(-4px);box-shadow:0 24px 44px -32px rgba(110,99,155,.45);border-color:var(--lav);}
-  .rcard img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .rcard img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
   .rcard .rc-in{padding:20px 22px 22px;}
   .rcard .n{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--lav-deep);}
   .rcard h3{font-size:23px;margin:6px 0 6px;}
@@ -293,7 +296,7 @@
         <p>Everything I post on SZND lives here too, so you can find it when you need it.</p>
       </div>
       <div class="recipe-list">
-        <a class="rcard" href="/sznd/kitchen-extras-soup.html"><img loading="lazy" decoding="async" width="992" height="558" src="/media/sznd/kitchen-extras-soup-og.jpg" alt="Creamy chicken, mushroom and carrot soup" /><div class="rc-in"><div class="n">Thanksgiving prep · Fall</div><h3>Kitchen-Extras Soup</h3><p>A pot built from prep leftovers, plus my homemade cream of mushroom.</p><span class="go">Get the recipe →</span></div></a>
+        <a class="rcard" href="/sznd/kitchen-extras-soup.html"><img loading="lazy" decoding="async" width="1200" height="900" src="/media/sznd/kitchen-extras-soup-bowl-card.jpg" alt="Creamy chicken, mushroom and carrot soup in a bowl" /><div class="rc-in"><div class="n">Thanksgiving prep · Fall</div><h3>Kitchen-Extras Soup</h3><p>A pot built from prep leftovers, plus my homemade cream of mushroom.</p><span class="go">Get the recipe →</span></div></a>
         <a class="rcard" href="/sznd/split-pea-soup.html"><img loading="lazy" decoding="async" width="1200" height="676" src="/media/sznd/split-pea-soup-og.jpg" alt="Split pea soup with ham and carrots in a slow cooker" /><div class="rc-in"><div class="n">Slow cooker · Fall</div><h3>Split Pea Soup</h3><p>So good I made it two nights in a row. Freezes well for fall.</p><span class="go">Get the recipe →</span></div></a>
       </div>
     </div>
@@ -307,12 +310,12 @@
         <h2>Things worth <em>making yourself</em>.</h2>
       </div>
       <div class="make-grid">
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">From the garden</div><h3>Grow Your Own</h3><p>Raised beds, containers, and what actually thrives in the Pacific Northwest.</p><span class="go">See more →</span></a>
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">In the kitchen</div><h3>Garden-to-Table Recipes</h3><p>Honest, seasonal cooking built around whatever's ripe and on hand.</p><span class="go">See more →</span></a>
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">Put it up</div><h3>Preserve &amp; Store</h3><p>Jams, pickles, and the quiet satisfaction of a full pantry shelf.</p><span class="go">See more →</span></a>
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">Around the house</div><h3>DIY &amp; Home Projects</h3><p>Small builds, fixes, and refreshes — made with your own two hands.</p><span class="go">See more →</span></a>
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">Set the scene</div><h3>Seasonal Rituals</h3><p>The simple touches that make a table, a room, or a moment feel tended-to.</p><span class="go">See more →</span></a>
-        <a class="make" href="https://katoyapalmer.substack.com/s/sznd-by-katoya"><div class="n">Hands &amp; soil</div><h3>Field Notes</h3><p>What's working, what failed, and what I'm learning as I go.</p><span class="go">See more →</span></a>
+        <div class="make is-soon" aria-disabled="true"><div class="n">From the garden</div><h3>Grow Your Own</h3><p>Raised beds, containers, and what actually thrives in the Pacific Northwest.</p><span class="go soon">Coming soon</span></div>
+        <a class="make" href="#recipes"><div class="n">In the kitchen</div><h3>Garden-to-Table Recipes</h3><p>Honest, seasonal cooking built around whatever's ripe and on hand.</p><span class="go">See more →</span></a>
+        <div class="make is-soon" aria-disabled="true"><div class="n">Put it up</div><h3>Preserve &amp; Store</h3><p>Jams, pickles, and the quiet satisfaction of a full pantry shelf.</p><span class="go soon">Coming soon</span></div>
+        <div class="make is-soon" aria-disabled="true"><div class="n">Around the house</div><h3>DIY &amp; Home Projects</h3><p>Small builds, fixes, and refreshes — made with your own two hands.</p><span class="go soon">Coming soon</span></div>
+        <div class="make is-soon" aria-disabled="true"><div class="n">Set the scene</div><h3>Seasonal Rituals</h3><p>The simple touches that make a table, a room, or a moment feel tended-to.</p><span class="go soon">Coming soon</span></div>
+        <div class="make is-soon" aria-disabled="true"><div class="n">Hands &amp; soil</div><h3>Field Notes</h3><p>What's working, what failed, and what I'm learning as I go.</p><span class="go soon">Coming soon</span></div>
       </div>
     </div>
   </section>
