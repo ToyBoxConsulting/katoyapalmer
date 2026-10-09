@@ -24,3 +24,15 @@ img{max-width:100%}
   html{scroll-behavior:auto!important}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Read + search (2026-10-09). Colors fall back through each page's own palette. */
+.nav-links .nav-search{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;line-height:0}
+.nav-links .nav-search svg{display:block}
+.nav-links a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.kp-next{max-width:680px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kp-next a{display:block;background:var(--card,var(--paper,#FCF8EF));border:1px solid var(--line,#E2DCD1);border-radius:12px;padding:16px 18px;transition:border-color .2s;text-decoration:none!important}
+.kp-next a:hover,.kp-next a:focus-visible{border-color:var(--teal,var(--scarlet,#D6362A))}
+.kp-next .k{display:block;font-family:"Jost",system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep,var(--scarlet-deep,#A81F1A));margin-bottom:4px}
+.kp-next .t{display:block;font-family:"Syne",system-ui,sans-serif;font-weight:700;font-size:15.5px;line-height:1.25;color:var(--ink,#161210)}
+.kp-next .next{text-align:right;grid-column:2}
+@media (max-width:620px){.kp-next{grid-template-columns:1fr}.kp-next .next{grid-column:1}}
