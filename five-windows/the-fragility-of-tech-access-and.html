@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Fragility of Tech Access &amp; System Failures · Five Windows into a Fragile Economy · Katoya Palmer</title>
+<meta name="description" content="When Innovation Outpaces Inclusion. Today, I help organizations rebuild the very systems I’ve spent a career navigating." />
+<meta name="author" content="Katoya Raquell Palmer" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.katoyapalmer.com/five-windows/the-fragility-of-tech-access-and.html" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Katoya Palmer" />
+<meta property="og:title" content="The Fragility of Tech Access &amp; System Failures" />
+<meta property="og:description" content="When Innovation Outpaces Inclusion. Today, I help organizations rebuild the very systems I’ve spent a career navigating." />
+<meta property="og:url" content="https://www.katoyapalmer.com/five-windows/the-fragility-of-tech-access-and.html" />
+<meta property="og:image" content="https://www.katoyapalmer.com/media/five-windows/the-fragility-of-tech-access-and-1.jpg" />
+<meta property="og:image:width" content="1080" />
+<meta property="og:image:height" content="609" />
+<meta property="og:image:alt" content="Katoya Palmer presenting at a laptop in front of a screen of partner logos" />
+<meta property="article:published_time" content="2025-12-04" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Fragility of Tech Access &amp; System Failures" />
+<meta name="twitter:description" content="When Innovation Outpaces Inclusion. Today, I help organizations rebuild the very systems I’ve spent a career navigating." />
+<meta name="twitter:image" content="https://www.katoyapalmer.com/media/five-windows/the-fragility-of-tech-access-and-1.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --cream:#F3EBDB; --cream-2:#EDE3CF; --paper:#FCF8EF;
+    --ink:#161210; --ink-soft:#5C616A; --ink-faint:#9CA0A8;
+    --teal:#5C8A82; --teal-deep:#436B64; --teal-soft:#DEE9E5;
+    --line:#E2DCD1;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A;
+    --syne:"Syne", system-ui, sans-serif;
+    --grot:"Space Grotesk", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--grot);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 54px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--syne);font-weight:800;line-height:1.04;letter-spacing:-.018em;}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(240,236,227,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 54px;max-width:1180px;margin:0 auto;gap:16px;}
+  .nav-back{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-back:hover{color:var(--teal-deep);}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--teal-deep);}
+  .nav-sub{font-family:var(--jost);font-size:12.5px;font-weight:700;letter-spacing:.04em;background:var(--scarlet);color:#fff!important;padding:9px 17px;border-radius:40px;transition:.2s;}
+  .nav-sub:hover{background:var(--scarlet-deep);}
+
+  /* HERO */
+  .essay-hero{padding:76px 0 26px;text-align:center;}
+  .essay-hero .cat{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-deep);}
+  .essay-hero h1{font-size:50px;line-height:1.04;margin:16px auto 16px;max-width:820px;color:var(--ink);}
+  .essay-hero .dek{font-size:19px;color:var(--ink-soft);max-width:620px;margin:0 auto 18px;}
+  .essay-hero .attrib{font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.05em;}
+  .essay-hero .orig{font-family:var(--jost);font-size:12px;color:var(--ink-faint);letter-spacing:.03em;margin-top:6px;}
+  .essay-hero .orig a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+
+  /* ESSAY BODY */
+  article.essay{padding:20px 0 70px;}
+  article.essay .body{max-width:680px;margin:0 auto;font-size:18px;line-height:1.72;color:var(--ink);overflow-wrap:anywhere;}
+  article.essay .body > p{margin-bottom:20px;}
+  article.essay .body > p:first-of-type::first-letter{font-family:var(--syne);font-size:64px;font-weight:800;color:var(--teal-deep);float:left;line-height:1;padding:6px 12px 0 0;}
+  article.essay .body h2{font-size:26px;letter-spacing:-.01em;color:var(--ink);margin:38px 0 14px;line-height:1.15;}
+  article.essay .body h3{font-size:21px;margin:30px 0 12px;}
+  article.essay .body em{color:var(--teal-deep);font-style:italic;}
+  article.essay .body strong{font-weight:600;color:var(--ink);}
+  article.essay .body a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+  article.essay .body a:hover{color:var(--teal);}
+  article.essay .body blockquote{border-left:3px solid var(--teal);padding:6px 0 6px 20px;margin:28px 0;font-family:var(--syne);font-weight:600;font-size:21px;color:var(--ink);line-height:1.42;letter-spacing:-.008em;}
+  article.essay .body ol,article.essay .body ul{margin:0 0 22px 24px;}
+  article.essay .body li{margin-bottom:10px;}
+  article.essay .body li p{margin:0;}
+  article.essay .body hr{border:0;height:1px;background:var(--line);margin:38px auto;max-width:120px;}
+  article.essay .body figure{margin:8px 0 30px;}
+  article.essay .body figure img{display:block;width:auto;max-width:100%;max-height:78vh;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line);}
+  article.essay .body figcaption{font-family:var(--jost);font-size:14px;color:var(--ink-soft);text-align:center;margin-top:10px;line-height:1.5;}
+  article.essay .body figcaption a{color:var(--ink-soft);}
+
+  /* TT&P SUB-CARD */
+  .ttp-card{max-width:680px;margin:46px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 32px;text-align:center;}
+  .ttp-card .lab{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-deep);}
+  .ttp-card h2{font-size:24px;margin:12px 0 10px;}
+  .ttp-card p{font-size:15.5px;color:var(--ink-soft);max-width:480px;margin:0 auto 20px;}
+  .ttp-card .btn{display:inline-flex;font-family:var(--jost);font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;padding:12px 22px;border-radius:40px;background:var(--teal-deep);color:#fff;transition:.2s;}
+  .ttp-card .btn:hover{background:var(--teal);}
+
+  .back-to{max-width:680px;margin:34px auto 0;padding-top:26px;border-top:1px solid var(--line);text-align:center;font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.03em;}
+  .back-to a{color:var(--teal-deep);font-weight:600;}
+  .back-to a:hover{text-decoration:underline;}
+  .care{max-width:680px;margin:16px auto 0;font-size:12.5px;color:var(--ink-faint);text-align:center;}
+
+  /* FOOTER */
+  .kp-foot{background:var(--paper);border-top:1px solid var(--line);padding:40px 0 30px;font-family:var(--jost);font-size:12.5px;color:var(--ink-soft);text-align:center;}
+  .kp-foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:14px;font-weight:600;font-size:13px;}
+  .kp-foot a{color:var(--ink-soft);} .kp-foot a:hover{color:var(--teal-deep);}
+
+  @media (max-width:820px){
+    .wrap{padding:0 20px;}
+    .nav-in{padding:12px 20px;}
+    .essay-hero{padding:46px 0 18px;}
+    .essay-hero h1{font-size:32px;}
+    .essay-hero .dek{font-size:16.5px;}
+    article.essay .body{font-size:17px;}
+    article.essay .body > p:first-of-type::first-letter{font-size:54px;}
+    article.essay .body blockquote{font-size:18.5px;}
+    .ttp-card{padding:24px 20px;}
+  }
+  :root{--teal:#A9873A;--teal-deep:#7E601F;--teal-soft:#F1E6C4;}
+  article.essay .body h4{font-family:var(--syne);font-weight:700;font-size:18px;margin:26px 0 10px;}
+  article.essay .body .callout{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;padding:16px 20px;margin:28px 0;}
+  article.essay .body .callout p{margin:0;}
+  .series-nav{max-width:680px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .series-nav a{display:block;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:.2s;}
+  .series-nav a:hover{border-color:var(--teal);}
+  .series-nav .k{display:block;font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:4px;}
+  .series-nav .t{display:block;font-family:var(--syne);font-weight:700;font-size:15.5px;line-height:1.25;color:var(--ink);}
+  .series-nav .next{text-align:right;grid-column:2;}
+  @media (max-width:620px){.series-nav{grid-template-columns:1fr;}.series-nav .next{grid-column:1;}}
+</style>
+<script src="/tb-events.js" defer></script>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/consent.js" defer></script>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
+</head>
+<body data-screen-label="Five Windows essay" data-track="five-windows">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="top">
+  <div class="nav-in">
+    <a class="nav-back" href="/five-windows/">&larr; Five Windows</a>
+    <div class="nav-links">
+      <a href="/five-windows/">The series</a>
+      <a href="/media/">Media</a>
+      <a href="/journal/">Journal</a>
+      <a class="nav-sub" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=nav">Subscribe</a>
+    </div>
+  </div>
+</nav>
+<span id="main"></span>
+
+<header class="essay-hero">
+  <div class="wrap">
+    <div class="cat">Five Windows into a Fragile Economy · Window 4: Technology</div>
+    <h1>The Fragility of Tech Access &amp; System Failures</h1>
+    <p class="dek">When Innovation Outpaces Inclusion</p>
+    <div class="attrib">Katoya Raquell Palmer · <time datetime="2025-12-04">December 4, 2025</time></div>
+    <div class="orig">Originally published on Substack, December 4, 2025. <a href="https://katoyapalmer.substack.com/p/the-fragility-of-tech-access-and">Read the original</a></div>
+  </div>
+</header>
+
+<article class="essay">
+  <div class="wrap">
+    <div class="body">
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-1.jpg" alt="Katoya Palmer presenting at a laptop in front of a screen of partner logos" width="1080" height="609" loading="lazy" decoding="async" />
+        <figcaption>Today, I help organizations rebuild the very systems I’ve spent a career navigating. This essay isn’t observation—it’s lived experience and professional practice.</figcaption>
+      </figure>
+      <h3>IT Is Infrastructure. Treat It That Way.</h3>
+      <p>My relationship with technology began long before I had a title, a department, or a team. It began in Louisiana, sitting cross-legged on the carpet while my mother explained which VCR cables carried sound and which carried picture, and how every cord mattered. I didn’t know then that she was teaching me systems theory long before I’d ever hear the phrase. She studied business information systems at Louisiana Tech University at a time when Black women were rarely invited into those rooms. Her fluency became my inheritance. Her curiosity became the blueprint I would follow.</p>
+      <p>By the time we moved, and she purchased our first Gateway computer—the iconic black-and-white cow box that felt like it contained the future—we were one of the few households in our community with a machine like that. The cords were color-coded; the instructions were clear and assembling it felt like being handed the keys to a world I instantly wanted to master.</p>
+      <p>By high school, while many of my classmates were still learning how to get online, I was building rudimentary webpages, designing HTML layouts, tinkering in less visible corners of the early internet, customizing profiles on BlackPlanet and MySpace, and exploring early chat rooms. I even wrote a few seniors’ papers on the side—copying, pasting, reformatting, and pulling information from corners of the early internet that felt like a secret passageway. That was my version of being a <em>bad girl</em> back then: using digital access as quiet rebellion. By the time I reached college, I was downloading music on Napster for hours and burning CDs until sunrise. Technology wasn’t entertainment. It wasn’t even a tool. It was a language—and I was fluent.</p>
+      <hr />
+      <h3>Professional Fluency: Early Systems Thinking</h3>
+      <p>Nineteen years old, newly withdrawn from my freshman year of college, I walked into Household Finance—later acquired by HSBC Bank—and encountered my first formal digital workflow. Our leads database moved clients from one phase to the next: initial contact, application, underwriting, approval. The documents were manual; the process was not. That hybrid taught me something foundational: systems build trust when people can see themselves in the workflow.</p>
+      <p>My branch manager, believed in teaching. She walked me through the company’s intranet, its process manuals, and the structured SOPs that governed the work. That early exposure to organized digital tracking created a discipline that would follow me into every leadership role I held.</p>
+      <p>Years later, working in the nonprofit sector, I was part of a cross-department centralization team focused on standardizing program registration and data workflows across multiple branches. Using a recreation management and scheduling system—we built consistent SOPs so every branch created, coded, and displayed programs the same way. That work eventually became foundational to the organization’s early Power BI process building. I wasn’t the sole architect, but I was among the leaders who ensured the system worked for everyone. It was my first time seeing how standardization, when done with intention, becomes a form of equity.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-2.jpg" alt="A desktop computer setup with a small dog resting on the desk" width="1600" height="1200" loading="lazy" decoding="async" />
+        <figcaption>ActiveNet, dual monitors, a thousand sticky notes, a dark pool deck, and one very patient dog—this was systems integration in real life, not in theory.</figcaption>
+      </figure>
+      <hr />
+      <h3>Crisis Literacy: The Cost of Fragility and the Labor of Repair</h3>
+      <p>Years later, in my first executive role, fragility revealed itself in the sharpest possible way: an embezzlement investigation. Our finance director had been producing fake reports and PDFs—statements so convincing that staff trusted them without question until federal investigators proved otherwise. The breach wasn’t just a personal failure. It was a systemic one. A structure that allowed one person to operate without shared access, oversight, training, or controls is a structure designed to break.</p>
+      <p>The fund-accounting information system she used had been customized entirely around her. It was dense, inaccessible, and undocumented. Most staff didn’t know how to navigate it; some didn’t even know how to log in. The system’s opacity became her cover. Its complexity became her power. And its isolation became the organization’s vulnerability.</p>
+      <p>When the truth surfaced, I terminated the employee, partnered with investigators, and began rebuilding the entire financial ecosystem from the ground up. The finance consultant assigned to help reconcile the damage recommended QuickBooks and a series of SaaS tools—solutions that work well for small businesses, but not for an organization managing layered government contracts across city, county, state, and federal funders. We needed audit trails, cost-center integrity, granular contract reporting, and compliance protections. QuickBooks couldn’t meet those requirements.</p>
+      <p>When I stood firm on keeping our fund-accounting system and leaning into training, the consultant abandoned the technical conversation entirely. He labeled me an “angry Black woman,” framed my leadership as disagreeable, and then bypassed me to defer to a white male board member whose approval he sought instead. Without my authorization, he began designing an alternate financial system that contradicted the organizational requirements I was accountable for delivering.</p>
+      <p>It was a textbook example of how racialized and gendered stereotypes shape technical spaces and how quickly bias can override both expertise and chain of command.</p>
+      <p>But the financial rebuild wasn’t the whole crisis.<br />It wasn’t even the hardest one.</p>
+      <h3>The Hidden Crisis: Digital Literacy as Infrastructure</h3>
+      <p>Before we could modernize anything—finance, operations, HR, compliance—we had to face a deeper truth: <strong>the organization wasn’t just behind technically; it was behind digitally.</strong></p>
+      <p>We were a second-chance employer with a deeply service-centered staff—people with extraordinary heart but limited exposure to digital interfaces. Many had spent their lives surviving systems, not navigating digital ones. And almost no one was equipped to move through the technological workflows our contracts and future funding would require.</p>
+      <p>In my first few months, it became obvious: <strong>we could not rebuild the organization’s systems until we rebuilt the organization’s digital confidence.</strong></p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-3.jpg" alt="A young person working at a standing desk by a window" width="1600" height="2133" loading="lazy" decoding="async" />
+        <figcaption>Rebuilding an IT backbone isn’t abstract. It looks like this: an IT manger installing hardware, staff retraining, every system touched and rebuilt by hand. Photo: Christopher Perry.</figcaption>
+      </figure>
+      <p>So, my IT manager and I designed the solution ourselves.</p>
+      <p>We built a multi-part digital literacy program from scratch—training staff on cloud storage fundamentals, file hygiene, version control, permissions, secure document handling, shared drives, and the basics of audit trails and data governance. We created our own internal certification, not as punishment, but as empowerment. Because readiness is equity. And digital fluency is stability.</p>
+      <p>Only when those foundations were in place could we begin the modernization effort:<br />transitioning from Google Workspace to SharePoint, re-mapping file structures, establishing governance protocols, and preparing the organization for its first data lake.</p>
+      <p>It wasn’t a tech project.<br />It was a literacy project.<br />It was cultural change.<br />It was economic mobility work.<br />It was infrastructure.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-4.jpg" alt="Katoya Palmer taking a selfie at the Black Women in Technology Summit" width="960" height="1280" loading="lazy" decoding="async" />
+        <figcaption>In rooms where Black women in tech are still the exception, I learned early how bias shapes who is believed—and who is required to prove what they already know.</figcaption>
+      </figure>
+      <h3>Modernization as Recovery Work</h3>
+      <p>With literacy in place, we could turn to the structural rebuild. With an IT manager I had previously mentored—someone who once worked for me as a lifeguard and pool manager before entering the tech field—we modernized the entire ecosystem. We replaced outdated hardware, repaired network security, standardized permissions, and created real device-management protocols. We brought in an external IT consulting firm to support the architecture and partnered with the philanthropic arm of a major technology company that funded our SharePoint migration and our first organizational data lake.</p>
+      <p>The work was iterative, exhausting, layered, and urgent. We weren’t just installing tools; we were repairing trust. And throughout the process, my expertise was questioned—not because the work was flawed, but because I was a Black woman delivering technical direction that others weren’t accustomed to receiving from someone who looked like me.</p>
+      <p>Later, when the systems stabilized, the very structures I designed became the backbone of the organization’s recovery. The same decisions once treated as confrontation were recognized, finally, as infrastructure.</p>
+      <hr />
+      <h3>Compliance and Capacity: The Cost of Being the Fixer</h3>
+      <p>Government money comes with data expectations that most community nonprofits were never funded to meet. In Washington, agencies receiving public dollars must comply with <strong>2 CFR Part 200</strong>, along with state-level requirements under <strong>RCW 43.09</strong> (audit and accountability), <strong>RCW 42.56</strong> (public records tied to public funds), <strong>RCW 19.255</strong> (data breach notification), and newer digital privacy laws like <strong>My Health My Data</strong>. Local contracts add their own layers: quarterly dashboards, demographic reporting, service documentation, and multi-year record retention.</p>
+      <p>All of this assumes organizations have secure databases, reliable hardware, protected storage, and staff trained to manage sensitive information. But most nonprofits were never resourced for the systems this compliance model requires. They carry the transparency expectations of a public agency without the IT budget of one. We built a statewide compliance structure that runs on regulated data, then handed it to organizations still fighting for the infrastructure to protect, store, and report it.</p>
+      <p>Compliance is not optional—it determines whether contracts are renewed, funding is released, and services continue. Nonprofits must maintain systems capable of tracking performance metrics, client histories, case notes, and audit trails. For-profit enterprises face their own pressures—e-commerce, supply chains, inventory, reconciliation—but the throughline is the same: modern operations require modern technology. The environments differ. The requirements do not.</p>
+      <p>Yet organizations delay modernization because modernization is expensive. External IT support can exceed $100 per user or device per month, and far more for advanced security work. Hardware cycles are unfunded. Data governance is rarely written into grants. The result is predictable: fragile systems staffed by well-meaning people who are structurally set up to fail.</p>
+      <p>This isn’t theoretical. The <strong>2025 Nonprofit Technology Impact Report</strong> found that organizations across the sector face rising operational and technology strain, citing outdated systems, fragmented data, and chronic underinvestment as top barriers to stability and service delivery.</p>
+      <p>And delay is not neutral. It multiplies risk. With every year of postponement, staff fall further behind in readiness, confidence, and digital literacy. When leadership changes, when a new system is introduced, or when the environment shifts—as it always does—the people closest to the ground absorb the impact. Fragility accumulates quietly, and communities feel it loudly.</p>
+      <hr />
+      <h3>Visibility as Infrastructure</h3>
+      <p>The digital divide is no longer about who has a laptop. It’s about who can navigate digital life. When I mentored teens, I saw kids who were brilliant at video editing but intimidated by email. I saw youth who could manage three social media accounts but couldn’t upload a document to cloud storage. I saw smart, capable adult freeze at the sight of a new interface.</p>
+      <p>Recent national data confirms what I saw firsthand. According to a 2023 report from the National Skills Coalition and Microsoft, <strong>92% of U.S. jobs now require digital skills</strong>, yet <strong>one in three workers</strong> lack even the most basic proficiency. The gap isn’t just access to devices—it’s readiness, fluency, and confidence.</p>
+      <p>Digital access is no longer a binary. It is a spectrum.</p>
+      <p>Communities that treat technology as optional are unknowingly restricting civic participation, job access, and economic mobility. The divide is not only about speed or cost. It is about voice, literacy, and confidence. And that divide shows up everywhere: housing portals, school platforms, telehealth apps, safety reporting tools, grant systems, job applications, public meetings, and civic processes.</p>
+      <hr />
+      <h3>Bias and the Bot</h3>
+      <p>Now we are entering an era where inequity doesn’t just show up in systems—it can be encoded in them. AI and automation reflect the data they are trained on, and communities historically left out of data design are at risk of being left out again. Small nonprofits, independent creators, and communities of color are already struggling to see themselves in the next generation of digital infrastructure.</p>
+      <p>Some creators are pushing back. Creator-led platforms have started experimenting with compensation models for training data including new partnerships on platforms like Fanbase that allow creators—especially Black media and content creators—to be paid when their content is used to train AI models. Whether these models scale is still unclear, but the trend itself is a signal: communities who have historically supplied the culture that fuels the internet are demanding visibility, credit, and consent in the next digital economy.</p>
+      <p>AI literacy is no longer optional. Data ethics is not theoretical. Privacy is no longer personal—it is structural. And every person, every organization, every leader will be impacted by how systems evolve from here.</p>
+      <p>A signal and a system are not luxuries. They are infrastructure.</p>
+      <hr />
+      <h3>The AI Bubble and the Generation We Told to Code</h3>
+      <p>A decade ago, we told a generation of children that their futures depended on learning to code. I witnessed the height of this expectation as a PTA vice president, organizing a Code.org day at my son’s elementary school. Volunteers from major tech companies taught classes. Donated computers were taken apart piece by piece. Students coded games while others discovered hardware by touch. My son smashed his finger in the door trying to reach the event and still refused to miss it.</p>
+      <p>The promise was clear: learn to code and you will be ready for the future.</p>
+      <p>That generation is now entering a labor market reshaped by automation, generative AI, a sharp decline and reshaping of entry-level coding pathways, and a widening mismatch between training and opportunity. Some are thriving. Many feel misled. Most never received the scaffolding required to turn coding into career mobility. Because coding was never the point. Systems literacy was.</p>
+      <p>The World Economic Forum’s 2023 Future of Jobs report projects that <strong>85 million jobs may be displaced by automation</strong>, while <strong>97 million new roles</strong> will emerge—most requiring systems thinking, data literacy, cross-functional problem-solving, and human judgment. Coding alone was never the pathway. Systems fluency is.</p>
+      <p>And now we’re watching another bubble form—AI accelerating faster than economic structures can absorb, just like the dot-com boom. When narratives outpace infrastructure, certain communities get left behind every single time.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-5.jpg" alt="A teenager holding a boxed Microsoft Surface laptop" width="1600" height="2133" loading="lazy" decoding="async" />
+        <figcaption>My son with his first brand new laptop, the generation we told to code. The generation now stepping into an economy reshaped by AI. Their readiness deserves more than promises.</figcaption>
+      </figure>
+      <hr />
+      <h3>A Love Letter to Technology</h3>
+      <p>My love for technology is not abstract. It is generational. My mother learned systems when Black women in tech were almost invisible, and her confidence in that world became the foundation of my own. Today, she still has more devices than most people I know, and she tends to them with the same care she once used to teach me how to connect a VCR to a television.</p>
+      <p>I’m the same way. At any given moment, I have five laptops in rotation and several more stored in a closet. My smartwatch, tablets, cameras, chargers, and cables are not clutter—they are companions. When I worked in aquatics, I brought a GoPro onto the pool deck to explore underwater teaching and creative multimedia. Technology is not a skill I learned. It is a relationship I inherited.</p>
+      <p><a href="https://katoyapalmer.substack.com/p/the-fragility-of-tech-access-and">Watch the video in the original post on Substack</a></p>
+      <p>One Christmas season, that love turned into action. I reached out to a donor and asked for something specific—twelve Xbox consoles for the young people we served. It wasn’t a random gift; it was an intentional investment in their digital lives. For many, it was the first device they had ever owned. Watching them pick up those consoles affirmed what I’ve always believed: access begins with joy. Before digital literacy becomes a workforce skill, it starts as curiosity—learning to navigate an interface, customize a profile, troubleshoot a connection, and feel at home inside a system. Technology becomes less intimidating when it arrives as possibility, not pressure</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-6.jpg" alt="A stack of boxed electronics and game consoles" width="1600" height="2133" loading="lazy" decoding="async" />
+        <figcaption>Christmas 2022: I secured twelve Xbox consoles for our youth—intentional access, delivered with joy.</figcaption>
+      </figure>
+      <p>.</p>
+      <p>And in 2025, a year marked by unemployment, recovery, rebuilding, and reinvention, it has been technology—my familiarity with digital tools, my love for systems, my fluency in platforms—that grounded me. I wrote the <em>Five Windows into a Fragile Economy</em> series because digital access made writing it possible. I built podcasts using nothing but curiosity, a microphone, and time. I learned TikTok by trial and error, iteration and play. Technology has been my anchor during a season that could have easily unmoored me.</p>
+      <p>Access isn’t just hardware. It’s heartware.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-7.jpg" alt="A hand holding an iPod playing music" width="1536" height="2048" loading="lazy" decoding="async" />
+        <figcaption>From VTech toys to my first iPod, I’ve always learned new tools from the inside out. Curiosity has been my longest-running operating system.</figcaption>
+      </figure>
+      <hr />
+      <h3>What’s Working, What’s Waiting</h3>
+      <p>There are bright spots. Libraries are becoming digital literacy hubs. Community centers are modernizing their labs. Workforce boards are piloting data modernization initiatives. Some city governments are finally stabilizing internal IT instead of outsourcing every function. Philanthropy is starting to shift toward operational capacity over novelty programs. And across the sector, unsung leaders are documenting workflows, rebuilding outdated systems, and quietly applying project management rigor to legacy programs.</p>
+      <p>But these bright spots are exceptions, not evidence of system readiness. Many organizations are still waiting—waiting for budget cycles, executive transitions, economic recovery, or a mythical “right time” to confront operational debt. And as they wait, complexity rises, data deteriorates, staff burn out, and fragility deepens. The longer the wait, the harder the recovery.</p>
+      <p>McKinsey’s recent operations research shows that outdated systems and operational inefficiencies can absorb <strong>20–30% of an organization’s productivity</strong>, accelerating burnout and eroding institutional memory. When systems lag, people pay the price.</p>
+      <hr />
+      <h3>Why This Matters Now</h3>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-8.jpg" alt="A speaker on a stage in front of a screen titled Pursuit of the Dream Machine" width="1600" height="901" loading="lazy" decoding="async" />
+        <figcaption>Former Microsoft CEO, Satya Nadella on stage opening their Build Conference 2023. This was the moment I realized our organization needed a pathway toward automation, data literacy, and eventually Microsoft Fabric. Inspiration is only useful if you can operationalize it.</figcaption>
+      </figure>
+      <p>Three intersecting forces make this moment urgent.</p>
+      <p>First: operational fragility is compounding everywhere. Workforce instability, outdated systems, and fractured decision-making are not individual organizational failures—they are ecosystem failures. When the institutions closest to communities are unstable, the communities they serve become more vulnerable.</p>
+      <p>Second: the AI bubble is reshaping expectations in real time. The generation raised on “learn to code” is entering adulthood just as coding pathways are being automated. The mismatch between preparation and opportunity is widening. Narratives moved faster than infrastructure once again.</p>
+      <p>Third: external threats are evolving faster than internal controls. From sophisticated phishing to counterfeit documentation, vulnerabilities now demand systems-level responses. Trust cannot be restored without transparency, governance, and digital discipline.</p>
+      <hr />
+      <h3>A Different Path Forward</h3>
+      <p>The path forward is not glamorous, but it is entirely possible. It requires honest assessments of operational debt, modern governance, documented processes, cross-functional decision-making, digital literacy for every staff member, and sustained investment in infrastructure rather than relying on heroic workarounds.</p>
+      <p>Communities cannot afford for their institutions to operate with 2008 infrastructure, 2013 workflows, and 2025 expectations. The gap is widening. The window to stabilize is narrowing. But the roadmap is clear for leaders willing to follow it.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-9.jpg" alt="A home office desk with several monitors and a laptop" width="1600" height="758" loading="lazy" decoding="async" />
+        <figcaption>This early version of my current desk carried me through the pandemic—unemployment, reinvention, and the creation of this entire essay series. Technology didn’t just support my work; it anchored me.</figcaption>
+      </figure>
+      <hr />
+      <h3>Looking Ahead: A Lead-In to the Final Window</h3>
+      <p>Technology is not separate from economic stability—it is a core determinant of it. Digital access, fluency, literacy, and confidence are now prerequisites for mobility in a fragile economy. The same forces that shape whether someone can complete an online application shape whether they can compete for a job, navigate a benefit system, or participate in a local market. And when public systems that govern our economy fail to modernize, people—not policies—absorb the consequences.</p>
+      <p>The next window will explore what happens when growth, opportunity, and innovation are treated as isolated outcomes rather than integrated systems. Because just like IT, the economy is infrastructure. And when that infrastructure is fragile, people closest to the ground bear the full weight of its failure.</p>
+      <p>As a consultant, builder, and systems strategist, this is the work I continue to do—inside organizations, across sectors, and through ToyBox Consulting. More tools, frameworks, and my upcoming podcasts will live at <strong><a href="http://www.toyboxconsulting.net/">www.toyboxconsulting.net</a></strong>, where leaders can learn how to build the systems our communities deserve.</p>
+      <p>Because the future isn’t just digital.<br />It’s infrastructural.<br />And we cannot afford to build it on fragile ground.</p>
+      <figure>
+        <img src="/media/five-windows/the-fragility-of-tech-access-and-10.jpg" alt="A mother holding her newborn in a hospital neonatal unit" width="1600" height="1188" loading="lazy" decoding="async" />
+        <figcaption>Technology has been threaded through every chapter of my life—even the ones that began in crisis. Me, a new mom, holding my 24-week preemie son in the NICU</figcaption>
+      </figure>
+      <h3>Sources</h3>
+      <ul>
+      <li><p>National Skills Coalition &amp; Microsoft. (2023). <em>Closing the Digital Skill Divide: The Payoff for Workers, Businesses, and the Economy.</em><br /><a href="https://nationalskillscoalition.org/news/press-releases/new-report-92-of-jobs-require-digital-skills-one-third-of-workers-have-low-or-no-digital-skills-due-to-historic-underinvestment-structural-inequities/?utm_source=chatgpt.com">https://nationalskillscoalition.org/news/press-releases/new-report-92-of-jobs-require-digital-skills-one-third-of-workers-have-low-or-no-digital-skills-due-to-historic-underinvestment-structural-inequities/</a></p></li>
+      <li><p>Articulate Foundation. (2025). <em>Nonprofit Technology Impact Report.</em><br /><a href="https://articulatefoundation.org/2025-nonprofit-technology-impact-report-reveals-urgent-priorities-financial-sustainability-and-ai-adoption/?utm_source=chatgpt.com">https://articulatefoundation.org/2025-nonprofit-technology-impact-report-reveals-urgent-priorities-financial-sustainability-and-ai-adoption/</a></p></li>
+      <li><p>McKinsey &amp; Company. (Recent operations analysis). <em>Organizational Productivity, Operational Inefficiency, and Digital Transformation Benchmarks. </em>https://www.mckinsey.com</p>
+      <p>(referenced analysis)</p></li>
+      <li><p>World Economic Forum. (2023). <em>Future of Jobs Report.</em><br /><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2023/digest/?utm_source=chatgpt.com">https://www.weforum.org/publications/the-future-of-jobs-report-2023/digest/</a></p></li>
+      </ul>
+    </div>
+
+
+    <nav class="series-nav" aria-label="Five Windows series">
+      <a class="prev" href="/five-windows/the-fragility-of-the-nonprofit-system.html"><span class="k">&larr; Window 3: The Nonprofit System</span><span class="t">The Fragility of the Nonprofit System: Power, Performance, and Reform</span></a>
+      <a class="next" href="/five-windows/five-windows-one-stage.html"><span class="k">Reflection &rarr;</span><span class="t">Five Windows. One Stage.</span></a>
+    </nav>
+
+    <aside class="ttp-card" aria-label="Weekly letter">
+      <div class="lab">Thought, Taste &amp; Presence</div>
+      <h2>Keep reading with me.</h2>
+      <p>Thought, Taste &amp; Presence: essays, recipes and the practice, every Monday.</p>
+      <a class="btn" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=essay_end">Get my weekly letter</a>
+    </aside>
+
+    <div class="back-to">
+      <a href="/five-windows/">&larr; All Five Windows essays</a>
+    </div>
+  </div>
+</article>
+
+<footer class="kp-foot">
+  <div class="wrap">
+    <nav class="kp-foot-links" aria-label="Footer">
+      <a href="/">Home</a><a href="/five-windows/">Five Windows</a><a href="/media/">Media</a><a href="/journal/">Journal</a><a href="/links/">Links</a>
+      <a href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=footer">Weekly letter</a><a href="https://katoyapalmer.substack.com">Substack</a><a href="https://tiktok.com/@katoyapalmer">TikTok</a><a href="https://www.instagram.com/katoyapalmer/">Instagram</a><a href="https://www.linkedin.com/in/katoya318/">LinkedIn</a>
+    </nav>
+    <p>&copy; 2026 Katoya Raquell Palmer &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a> &middot; <a href="/cookies.html">Cookie Notice</a> &middot; <a href="#" onclick="tbReopenConsent(); return false;">Cookie settings</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://assets.calendly.com https://calendly.com https://api.web3forms.com https://toybox-tools-mail.katoya.workers.dev https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com; font-src 'self' data: https://fonts.gstatic.com ; img-src 'self' data: blob: https: https://www.google-analytics.com https://*.google-analytics.com https://c.clarity.ms https://www.clarity.ms; connect-src 'self' https://toybox-tools-mail.katoya.workers.dev https://api.web3forms.com https://challenges.cloudflare.com https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://*.clarity.ms https://cloudflareinsights.com https://*.cloudflareinsights.com https://static.cloudflareinsights.com https://tracker.metricool.com ; frame-src 'self' https://calendly.com https://*.calendly.com https://player.vimeo.com https://*.substack.com https://www.eventbrite.com https://challenges.cloudflare.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Fragility of Community Safety &amp; Systems Change · Five Windows into a Fragile Economy · Katoya Palmer</title>
+<meta name="description" content="Prevention Isn’t Charity — It’s Civic Infrastructure" />
+<meta name="author" content="Katoya Raquell Palmer" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.katoyapalmer.com/five-windows/community-safety-and-systems-change.html" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Katoya Palmer" />
+<meta property="og:title" content="The Fragility of Community Safety &amp; Systems Change" />
+<meta property="og:description" content="Prevention Isn’t Charity — It’s Civic Infrastructure" />
+<meta property="og:url" content="https://www.katoyapalmer.com/five-windows/community-safety-and-systems-change.html" />
+<meta property="og:image" content="https://www.katoyapalmer.com/media/five-windows/community-safety-and-systems-change-cover.jpg" />
+<meta property="og:image:width" content="1080" />
+<meta property="og:image:height" content="729" />
+<meta property="og:image:alt" content="A large group of people smiling together in an indoor swimming pool" />
+<meta property="article:published_time" content="2025-10-15" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Fragility of Community Safety &amp; Systems Change" />
+<meta name="twitter:description" content="Prevention Isn’t Charity — It’s Civic Infrastructure" />
+<meta name="twitter:image" content="https://www.katoyapalmer.com/media/five-windows/community-safety-and-systems-change-cover.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --cream:#F3EBDB; --cream-2:#EDE3CF; --paper:#FCF8EF;
+    --ink:#161210; --ink-soft:#5C616A; --ink-faint:#9CA0A8;
+    --teal:#5C8A82; --teal-deep:#436B64; --teal-soft:#DEE9E5;
+    --line:#E2DCD1;
+    --gold:#C6A24C; --gold-deep:#7E601F; --champ:#EAD79F;
+    --scarlet:#D6362A; --scarlet-deep:#A81F1A;
+    --syne:"Syne", system-ui, sans-serif;
+    --grot:"Space Grotesk", system-ui, sans-serif;
+    --jost:"Jost", system-ui, sans-serif;
+    --foil:linear-gradient(118deg,#6E5219 0%,#8A6A22 20%,#A9873A 40%,#D2B064 47%,#A9873A 54%,#7E601F 78%,#957330 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--grot);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 54px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--syne);font-weight:800;line-height:1.04;letter-spacing:-.018em;}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(240,236,227,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 54px;max-width:1180px;margin:0 auto;gap:16px;}
+  .nav-back{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-back:hover{color:var(--teal-deep);}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--teal-deep);}
+  .nav-sub{font-family:var(--jost);font-size:12.5px;font-weight:700;letter-spacing:.04em;background:var(--scarlet);color:#fff!important;padding:9px 17px;border-radius:40px;transition:.2s;}
+  .nav-sub:hover{background:var(--scarlet-deep);}
+
+  /* HERO */
+  .essay-hero{padding:76px 0 26px;text-align:center;}
+  .essay-hero .cat{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-deep);}
+  .essay-hero h1{font-size:50px;line-height:1.04;margin:16px auto 16px;max-width:820px;color:var(--ink);}
+  .essay-hero .dek{font-size:19px;color:var(--ink-soft);max-width:620px;margin:0 auto 18px;}
+  .essay-hero .attrib{font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.05em;}
+  .essay-hero .orig{font-family:var(--jost);font-size:12px;color:var(--ink-faint);letter-spacing:.03em;margin-top:6px;}
+  .essay-hero .orig a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+
+  /* ESSAY BODY */
+  article.essay{padding:20px 0 70px;}
+  article.essay .body{max-width:680px;margin:0 auto;font-size:18px;line-height:1.72;color:var(--ink);overflow-wrap:anywhere;}
+  article.essay .body > p{margin-bottom:20px;}
+  article.essay .body > p:first-of-type::first-letter{font-family:var(--syne);font-size:64px;font-weight:800;color:var(--teal-deep);float:left;line-height:1;padding:6px 12px 0 0;}
+  article.essay .body h2{font-size:26px;letter-spacing:-.01em;color:var(--ink);margin:38px 0 14px;line-height:1.15;}
+  article.essay .body h3{font-size:21px;margin:30px 0 12px;}
+  article.essay .body em{color:var(--teal-deep);font-style:italic;}
+  article.essay .body strong{font-weight:600;color:var(--ink);}
+  article.essay .body a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+  article.essay .body a:hover{color:var(--teal);}
+  article.essay .body blockquote{border-left:3px solid var(--teal);padding:6px 0 6px 20px;margin:28px 0;font-family:var(--syne);font-weight:600;font-size:21px;color:var(--ink);line-height:1.42;letter-spacing:-.008em;}
+  article.essay .body ol,article.essay .body ul{margin:0 0 22px 24px;}
+  article.essay .body li{margin-bottom:10px;}
+  article.essay .body li p{margin:0;}
+  article.essay .body hr{border:0;height:1px;background:var(--line);margin:38px auto;max-width:120px;}
+  article.essay .body figure{margin:8px 0 30px;}
+  article.essay .body figure img{display:block;width:auto;max-width:100%;max-height:78vh;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line);}
+  article.essay .body figcaption{font-family:var(--jost);font-size:14px;color:var(--ink-soft);text-align:center;margin-top:10px;line-height:1.5;}
+  article.essay .body figcaption a{color:var(--ink-soft);}
+
+  /* TT&P SUB-CARD */
+  .ttp-card{max-width:680px;margin:46px auto 0;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 32px;text-align:center;}
+  .ttp-card .lab{font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal-deep);}
+  .ttp-card h2{font-size:24px;margin:12px 0 10px;}
+  .ttp-card p{font-size:15.5px;color:var(--ink-soft);max-width:480px;margin:0 auto 20px;}
+  .ttp-card .btn{display:inline-flex;font-family:var(--jost);font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;padding:12px 22px;border-radius:40px;background:var(--teal-deep);color:#fff;transition:.2s;}
+  .ttp-card .btn:hover{background:var(--teal);}
+
+  .back-to{max-width:680px;margin:34px auto 0;padding-top:26px;border-top:1px solid var(--line);text-align:center;font-family:var(--jost);font-size:13px;color:var(--ink-soft);letter-spacing:.03em;}
+  .back-to a{color:var(--teal-deep);font-weight:600;}
+  .back-to a:hover{text-decoration:underline;}
+  .care{max-width:680px;margin:16px auto 0;font-size:12.5px;color:var(--ink-faint);text-align:center;}
+
+  /* FOOTER */
+  .kp-foot{background:var(--paper);border-top:1px solid var(--line);padding:40px 0 30px;font-family:var(--jost);font-size:12.5px;color:var(--ink-soft);text-align:center;}
+  .kp-foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:14px;font-weight:600;font-size:13px;}
+  .kp-foot a{color:var(--ink-soft);} .kp-foot a:hover{color:var(--teal-deep);}
+
+  @media (max-width:820px){
+    .wrap{padding:0 20px;}
+    .nav-in{padding:12px 20px;}
+    .essay-hero{padding:46px 0 18px;}
+    .essay-hero h1{font-size:32px;}
+    .essay-hero .dek{font-size:16.5px;}
+    article.essay .body{font-size:17px;}
+    article.essay .body > p:first-of-type::first-letter{font-size:54px;}
+    article.essay .body blockquote{font-size:18.5px;}
+    .ttp-card{padding:24px 20px;}
+  }
+  :root{--teal:#A9873A;--teal-deep:#7E601F;--teal-soft:#F1E6C4;}
+  article.essay .body h4{font-family:var(--syne);font-weight:700;font-size:18px;margin:26px 0 10px;}
+  article.essay .body .callout{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;padding:16px 20px;margin:28px 0;}
+  article.essay .body .callout p{margin:0;}
+  .series-nav{max-width:680px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .series-nav a{display:block;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:.2s;}
+  .series-nav a:hover{border-color:var(--teal);}
+  .series-nav .k{display:block;font-family:var(--jost);font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:4px;}
+  .series-nav .t{display:block;font-family:var(--syne);font-weight:700;font-size:15.5px;line-height:1.25;color:var(--ink);}
+  .series-nav .next{text-align:right;grid-column:2;}
+  @media (max-width:620px){.series-nav{grid-template-columns:1fr;}.series-nav .next{grid-column:1;}}
+</style>
+<script src="/tb-events.js" defer></script>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/consent.js" defer></script>
+<link rel="stylesheet" href="/assets/kp-music.css" />
+<script src="/assets/kp-music.js" defer></script>
+</head>
+<body data-screen-label="Five Windows essay" data-track="five-windows">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="top">
+  <div class="nav-in">
+    <a class="nav-back" href="/five-windows/">&larr; Five Windows</a>
+    <div class="nav-links">
+      <a href="/five-windows/">The series</a>
+      <a href="/media/">Media</a>
+      <a href="/journal/">Journal</a>
+      <a class="nav-sub" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=nav">Subscribe</a>
+    </div>
+  </div>
+</nav>
+<span id="main"></span>
+
+<header class="essay-hero">
+  <div class="wrap">
+    <div class="cat">Five Windows into a Fragile Economy · Window 2: Community Safety</div>
+    <h1>The Fragility of Community Safety &amp; Systems Change</h1>
+    <p class="dek">Prevention Isn’t Charity — It’s Civic Infrastructure</p>
+    <div class="attrib">Katoya Raquell Palmer · <time datetime="2025-10-15">October 15, 2025</time></div>
+    <div class="orig">Originally published on Substack, October 15, 2025. <a href="https://katoyapalmer.substack.com/p/community-safety-and-systems-change">Read the original</a></div>
+  </div>
+</header>
+
+<article class="essay">
+  <div class="wrap">
+    <div class="body">
+      <p>Katoya Palmer is a Co-Author of <em>“Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,”</em><br /><em>American Journal of Public Health</em> (2024) — collaborative study bridging public health research and community-based violence intervention practice. <a href="https://pubmed.ncbi.nlm.nih.gov/38509040/?utm_source=chatgpt.com">PubMed ID: 38509040</a></p>
+      <p>This essay is part of <em>Five Windows into a Fragile Economy</em>—a series about how instability in housing, safety, nonprofits, technology, and economic growth isn’t random: it’s systemic.<br />Each essay examines a different layer of infrastructure we depend on but rarely see.</p>
+      <p><strong>Community Safety &amp; Systems Change</strong> looks at what happens when safety fails in layers—when policing replaces prevention, when burnout replaces care, and when the people closest to the ground carry the weight of broken systems.<br />It argues that true safety isn’t reactionary—it’s structural.</p>
+      <hr />
+      <h3>Introduction: Safety in Layers</h3>
+      <p>When the safety system fails, it fails in layers—policing without prevention, services without stability, laws without equity.<br />Those layers are not abstract; they’re structural: community trust, funding, accountability, wellness, and impact.<br />When one collapses, the others follow.<br />Real safety isn’t a reflex; it’s built into the structure.</p>
+      <blockquote><p>Prevention isn’t theory. It’s infrastructure.</p></blockquote>
+      <hr />
+      <h3>My Mother’s Infrastructure</h3>
+      <p>My mother worked three jobs, but she still built my world around enrichment. I took swim lessons, jazz dance, ballet, band, and karate. By the time I reached high school, she made sure I could join everything that kept me connected—the basketball team, the swim team, water polo, theater, DECA, and band. I even took sports medicine and anatomy and physiology, classes I rarely see offered anymore.</p>
+      <p>She believed that activity was armor. If I was moving, learning, or creating, I was protected. She kept me active in church, too—not just attending, but serving. I can still remember the morning she woke me up after my first night drinking, long before dawn, and handed me a vacuum. We went to the church together, and she made me clean every aisle and pew. It wasn’t punishment. It was a reminder:</p>
+      <blockquote><p>when you lose your discipline, you return to your foundation.</p></blockquote>
+      <p>She also gave me the gift of early internet access—AOL, of course—on our first Gateway computer. That glowing screen opened the world to me and sparked a lifelong love of technology, long before “digital literacy” became a phrase.</p>
+      <p>Those experiences built my earliest understanding of safety—not as policing or punishment, but as presence, preparation, and accountability. My mother taught me that activity was protection,</p>
+      <blockquote><p>structure was care, and access was power.</p></blockquote>
+      <hr />
+      <h3>When Prevention Falls Away</h3>
+      <p>Leaving for college at Arizona State, I was searching for belonging—a sense of community that felt like home. I found a circle that promised connection and identity, and for a while, I believed I had discovered exactly what I needed. But that experience quickly became something else.</p>
+      <p>What I encountered instead of sisterhood was exclusion—the kind that cuts deeper because it comes from the very people who first made you feel seen. In the process of trying to belong, I found myself feeling small, unseen, and deeply hurt.</p>
+      <p>That experience fractured something in me. For the first time, I lost faith in the systems of safety and connection that had shaped me. My mother had built community around care, structure, and accountability. But in that space, I learned that not every community holds you with the same care it demands from you.</p>
+      <p>I left Arizona feeling isolated and untethered—no longer sure of who I was or where I fit. The loss of belonging, more than anything, is what sent me home searching for stability in all the wrong places.</p>
+      <blockquote><p>Harm doesn’t always come from strangers. Sometimes it comes from the spaces that promise belonging but fail to protect it.</p></blockquote>
+      <hr />
+      <h3>What I Experienced in the Streets</h3>
+      <p>After leaving college, I spent several years caught between survival and self-discovery. I found brief success working in finance and operations, but that stability was short-lived. The fast pace and quick money came with an even faster slide into substance use and the kind of company that thrives in chaos—people hustling to survive in systems that had already failed them.</p>
+      <p>Between 2003 and 2004, I caught my first cases. A few more followed over the years—each one a mirror reflecting back the decisions that come from exhaustion and despair, not evil. By the time I conceived my son, I was on house arrest. That was the beginning of my turning point.</p>
+      <p>I’ve lived both sides of this work—the polished, professional side that sits at policy tables, and the raw, street-level side where safety is a privilege, not a given. I had to catch myself before falling completely. That experience taught me that</p>
+      <blockquote><p>recovery isn’t linear, and prevention isn’t charity—it’s the difference between a detour and a dead end.</p></blockquote>
+      <hr />
+      <h3>Back to School, Into the Schools</h3>
+      <p>In 2012, I returned to college with financial aid and a work-study allotment. That placement took me to my son’s school in Seattle’s Central District. I supervised recess, supported classrooms, worked in detention, tutored, and joined the PTSA. Eventually, I became a paraprofessional working directly with special-education students.</p>
+      <p>Like many Black women in schools, I became a safe person students could come to. That role taught me how layered safety in schools really is: teachers, paraprofessionals, principals, nurses, counselors, after-school programs—each one a strand in the invisible web that keeps children from tipping into crisis.</p>
+      <blockquote><p>Schools practice readiness like a muscle. They’re lifelines, not electives.</p></blockquote>
+      <hr />
+      <h3>Returning to the Pool</h3>
+      <p>Alongside my work in schools, I continued to grow in aquatics—starting as a part-time lifeguard, then becoming a pool manager, aquatics director, and eventually a senior leader overseeing safety at the YMCA in Seattle’s Central District. I was a trusted trainer across the association, helping to prepare new and seasoned lifeguards throughout the region.</p>
+      <p>During that time, I developed a free swim-lesson program for BIPOC youth and served as a certified Child Abuse Prevention Trainer, ensuring staff understood how safety extends beyond the pool deck. Every class, every rescue drill, every child who learned to float on their back reinforced what my mother had always known: preparation saves lives.</p>
+      <p>Each summer, I also led our inclusive lifeguard team at Camp Orkila on the San Juan Islands—creating space where every camper, regardless of ability or background, could experience belonging in open water. Those moments reminded me that</p>
+      <blockquote><p>safety isn’t just a skill—it’s a culture.</p></blockquote>
+      <p>It was during my time with the YMCA’s Emerging Multicultural Leadership Experience (EMLE)—one of YMCA-USA’s national equity programs—that I met Eleuthera Lisch, who was leading the Alive &amp; Free program founded by Dr. Joseph Marshall. At the time, I was still figuring out my path toward executive leadership, not knowing I’d cross paths with her again years later as she became the regional director for gun-violence prevention in our county.</p>
+      <p>The same conference introduced me to Eddie Bocanegra, then leading credible-messenger work in Chicago. Hearing him present was the first time I understood community-violence intervention as a professional discipline—not an act of charity.</p>
+      <p>Those encounters at the YMCA connected everything I would later come to believe: that equity, safety, and leadership must grow together—in policy, in community, and in us.</p>
+      <p>I contributed to national conversations at YMCA of the USA and joined the board of SplashForward, which is building a regional aquatic center and expanding year-round access to swim and lifeguard programs. I was also featured in the documentary <em>Drowning in Silence</em>, where I spoke about the Shreveport Six—six children who drowned together in 2010—a stark reminder that prevention cannot wait for crisis.</p>
+      <p>In all my years in aquatics, I’ve had a few incidents and rescues—moments that tested my training and composure. But I’ve been fortunate: I’ve never had a life lost under my watch. On the other side of my career, in just a few short years working in community safety and gun-violence prevention, I’ve seen dozens of lives lost—and many more shots fired.</p>
+      <blockquote><p>The difference isn’t compassion or courage. It’s infrastructure.</p></blockquote>
+      <hr />
+      <h3>Stepping Into Community Safety Work</h3>
+      <p>My path into community safety deepened through partnership, research, and leadership.</p>
+      <p>It began with the Black Brilliance Research Project, one of the most extensive community-based research efforts of its kind. Working under a data organization alongside doctoral candidates and community researchers, I helped coordinate across multiple ecosystems—connecting residents, practitioners, and local government partners.</p>
+      <p>From that foundation grew the Beloved Campaign, a collaboration between public-health and arts-and-culture partners. We worked to translate research into movement—bringing together creative collectives, media voices, and community-led organizations to tell a different story about prevention.</p>
+      <p>During that period, I was invited to serve as Chief Operating Officer for a community-safety, diversion, and reentry organization serving youth and young adults. Inside that role, I learned the operational realities behind every program headline—budgets, compliance, trauma, and trust all unfolding at once. Even in an organization recognized for impact, the day-to-day revealed how fragile the field can be without clear systems, wellness supports, or standardized practices.</p>
+      <p>Amid that work, I joined local leaders, clinicians, and policy advocates to co-create the Together We End Gun Violence Conference—a regional convening centered on collaboration and care.</p>
+      <p>Finally, in partnership with researchers from the University of Washington Department of Epidemiology, I contributed to the peer-reviewed article <em>“Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,”</em> which documented how communities and researchers can co-create frameworks that honor both evidence and experience.</p>
+      <p>From pool decks to classrooms to campaigns, one truth followed me: safety isn’t a single lane; it runs on prevention, intervention, and restoration.</p>
+      <hr />
+      <h3>Building a Local Hub of Belonging</h3>
+      <p>While at the community-safety organization, I spearheaded the creation of a service center at 23rd and Jackson—a neighborhood hub offering snacks, case management, tutoring, and mentorship while partnering with local businesses to deepen belonging.</p>
+      <p>Launching the hub wasn’t simple. I managed the trepidation of staff who were concerned about “popping up” in what was considered a hotspot—the very kind of area our work targeted for remediation. Establishing a physical presence there wasn’t just a programmatic decision; it was a statement of belief that safety must exist where harm has occurred.</p>
+      <p>At its peak, the center even reduced shoplifting at the nearby Amazon Go store—proof that</p>
+      <blockquote><p>proximity and care can change behavior.</p></blockquote>
+      <hr />
+      <h3>Where the System Breaks</h3>
+      <figure>
+        <img src="/media/five-windows/community-safety-and-systems-change-1.jpg" alt="People seated in a meeting room wearing Urban Family and Community Safety Team sweatshirts" width="1600" height="1200" loading="lazy" decoding="async" />
+        <figcaption>From lifeguards to credible messengers — safety only works when people do.</figcaption>
+      </figure>
+      <p>Despite record funding, our systems still prioritize reaction over readiness.</p>
+      <p>In 2024, King County recorded 1,591 shots-fired incidents, 75 firearm homicides, and 319 non-fatal shooting victims—more than half within Seattle. By mid-2025, those numbers had dropped by nearly one-third, but the progress remains fragile.</p>
+      <p>We praise community workers as heroes but underfund their healing. Many of these workers are recruited directly from the neighborhoods most affected by violence. They carry community credibility—but that closeness comes at a cost. Working where you’ve experienced trauma means reliving it daily, and without support, that proximity can turn dangerous. Some relapse into the same cycles they once escaped. Others burn out, or worse, become targets themselves.</p>
+      <p>The result is a workforce built on empathy but held together by exhaustion.</p>
+      <hr />
+      <h3>The Cost of Fragility</h3>
+      <p>Performance-based contracts mean organizations often don’t get paid for the hours staff have already worked if participants don’t meet metrics that were never realistic to begin with. Youth mentors and caseworkers can spend months supporting people through crises, only to see their efforts written off as “non-billable.”</p>
+      <p>When you work with people navigating reentry, trauma, or survival, setbacks are part of real recovery. But funding models treat prevention like a transaction—rewarding only what can be measured, not what truly matters.</p>
+      <p>These frameworks turn healing into a numbers game. And when payroll depends on perfect progress, organizations start to triage compassion just to stay afloat.</p>
+      <blockquote><p>Fund safety like a transaction, and you starve the trust it requires.</p></blockquote>
+      <hr />
+      <h3>The Weight of Proximity and Power</h3>
+      <p>In cities like Seattle, where the Black population is small but disproportionately impacted by violence, the community-safety workforce is often deeply connected to the very neighborhoods they serve. That closeness is powerful—it builds trust quickly—but it also introduces risk.</p>
+      <p>When staff are serving communities they grew up in, still live in, or still have ties to, the line between professional and personal can blur. Some workers are one degree away from active conflicts or unresolved trauma. Others still face financial hardship, making it difficult to maintain distance from the pressures of the streets.</p>
+      <p>Without proper boundaries, supervision, and equitable pay, that proximity can create ethical and emotional risks—not just for staff, but for entire organizations. If a worker has family or friends tied to a local set, and the organization also serves that group, it can unintentionally reproduce the same tensions it’s meant to heal.</p>
+      <blockquote><p>This is the quiet failure no one talks about: when community programs mirror street politics, both sides lose.</p></blockquote>
+      <hr />
+      <h3>The Missing Link — Training and Standardization</h3>
+      <p>Across the country, credible messengers are being trained by Dr. Chico Tillmon, Dr. Joseph Marshall, Dr. Aquil Basheer, and programs like ROCA, the Metropolitan Peace Academy, and the Health Alliance for Violence Intervention (HAVI).</p>
+      <p>Research in Oakland shows that variation in training requirements undermines consistency and safety—the same problem lifeguarding solved decades ago through national credentialing. Oakland’s outreach workers, for example, received clinical supervision, living-wage stipends, and structured professional development—supports that reduced turnover and burnout.</p>
+      <blockquote><p>Standards don’t erase community culture; they protect it. Uneven readiness turns safety into chance.</p></blockquote>
+      <figure>
+        <img src="/media/five-windows/community-safety-and-systems-change-2.jpg" alt="A speaker at a podium in a conference room, with slides on a screen" width="785" height="1046" loading="lazy" decoding="async" />
+        <figcaption>Dr. Chico Tillmon speaking at the 2022 National Research Conference for the Prevention of Firearm Related Harms</figcaption>
+      </figure>
+      <hr />
+      <h3>Reinforced Wellness and Worker Support</h3>
+      <p>The Giffords Law Center reports that community-violence workers experience trauma at rates comparable to first responders. In some cities, those realities led to a shift: therapy, peer-support groups, and debrief sessions became standard, not supplemental.</p>
+      <p>That mirrors my own experience implementing employer paid life-insurance coverage and wellness planning for front-line workers. I wanted them to have something tangible—a policy that said, “your life matters as much as the ones you save.”</p>
+      <blockquote><p>When we treat care for caregivers as infrastructure, the whole system stabilizes.</p></blockquote>
+      <hr />
+      <h3>Emerging Research: The Field Is Catching Up</h3>
+      <p>The newest studies echo what communities have said for years: prevention can be measured, but only if we measure what matters.</p>
+      <ul>
+      <li><p>A national review found that only one in ten violence-prevention programs included community members in defining success. Researchers now call for shared power in evaluation.</p></li>
+      <li><p>In New York City, the Cure Violence model led to roughly 14 percent fewer shootings in neighborhoods where outreach teams were active.</p></li>
+      <li><p>Some states are piloting Medicaid reimbursements for violence-prevention work—treating it as essential health care.</p></li>
+      <li><p>Studies confirm what workers already know: outreach staff face trauma on par with paramedics and need built-in mental-health care, not optional wellness days.</p></li>
+      <li><p>National frameworks from Giffords and the CDC now point toward the same conclusion: prevention must be professionalized—with fair pay, stable funding, and standardized training.</p></li>
+      </ul>
+      <blockquote><p>The evidence is finally catching up to experience.</p></blockquote>
+      <p>Researchers are beginning to describe prevention the same way community workers have for decades: not as an intervention, but as infrastructure.</p>
+      <hr />
+      <h3>Solutions Dashboard: Community Safety as Infrastructure</h3>
+      <p><strong>Proven Solutions</strong><br />Research from Oakland and the Giffords Law Center shows what happens when prevention is funded like infrastructure. Between 2012 and 2018, Oakland cut shootings by more than half and homicides by 49 percent through its Ceasefire model—combining deterrence, life coaching, and wraparound services.<br />Programs like Advance Peace, Cure Violence Global, and ROCA show similar results, with violence reduced by 35–63 percent. Completing the Chicago CRED program was associated with a 73 percent lower risk of arrest for a violent crime over two years compared with non-participants.</p>
+      <p><strong>Low-Hanging Fruit</strong></p>
+      <ul>
+      <li><p>National certification for community-safety professionals</p></li>
+      <li><p>Capacity and wellness funding for Finance, HR, IT, and trauma-informed care</p></li>
+      <li><p>Prompt grant disbursement to prevent payroll crises</p></li>
+      <li><p>University-community data partnerships like Oakland’s</p></li>
+      </ul>
+      <p><strong>Dream Solutions</strong></p>
+      <ul>
+      <li><p>Regional Youth Safety Hubs blending recreation, therapy, and workforce training</p></li>
+      <li><p>Multi-year pooled funding combining public and philanthropic capital</p></li>
+      <li><p>Safety education embedded in school curricula</p></li>
+      <li><p>Housing + Safety Corridors co-locating prevention and stability services</p></li>
+      </ul>
+      <p>Oakland’s transformation proved that sustained investment, coordination, and community partnership can cut violence in half without abandoning accountability.</p>
+      <hr />
+      <h3>The Lineage of Women Who Reframed Safety</h3>
+      <p>Women have been central architects in redefining community safety—turning healing into systems, trauma into structure, and survival into science.</p>
+      <p><strong>Eleuthera Lisch</strong>, now serving as Director of the Regional Office of Gun Violence Prevention in Seattle/King County, has shifted prevention into governmental practice. I’ve worked directly with her, and her leadership remains foundational for how we think about local infrastructure.</p>
+      <p>I’ve had the honor of hearing <strong>Dr. Deborah Prothrow-Stith</strong> speak. Her pioneering framing of violence as a public-health issue reshaped how many of us perceive prevention—not as crime control, but as social care.</p>
+      <figure>
+        <img src="/media/five-windows/community-safety-and-systems-change-3.jpg" alt="An audience watching a slide presentation in a conference room" width="1394" height="1046" loading="lazy" decoding="async" />
+        <figcaption><strong>Dr. Deborah Prothrow-Stith speaking at the 2022 National Research Conference for the Prevention of Firearm Related Harms</strong></figcaption>
+      </figure>
+      <p><strong>Erica Ford</strong> has been a strong voice in the national conversation around community violence. I have heard her speak, and her public presence has inspired many women working in this space.</p>
+      <p><strong>Dr. Alisha Moreland-Capuia</strong> currently leads trauma-informed efforts at McLean Hospital and is Assistant Professor of Psychiatry at Harvard Medical School. Her work builds bridges between trauma science and system-level change—training organizations in how to operate through a trauma-informed lens. <a href="https://www.dralishamorelandcapuia.com/about-1?utm_source=chatgpt.com">Dr. Alisha Moreland Capuia+1</a></p>
+      <p><strong>Dr. Jessica H. Beard</strong> is a trauma surgeon, Director of Trauma Research, and Director of Research for the Philadelphia Center for Gun Violence Reporting. She is also a Stoneleigh Fellow. Her scholarship examines the intersection of clinical care, media narratives, and community recovery. <a href="https://stoneleighfoundation.org/fellow/jessica-h-beard-md-mph/?utm_source=chatgpt.com">Stoneleigh Foundation+1</a></p>
+      <p><strong>Dr. Thema Bryant</strong> is a psychologist, academic leader, and in 2023 was elected President of the American Psychological Association. Her research and public advocacy focus on racialized trauma, healing, and systems transformation. <a href="https://en.wikipedia.org/wiki/Thema_Bryant?utm_source=chatgpt.com">Wikipedia</a></p>
+      <p>These women—some I’ve encountered directly, others whose work I’ve observed from afar—represent the backbone of the community-safety field. Their series of breaking ground, building frameworks, and reimagining infrastructure proves that prevention is not reaction—it’s design.</p>
+      <hr />
+      <h3>Call to Action: Fund the Women Who Hold It All Together</h3>
+      <p>There are so many women doing this work whose stories get overshadowed by louder voices. They are the unpaid mothers, daughters, aunts, nieces, assistant managers, cooks, life coaches, and mentors in our communities.<br />We are the ones holding the grief, coordinating the logistics, feeding community, and consoling the families.</p>
+      <p>If we’re going to fund prevention, we must also fund the women who sustain it.<br />There must be a clear, supported pathway for women in this field—from outreach to leadership, from invisible labor to recognized expertise.</p>
+      <hr />
+      <h3>What Structural Safety Looks Like</h3>
+      <p>Structural safety means every child has early access to enrichment—learning to swim by third grade, being introduced to the arts, or finding a mentor who reflects their potential.<br />It means community-safety workers have certifications, benefits, and mental-health care like first responders.<br />It means governments treat prevention organizations as essential services, not short-term grants.</p>
+      <p>These are the conditions that anchor trust, stabilize families, and build generational skill—the real infrastructure of inclusion.</p>
+      <hr />
+      <h3>Closing: Prevention Is Infrastructure</h3>
+      <blockquote><p>If we can require lifeguards to prevent drowning, we can require funders and policymakers to equip the full ecosystem of safety—prevention, intervention, and restoration.</p></blockquote>
+      <p>Because community trust, funding, accountability, wellness, and impact are not soft ideals.<br />They are the load-bearing pillars of safety.<br />And when one bends, the rest begin to break.</p>
+      <h3>Bridge to the Next Window</h3>
+      <p>Safety is the frontline of fragility, but it’s never the root.</p>
+      <blockquote><p>Every program, every crisis response, every life saved or lost depends on the same unseen infrastructure: the nonprofit system that carries it.</p></blockquote>
+      <p>These organizations hold the emotional weight, the financial strain, and the public expectation of safety—but they’re often built on shoestring budgets and unsustainable contracts.</p>
+      <p>The next essay in this series, <strong>“Nonprofit Fragility: Passion Isn’t a System,”</strong> explores why the very organizations designed to keep our communities safe are themselves so vulnerable to collapse. It looks at what happens when care work runs on exhaustion instead of investment, and why strengthening the people who hold the line is the most overlooked form of prevention.</p>
+      <h3>Notes &amp; Sources</h3>
+      <ol>
+      <li><p><em>Alive &amp; Free</em> model founded by Dr. Joseph Marshall, San Francisco.</p></li>
+      <li><p>“Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,” <em>American Journal of Public Health / Journal of Trauma and Acute Care Surgery</em> (2024).</p></li>
+      <li><p>King County Prosecuting Attorney’s Office, <em>2024 Year-End Gun Violence Report</em>.</p></li>
+      <li><p>King County Prosecuting Attorney’s Office, <em>Q2 2025 Gun Violence Report</em>.</p></li>
+      <li><p>Oakland Department of Violence Prevention, <em>Exhibit C: Practice-Based &amp; Evidence-Informed Programs Research</em> (2022).</p></li>
+      <li><p>Giffords Law Center, <em>A Case Study in Hope: The Oakland Ceasefire Model and Violence Prevention Infrastructure</em> (2019).</p></li>
+      <li><p>Advance Peace and Cure Violence Global evaluation summaries, 2018–2022.</p></li>
+      <li><p>Northwestern University, <em>Chicago CRED Evaluation Study</em> (2023).</p></li>
+      <li><p>“Evaluating Community Violence Intervention Programs: A Scoping Review,” Univ. of Washington / <em>Am J Prev Med</em> (2025).</p></li>
+      <li><p>“Do Cure Violence Programs Reduce Gun Violence? Evidence from New York City,” <em>arXiv</em> (2024).</p></li>
+      <li><p>“Medicaid Reimbursement for Community Violence Intervention,” <em>Health &amp; Justice Journal</em> (2025).</p></li>
+      <li><p>“Understanding Structural Violence in Community Interventions,” <em>Social Science &amp; Medicine</em> (2024).</p></li>
+      <li><p><em>CVI Research &amp; Evaluation Road Map</em>, RTI International (2024).</p></li>
+      <li><p><em>Opportunities for Innovation in Community Violence Intervention</em>, Giffords Law Center (2025).</p></li>
+      </ol>
+    </div>
+
+
+    <nav class="series-nav" aria-label="Five Windows series">
+      <a class="prev" href="/five-windows/growth-without-access-isnt-growth.html"><span class="k">&larr; Window 1: Housing</span><span class="t">The Fragility of Housing, Transit, and Policy Failures</span></a>
+      <a class="next" href="/five-windows/the-fragility-of-the-nonprofit-system.html"><span class="k">Window 3: The Nonprofit System &rarr;</span><span class="t">The Fragility of the Nonprofit System: Power, Performance, and Reform</span></a>
+    </nav>
+
+    <aside class="ttp-card" aria-label="Weekly letter">
+      <div class="lab">Thought, Taste &amp; Presence</div>
+      <h2>Keep reading with me.</h2>
+      <p>Thought, Taste &amp; Presence: essays, recipes and the practice, every Monday.</p>
+      <a class="btn" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=essay_end">Get my weekly letter</a>
+    </aside>
+
+    <div class="back-to">
+      <a href="/five-windows/">&larr; All Five Windows essays</a>
+    </div>
+  </div>
+</article>
+
+<footer class="kp-foot">
+  <div class="wrap">
+    <nav class="kp-foot-links" aria-label="Footer">
+      <a href="/">Home</a><a href="/five-windows/">Five Windows</a><a href="/media/">Media</a><a href="/journal/">Journal</a><a href="/links/">Links</a>
+      <a href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=five_windows_essay&amp;utm_campaign=ttp_weekly&amp;utm_content=footer">Weekly letter</a><a href="https://katoyapalmer.substack.com">Substack</a><a href="https://tiktok.com/@katoyapalmer">TikTok</a><a href="https://www.instagram.com/katoyapalmer/">Instagram</a><a href="https://www.linkedin.com/in/katoya318/">LinkedIn</a>
+    </nav>
+    <p>&copy; 2026 Katoya Raquell Palmer &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a> &middot; <a href="/cookies.html">Cookie Notice</a> &middot; <a href="#" onclick="tbReopenConsent(); return false;">Cookie settings</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
