@@ -1,0 +1,53 @@
+/* SZND recipe index cards: antiqued 3x5 cards like the ones Katoya's mom used.
+   Paper texture: /assets/sznd/index-card-paper*.webp (generated, splatter and coffee ring baked in).
+   Loaded by /sznd.html and every /sznd/*.html recipe page. */
+:root{
+  --card-ink:#262C4E;          /* ballpoint blue-black */
+  --card-rule:rgba(110,150,190,.42);
+  --card-red:rgba(196,70,70,.72);
+  --card-paper:#EFE2C4;
+  --hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+}
+
+/* Recipe pages: Ingredients and Method cards */
+.r-body .card{
+  background:linear-gradient(rgba(252,247,234,.5),rgba(252,247,234,.5)),url(/assets/sznd/index-card-paper-tall.webp) center/cover no-repeat,var(--card-paper);
+  border:0;border-radius:3px;
+  box-shadow:0 22px 34px -22px rgba(60,40,20,.55),0 2px 5px rgba(60,40,20,.18);
+  transform:rotate(-.6deg);
+}
+.r-body #method{transform:rotate(.45deg);}
+.r-body .card h2{
+  font-family:var(--hand)!important;font-weight:700!important;font-size:46px;line-height:1.1!important;letter-spacing:0!important;
+  color:var(--card-ink);padding-bottom:8px;margin-bottom:10px;
+  border-bottom:2px solid var(--card-red);
+}
+.r-body .card .note{color:#5a5248;}
+.r-body .card .ing li{border-bottom:1.5px solid var(--card-rule);color:var(--card-ink);}
+.r-body .card .ing li:last-child{border-bottom:1.5px solid var(--card-rule);}
+.r-body .card .steps li{color:var(--card-ink);}
+.r-body .card .tip{background:rgba(228,234,221,.82);}
+
+/* SZND landing page: recipe tiles become cards under the photo */
+.rcard{border:0;border-radius:4px;background:#F6EEDC;
+  box-shadow:0 20px 32px -24px rgba(60,40,20,.55),0 2px 5px rgba(60,40,20,.16);}
+.rcard:nth-child(odd){transform:rotate(-.7deg);}
+.rcard:nth-child(even){transform:rotate(.6deg);}
+.rcard:hover{transform:rotate(0) translateY(-4px);border-color:transparent;}
+.rcard .rc-in{
+  background:
+    repeating-linear-gradient(to bottom,transparent 0 33px,var(--card-rule) 33px 34.5px),
+    linear-gradient(rgba(252,247,234,.5),rgba(252,247,234,.5)),
+    url(/assets/sznd/index-card-paper.webp) center/cover no-repeat;
+  background-position:0 52px,center,center;
+  border-top:2px solid var(--card-red);
+}
+.rcard h3{font-family:var(--hand)!important;font-weight:700!important;font-size:36px;line-height:1.05!important;letter-spacing:0!important;color:var(--card-ink);}
+.rcard .n{color:#7a6e5e;}
+.rcard p{color:#4f4840;}
+
+@media (prefers-reduced-motion:reduce){.rcard:hover{transform:none;}}
+@media print{
+  .r-body .card,.r-body #method{background:#fff;box-shadow:none;transform:none;}
+  .r-body .card h2{font-family:Georgia,serif;font-size:28px;}
+}
