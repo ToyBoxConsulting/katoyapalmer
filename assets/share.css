@@ -1,0 +1,14 @@
+/* Share row (see /assets/share.js). Neutral colors so it sits on every section's palette. */
+.kp-share-outer{max-width:1140px;margin:0 auto;padding:8px 20px 44px;}
+.kp-share{text-align:center;}
+.kp-share-label{font-family:"Jost",system-ui,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--ink-soft,#6B6470);margin:0 0 12px;}
+.kp-share-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.kp-share-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:40px;
+  border:1px solid rgba(22,18,16,.22);background:rgba(255,255,255,.55);color:var(--ink,#161210);
+  font:600 13.5px/1 "Jost",system-ui,sans-serif;letter-spacing:.03em;text-decoration:none;cursor:pointer;transition:.18s;}
+.kp-share-btn:hover,.kp-share-btn:focus-visible{background:var(--ink,#161210);color:#fff;border-color:var(--ink,#161210);}
+.kp-share-btn:focus-visible{outline:2px solid #9b2335;outline-offset:2px;}
+.kp-share-share{background:var(--ink,#161210);color:#fff;}
+@media (max-width:520px){.kp-share-btn span{font-size:13px;} .kp-share-btn{padding:0 13px;}}
+@media print{.kp-share,.kp-share-outer{display:none!important;}}
