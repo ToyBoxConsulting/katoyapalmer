@@ -8,7 +8,7 @@
     var seen = false;
     try { seen = sessionStorage.getItem('kp_ring_drawn') === '1'; sessionStorage.setItem('kp_ring_drawn', '1'); } catch (e) {}
     if (seen) return;
-    var svg = document.querySelector('nav .bo svg');
+    var svg = document.querySelector('.kp-h .bo svg') || document.querySelector('nav .bo svg');
     if (!svg) return;
     var NS = 'http://www.w3.org/2000/svg', id = 'kpm' + Math.floor(Math.random() * 1e6);
     var defs = svg.querySelector('defs') || svg.insertBefore(document.createElementNS(NS, 'defs'), svg.firstChild);
