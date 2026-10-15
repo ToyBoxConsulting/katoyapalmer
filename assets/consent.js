@@ -73,8 +73,10 @@
     s.setAttribute('data-cf-beacon', '{"token": "' + CONFIG.cloudflareAnalyticsToken + '"}');
     document.body.appendChild(s);
   }
+  var IS_LOCAL = /^(localhost|127\.0\.0\.1|\[::1\]|0\.0\.0\.0)$/.test(location.hostname);
+
   function loadMetricool() {
-    if (window.__tbMetricoolLoaded) return;
+    if (IS_LOCAL || window.__tbMetricoolLoaded) return;
     window.__tbMetricoolLoaded = true;
     var s = document.createElement('script');
     s.src = 'https://tracker.metricool.com/resources/be.js';
@@ -157,9 +159,12 @@
     var wrap = document.createElement('div'); wrap.innerHTML = HTML;
     while (wrap.firstChild) document.body.appendChild(wrap.firstChild);
 
-    loadCloudflare();
-    loadGA4();
-    loadClarity();
+    // Skip all trackers on local previews (localhost / 127.0.0.1) so testing never counts as traffic.
+    if (!IS_LOCAL) {
+      loadCloudflare();
+      loadGA4();
+      loadClarity();
+    }
 
     var existing = readConsent();
     if (existing) applyConsent(existing);
