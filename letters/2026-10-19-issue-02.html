@@ -25,63 +25,11 @@
 <meta name="twitter:image" content="https://www.katoyapalmer.com/media/letters/TTP_share_name_1200x630.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
 <script src="/tb-events.js" defer></script>
 <script src="/assets/consent.js" defer></script>
-<style>
-  :root{
-    --paper:#F3EBDB; --card:#FCF8EF; --ink:#161210; --ink-soft:#6E665F; --line:#E5DFD3;
-    --gold:#C6A24C; --gold-deep:#7E601F;
-    --scarlet:#D6362A; --scarlet-deep:#A81F1A; --clay:#B5654A; --sage-deep:#5E7259;
-    --syne:"Syne",system-ui,sans-serif; --grot:"Space Grotesk",system-ui,sans-serif; --jost:"Jost",system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:var(--grot);background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
-  a{color:var(--scarlet-deep);}
-  .skip-link{position:absolute;left:-999px;} .skip-link:focus{left:16px;top:16px;background:#fff;padding:8px 12px;z-index:99;}
-  nav{position:sticky;top:0;z-index:50;background:rgba(243,235,219,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1100px;margin:0 auto;}
-  .wm{display:inline-flex;align-items:center;font-family:var(--syne);font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;}
-  .wm .bo{margin:0 1px;}
-  .nav-links{display:flex;gap:20px;align-items:center;}
-  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;color:var(--ink-soft);text-decoration:none;}
-  .nav-sub{background:var(--scarlet);color:#fff!important;padding:9px 18px;border-radius:40px;}
-  .mast{text-align:center;padding:48px 16px 8px;}
-  .mast img{width:100%;max-width:720px;height:auto;}
-  article{max-width:680px;margin:0 auto;padding:8px 20px 40px;}
-  .issue-meta{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin-bottom:10px;}
-  h1{font-family:var(--syne);font-weight:800;font-size:clamp(30px,6vw,46px);line-height:1.05;text-align:center;margin-bottom:28px;}
-  h2{font-family:var(--jost);font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;margin:44px 0 6px;padding-top:18px;border-top:1px solid var(--line);}
-  h2.t{color:var(--scarlet);} h2.a{color:var(--clay);} h2.p{color:var(--sage-deep);} h2.o{color:var(--gold-deep);}
-  h3{font-family:var(--syne);font-weight:700;font-size:21px;line-height:1.2;margin:18px 0 6px;}
-  p{margin:10px 0;} ul{margin:8px 0 8px 22px;} li{margin:7px 0;}
-  .sub-card{background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:22px;margin:36px 0;text-align:center;}
-  .sub-card p{margin:6px 0 14px;color:var(--ink-soft);}
-  .btn{display:inline-block;font-family:var(--jost);font-weight:700;font-size:14px;padding:12px 22px;border-radius:40px;text-decoration:none;margin:4px;}
-  .btn-red{background:var(--scarlet);color:#fff;} .btn-navy{background:#14213D;color:#EAD79F;}
-  .share{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0;}
-  .share a,.share button{font-family:var(--jost);font-size:13px;font-weight:600;border:1px solid var(--gold);background:transparent;color:var(--ink);padding:8px 16px;border-radius:40px;text-decoration:none;cursor:pointer;}
-  .talk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:30px;}
-  .talk h2{border:0;margin-top:0;padding-top:0;color:var(--scarlet);}
-  footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;font-size:13px;color:var(--ink-soft);}
-  footer a{color:var(--ink-soft);margin:0 8px;}
-  @media (max-width:600px){.nav-links a:not(.nav-sub){display:none;}}
-  /* Issue 2 sections: skim box, take lines, link rows, ad slots */
-  article{overflow-wrap:break-word;}
-  article [id]{scroll-margin-top:110px;}
-  .skim{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--scarlet);border-radius:10px;padding:16px 18px;margin:0 0 8px;}
-  .skim b{font-family:var(--syne);font-size:17px;}
-  .skim ul{margin:8px 0 0 18px;} .skim li{margin:5px 0;font-size:15px;line-height:1.55;}
-  .take{font-weight:700;}
-  .more{font-family:var(--jost);font-size:14px;font-weight:600;}
-  .ad{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
-  .ad p:first-child{margin-top:0;} .ad p:last-child{margin-bottom:0;}
-  .note{font-size:13px;color:var(--ink-soft);}
-  .pic{width:100%;height:auto;display:block;margin:6px auto 10px;border-radius:6px;}
-  .signoff{margin-top:22px;}
-  .slogo{height:36px;width:auto;vertical-align:middle;margin-right:10px;display:inline-block;}
-  .ad-logo{display:block;height:auto;max-width:100%;margin:0 0 12px;}
-</style>
+<link rel="stylesheet" href="/assets/letters.css" />
+<script src="/assets/letters.js" defer></script>
 <link rel="stylesheet" href="/assets/kp-music.css" />
 <script src="/assets/kp-music.js" defer></script>
 <script type="application/ld+json">
@@ -120,140 +68,206 @@
 <!-- kp-header:end -->
 <span id="main"></span>
 
-<div class="mast"><img src="/assets/email/ttp-cover-issue02.jpg" alt="Katoya Palmer smiling on a wooden garden bench, above the title: The weekly letter, Issue 2, October 19, 2026. Thought, Taste and Presence, from Katoya Palmer. Photo: Erik Kalligraphy Wilson" width="1200" height="880"></div>
-
-<article>
-  <div class="issue-meta">Issue 2 · Monday, October 19, 2026 · 4 min read, 30 sec skim</div>
-  <h1>Prevention is infrastructure</h1>
-
-  <div class="skim"><b>This week, in one breath</b>
-    <ul>
-      <li><a href="#thought">Thought:</a> prevention is infrastructure, and what a board is really for.</li>
-      <li><a href="#spotlight">Spotlight:</a> Space Between, and their auction is open now.</li>
-      <li><a href="#taste">Taste:</a> four years of basil, game-day deviled eggs, catfish worth the drive, and a return trip to Primo's.</li>
-      <li><a href="#answers">Last week's answers:</a> who guessed the spot first.</li>
-      <li><a href="#presence">Presence:</a> graded in cursive, good news on our Husky journey, and this week's sit.</li>
-      <li><a href="#offclock">Off the clock:</a> Onyx's earthquake sense, two Seahawks losses, and Monopoly.</li>
-      <li><a href="https://calendly.com/toyboxcm/discovery-call?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Got a problem?</a> <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply</a> and tell me.</li>
-    </ul>
+<div class="tp-bar">
+  <div class="tp-bar-in">
+    <a class="tp-bar-name" href="/letters/" aria-label="Thought, Taste and Presence, all letters"><span class="full"><span class="tp-t-l">Thought,</span> <span class="tp-a-l">Taste</span> <span class="tp-amp-l">&amp;</span> <span class="tp-p-l">Presence</span></span><span class="short"><span class="tp-t-l">T</span><span class="tp-amp-l">,</span><span class="tp-a-l">T</span><span class="tp-amp-l">&amp;</span><span class="tp-p-l">P</span></span><span class="tp-bar-no">NO. 02</span></a>
+    <a class="tp-bar-btn" href="#contents" aria-controls="tp-sheet" aria-expanded="false">Contents</a>
   </div>
+  <div class="tp-progress" aria-hidden="true"><i></i></div>
+</div>
 
-  <h2 class="t" id="thought">Thought</h2>
-  <h3>Prevention is infrastructure</h3>
-  <p class="take">I never lost a life on my watch at the pool. In community safety work, I saw dozens lost. The difference wasn't courage. It was infrastructure.</p>
-  <p>That's the thread through this week's posts: every safe kid I've known had an adult and a place to be, and people never asked me for a unit. They asked for a home near the bus, the school and the job. I heard that in the affordable housing strategy sessions I facilitated in 2025, and this year the plan was adopted.</p>
-  <p>It's also why I was at Ripples of Hope last month, No More Under's benefit, celebrating seven years of saving lives. Who learns to swim in this country was shaped by who was allowed in the water. That was designed, so it can be redesigned. <a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls"><i>Drowning in Silence</i></a>, the film I'm in, is streaming on Apple TV. Watch it, share it, and book the swim lessons.</p>
+<header class="tp-mast">
+  <i class="bo" data-size="44" aria-hidden="true"></i>
+  <p class="tp-mast-k">The weekly letter from Katoya Palmer</p>
+</header>
 
-  <h3>What is a board's real job?</h3>
-  <p class="take">Care, loyalty and obedience: the three duties every board member signs up for, whether they know it or not.</p>
-  <p>The question came up again and again at the 4Culture Network of Support mixer. ToyBox joined the Network for 2026, helping King County cultural organizations build capacity. <a href="https://www.toyboxconsulting.net/blog/network-of-support-101.html">What the Network is</a></p>
-
-  <h3>New at ToyBox</h3>
-  <p><b>Four posts a week, built around the questions decision makers bring us:</b> hiring that sticks past 90 days, a creative company whose trust didn't turn into revenue, and why the quiet meeting isn't the aligned one.</p>
-  <p>Also new: a free <b>Operational Health Check</b>. Ten minutes of yes-or-no questions across governance, finance, people, programs and technology.</p>
-  <p class="more"><a href="https://www.toyboxconsulting.net/tools/operational-health-check.html?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Take the health check →</a> · <a href="https://www.toyboxconsulting.net/blog/?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Read the blog →</a></p>
-
-  <h2 class="t" id="spotlight">Client spotlight</h2>
-  <h3>Space Between</h3>
-  <p class="take">Every Space Between meeting opens with a sit: a few quiet minutes to clear our minds before we share space together.</p>
-  <p>For 10 years they've brought mindfulness and wellbeing practices into schools. Their in-person celebration was cancelled this year, but you can still support the work: their <b>online silent auction is open now</b>, with 11 items from entertainment to gift cards and services, and bidding closes Friday, October 30 at noon. You can also donate to their Joy in Presence campaign.</p>
-  <p class="more"><a href="https://givebutter.com/c/findingjoy/auction">Bid in the auction →</a> · <a href="https://givebutter.com/c/findingjoy">Donate</a></p>
-
-  <h2 class="a" id="taste">Taste</h2>
-  <h3><img class="slogo" src="/assets/email/logo-sznd.png" width="112" height="120" alt="SZND by Katoya">SZND: four years of basil</h3>
-  <p class="take">My first real harvest went into a big pan of penne pesto for my water polo team in 2021.</p>
-  <p>Summer 2025 was my best basil year ever, and it started with sick basil starts I bought at 50 percent off. Four weeks later the plants were bigger than the planter, and that harvest became my <a href="/sznd/cajun-pesto.html">Cajun pesto</a>: steak and pesto pasta, garden to table. If you've never grown anything, start with basil starts, even the ones on the clearance rack. What are you growing? <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply.</a></p>
-  <p><img class="pic" src="/media/sznd/cajun-pesto-steak-pasta.jpg" width="1200" height="1500" loading="lazy" decoding="async" alt="A bowl of cavatappi tossed in Cajun pesto with sliced grilled steak, a purple vase and lily behind it" style="max-width:420px"></p>
-  <p><b>Honorable mention for football season: deviled eggs.</b> 🏈 Game day calls for them. Last Thanksgiving my son made his first batch and carried the tray to the table himself, and shout-out to my aunt, uncle and cousins in Arizona: I have to have their deviled eggs every time I go. How do you top yours?</p>
-  <p class="more"><a href="/sznd.html">Get the recipes →</a> · <a href="/sznd/cajun-pesto.html">Get the Cajun pesto →</a> · Next up: lattice apple pie.</p>
-
-  <h3><img class="slogo" src="/assets/email/logo-lipstick.png" width="120" height="120" alt="Lipstick on My Fork">Lipstick on My Fork: Hilltop Red Apple</h3>
-  <p class="take">Four lip prints, and no lipstick left.</p>
-  <p>The fried catfish in the hot case is worth the drive to Beacon Hill. It's also a Sunday-after-church memory with my mom.</p>
-  <p><b>Back at Primo's.</b> In case you were wondering how much I like Primo's from <a href="/lipstick/primos-bellevue.html">last week's review</a>: I was there again Friday night for dinner with friends. I didn't try anything new. Still in love with the ceviche and the house salad. Shout-out to their staff for the complimentary champagne toast. 🥂</p>
-  <p><img class="pic" src="/media/lipstick/primos-house-salad.jpg" width="1080" height="891" loading="lazy" decoding="async" alt="The house salad at Primo's, unwrapped, with an avocado rose and sliced steak" style="max-width:480px"></p>
-  <p class="more"><a href="/lipstick.html#reviews">Read the reviews →</a></p>
-
-  <h2 class="a" id="answers">Last week's answers</h2>
-  <h3>Guess the spot: Hilltop Red Apple</h3>
-  <p class="take">First to guess it: @thareal2mill. "Red Apple duh." 💋</p>
-  <p>Thursday's teaser was a close-up of fried catfish in a hot case, and it took one comment to crack it. You know your catfish.</p>
-  <p><b>@thareal2mill, this one's for you:</b> if you're reading this on my site and you're not on the list yet, subscribe, so every Monday you see who cracked the last one. Everybody else, the new teaser drops Thursday. Bring your best guess.</p>
-  <p class="more"><a href="https://www.katoyapalmer.com/letters/?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=first_guess">Subscribe to Thought, Taste &amp; Presence →</a></p>
-
-  <h2 class="p" id="presence">Presence</h2>
-  <h3>If you were graded in cursive</h3>
-  <p class="take">At Comic-Con, my son and I picked out new pens at the same table, and we were taught to use them completely differently.</p>
-  <p>I learned to type on my mom's typewriter, her college graduation gift. Now I talk to my phone and it types for me, and AI fixes my sentence before I finish it. Shout-out to my mom and her red pen. <b>What were you taught was non-negotiable that doesn't matter anymore?</b> <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply.</a></p>
-
-  <h3>Our Husky journey</h3>
-  <p class="take">Update: my son was granted a full year of tuition, loan-free, through UW's undergraduate grant program. Won't He do it?! 🤯👏</p>
-  <p>Transfer students start behind on financial aid, and we found out the hard way. I'm so thankful my kiddo gets to bear the fruit of his labor through such an amazing gesture. If you're a transfer family still working through aid, <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">hit reply</a>. I'll share what we learned.</p>
-
-  <h3>3 years later</h3>
-  <!-- PHOTOS PENDING (3 years later): add two photos here later, (1) 2023 Armand Hammer concert at Neumos, (2) the caricature from cousin India's wedding. No placeholder images until Katoya supplies them. -->
-  <p>My son and me in 2023, the night I took him to his first concert, Armand Hammer at Neumos. And now, as a caricature from my cousin India's wedding last month. Same smiles, more beard.</p>
-
-  <h3 id="sit"><img class="slogo" src="/assets/email/logo-mitm.png" width="120" height="120" alt="Mindfulness in the Middle">Mindfulness in the Middle: this week's sit</h3>
-  <p class="take">A guided visualization: a picture, slow enough that your mind settles into it.</p>
-  <p><i>Picture a cup of tea you made recently. Watch the steam rise and thin out as it meets the air. Feel the warmth through the cup in your hands. Now watch the steam slow and the surface go still. Take a deep breath in. And a deep breath out.</i></p>
-  <p class="note">Inspired by the Space Between board.</p>
-
-  <h2 class="p" id="coming-up">Coming up</h2>
-  <ul>
-    <li><b>Thu 10/22 · Guess the spot.</b> A new Lipstick on My Fork teaser drops Thursday, and the first correct guess gets a shout-out here next week.</li>
-    <li><b>Now through Nov 30 · Cal Bonner's "Creation Over Elimination"</b>, a solo exhibition at Colman Commons, 811 1st Ave, Seattle. <a href="https://www.whereweconverge.com/events/cal-bonners-creation-over-elimination">Details</a></li>
-    <li><b>Fri 10/30, noon · Space Between's auction closes.</b> Last call to bid. <a href="https://givebutter.com/c/findingjoy/auction">Bid</a></li>
-    <li><b>Fri 10/30 · A Space Inside Open Mic</b>, a BIPOC-centered open mic at Colman Commons, every final Friday. <a href="https://tinyurl.com/InsideOpenMic">Details</a></li>
-    <li><b>Sat 10/31 · EQUALUX</b>, GSBA's Halloween gala at The Westin Seattle, benefiting the GSBA Scholarship &amp; Education Fund. <a href="https://thegsba.org/equalux/">Details</a></li>
-    <li><b>Fri 11/6 · Coming Home</b>, Hilton Bellevue, celebrating the women of The Sophia Way. I serve on the board. <a href="https://sophiaway.org/coming-home/">Get a ticket</a></li>
-    <li><b>Now streaming · Drowning in Silence</b> on Apple TV. I'm in the film. <a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls">Watch</a></li>
-  </ul>
-
-  <h2 class="p" id="offclock">Off the clock</h2>
-  <p><b>Onyx called it.</b> 🐾 The other night, little Onyx was so uneasy and clingy that I said out loud, "I hope we're not about to have an earthquake." He didn't settle down until way after 2 a.m. Then there was an earthquake near us in Snoqualmie. Do your pets ever know something before you do?</p>
-  <p><b>Two Seahawks losses in one week.</b> Damn it, Sam! 💙💚 The interceptions got me, and I could not believe we went into overtime. I don't know the most about football, but I'm fairly athletic, and the offensive line has some work to do. It also makes me wonder: does the quarterback who wins us a Super Bowl get some kind of curse that keeps them from bringing home another one? Still riding with them.</p>
-  <p><b>Monopoly is back at McDonald's</b>, and I've been playing since high school. What grinds my gears: last year you could get free plays online, and this year the only free way in is by mail. Still playing. The game runs through November 1, and you can enter codes in the app until November 22. What's your strategy?</p>
-
-  <h2 class="o" id="advertise">Advertise with Converge Media</h2>
-  <div class="ad">
-    <img class="ad-logo" src="/assets/email/converge-wordmark-dark.png" width="180" height="35" alt="Converge Media" style="width:180px">
-    <p>Want your business, event or campaign in front of the Converge Media community? They offer TV spots, social posts, newsletter and blog features, and video production, packaged to fit your budget.</p>
-    <p class="more"><a href="mailto:katoya@toyboxconsulting.net?subject=Advertising%20with%20Converge%20Media">Email me and I'll connect you →</a></p>
+<header class="tp-cover">
+  <img class="tp-cover-img" src="/media/letters/covers/issue-02-cover.jpg" width="1400" height="876" alt="Katoya Palmer smiling, leaning back on a weathered wooden garden bench, in a floral sleeveless dress and green sneakers">
+  <span class="tp-credit">Photo: Erik "Kalligraphy" Wilson</span>
+  <div class="tp-cover-txt">
+    <p class="tp-no"><b>No. 2</b> The weekly letter</p>
+    <h1>Prevention is infrastructure</h1>
+    <p class="tp-meta"><span>By Katoya Palmer</span><span>Monday, October 19, 2026</span><span>7 min read, 30 sec skim</span></p>
   </div>
+</header>
+<p class="tp-dek">What a board is really for, Space Between, four years of basil, catfish worth the drive, good news on our Husky journey, and this week's sit.</p>
 
-  <h2 class="o" id="work-with-me">Work with me</h2>
-  <div class="ad">
-    <img class="ad-logo" src="/assets/email/logo-toybox-gold.png" width="111" height="40" alt="ToyBox Consulting and Management" style="height:40px;width:auto">
-    <p><b>Got a problem your organization keeps circling?</b> <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply</a> and tell me what it is in a sentence or two. I read every one, and if ToyBox can help, I'll tell you how.</p>
-    <p class="more"><a href="https://calendly.com/toyboxcm/discovery-call?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Or book a free 30-minute intro call →</a></p>
+<div class="tp-layout">
+  <aside class="tp-rail" id="contents" aria-label="In this issue"><div class="tp-rail-in tp-contents">
+    <details>
+      <summary><h2>This week, in one breath</h2></summary>
+      <ol>
+        <li><a href="#thought"><span><small class="tp-c-t">Thought</small>Prevention is infrastructure, and what a board is really for.</span></a></li>
+        <li><a href="#spotlight"><span><small class="tp-c-t">Spotlight</small>Space Between, and their auction is open now.</span></a></li>
+        <li><a href="#taste"><span><small class="tp-c-a">Taste</small>Four years of basil, game-day deviled eggs, catfish worth the drive, and a return trip to Primo's.</span></a></li>
+        <li><a href="#answers"><span><small class="tp-c-a">Last week's answers</small>Who guessed the spot first.</span></a></li>
+        <li><a href="#presence"><span><small class="tp-c-p">Presence</small>Graded in cursive, good news on our Husky journey, and this week's sit.</span></a></li>
+        <li><a href="#coming-up"><span><small class="tp-c-p">Coming up</small>Guess the spot, an exhibition, an auction close, an open mic and two galas.</span></a></li>
+        <li><a href="#offclock"><span><small class="tp-c-p">Off the clock</small>Onyx's earthquake sense, two Seahawks losses, and Monopoly.</span></a></li>
+        <li><a href="#partners"><span><small class="tp-c-o">Partners and asks</small>Converge Media, work with me, sponsor this letter.</span></a></li>
+      </ol>
+      <p class="tp-reply"><a href="https://calendly.com/toyboxcm/discovery-call?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Got a problem?</a> <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply</a> and tell me.</p>
+      <p class="tp-skim">30 second skim: read the gold-ruled lines.</p>
+    </details>
+  </div></aside>
+
+  <article class="tp-story">
+    <section class="tp-sec" id="thought">
+      <div class="tp-open tp-o-t"><h2 class="k">Thought</h2><span class="n" aria-hidden="true">01</span></div>
+      <h3 class="tp-big">Prevention is infrastructure</h3>
+      <p class="tp-take">I never lost a life on my watch at the pool. In community safety work, I saw dozens lost. The difference wasn't courage. It was infrastructure.</p>
+      <p class="tp-lead">That's the thread through this week's posts: every safe kid I've known had an adult and a place to be, and people never asked me for a unit. They asked for a home near the bus, the school and the job. I heard that in the affordable housing strategy sessions I facilitated in 2025, and this year the plan was adopted.</p>
+      <p>It's also why I was at Ripples of Hope last month, No More Under's benefit, celebrating seven years of saving lives. Who learns to swim in this country was shaped by who was allowed in the water.</p>
+      <blockquote class="tp-pull"><p>That was designed, so it can be redesigned.</p></blockquote>
+      <p><a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls"><i>Drowning in Silence</i></a>, the film I'm in, is streaming on Apple TV. Watch it, share it, and book the swim lessons.</p>
+
+      <h3>What is a board's real job?</h3>
+      <p class="tp-take">Care, loyalty and obedience: the three duties every board member signs up for, whether they know it or not.</p>
+      <p>The question came up again and again at the 4Culture Network of Support mixer. ToyBox joined the Network for 2026, helping King County cultural organizations build capacity. <a href="https://www.toyboxconsulting.net/blog/network-of-support-101.html">What the Network is</a></p>
+
+      <h3>New at ToyBox</h3>
+      <p><b>Four posts a week, built around the questions decision makers bring us:</b> hiring that sticks past 90 days, a creative company whose trust didn't turn into revenue, and why the quiet meeting isn't the aligned one.</p>
+      <p>Also new: a free <b>Operational Health Check</b>. Ten minutes of yes-or-no questions across governance, finance, people, programs and technology.</p>
+      <p class="tp-more"><a href="https://www.toyboxconsulting.net/tools/operational-health-check.html?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Take the health check →</a> &nbsp; <a href="https://www.toyboxconsulting.net/blog/?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Read the blog →</a></p>
+    </section>
+
+    <section class="tp-sec" id="spotlight">
+      <div class="tp-open tp-o-t"><h2 class="k">Client spotlight</h2><span class="n" aria-hidden="true">02</span></div>
+      <h3 class="tp-big">Space Between</h3>
+      <p class="tp-take">Every Space Between meeting opens with a sit: a few quiet minutes to clear our minds before we share space together.</p>
+      <p>For 10 years they've brought mindfulness and wellbeing practices into schools. Their in-person celebration was cancelled this year, but you can still support the work: their <b>online silent auction is open now</b>, with 11 items from entertainment to gift cards and services, and bidding closes Friday, October 30 at noon. You can also donate to their Joy in Presence campaign.</p>
+      <p class="tp-more"><a href="https://givebutter.com/c/findingjoy/auction">Bid in the auction →</a> &nbsp; <a href="https://givebutter.com/c/findingjoy">Donate</a></p>
+    </section>
+
+    <section class="tp-sec" id="taste">
+      <div class="tp-open tp-o-a"><h2 class="k">Taste</h2><span class="n" aria-hidden="true">03</span></div>
+      <div class="tp-brand" style="margin-top:0;padding-top:0;border:0"><img src="/assets/email/logo-sznd.png" width="112" height="120" alt="SZND by Katoya"><div><small>SZND by Katoya</small><h3>Four years of basil</h3></div></div>
+      <p class="tp-take">My first real harvest went into a big pan of penne pesto for my water polo team in 2021.</p>
+      <p>Summer 2025 was my best basil year ever, and it started with sick basil starts I bought at 50 percent off. Four weeks later the plants were bigger than the planter, and that harvest became my <a href="/sznd/cajun-pesto.html">Cajun pesto</a>: steak and pesto pasta, garden to table. If you've never grown anything, start with basil starts, even the ones on the clearance rack. What are you growing? <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply.</a></p>
+      <figure class="tp-pic half"><img src="/media/sznd/cajun-pesto-steak-pasta.jpg" width="1200" height="1500" loading="lazy" decoding="async" alt="A bowl of cavatappi tossed in Cajun pesto with sliced grilled steak, a purple vase and lily behind it"></figure>
+      <p><b>Honorable mention for football season: deviled eggs.</b> 🏈 Game day calls for them. Last Thanksgiving my son made his first batch and carried the tray to the table himself, and shout-out to my aunt, uncle and cousins in Arizona: I have to have their deviled eggs every time I go. How do you top yours?</p>
+      <p class="tp-more"><a href="/sznd.html">Get the recipes →</a> &nbsp; <a href="/sznd/cajun-pesto.html">Get the Cajun pesto →</a> &nbsp; Next up: lattice apple pie.</p>
+
+      <div class="tp-brand"><img src="/assets/email/logo-lipstick.png" width="120" height="120" alt="Lipstick on My Fork"><div><small>Lipstick on My Fork</small><h3>Hilltop Red Apple</h3></div></div>
+      <blockquote class="tp-pull a"><p>Four lip prints, and no lipstick left.</p></blockquote>
+      <p>The fried catfish in the hot case is worth the drive to Beacon Hill. It's also a Sunday-after-church memory with my mom.</p>
+      <p><b>Back at Primo's.</b> In case you were wondering how much I like Primo's from <a href="/lipstick/primos-bellevue.html">last week's review</a>: I was there again Friday night for dinner with friends. I didn't try anything new. Still in love with the ceviche and the house salad. Shout-out to their staff for the complimentary champagne toast. 🥂</p>
+      <figure class="tp-pic half"><img src="/media/lipstick/primos-house-salad.jpg" width="1080" height="891" loading="lazy" decoding="async" alt="The house salad at Primo's, unwrapped, with an avocado rose and sliced steak"></figure>
+      <p class="tp-more"><a href="/lipstick.html#reviews">Read the reviews →</a></p>
+    </section>
+
+    <section class="tp-sec" id="answers">
+      <div class="tp-open tp-o-a"><h2 class="k">Last week's answers</h2><span class="n" aria-hidden="true">04</span></div>
+      <h3 class="tp-big">Guess the spot: Hilltop Red Apple</h3>
+      <p class="tp-take">First to guess it: @thareal2mill. "Red Apple duh." 💋</p>
+      <p>Thursday's teaser was a close-up of fried catfish in a hot case, and it took one comment to crack it. You know your catfish.</p>
+      <p><b>@thareal2mill, this one's for you:</b> if you're reading this on my site and you're not on the list yet, subscribe, so every Monday you see who cracked the last one. Everybody else, the new teaser drops Thursday. Bring your best guess.</p>
+      <p class="tp-more"><a href="https://www.katoyapalmer.com/letters/?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=first_guess">Subscribe to Thought, Taste &amp; Presence →</a></p>
+    </section>
+
+    <section class="tp-sec" id="presence">
+      <div class="tp-open tp-o-p"><h2 class="k">Presence</h2><span class="n" aria-hidden="true">05</span></div>
+      <h3 class="tp-big">If you were graded in cursive</h3>
+      <p class="tp-take">At Comic-Con, my son and I picked out new pens at the same table, and we were taught to use them completely differently.</p>
+      <p>I learned to type on my mom's typewriter, her college graduation gift. Now I talk to my phone and it types for me, and AI fixes my sentence before I finish it. Shout-out to my mom and her red pen. <b>What were you taught was non-negotiable that doesn't matter anymore?</b> <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply.</a></p>
+
+      <h3>Our Husky journey</h3>
+      <blockquote class="tp-pull p"><p>Update: my son was granted a full year of tuition, loan-free, through UW's undergraduate grant program. Won't He do it?! 🤯👏</p></blockquote>
+      <p>Transfer students start behind on financial aid, and we found out the hard way. I'm so thankful my kiddo gets to bear the fruit of his labor through such an amazing gesture. If you're a transfer family still working through aid, <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">hit reply</a>. I'll share what we learned.</p>
+
+      <h3>3 years later</h3>
+      <!-- PHOTOS PENDING (3 years later): add two photos here later, (1) 2023 Armand Hammer concert at Neumos, (2) the caricature from cousin India's wedding. No placeholder images until Katoya supplies them. -->
+      <p>My son and me in 2023, the night I took him to his first concert, Armand Hammer at Neumos. And now, as a caricature from my cousin India's wedding last month. Same smiles, more beard.</p>
+
+      <div class="tp-brand" id="sit"><img src="/assets/email/logo-mitm.png" width="120" height="120" alt="Mindfulness in the Middle"><div><small>Mindfulness in the Middle</small><h3>This week's sit</h3></div></div>
+      <p class="tp-take">A guided visualization: a picture, slow enough that your mind settles into it.</p>
+      <p class="tp-sit">Picture a cup of tea you made recently. Watch the steam rise and thin out as it meets the air. Feel the warmth through the cup in your hands. Now watch the steam slow and the surface go still. Take a deep breath in. And a deep breath out.</p>
+      <p class="tp-note">Inspired by the Space Between board. <a href="/mindfulness.html">More practices</a></p>
+    </section>
+
+    <section class="tp-sec" id="coming-up">
+      <div class="tp-open tp-o-p"><h2 class="k">Coming up</h2><span class="n" aria-hidden="true">06</span></div>
+      <ul class="tp-cal">
+        <li><span class="d">Thu<b>10/22</b></span><span><b>Guess the spot.</b> A new Lipstick on My Fork teaser drops Thursday, and the first correct guess gets a shout-out here next week.</span></li>
+        <li><span class="d">Thru<b>11/30</b></span><span><b>Cal Bonner's "Creation Over Elimination"</b>, a solo exhibition at Colman Commons, 811 1st Ave, Seattle. <a href="https://www.whereweconverge.com/events/cal-bonners-creation-over-elimination">Details</a></span></li>
+        <li><span class="d">Fri<b>10/30</b></span><span><b>Noon: Space Between's auction closes.</b> Last call to bid. <a href="https://givebutter.com/c/findingjoy/auction">Bid</a></span></li>
+        <li><span class="d">Fri<b>10/30</b></span><span><b>A Space Inside Open Mic</b>, a BIPOC-centered open mic at Colman Commons, every final Friday. <a href="https://tinyurl.com/InsideOpenMic">Details</a></span></li>
+        <li><span class="d">Sat<b>10/31</b></span><span><b>EQUALUX</b>, GSBA's Halloween gala at The Westin Seattle, benefiting the GSBA Scholarship &amp; Education Fund. <a href="https://thegsba.org/equalux/">Details</a></span></li>
+        <li><span class="d">Fri<b>11/6</b></span><span><b>Coming Home</b>, Hilton Bellevue, celebrating the women of The Sophia Way. I serve on the board. <a href="https://sophiaway.org/coming-home/">Get a ticket</a></span></li>
+        <li><span class="d">Now<b>TV</b></span><span><b>Drowning in Silence</b>, now streaming on Apple TV. I'm in the film. <a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls">Watch</a></span></li>
+      </ul>
+    </section>
+
+    <section class="tp-sec" id="offclock">
+      <div class="tp-open tp-o-p"><h2 class="k">Off the clock</h2><span class="n" aria-hidden="true">07</span></div>
+      <p><b>Onyx called it.</b> 🐾 The other night, little Onyx was so uneasy and clingy that I said out loud, "I hope we're not about to have an earthquake." He didn't settle down until way after 2 a.m. Then there was an earthquake near us in Snoqualmie. Do your pets ever know something before you do?</p>
+      <p><b>Two Seahawks losses in one week.</b> Damn it, Sam! 💙💚 The interceptions got me, and I could not believe we went into overtime. I don't know the most about football, but I'm fairly athletic, and the offensive line has some work to do. It also makes me wonder: does the quarterback who wins us a Super Bowl get some kind of curse that keeps them from bringing home another one? Still riding with them.</p>
+      <p><b>Monopoly is back at McDonald's</b>, and I've been playing since high school. What grinds my gears: last year you could get free plays online, and this year the only free way in is by mail. Still playing. The game runs through November 1, and you can enter codes in the app until November 22. What's your strategy?</p>
+    </section>
+
+    <section class="tp-sec" id="partners">
+      <div class="tp-open tp-o-o"><h2 class="k">Partners and asks</h2><span class="n" aria-hidden="true">08</span></div>
+      <div class="tp-slots">
+        <div class="tp-slot" id="advertise">
+          <span class="tag">Advertise</span>
+          <h3>Advertise with Converge Media</h3>
+          <img class="logo" src="/assets/email/converge-wordmark-dark.png" width="144" height="28" alt="Converge Media">
+          <p>Want your business, event or campaign in front of the Converge Media community? They offer TV spots, social posts, newsletter and blog features, and video production, packaged to fit your budget.</p>
+          <p class="tp-more"><a href="mailto:katoya@toyboxconsulting.net?subject=Advertising%20with%20Converge%20Media">Email me and I'll connect you →</a></p>
+        </div>
+        <div class="tp-slot tp-slot--ink" id="work-with-me">
+          <span class="tag">Work with me</span>
+          <h3>Got a problem your organization keeps circling?</h3>
+          <img class="logo" src="/assets/email/logo-toybox-gold.png" width="78" height="28" alt="ToyBox Consulting and Management">
+          <p><a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%202">Hit reply</a> and tell me what it is in a sentence or two. I read every one, and if ToyBox can help, I'll tell you how.</p>
+          <p class="tp-more"><a href="https://calendly.com/toyboxcm/discovery-call?utm_source=ttp&amp;utm_medium=web&amp;utm_campaign=issue02">Or book a free 30-minute intro call →</a></p>
+        </div>
+        <div class="tp-slot" id="sponsor">
+          <span class="tag">Sponsor</span>
+          <h3>Sponsor this letter</h3>
+          <p>Thought, Taste &amp; Presence reaches people who care about community, food and leadership in the Northwest. <b>Want your business or cause in front of them?</b></p>
+          <p class="tp-more"><a href="mailto:katoya@toyboxconsulting.net?subject=Sponsoring%20Thought%2C%20Taste%20%26%20Presence">Ask about sponsoring an issue →</a></p>
+        </div>
+        <div class="tp-slot" id="one-more">
+          <span class="tag">One more thing</span>
+          <p style="margin-top:6px"><b>Out the Box</b>, ToyBox's monthly letter, starts Wednesday, November 4. <a href="https://ee4a3130.sibforms.com/serve/MUIFAHD7T6bz4b98WGJrRC8opOmtbAESrvTeMq-830K1ISwZeIUZKcxBNDKG_CZnItZLrQaEg_4bAnfIc-jxgNWtetX2OhAVKydTgLwiXM0tKjBjFHsgr_QqXMOvV_i_QHcQxrTIqwd1HTS3-tgVnMR-v9o4_YWdRG6uXgb1gbkELNIlUQMLzCMOGLhh8AUs6ZTJTZjyI96ATSDhcw==?utm_source=ttp&amp;utm_medium=email&amp;utm_campaign=out_the_box">Subscribe</a></p>
+        </div>
+      </div>
+      <p class="tp-signoff">See you next Monday,<br>Katoya</p>
+      <div class="tp-endmark"><i class="bo" data-size="28" aria-hidden="true"></i></div>
+    </section>
+
+    <nav class="tp-pn" aria-label="More issues">
+      <a href="/letters/2026-10-12-issue-01.html"><span class="dir">← Previous issue</span><span class="ttl">No. 1: No better time than today</span></a>
+      <span class="tp-pn-x next"><span class="dir">Next issue</span><span class="ttl">No. 3 arrives Monday, October 26</span></span>
+    </nav>
+  </article>
+</div>
+
+<div class="tp-sheet tp-contents" id="tp-sheet" role="dialog" aria-label="In this issue"><button class="tp-sheet-close" type="button">Close</button><h2>In this issue</h2></div>
+
+<section class="tp-end" id="subscribe" aria-label="Subscribe and share">
+  <div class="tp-e1">
+    <p class="k">Subscribe</p>
+    <h2>Get the next letter in your inbox.</h2>
+    <p>Short in your email every Monday. The full version lives here.</p>
+    <a class="tp-btn tp-btn-w" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=letter_page&amp;utm_campaign=ttp_weekly">Weekly: Thought, Taste &amp; Presence</a>
+    <a class="tp-btn tp-btn-o" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
   </div>
-
-  <h2 class="o" id="sponsor">Sponsor this letter</h2>
-  <div class="ad">
-    <p>Thought, Taste &amp; Presence reaches people who care about community, food and leadership in the Northwest. <b>Want your business or cause in front of them?</b></p>
-    <p class="more"><a href="mailto:katoya@toyboxconsulting.net?subject=Sponsoring%20Thought%2C%20Taste%20%26%20Presence">Ask about sponsoring an issue →</a></p>
+  <div class="tp-e2">
+    <p class="k">Share</p>
+    <h2>Pass this issue along.</h2>
+    <div data-share></div>
   </div>
-
-  <h2 class="o">One more thing</h2>
-  <p><b>Out the Box</b>, ToyBox's monthly letter, starts Wednesday, November 4. <a href="https://ee4a3130.sibforms.com/serve/MUIFAHD7T6bz4b98WGJrRC8opOmtbAESrvTeMq-830K1ISwZeIUZKcxBNDKG_CZnItZLrQaEg_4bAnfIc-jxgNWtetX2OhAVKydTgLwiXM0tKjBjFHsgr_QqXMOvV_i_QHcQxrTIqwd1HTS3-tgVnMR-v9o4_YWdRG6uXgb1gbkELNIlUQMLzCMOGLhh8AUs6ZTJTZjyI96ATSDhcw==?utm_source=ttp&amp;utm_medium=email&amp;utm_campaign=out_the_box">Subscribe</a></p>
-  <p class="signoff">See you next Monday,<br>Katoya</p>
-
-  <div class="sub-card" id="subscribe">
-    <p><b>Get the next letter in your inbox.</b></p>
-    <a class="btn btn-red" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=letter_page&amp;utm_campaign=ttp_weekly">Weekly: Thought, Taste &amp; Presence</a>
-    <a class="btn btn-navy" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
+  <div class="tp-e3">
+    <p class="k">Guess the spot · Thursday</p>
+    <h2>A new Lipstick on My Fork teaser drops Thursday.</h2>
+    <p>First correct guess gets a shout-out in next Monday's letter.</p>
+    <a class="tp-btn tp-btn-o" href="/lipstick.html#reviews">See the reviews</a>
   </div>
+</section>
 
-  <div class="share" aria-label="Share this letter">
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-19-issue-02.html" target="_blank" rel="noopener">Share on LinkedIn</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-19-issue-02.html" target="_blank" rel="noopener">Share on Facebook</a>
-    <a href="mailto:?subject=Thought%2C%20Taste%20%26%20Presence%2C%20Issue%202&amp;body=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-19-issue-02.html">Email a friend</a>
-    <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.href).then(()=>{this.textContent='Link copied'})">Copy link</button>
-  </div>
-</article>
-
-<footer>
+<footer class="tp-foot">
   <a href="/index.html">katoyapalmer.com</a> · <a href="/letters/">All letters</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/cookies.html">Cookies</a>
   <div style="margin-top:8px">© 2026 Katoya Raquell Palmer</div>
 </footer>

@@ -25,48 +25,11 @@
 <meta name="twitter:image" content="https://www.katoyapalmer.com/media/letters/TTP_share_name_1200x630.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
 <script src="/tb-events.js" defer></script>
 <script src="/assets/consent.js" defer></script>
-<style>
-  :root{
-    --paper:#F3EBDB; --card:#FCF8EF; --ink:#161210; --ink-soft:#6E665F; --line:#E5DFD3;
-    --gold:#C6A24C; --gold-deep:#7E601F;
-    --scarlet:#D6362A; --scarlet-deep:#A81F1A; --clay:#B5654A; --sage-deep:#5E7259;
-    --syne:"Syne",system-ui,sans-serif; --grot:"Space Grotesk",system-ui,sans-serif; --jost:"Jost",system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:var(--grot);background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
-  a{color:var(--scarlet-deep);}
-  .skip-link{position:absolute;left:-999px;} .skip-link:focus{left:16px;top:16px;background:#fff;padding:8px 12px;z-index:99;}
-  nav{position:sticky;top:0;z-index:50;background:rgba(243,235,219,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1100px;margin:0 auto;}
-  .wm{display:inline-flex;align-items:center;font-family:var(--syne);font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;}
-  .wm .bo{margin:0 1px;}
-  .nav-links{display:flex;gap:20px;align-items:center;}
-  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;color:var(--ink-soft);text-decoration:none;}
-  .nav-sub{background:var(--scarlet);color:#fff!important;padding:9px 18px;border-radius:40px;}
-  .mast{text-align:center;padding:48px 16px 8px;}
-  .mast img{width:100%;max-width:720px;height:auto;}
-  article{max-width:680px;margin:0 auto;padding:8px 20px 40px;}
-  .issue-meta{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin-bottom:10px;}
-  h1{font-family:var(--syne);font-weight:800;font-size:clamp(30px,6vw,46px);line-height:1.05;text-align:center;margin-bottom:28px;}
-  h2{font-family:var(--jost);font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;margin:44px 0 6px;padding-top:18px;border-top:1px solid var(--line);}
-  h2.t{color:var(--scarlet);} h2.a{color:var(--clay);} h2.p{color:var(--sage-deep);} h2.o{color:var(--gold-deep);}
-  h3{font-family:var(--syne);font-weight:700;font-size:21px;line-height:1.2;margin:18px 0 6px;}
-  p{margin:10px 0;} ul{margin:8px 0 8px 22px;} li{margin:7px 0;}
-  .sub-card{background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:22px;margin:36px 0;text-align:center;}
-  .sub-card p{margin:6px 0 14px;color:var(--ink-soft);}
-  .btn{display:inline-block;font-family:var(--jost);font-weight:700;font-size:14px;padding:12px 22px;border-radius:40px;text-decoration:none;margin:4px;}
-  .btn-red{background:var(--scarlet);color:#fff;} .btn-navy{background:#14213D;color:#EAD79F;}
-  .share{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0;}
-  .share a,.share button{font-family:var(--jost);font-size:13px;font-weight:600;border:1px solid var(--gold);background:transparent;color:var(--ink);padding:8px 16px;border-radius:40px;text-decoration:none;cursor:pointer;}
-  .talk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:30px;}
-  .talk h2{border:0;margin-top:0;padding-top:0;color:var(--scarlet);}
-  footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;font-size:13px;color:var(--ink-soft);}
-  footer a{color:var(--ink-soft);margin:0 8px;}
-  @media (max-width:600px){.nav-links a:not(.nav-sub){display:none;}}
-</style>
+<link rel="stylesheet" href="/assets/letters.css" />
+<script src="/assets/letters.js" defer></script>
 <link rel="stylesheet" href="/assets/kp-music.css" />
 <script src="/assets/kp-music.js" defer></script>
 <script type="application/ld+json">
@@ -105,78 +68,153 @@
 <!-- kp-header:end -->
 <span id="main"></span>
 
-<div class="mast"><img src="/media/letters/TTP_email-header_1200x360.png" alt="KATOYA — Thought · Taste · Presence, the weekly letter" width="1200" height="360"></div>
-
-<article>
-  <div class="issue-meta">Issue 1 · Monday, October 12, 2026</div>
-  <h1>No better time than today</h1>
-
-  <p>Welcome to the first issue. Every Monday, this letter rounds up everything I shared that week, across my consulting work, my writing and my kitchen, plus the places I showed up and the causes I'm supporting. One letter, so you don't have to follow me everywhere.</p>
-  <p>Why now? Because there's no better time than today. Those close to me have heard my newest mantra: "I'm tired of losing." I realized I was only losing because I stopped competing. Not that this is a competition, but I do my best when I have a goal and something to strive for. I've dedicated my time to building my business, and this letter is how I'll bring it all together.</p>
-
-  <h2 class="t">Thought</h2>
-  <h3>Five Windows, one year later</h3>
-  <p>A year ago I started writing Five Windows into a Fragile Economy. This week I marked the anniversary with the window that started it all: housing. The system called our exit "positive." My income was still 26% below the local median. <a href="/five-windows/five-windows-one-year-later.html">Read Five Windows, One Year Later</a></p>
-  <p>And I shared something personal: 62 pounds down, with no surgery and no shots. Much of it started in my own kitchen, which is a big part of what SZND is about. <a href="https://www.instagram.com/p/DeI6rTtjdVy/">See the post</a></p>
-
-  <h3>This week at ToyBox</h3>
-  <ul>
-    <li><b>Selected to 10 City of Seattle consultant rosters</b> for 2025 to 2030. <a href="https://linkedin.com/feed/update/urn:li:share:7513660370910179328">Read the announcement</a></li>
-    <li><b>Housing instability doesn't stay at home.</b> It shows up at work, and a stay interview is one way to catch it early. <a href="https://linkedin.com/feed/update/urn:li:share:7513297593037172738">Read the post</a></li>
-    <li><b>A new series on ToyBox's three areas:</b> Operations, Programs and Leadership Development. <a href="https://www.instagram.com/p/DeN7SXqiu-_/">Start with the intro</a></li>
-    <li><b>ToyBox is on TikTok</b> with short daily lessons, from building a logic model on one page to how consultants actually get hired by a city. <a href="https://www.tiktok.com/@toyboxconsulting">Follow @toyboxconsulting</a></li>
-  </ul>
-
-  <h2 class="a">Taste</h2>
-  <h3>SZND by Katoya: cooking in season</h3>
-  <p>SZND is the homemade side of me: what I cook, what I grow and what I make with my hands. Every recipe has a home on katoyapalmer.com now. This week it was a split pea soup I made two nights in a row, the second batch with fresh jalapeño. On Saturday came the kitchen-extras soup I kept going all through Thanksgiving week last year, with my homemade cream of mushroom. <a href="/sznd.html">Get the split pea soup</a> · <a href="/sznd/kitchen-extras-soup.html">Get the kitchen-extras soup</a></p>
-  <h3>Lipstick on My Fork: Primo's, Bellevue</h3>
-  <p>Lipstick on My Fork, now rated in lip prints. 💋 This week: chicken and waffles that took me back to my grandma's fried chicken, and a house salad with steak wrapped like a bouquet. Four lip prints. <a href="/lipstick/primos-bellevue.html">Read the review</a></p>
-
-  <h2 class="p">Presence</h2>
-  <h3>Where I was: 4Culture's Network of Support mixer</h3>
-  <p>Wednesday night I was at 4Culture's Network of Support mixer at El Centro de la Raza's Centilia Cultural Center, my first year as one of the program's consultants. Over three rounds of 10-minute conversations, people asked what a board is really for, how to grow the next layer of leaders, and where to start on a strategic plan, a succession plan or a grant. A warm, welcoming room.</p>
-  <h3>Where I'll be, and what I'm supporting</h3>
-  <ul>
-    <li><b>Wed 10/14, 11:30 AM to 1:00 PM · "From First Conversation to Yes"</b> at the Bellevue Chamber, 330 112th Ave NE #100. <a href="https://www.bellevuechamber.org/events/from-first-conversation-to-yes">Register</a></li>
-    <li><b>Sat 10/17, 11:30 AM to 1:30 PM · The Sophia Way Fall Community Brunch</b>, St. Luke's Lutheran Church, 3030 Bellevue Way NE. A warm meal, bingo, seasonal clothing and free haircuts, nails and facials for the women Sophia Way serves. I serve on the board. <a href="https://sophiaway.org/event/fall-community-brunch/">See the brunch</a></li>
-    <li><b>Fri 11/6, 6:30 to 8:30 PM · Coming Home</b>, Hilton Bellevue, 300 112th Ave SE, celebrating the women of The Sophia Way who got the keys to a home of their own. <a href="https://sophiaway.org/coming-home/">Get a ticket</a></li>
-    <li><b>Now streaming · Drowning in Silence</b> on Apple TV, Chezik Tsunoda's film about drowning prevention after the loss of her son. I'm in the film, and I'm proud to stand with her work. <a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls">Watch on Apple TV</a></li>
-    <li><b>Wed 10/14 · "From First Conversation to Yes"</b> at the Bellevue Chamber, 330 112th Ave NE #100, 11:30 AM to 1:00 PM. <a href="https://www.bellevuechamber.org/events/from-first-conversation-to-yes">Register</a></li>
-  </ul>
-  <h2 class="p">Off the clock</h2>
-  <p>And the most important news of the week: Onyx got to wear his rain jacket, which means it's official. The big dark is finally here. Like a lot of little dogs, he does not like the rain. He waited as long as he possibly could before asking to go to his potty spot. He loves his rain jacket, and that's about it. &#128062;</p>
-  <p><img src="/assets/email/onyx-rain-jacket.jpg" width="840" height="1120" loading="lazy" decoding="async" alt="Onyx, a small black dog in a bright green rain jacket, looking back over his shoulder on a wet parking lot" style="width:100%;max-width:420px;height:auto;display:block;margin:6px auto 10px;border-radius:6px"></p>
-  <h2 class="p">Mindfulness in the Middle</h2>
-  <p>One practice for the week: one full breath. In for four, hold for four, out for six. It's what I do before every speaking engagement or presentation.</p>
-  <p>Mindfulness in the Middle is my space for staying grounded in the middle of a full life. It began as my healing journey, a path to finding myself again, and that path inspired Lipstick on My Fork and SZND. It has a home here now. <a href="/mindfulness.html">Find more practices</a></p>
-
-  <h2 class="o">One more thing</h2>
-  <p><img src="/assets/email/follow-toybox.jpg" alt="Katoya Palmer speaking with a microphone, wearing a houndstooth jacket, above the ToyBox Consulting and Management logo in gold" style="width:100%;max-width:480px;height:auto;display:block;margin:6px auto 10px;border-radius:6px" loading="lazy"></p>
-  <p>My work has two homes. This letter is the story. <b>ToyBox Consulting &amp; Management</b> is the how: practical breakdowns for the people making decisions in business, government, the arts and nonprofits. Starting this week, ToyBox also shares <b>"What's Your Problem?"</b>: you bring a real challenge, and I show how I'd approach it. If you lead a team, a budget or a board, follow along there too.</p>
-  <p><a href="https://www.linkedin.com/company/2863972/">LinkedIn</a> · <a href="https://www.instagram.com/toyboxconsulting/">Instagram</a> · <a href="https://www.tiktok.com/@toyboxconsulting">TikTok</a> · <a href="https://x.com/ToyBoxCM">X</a> · <a href="https://www.toyboxconsulting.net/">toyboxconsulting.net</a></p>
-  <p>And starting in November, ToyBox sends <b>Out the Box</b> once a month: practical lessons from its work in operations, programs and leadership development.</p>
-
-  <div class="sub-card">
-    <p><b>Get the next letter in your inbox.</b></p>
-    <a class="btn btn-red" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&utm_medium=letter_page&utm_campaign=ttp_weekly">Weekly: Thought, Taste &amp; Presence</a>
-    <a class="btn btn-navy" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
+<div class="tp-bar">
+  <div class="tp-bar-in">
+    <a class="tp-bar-name" href="/letters/" aria-label="Thought, Taste and Presence, all letters"><span class="full"><span class="tp-t-l">Thought,</span> <span class="tp-a-l">Taste</span> <span class="tp-amp-l">&amp;</span> <span class="tp-p-l">Presence</span></span><span class="short"><span class="tp-t-l">T</span><span class="tp-amp-l">,</span><span class="tp-a-l">T</span><span class="tp-amp-l">&amp;</span><span class="tp-p-l">P</span></span><span class="tp-bar-no">NO. 01</span></a>
+    <a class="tp-bar-btn" href="#contents" aria-controls="tp-sheet" aria-expanded="false">Contents</a>
   </div>
+  <div class="tp-progress" aria-hidden="true"><i></i></div>
+</div>
 
-  <div class="share" aria-label="Share this letter">
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-12-issue-01.html" target="_blank" rel="noopener">Share on LinkedIn</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-12-issue-01.html" target="_blank" rel="noopener">Share on Facebook</a>
-    <a href="mailto:?subject=Thought%2C%20Taste%20%26%20Presence%20%E2%80%94%20Issue%201&amp;body=https%3A%2F%2Fwww.katoyapalmer.com%2Fletters%2F2026-10-12-issue-01.html">Email a friend</a>
-    <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.href).then(()=>{this.textContent='Link copied'})">Copy link</button>
+<header class="tp-mast">
+  <i class="bo" data-size="44" aria-hidden="true"></i>
+  <p class="tp-mast-k">The weekly letter from Katoya Palmer</p>
+</header>
+
+<header class="tp-cover tp-cover--split">
+  <img class="tp-cover-img" src="/media/letters/covers/issue-01-cover.jpg" width="714" height="1073" alt="Katoya Palmer speaking into a microphone at an event, in a black and white houndstooth coat">
+  <span class="tp-credit">Photo: Art by Frederick</span>
+  <div class="tp-cover-txt">
+    <p class="tp-no"><b>No. 1</b> The weekly letter</p>
+    <h1>No better time than today</h1>
+    <p class="tp-meta"><span>By Katoya Palmer</span><span>Monday, October 12, 2026</span><span>4 min read</span></p>
   </div>
+</header>
+<p class="tp-dek">Five Windows turns one, two soups from SZND by Katoya, Lipstick on My Fork at Primo's, the 4Culture Network of Support mixer, and where I'll be next.</p>
 
-  <section class="talk" id="talk">
-    <h2>Talk to me</h2>
-    <p>This week's question: ham or smoked turkey in your split pea soup? Tell me: <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%201">email me your answer</a>. I read every one.</p>
-  </section>
-</article>
+<div class="tp-layout">
+  <aside class="tp-rail" id="contents" aria-label="In this issue"><div class="tp-rail-in tp-contents">
+    <details>
+      <summary><h2>In this issue</h2></summary>
+      <ol>
+        <li><a href="#welcome"><span><small class="tp-c-o">Welcome</small>Why this letter, and why now.</span></a></li>
+        <li><a href="#thought"><span><small class="tp-c-t">Thought</small>Five Windows, one year later, and this week at ToyBox.</span></a></li>
+        <li><a href="#taste"><span><small class="tp-c-a">Taste</small>Two SZND soups, and Lipstick on My Fork at Primo's.</span></a></li>
+        <li><a href="#presence"><span><small class="tp-c-p">Presence</small>4Culture's mixer, and where I'll be.</span></a></li>
+        <li><a href="#offclock"><span><small class="tp-c-p">Off the clock</small>Onyx and his rain jacket.</span></a></li>
+        <li><a href="#mindfulness"><span><small class="tp-c-p">Mindfulness in the Middle</small>One full breath.</span></a></li>
+        <li><a href="#one-more"><span><small class="tp-c-o">One more thing</small>ToyBox, and Out the Box.</span></a></li>
+        <li><a href="#talk"><span><small class="tp-c-o">Talk to me</small>Ham or smoked turkey?</span></a></li>
+      </ol>
+    </details>
+  </div></aside>
 
-<footer>
+  <article class="tp-story">
+    <section class="tp-sec" id="welcome">
+      <div class="tp-open tp-o-o"><h2 class="k">Welcome</h2><span class="n" aria-hidden="true">01</span></div>
+      <p class="tp-lead">Welcome to the first issue. Every Monday, this letter rounds up everything I shared that week, across my consulting work, my writing and my kitchen, plus the places I showed up and the causes I'm supporting. One letter, so you don't have to follow me everywhere.</p>
+      <p>Why now? Because there's no better time than today. Those close to me have heard my newest mantra: "I'm tired of losing." I realized I was only losing because I stopped competing. Not that this is a competition, but I do my best when I have a goal and something to strive for. I've dedicated my time to building my business, and this letter is how I'll bring it all together.</p>
+      <blockquote class="tp-pull"><p>I'm tired of losing.</p></blockquote>
+    </section>
+
+    <section class="tp-sec" id="thought">
+      <div class="tp-open tp-o-t"><h2 class="k">Thought</h2><span class="n" aria-hidden="true">02</span></div>
+      <h3 class="tp-big">Five Windows, one year later</h3>
+      <p>A year ago I started writing Five Windows into a Fragile Economy. This week I marked the anniversary with the window that started it all: housing. The system called our exit "positive." My income was still 26% below the local median. <a href="/five-windows/five-windows-one-year-later.html">Read Five Windows, One Year Later</a></p>
+      <p>And I shared something personal: 62 pounds down, with no surgery and no shots. Much of it started in my own kitchen, which is a big part of what SZND is about. <a href="https://www.instagram.com/p/DeI6rTtjdVy/">See the post</a></p>
+
+      <h3>This week at ToyBox</h3>
+      <ul>
+        <li><b>Selected to 10 City of Seattle consultant rosters</b> for 2025 to 2030. <a href="https://linkedin.com/feed/update/urn:li:share:7513660370910179328">Read the announcement</a></li>
+        <li><b>Housing instability doesn't stay at home.</b> It shows up at work, and a stay interview is one way to catch it early. <a href="https://linkedin.com/feed/update/urn:li:share:7513297593037172738">Read the post</a></li>
+        <li><b>A new series on ToyBox's three areas:</b> Operations, Programs and Leadership Development. <a href="https://www.instagram.com/p/DeN7SXqiu-_/">Start with the intro</a></li>
+        <li><b>ToyBox is on TikTok</b> with short daily lessons, from building a logic model on one page to how consultants actually get hired by a city. <a href="https://www.tiktok.com/@toyboxconsulting">Follow @toyboxconsulting</a></li>
+      </ul>
+    </section>
+
+    <section class="tp-sec" id="taste">
+      <div class="tp-open tp-o-a"><h2 class="k">Taste</h2><span class="n" aria-hidden="true">03</span></div>
+      <div class="tp-brand" style="margin-top:0;padding-top:0;border:0"><img src="/assets/email/logo-sznd.png" width="112" height="120" alt="SZND by Katoya"><div><small>SZND by Katoya</small><h3>Cooking in season</h3></div></div>
+      <p>SZND is the homemade side of me: what I cook, what I grow and what I make with my hands. Every recipe has a home on katoyapalmer.com now. This week it was a split pea soup I made two nights in a row, the second batch with fresh jalapeño. On Saturday came the kitchen-extras soup I kept going all through Thanksgiving week last year, with my homemade cream of mushroom.</p>
+      <p class="tp-more"><a href="/sznd.html">Get the split pea soup →</a> &nbsp; <a href="/sznd/kitchen-extras-soup.html">Get the kitchen-extras soup →</a></p>
+
+      <div class="tp-brand"><img src="/assets/email/logo-lipstick.png" width="120" height="120" alt="Lipstick on My Fork"><div><small>Lipstick on My Fork</small><h3>Primo's, Bellevue</h3></div></div>
+      <p>Lipstick on My Fork, now rated in lip prints. 💋 This week: chicken and waffles that took me back to my grandma's fried chicken, and a house salad with steak wrapped like a bouquet. Four lip prints.</p>
+      <p class="tp-more"><a href="/lipstick/primos-bellevue.html">Read the review →</a></p>
+    </section>
+
+    <section class="tp-sec" id="presence">
+      <div class="tp-open tp-o-p"><h2 class="k">Presence</h2><span class="n" aria-hidden="true">04</span></div>
+      <h3 class="tp-big">Where I was: 4Culture's Network of Support mixer</h3>
+      <p>Wednesday night I was at 4Culture's Network of Support mixer at El Centro de la Raza's Centilia Cultural Center, my first year as one of the program's consultants. Over three rounds of 10-minute conversations, people asked what a board is really for, how to grow the next layer of leaders, and where to start on a strategic plan, a succession plan or a grant. A warm, welcoming room.</p>
+      <h3>Where I'll be, and what I'm supporting</h3>
+      <ul class="tp-cal">
+        <li><span class="d">Wed<b>10/14</b></span><span><b>11:30 AM to 1:00 PM · "From First Conversation to Yes"</b> at the Bellevue Chamber, 330 112th Ave NE #100. <a href="https://www.bellevuechamber.org/events/from-first-conversation-to-yes">Register</a></span></li>
+        <li><span class="d">Sat<b>10/17</b></span><span><b>11:30 AM to 1:30 PM · The Sophia Way Fall Community Brunch</b>, St. Luke's Lutheran Church, 3030 Bellevue Way NE. A warm meal, bingo, seasonal clothing and free haircuts, nails and facials for the women Sophia Way serves. I serve on the board. <a href="https://sophiaway.org/event/fall-community-brunch/">See the brunch</a></span></li>
+        <li><span class="d">Fri<b>11/6</b></span><span><b>6:30 to 8:30 PM · Coming Home</b>, Hilton Bellevue, 300 112th Ave SE, celebrating the women of The Sophia Way who got the keys to a home of their own. <a href="https://sophiaway.org/coming-home/">Get a ticket</a></span></li>
+        <li><span class="d">Now<b>TV</b></span><span><b>Drowning in Silence</b>, now streaming on Apple TV, Chezik Tsunoda's film about drowning prevention after the loss of her son. I'm in the film, and I'm proud to stand with her work. <a href="https://tv.apple.com/us/movie/drowning-in-silence/umc.cmc.28nysp18en5ydcnfo8gxsqqls">Watch on Apple TV</a></span></li>
+      </ul>
+    </section>
+
+    <section class="tp-sec" id="offclock">
+      <div class="tp-open tp-o-p"><h2 class="k">Off the clock</h2><span class="n" aria-hidden="true">05</span></div>
+      <p>And the most important news of the week: Onyx got to wear his rain jacket, which means it's official. The big dark is finally here. Like a lot of little dogs, he does not like the rain. He waited as long as he possibly could before asking to go to his potty spot. He loves his rain jacket, and that's about it. &#128062;</p>
+      <figure class="tp-pic half"><img src="/assets/email/onyx-rain-jacket.jpg" width="840" height="1120" loading="lazy" decoding="async" alt="Onyx, a small black dog in a bright green rain jacket, looking back over his shoulder on a wet parking lot"></figure>
+    </section>
+
+    <section class="tp-sec" id="mindfulness">
+      <div class="tp-open tp-o-p"><h2 class="k">Mindfulness in the Middle</h2><span class="n" aria-hidden="true">06</span></div>
+      <div class="tp-brand" style="margin-top:0;padding-top:0;border:0"><img src="/assets/email/logo-mitm.png" width="120" height="120" alt="Mindfulness in the Middle"><div><small>Mindfulness in the Middle</small><h3>One practice for the week</h3></div></div>
+      <p class="tp-sit">One full breath. In for four, hold for four, out for six. It's what I do before every speaking engagement or presentation.</p>
+      <p>Mindfulness in the Middle is my space for staying grounded in the middle of a full life. It began as my healing journey, a path to finding myself again, and that path inspired Lipstick on My Fork and SZND. It has a home here now. <a href="/mindfulness.html">Find more practices</a></p>
+    </section>
+
+    <section class="tp-sec" id="one-more">
+      <div class="tp-open tp-o-o"><h2 class="k">One more thing</h2><span class="n" aria-hidden="true">07</span></div>
+      <figure class="tp-pic half"><img src="/assets/email/follow-toybox.jpg" width="1080" height="1350" loading="lazy" decoding="async" alt="Katoya Palmer speaking with a microphone, wearing a houndstooth jacket, above the ToyBox Consulting and Management logo in gold"></figure>
+      <p>My work has two homes. This letter is the story. <b>ToyBox Consulting &amp; Management</b> is the how: practical breakdowns for the people making decisions in business, government, the arts and nonprofits. Starting this week, ToyBox also shares <b>"What's Your Problem?"</b>: you bring a real challenge, and I show how I'd approach it. If you lead a team, a budget or a board, follow along there too.</p>
+      <p class="tp-more"><a href="https://www.linkedin.com/company/2863972/">LinkedIn</a> · <a href="https://www.instagram.com/toyboxconsulting/">Instagram</a> · <a href="https://www.tiktok.com/@toyboxconsulting">TikTok</a> · <a href="https://x.com/ToyBoxCM">X</a> · <a href="https://www.toyboxconsulting.net/">toyboxconsulting.net</a></p>
+      <p>And starting in November, ToyBox sends <b>Out the Box</b> once a month: practical lessons from its work in operations, programs and leadership development.</p>
+    </section>
+
+    <section class="tp-sec" id="talk">
+      <div class="tp-open tp-o-o"><h2 class="k">Talk to me</h2><span class="n" aria-hidden="true">08</span></div>
+      <p class="tp-take">This week's question: ham or smoked turkey in your split pea soup?</p>
+      <p>Tell me: <a href="mailto:katoya@toyboxconsulting.net?subject=Re%3A%20Thought%2C%20Taste%20%26%20Presence%20Issue%201">email me your answer</a>. I read every one.</p>
+      <div class="tp-endmark"><i class="bo" data-size="28" aria-hidden="true"></i></div>
+    </section>
+
+    <nav class="tp-pn" aria-label="More issues">
+      <span class="tp-pn-x"><span class="dir">Previous issue</span><span class="ttl">This is the first issue</span></span>
+      <a class="next" href="/letters/2026-10-19-issue-02.html"><span class="dir">Next issue →</span><span class="ttl">No. 2: Prevention is infrastructure</span></a>
+    </nav>
+  </article>
+</div>
+
+<div class="tp-sheet tp-contents" id="tp-sheet" role="dialog" aria-label="In this issue"><button class="tp-sheet-close" type="button">Close</button><h2>In this issue</h2></div>
+
+<section class="tp-end" id="subscribe" aria-label="Subscribe and share">
+  <div class="tp-e1">
+    <p class="k">Subscribe</p>
+    <h2>Get the next letter in your inbox.</h2>
+    <p>Short in your email every Monday. The full version lives here.</p>
+    <a class="tp-btn tp-btn-w" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=letter_page&amp;utm_campaign=ttp_weekly">Weekly: Thought, Taste &amp; Presence</a>
+    <a class="tp-btn tp-btn-o" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
+  </div>
+  <div class="tp-e2">
+    <p class="k">Share</p>
+    <h2>Pass this issue along.</h2>
+    <div data-share></div>
+  </div>
+  <div class="tp-e3">
+    <p class="k">Guess the spot · Thursday</p>
+    <h2>A new Lipstick on My Fork teaser drops Thursday.</h2>
+    <p>First correct guess gets a shout-out in next Monday's letter.</p>
+    <a class="tp-btn tp-btn-o" href="/lipstick.html#reviews">See the reviews</a>
+  </div>
+</section>
+
+<footer class="tp-foot">
   <a href="/index.html">katoyapalmer.com</a> · <a href="/letters/">All letters</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/cookies.html">Cookies</a>
   <div style="margin-top:8px">© 2026 Katoya Raquell Palmer</div>
 </footer>

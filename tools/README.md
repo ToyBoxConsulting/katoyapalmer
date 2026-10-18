@@ -33,3 +33,9 @@ If you skip the index step, search still works but will not find the new or chan
 ## Reading time
 
 Reading time is the essay's word count divided by 230, rounded up.
+
+## Weekly letter pages
+
+Every Thought, Taste & Presence issue uses the magazine template: `assets/letters.css` and
+`assets/letters.js`, with the page skeleton and step-by-step notes in `tools/letter-template.html`.
+The archive rack is `/letters/index.html`. Covers live in `/media/letters/covers/`.

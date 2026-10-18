@@ -24,56 +24,10 @@
 <meta name="twitter:image" content="https://www.katoyapalmer.com/media/letters/TTP_share_name_1200x630.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Italianno&family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
 <script src="/tb-events.js" defer></script>
 <script src="/assets/consent.js" defer></script>
-<style>
-  :root{
-    --paper:#F3EBDB; --card:#FCF8EF; --ink:#161210; --ink-soft:#6E665F; --line:#E5DFD3;
-    --gold:#C6A24C; --gold-deep:#7E601F;
-    --scarlet:#D6362A; --scarlet-deep:#A81F1A; --clay:#B5654A; --sage-deep:#5E7259;
-    --syne:"Syne",system-ui,sans-serif; --grot:"Space Grotesk",system-ui,sans-serif; --jost:"Jost",system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:var(--grot);background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
-  a{color:var(--scarlet-deep);}
-  .skip-link{position:absolute;left:-999px;} .skip-link:focus{left:16px;top:16px;background:#fff;padding:8px 12px;z-index:99;}
-  nav{position:sticky;top:0;z-index:50;background:rgba(243,235,219,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1100px;margin:0 auto;}
-  .wm{display:inline-flex;align-items:center;font-family:var(--syne);font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;}
-  .wm .bo{margin:0 1px;}
-  .nav-links{display:flex;gap:20px;align-items:center;}
-  .nav-links a{font-family:var(--jost);font-size:13px;font-weight:600;color:var(--ink-soft);text-decoration:none;}
-  .nav-sub{background:var(--scarlet);color:#fff!important;padding:9px 18px;border-radius:40px;}
-  .mast{text-align:center;padding:48px 16px 8px;}
-  .mast img{width:100%;max-width:720px;height:auto;}
-  article{max-width:680px;margin:0 auto;padding:8px 20px 40px;}
-  .issue-meta{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin-bottom:10px;}
-  h1{font-family:var(--syne);font-weight:800;font-size:clamp(30px,6vw,46px);line-height:1.05;text-align:center;margin-bottom:28px;}
-  h2{font-family:var(--jost);font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;margin:44px 0 6px;padding-top:18px;border-top:1px solid var(--line);}
-  h2.t{color:var(--scarlet);} h2.a{color:var(--clay);} h2.p{color:var(--sage-deep);} h2.o{color:var(--gold-deep);}
-  h3{font-family:var(--syne);font-weight:700;font-size:21px;line-height:1.2;margin:18px 0 6px;}
-  p{margin:10px 0;} ul{margin:8px 0 8px 22px;} li{margin:7px 0;}
-  .sub-card{background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:22px;margin:36px 0;text-align:center;}
-  .sub-card p{margin:6px 0 14px;color:var(--ink-soft);}
-  .btn{display:inline-block;font-family:var(--jost);font-weight:700;font-size:14px;padding:12px 22px;border-radius:40px;text-decoration:none;margin:4px;}
-  .btn-red{background:var(--scarlet);color:#fff;} .btn-navy{background:#14213D;color:#EAD79F;}
-  .share{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0;}
-  .share a,.share button{font-family:var(--jost);font-size:13px;font-weight:600;border:1px solid var(--gold);background:transparent;color:var(--ink);padding:8px 16px;border-radius:40px;text-decoration:none;cursor:pointer;}
-  .talk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:30px;}
-  .talk h2{border:0;margin-top:0;padding-top:0;color:var(--scarlet);}
-  footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;font-size:13px;color:var(--ink-soft);}
-  footer a{color:var(--ink-soft);margin:0 8px;}
-  @media (max-width:600px){.nav-links a:not(.nav-sub){display:none;}}
-  .lede{text-align:center;color:var(--ink-soft);max-width:560px;margin:0 auto 26px;}
-  .issues{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
-  .issues li{margin:0;border-bottom:1px solid var(--line);}
-  .issues a{display:block;padding:18px 4px;text-decoration:none;color:var(--ink);}
-  .issues .im{font-family:var(--jost);font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);}
-  .issues .it{font-family:var(--syne);font-weight:700;font-size:22px;line-height:1.2;margin:4px 0;}
-  .issues .id{font-size:15px;color:var(--ink-soft);}
-  .issues a:hover .it{color:var(--scarlet);}
-</style>
+<link rel="stylesheet" href="/assets/letters.css" />
 <link rel="stylesheet" href="/assets/kp-music.css" />
 <script src="/assets/kp-music.js" defer></script>
 <script type="application/ld+json">
@@ -107,34 +61,58 @@
 <!-- kp-header:end -->
 <span id="main"></span>
 
-<div class="mast"><img src="/media/letters/TTP_email-header_1200x360.png" alt="KATOYA — Thought · Taste · Presence, the weekly letter" width="1200" height="360"></div>
+<header class="tp-mast">
+  <i class="bo" data-size="44" aria-hidden="true"></i>
+  <p class="tp-mast-k">The weekly letter from Katoya Palmer · Every Monday</p>
+</header>
 
-<article>
-  <div class="issue-meta">The weekly letter</div>
-  <h1>All letters</h1>
-  <p class="lede">Every Monday, one letter with everything I shared that week, across my consulting work, my writing and my kitchen.</p>
+<div class="tp-rack-head">
+  <h1><span class="t">Thought,</span> <span class="a">Taste</span> <span class="amp">&amp;</span> <span class="p">Presence</span></h1>
+  <p>Every Monday, one letter with everything I shared that week, across my consulting work, my writing and my kitchen. Pick an issue off the rack.</p>
+</div>
 
-  <ul class="issues">
-    <li><a href="/letters/2026-10-19-issue-02.html">
-      <div class="im">Issue 2 · Monday, October 19, 2026</div>
-      <div class="it">Prevention is infrastructure</div>
-      <div class="id">What a board is really for, Space Between, four years of basil, catfish worth the drive, good news on our Husky journey, and this week's sit.</div>
+<section class="tp-shelf" aria-label="All letters">
+  <ul class="tp-rack">
+    <!-- Newest issue first, with class="latest". Each cover: photo, name, number and date, headline, top 3 stories. -->
+    <li class="latest"><a class="tp-cov latest" href="/letters/2026-10-19-issue-02.html">
+      <img src="/media/letters/covers/issue-02-rack.jpg" width="600" height="800" alt="Katoya Palmer smiling on a wooden garden bench">
+      <div class="top"><span class="name"><span class="tp-t-l">Thought,</span> <span class="tp-a-l">Taste</span><br><span class="tp-amp-l">&amp;</span> <span class="tp-p-l">Presence</span></span><span class="no">No. 2<small>October 19, 2026</small></span></div>
+      <div class="bot">
+        <span class="tp-new">This week</span>
+        <h2>Prevention is infrastructure</h2>
+        <ul>
+          <li><b>Thought</b>Prevention is infrastructure, and what a board is really for</li>
+          <li><b>Spotlight</b>Space Between, and their auction is open now</li>
+          <li><b>Taste</b>Four years of basil, and catfish worth the drive</li>
+        </ul>
+      </div>
     </a></li>
-    <li><a href="/letters/2026-10-12-issue-01.html">
-      <div class="im">Issue 1 · Monday, October 12, 2026</div>
-      <div class="it">No better time than today</div>
-      <div class="id">Five Windows turns one, two soups from SZND by Katoya, Lipstick on My Fork at Primo's, the 4Culture Network of Support mixer, and where I'll be next.</div>
+    <li><a class="tp-cov" href="/letters/2026-10-12-issue-01.html">
+      <img src="/media/letters/covers/issue-01-cover.jpg" width="714" height="1073" alt="Katoya Palmer speaking into a microphone at an event, in a houndstooth coat" style="object-position:50% 15%">
+      <div class="top"><span class="name"><span class="tp-t-l">Thought,</span> <span class="tp-a-l">Taste</span><br><span class="tp-amp-l">&amp;</span> <span class="tp-p-l">Presence</span></span><span class="no">No. 1<small>October 12, 2026</small></span></div>
+      <div class="bot">
+        <h2>No better time than today</h2>
+        <ul>
+          <li><b>Thought</b>Five Windows, one year later</li>
+          <li><b>Taste</b>Two soups from SZND by Katoya</li>
+          <li><b>Taste</b>Lipstick on My Fork at Primo's</li>
+        </ul>
+      </div>
     </a></li>
+    <li><div class="tp-cov soon"><p>No. 3 arrives<br>Monday, October 26</p></div></li>
   </ul>
+  <div class="tp-ledge" aria-hidden="true"></div>
+</section>
 
-  <div class="sub-card">
-    <p><b>Get the next letter in your inbox.</b></p>
-    <a class="btn btn-red" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=letters_index&amp;utm_campaign=ttp_weekly&amp;utm_content=card">Weekly: Thought, Taste &amp; Presence</a>
-    <a class="btn btn-navy" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
+<section class="tp-subband" id="subscribe">
+  <div><h2>Get the next letter in your inbox.</h2><p>Short in your email every Monday. The full version lives here.</p></div>
+  <div>
+    <a class="tp-btn tp-btn-red" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=letters_index&amp;utm_campaign=ttp_weekly&amp;utm_content=card">Weekly: Thought, Taste &amp; Presence</a>
+    <a class="tp-btn tp-btn-navy" href="https://www.toyboxconsulting.net/#newsletter">Monthly: Out the Box</a>
   </div>
-</article>
+</section>
 
-<footer>
+<footer class="tp-foot">
   <a href="/index.html">katoyapalmer.com</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/cookies.html">Cookies</a>
   <div style="margin-top:8px">© 2026 Katoya Raquell Palmer</div>
 </footer>
