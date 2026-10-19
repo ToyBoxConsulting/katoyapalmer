@@ -228,6 +228,26 @@
 .letter-band p{margin:0;flex:1 1 320px;line-height:1.5}
 .letter-band .lb-btns{display:flex;flex-wrap:wrap;gap:10px}
 </style>
+<style>
+/* The column (2026-10-12): all reviews on one page, newest first */
+.column{max-width:680px}
+.column .col-intro{font-size:15px;color:var(--ink-soft);margin:8px 0 18px;font-style:italic}
+.col-entry{border-top:3px double var(--ink);padding:22px 0 26px;text-align:left}
+.col-entry .dateline{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.col-entry h3{font-family:var(--disp);font-size:30px;line-height:1.1;color:var(--red);margin:6px 0 6px}
+.col-entry h4{font-family:var(--disp);font-size:19px;margin:20px 0 4px}
+.col-entry p{line-height:1.65;margin:0 0 12px}
+.col-rating{margin:0 0 14px}
+.col-entry figure{margin:14px 0}
+.col-entry figure img{width:100%;height:auto;display:block}
+.col-entry figcaption{font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:6px}
+.col-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.col-gallery{grid-template-columns:1fr}}
+.col-entry .seg{border-left:3px solid var(--red);padding:2px 0 2px 14px;margin:14px 0}
+.col-entry .seg .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--red)}
+.col-entry .seg p{margin:4px 0 0}
+.col-meta{font-size:14px;color:var(--ink-soft)}
+</style>
 </head>
 <body data-screen-label="Lipstick on My Fork" data-track="lipstick">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -264,7 +284,7 @@
       <div class="rule"><span class="ln"></span><span class="mid">flirty · gluttonous · decadent</span><span class="ln"></span></div>
       <p class="sub">No recipes here. Just me, a reservation, and zero restraint — eating my way through the restaurant scene, lipstick intact.</p>
       <div class="cta">
-        <a class="btn btn-red" href="/lipstick/primos-bellevue.html">Read the latest bite</a>
+        <a class="btn btn-red" href="#hilltop-red-apple">Read the latest bite</a>
         <a class="btn btn-ink" href="https://www.tiktok.com/@lipstickonmyfork">Watch on TikTok</a>
       </div>
     </div>
@@ -343,11 +363,50 @@
       <div class="lab">From the table</div>
       <h2>Every review lives <em>here</em>.</h2>
       <p>Lipstick on My Fork lives on katoyapalmer.com now. Honest takes and the occasional kitchen confession, delivered with a full mouth and a red lip, and rounded up in my weekly letter, Thought, Taste &amp; Presence.</p>
-      <div class="reviews" id="reviews">
-        <div class="lab">Reviews</div>
-        <ul>
-          <li><a href="/lipstick/primos-bellevue.html"><span class="rv-name">Primo's, Bellevue</span> <span class="rv-lips" aria-label="4 lip prints">💋💋💋💋</span> <span class="rv-verdict">Swoon. Bring a date worth it.</span></a></li>
-        </ul>
+      <div class="reviews column" id="reviews">
+        <div class="lab">The column</div>
+        <p class="col-intro">A new review every Sunday, like the restaurant column that used to run in the Sunday paper. Newest first.</p>
+
+        <article class="col-entry" id="hilltop-red-apple">
+          <div class="dateline">Sunday, October 18, 2026</div>
+          <h3>Hilltop Red Apple, Beacon Hill</h3>
+          <div class="col-rating"><span class="rv-lips" aria-label="4 lip prints">💋💋💋💋</span> <span class="rv-verdict">Swoon. Bring a date worth it.</span></div>
+          <figure><img src="/media/lipstick/hilltop-catfish.jpg" width="1080" height="891" alt="Fried catfish piled high in the hot case at Hilltop Red Apple on Beacon Hill" loading="lazy"><figcaption>The fried catfish in the hot case.</figcaption></figure>
+          <p>If you know, you know. The fried catfish in the hot case at Hilltop Red Apple is the reason I once drove all the way to Beacon Hill for a fix, and this week I almost did it again.</p>
+          <p>It's a little nostalgic too. Before Beacon Hill, there was the Red Apple that used to be on Jackson. My mom and I stopped there for catfish on so many Sundays after church.</p>
+          <h4>Flavor</h4>
+          <p>The fish is usually fresh, and it's fried the way I like it. Nothing tastes like home-cooked catfish to me yet, but this is my fix until it does. The hushpuppies are a must, and this visit I got a little peach cobbler too.</p>
+          <h4>Service</h4>
+          <p>The staff is always super friendly.</p>
+          <div class="seg"><div class="k">Lipstick Test</div><p>None left. Pass the tartar sauce and hot sauce.</p></div>
+          <div class="seg"><div class="k">The Dedication</div><p>This one goes out to the Hilltop staff. Always super friendly.</p></div>
+          <h4>Would I go back?</h4>
+          <p>I almost did tonight.</p>
+          <p class="col-meta"><b>Forkprint:</b> September 7, 2026 · Hilltop Red Apple, Beacon Hill, Seattle</p>
+        </article>
+
+        <article class="col-entry" id="primos-bellevue">
+          <div class="dateline">Sunday, October 11, 2026</div>
+          <h3>Primo's, Bellevue</h3>
+          <div class="col-rating"><span class="rv-lips" aria-label="4 lip prints">💋💋💋💋</span> <span class="rv-verdict">Swoon. Bring a date worth it.</span></div>
+          <p>I've been coming back since January 2026. The first visit I worked through most of the appetizers with a colleague and fell for the drinks, the potato salad and the ribeye. Then I found Taco Tuesday: the tacos and sides are worth the trip, and my taco plates came with a free drink. I've also sampled their seasonal pasta and gnocchi at events, and they hosted my taste test for Golden Hour Unboxed.</p>
+          <p>The chicken and waffles took me back to my grandma's fried chicken. And the house salad is my must, every single time. It comes with steak, wrapped like a bouquet, and it's the best deal on the menu.</p>
+          <div class="col-gallery">
+            <figure><img src="/media/lipstick/primos-bouquet-salad.jpg" width="1080" height="891" alt="House salad with steak, wrapped in floral paper and ribbon like a bouquet" loading="lazy"><figcaption>The house salad arrives like a bouquet.</figcaption></figure>
+            <figure><img src="/media/lipstick/primos-house-salad.jpg" width="1080" height="891" alt="The house salad unwrapped, with an avocado rose and sliced steak" loading="lazy"><figcaption>Unwrapped: steak, greens and an avocado rose.</figcaption></figure>
+          </div>
+          <h4>The vibe</h4>
+          <p>Live music most times I've been, and a playlist that jams when there isn't. The staff is always friendly and professional. My move is to go right at opening, when it's a little quieter.</p>
+          <h4>The tab</h4>
+          <p>Prices are decent if you have discipline. Drinks will bump the tab up quickly, so plan accordingly, or go on Taco Tuesday.</p>
+          <div class="seg"><div class="k">Lipstick Test</div><p>Wiped clean. Every time.</p></div>
+          <div class="seg"><div class="k">The Dedication</div><p>This one goes out to Chuck. I didn't know him before Golden Hour Unboxed. Primo's was the first restaurant to answer, and he didn't hesitate. He made the evening. That's what showing up for community looks like.</p></div>
+          <div class="seg"><div class="k">Kiss &amp; Tell 💋</div><p>Primo's is named for the owners' friend Juan "Primo." Chuck also runs Vue in Belltown, karaoke suites and all.</p></div>
+          <h4>Would I go back?</h4>
+          <p>I can't wait to.</p>
+          <p class="col-meta"><b>Forkprint archive:</b> January 2026 · August 20, 2026 · <b>Primo's</b>, 1020 Bellevue Way NE, Bellevue · <a href="https://www.primosbellevue.com/">primosbellevue.com</a></p>
+          <p class="col-meta disclosure">Disclosure: Primo's sponsored catering for Golden Hour Unboxed. This review isn't sponsored.</p>
+        </article>
       </div>
       <div class="cta">
         <a class="btn btn-red" href="https://ee4a3130.sibforms.com/serve/MUIFAJP_UHMcBS1cYVw5mV8I2naK8-vwkEEE59UVm6uTXaad3tf3vL9gwFDGqBjdG3KJQFKt3m9pgqFKrB9c6BSLfleUNrvqHk6ftbmCrerxDy0bgt46GHSCX9SKk4HpdpGfrsWmKnIBry2UQy93cUrYwUaEEaoFAKsyJiPlKQdtBDx24kzfmJcNsCjHf3lNED_s_msGzm7nP1Zq2Q==?utm_source=site&amp;utm_medium=lipstick&amp;utm_campaign=ttp_weekly&amp;utm_content=reviews">Get my weekly letter</a>
