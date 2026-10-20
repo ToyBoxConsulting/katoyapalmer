@@ -88,7 +88,7 @@ html.kp-lock .kp-music{display:none!important}
   .kp-h-in{padding:10px 20px;gap:12px}
   .kp-sub-in{padding:8px 20px}
 }
-@media (max-width:420px){
+@media (max-width:480px){
   .kp-sur{display:none}
   .kp-wm{font-size:21px}
   .kp-btn.cta{padding:0 14px}
