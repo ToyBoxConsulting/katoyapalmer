@@ -180,9 +180,7 @@ That memory sits differently now. Today, as a board member helping to advance a 
 
 Direct service staff at a sheltering organization where I serve on the board describe the same dynamic every day. Many families can’t choose alignment because affordable units are often clustered far from Bellevue jobs and services. Case managers even start housing searches by bus lines. One staff member described their commute as “a second job” that takes hours away from family, self-care, and potential second income.
 
-And the data proves how fragile the balance is. In King County, of more than 16,000 people who exited federally subsidized housing, 16% became homeless again within a year. For those with evictions or lease violations, it was one in four. National studies by HUD mirror the same. What no system tracks is what happens after that first year — the fragile threshold where housing, transit, and income together decide who stays stable and who falls back.
-
-.
+And the data proves how fragile the balance is. In King County, of more than 16,000 people who exited federally subsidized housing, 16% became homeless again within a year. For those who left because of an eviction, lease violation or another negative exit, it was one in four. A HUD-funded study of Seattle and King County households, called HEARS, found the same pattern. What almost no system tracks is what happens after that first year — the fragile threshold where housing, transit, and income together decide who stays stable and who falls back.
 
 Policy Proximity vs. Lived Reality
 
@@ -192,21 +190,21 @@ And too often, access to support isn’t transparent. Smaller community-based or
 
 Meanwhile, families and entrepreneurs remain in constant crisis management. I know, because I’ve lived both sides. As recently as 2022, I was on Section 8 housing assistance. Within ten years, I had earned a degree, stepped into senior leadership, and built my own consulting business. That trajectory looks like success. But when my first executive role began, Section 8 ended too.
 
-And beyond housing, I carry another layer. As a Black woman, I have felt the pain of navigating employment that is never as stable or secure as the policies suggest it should be. I’m not alone. In mid-2025, the unemployment rate for Black women rose to about 6.7%, compared with roughly 4.2% nationally. That means Black women are unemployed at a rate nearly three points higher than the average — an epidemic that reveals how race, gender, and economics intersect to keep stability fragile.
+And beyond housing, I carry another layer. As a Black woman, I have felt the pain of navigating employment that is never as stable or secure as the policies suggest it should be. I’m not alone. In mid-2025, the unemployment rate for Black women rose to about 6.7%, compared with roughly 4.2% nationally. That means Black women are unemployed at a rate about two and a half points higher than the average — an epidemic that reveals how race, gender, and economics intersect to keep stability fragile.
 
-The same inequities show up in housing. Black women are more likely to face discrimination in rental markets, less likely to have applications accepted even with vouchers, and more likely to carry the compounded cost of caregiving while navigating instability. Stability is never race-neutral or gender-neutral — it is shaped by who systems are designed to serve, and who they are not.
+The same inequities show up in housing. Black women face the highest eviction rates of any group in the country, and voucher holders are still turned away by landlords even where the law, like here in Washington, forbids it. Black women are also more likely to carry the compounded cost of caregiving while navigating instability. Stability is never race-neutral or gender-neutral — it is shaped by who systems are designed to serve, and who they are not.
 
 So today, while I rebuild, I do so without the cover of housing support for the first time since 2008, and while carrying the weight of a job market that has never been neutral. That isn’t just my story. It’s a mirror of the system’s flaws.
 
 Housing Insecurity Is Economic Insecurity
 
-Housing instability doesn’t stop at the doorstep; it ripples through the economy. When housing is unaffordable, small business vitality collapses. In some corridors, it is literally cheaper to lease a storefront than an apartment. That inversion forces impossible choices: shelter or growth, stability or opportunity.
+Housing instability doesn’t stop at the doorstep; it ripples through the economy. When housing is unaffordable, small business vitality collapses. In some corridors, a small storefront can cost less per month than an apartment nearby. That inversion forces impossible choices: shelter or growth, stability or opportunity.
 
 And the workforce suffers too. Employees priced out of living near their jobs leave or spend hours commuting — time stolen from family, education, or the chance to earn additional income. Entrepreneurs with ideas but no capital remain locked out. Communities trying to build intergenerational wealth watch their progress stall.
 
 I know, because I’ve lived it. After more than a decade in Seattle’s Central District under Seattle Housing Authority, I was forced to move in 2020, during the height of the COVID pandemic. Two emergencies collided at once. First, my apartment developed a major plumbing leak, and water damage spread until the unit was deemed unlivable. COVID protocols delayed the process, making a bad situation impossible. At the same time, my son went through a severe bullying incident in Seattle Public Schools. The disruptions in his school environment compounded the urgency of leaving, pushing me to find a safer school and a home closer to it. What might have been resolved in another year became unmanageable when both crises hit at once. I transitioned immediately onto a King County Housing Authority voucher and relocated to Bellevue. On paper, that might look like continuity. In reality, it was displacement forced by conditions no family should have to endure.
 
-For readers who may not know: Section 8 is a federal program, but it’s administered by local housing authorities. In Seattle, that means the Seattle Housing Authority. In the rest of the region, it’s King County Housing Authority. After one year, voucher holders are technically allowed to “port out” — meaning transfer their voucher to another jurisdiction, even across the country. In theory, it’s designed to give families flexibility. In practice, porting often comes with months of paperwork, waitlists, and limited housing options.
+For readers who may not know: Section 8 is a federal program, but it’s administered by local housing authorities. In Seattle, that means the Seattle Housing Authority. In most of the rest of the county, it’s King County Housing Authority (Renton has its own). Voucher holders are technically allowed to “port out” — meaning transfer their voucher to another jurisdiction, even across the country. If you didn’t live in the housing authority’s area when you applied, you may have to wait a year first. In theory, it’s designed to give families flexibility. In practice, porting often comes with months of paperwork, waitlists, and limited housing options.
 
 Move-in day, 2020 — Bellevue. After more than a decade in the Central District, we relocated when our unit became unlivable during the pandemic. This kitchen represented a new beginning, but also a reminder: stability is always more fragile than it looks from the outside.
 
@@ -270,7 +268,7 @@ The Policy Gaps We Don’t Talk About
 
 I don’t claim to be a policy expert. But I have lived through housing insecurity, managed voucher processes for others, and rebuilt infrastructure as an operations leader. From that vantage point, the gaps are clear.
 
-In Washington State and King County, we don’t consistently track what happens after people exit housing support. We don’t always require community-based organizations to demonstrate readiness before managing large assistance programs. We don’t measure whether families remain stable after the check is cut. And too often, intake processes lack transparency, so support flows through word of mouth or personal connections instead of equitable systems.
+In Washington State and King County, we have studied it, but we don’t routinely track or publish what happens after people exit housing support. We don’t always require community-based organizations to demonstrate readiness before managing large assistance programs. We don’t measure whether families remain stable after the check is cut. And too often, intake processes lack transparency, so support flows through word of mouth or personal connections instead of equitable systems.
 
 These gaps matter because they show that funding alone isn’t enough. If public or private dollars are used for housing, then readiness, staff capacity, and conflict-of-interest policies must be part of the equation. Otherwise, families end up waiting, staff burn out, and stability slips away.
 
@@ -290,9 +288,13 @@ And it’s on all of us, as voters and community members, to demand better. When
 
 Next, we’ll step into the second window: Community Safety. Because when housing and mobility are fragile, the impact doesn’t stop at the household door. It spills into schools, workplaces, and neighborhoods. Safety is not just about policing or crime — it is about whether people have the stability and access that keep families and communities whole.
 
+A note on this update (October 21, 2026)
+
+One year after this series began, I went back through every number and source in this essay. I corrected a few things. A study I described as national was a HUD-funded study of Seattle and King County. The gap between Black women's unemployment and the national rate was two and a half points, not nearly three. I also clarified how voucher transfers and housing authorities work, softened a claim I could not source, named the King County study behind the 16 percent figure, and updated the homelessness count to 2026. The argument and the lived experience in this essay have not changed.
+
 Sources & Credibility
 
-The statistics cited in this essay are drawn from publicly available, peer-reviewed, and governmental sources. For example, the HUD HEARS Study tracks trajectories of households exiting subsidized housing and informs exit-risk data. The U.S. Bureau of Labor Statistics / FRED series confirms the 6.7% unemployment rate for Black women in 2025. Local homelessness data, such as the King County PIT estimate of ~16,385 people, is published by the King County Regional Homelessness Authority and local media outlets. These figures help ground this essay in both lived experience and empirical evidence.
+The statistics cited in this essay are drawn from publicly available, peer-reviewed, and governmental sources. For example, the HUD-funded HEARS study of Seattle and King County households (final report, January 2024) tracks trajectories of households exiting subsidized housing and informs exit-risk data. The King County exit figures (16,301 people, 16 percent homeless within a year) come from a study of exit type and homelessness in Housing Policy Debate, summarized by the National Low Income Housing Coalition (August 21, 2023). Eviction data comes from Hepburn, Louis and Desmond (Sociological Science, 2020) and Graetz and colleagues (PNAS, 2023). The U.S. Bureau of Labor Statistics / FRED series confirms the 6.7% unemployment rate for Black women in 2025. Local homelessness data, such as the King County 2026 Point-in-Time count of 18,365 people (initial report), is published by the King County Regional Homelessness Authority. These figures help ground this essay in both lived experience and empirical evidence.
 
 If this essay resonates with your experience or community, I invite you to subscribe and share. Each window builds on the last, and together they tell the story of how we can rebuild stability from the ground up.
 
@@ -315,7 +317,7 @@ Visit the TikTok Video companion series
 
 Katoya Palmer is a Co-Author of “Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,”
 
-American Journal of Public Health (2024) — collaborative study bridging public health research and community-based violence intervention practice. PubMed ID: 38509040
+Journal of Trauma and Acute Care Surgery (2024) 97(2):278-285 — collaborative study bridging public health research and community-based violence intervention practice. PubMed ID: 38509040
 
 This essay is part of Five Windows into a Fragile Economy—a series about how instability in housing, safety, nonprofits, technology, and economic growth isn’t random: it’s systemic.
 
@@ -421,21 +423,23 @@ From pool decks to classrooms to campaigns, one truth followed me: safety isn’
 
 Building a Local Hub of Belonging
 
-While at the community-safety organization, I spearheaded the creation of a service center at 23rd and Jackson—a neighborhood hub offering snacks, case management, tutoring, and mentorship while partnering with local businesses to deepen belonging.
+While at the community-safety organization, I spearheaded the creation of a service center at 23rd and Jackson. It had a soft opening on June 2, 2023, and was fully running by September, in time for the school year: a neighborhood hub offering snacks, case management, tutoring, and mentorship while partnering with local businesses to deepen belonging.
 
 Launching the hub wasn’t simple. I managed the trepidation of staff who were concerned about “popping up” in what was considered a hotspot—the very kind of area our work targeted for remediation. Establishing a physical presence there wasn’t just a programmatic decision; it was a statement of belief that safety must exist where harm has occurred.
 
-At its peak, the center even reduced shoplifting at the nearby Amazon Go store—proof that
+At its peak, the center even reduced shoplifting at a nearby convenience store—proof that
 
 proximity and care can change behavior.
+
+The center closed not long after I left.
 
 Where the System Breaks
 
 From lifeguards to credible messengers — safety only works when people do.
 
-Despite record funding, our systems still prioritize reaction over readiness.
+Even at the height of federal investment, our systems prioritized reaction over readiness. Now much of that investment is gone.
 
-In 2024, King County recorded 1,591 shots-fired incidents, 75 firearm homicides, and 319 non-fatal shooting victims—more than half within Seattle. By mid-2025, those numbers had dropped by nearly one-third, but the progress remains fragile.
+In 2024, King County recorded about 1,600 shots-fired incidents and nearly 400 shooting victims, about half of them in Seattle. In 2025, shots fired dropped 35 percent to 1,057, and shooting victims fell to 235, the lowest since before the pandemic. The decline continued into 2026, but the progress remains fragile.
 
 We praise community workers as heroes but underfund their healing. Many of these workers are recruited directly from the neighborhoods most affected by violence. They carry community credibility—but that closeness comes at a cost. Working where you’ve experienced trauma means reliving it daily, and without support, that proximity can turn dangerous. Some relapse into the same cycles they once escaped. Others burn out, or worse, become targets themselves.
 
@@ -465,7 +469,7 @@ The Missing Link — Training and Standardization
 
 Across the country, credible messengers are being trained by Dr. Chico Tillmon, Dr. Joseph Marshall, Dr. Aquil Basheer, and programs like ROCA, the Metropolitan Peace Academy, and the Health Alliance for Violence Intervention (HAVI).
 
-Research in Oakland shows that variation in training requirements undermines consistency and safety—the same problem lifeguarding solved decades ago through national credentialing. Oakland’s outreach workers, for example, received clinical supervision, living-wage stipends, and structured professional development—supports that reduced turnover and burnout.
+National reviews of the field call for balancing standards with flexibility, the same problem lifeguarding solved decades ago through national credentialing. Oakland invested in training and support for its life coaches and outreach workers.
 
 Standards don’t erase community culture; they protect it. Uneven readiness turns safety into chance.
 
@@ -473,7 +477,7 @@ Dr. Chico Tillmon speaking at the 2022 National Research Conference for the Prev
 
 Reinforced Wellness and Worker Support
 
-The Giffords Law Center reports that community-violence workers experience trauma at rates comparable to first responders. In some cities, those realities led to a shift: therapy, peer-support groups, and debrief sessions became standard, not supplemental.
+A Northwestern study of Chicago’s violence-intervention workforce found that workers were shot at more often than Chicago police officers, and nearly all of them showed signs of secondary trauma. In some cities, those realities led to a shift: therapy, peer-support groups, and debrief sessions became standard, not supplemental.
 
 That mirrors my own experience implementing employer paid life-insurance coverage and wellness planning for front-line workers. I wanted them to have something tangible—a policy that said, “your life matters as much as the ones you save.”
 
@@ -483,13 +487,11 @@ Emerging Research: The Field Is Catching Up
 
 The newest studies echo what communities have said for years: prevention can be measured, but only if we measure what matters.
 
-A national review found that only one in ten violence-prevention programs included community members in defining success. Researchers now call for shared power in evaluation.
+A 2025 University of Washington review of 149 evaluations found that only about one in ten included violence-intervention practitioners as authors. Most measured only what went wrong, not what got better. Researchers now call for shared power in evaluation.
 
 In New York City, the Cure Violence model led to roughly 14 percent fewer shootings in neighborhoods where outreach teams were active.
 
-Some states are piloting Medicaid reimbursements for violence-prevention work—treating it as essential health care.
-
-Studies confirm what workers already know: outreach staff face trauma on par with paramedics and need built-in mental-health care, not optional wellness days.
+At least seven states now let Medicaid pay for violence-prevention services, treating it as essential health care.
 
 National frameworks from Giffords and the CDC now point toward the same conclusion: prevention must be professionalized—with fair pay, stable funding, and standardized training.
 
@@ -501,9 +503,9 @@ Solutions Dashboard: Community Safety as Infrastructure
 
 Proven Solutions
 
-Research from Oakland and the Giffords Law Center shows what happens when prevention is funded like infrastructure. Between 2012 and 2018, Oakland cut shootings by more than half and homicides by 49 percent through its Ceasefire model—combining deterrence, life coaching, and wraparound services.
+Research from Oakland and the Giffords Law Center shows what happens when prevention is funded like infrastructure. Between 2012 and 2018, Oakland cut shootings by more than half and homicides by nearly half through its Ceasefire model—combining deterrence, life coaching, and wraparound services.
 
-Programs like Advance Peace, Cure Violence Global, and ROCA show similar results, with violence reduced by 35–63 percent. Completing the Chicago CRED program was associated with a 73 percent lower risk of arrest for a violent crime over two years compared with non-participants.
+Programs like Advance Peace and Cure Violence have seen striking results at individual sites: a 55 percent drop in gun deaths and injuries in Richmond, California, and 63 percent fewer shootings in one South Bronx neighborhood. Completing the Chicago CRED program was associated with a 73 percent lower risk of arrest for a violent crime over two years compared with non-participants.
 
 Low-Hanging Fruit
 
@@ -539,11 +541,11 @@ Dr. Deborah Prothrow-Stith speaking at the 2022 National Research Conference for
 
 Erica Ford has been a strong voice in the national conversation around community violence. I have heard her speak, and her public presence has inspired many women working in this space.
 
-Dr. Alisha Moreland-Capuia currently leads trauma-informed efforts at McLean Hospital and is Assistant Professor of Psychiatry at Harvard Medical School. Her work builds bridges between trauma science and system-level change—training organizations in how to operate through a trauma-informed lens. Dr. Alisha Moreland Capuia+1
+Dr. Alisha Moreland-Capuia currently leads trauma-informed efforts at McLean Hospital and is Assistant Professor of Psychiatry at Harvard Medical School. Her work builds bridges between trauma science and system-level change—training organizations in how to operate through a trauma-informed lens. Dr. Alisha Moreland Capuia
 
-Dr. Jessica H. Beard is a trauma surgeon, Director of Trauma Research, and Director of Research for the Philadelphia Center for Gun Violence Reporting. She is also a Stoneleigh Fellow. Her scholarship examines the intersection of clinical care, media narratives, and community recovery. Stoneleigh Foundation+1
+Dr. Jessica H. Beard is a trauma surgeon, Director of Trauma Research, and Director of Research for the Philadelphia Center for Gun Violence Reporting. She was also a Stoneleigh Fellow. Her scholarship examines the intersection of clinical care, media narratives, and community recovery. Stoneleigh Foundation
 
-Dr. Thema Bryant is a psychologist, academic leader, and in 2023 was elected President of the American Psychological Association. Her research and public advocacy focus on racialized trauma, healing, and systems transformation. Wikipedia
+Dr. Thema Bryant is a psychologist, academic leader, and served as the 2023 President of the American Psychological Association. Her research and public advocacy focus on racialized trauma, healing, and systems transformation.
 
 These women—some I’ve encountered directly, others whose work I’ve observed from afar—represent the backbone of the community-safety field. Their series of breaking ground, building frameworks, and reimagining infrastructure proves that prevention is not reaction—it’s design.
 
@@ -587,35 +589,47 @@ These organizations hold the emotional weight, the financial strain, and the pub
 
 The next essay in this series, “Nonprofit Fragility: Passion Isn’t a System,” explores why the very organizations designed to keep our communities safe are themselves so vulnerable to collapse. It looks at what happens when care work runs on exhaustion instead of investment, and why strengthening the people who hold the line is the most overlooked form of prevention.
 
+A note on this update (October 21, 2026)
+
+One year after this series began, I went back through every number and source in this essay. I updated King County's shooting figures with the revised 2024 data and the 2025 results. I replaced several statements I could not trace to a published source with findings I could verify. I also corrected journal names, a report title, two dates and Oakland's homicide decline, which was nearly half rather than 49 percent. A few stray citation marks are removed. I also added when the service center at 23rd and Jackson opened, and that it has since closed. The argument and the lived experience in this essay have not changed.
+
 Notes & Sources
 
 Alive & Free model founded by Dr. Joseph Marshall, San Francisco.
 
-“Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,” American Journal of Public Health / Journal of Trauma and Acute Care Surgery (2024).
+“Codeveloping Theories of Change for Improved Community-Based Violence Intervention Evaluation,” Journal of Trauma and Acute Care Surgery 2024;97(2):278-285 (Schleimer et al.).
 
 King County Prosecuting Attorney’s Office, 2024 Year-End Gun Violence Report.
 
-King County Prosecuting Attorney’s Office, Q2 2025 Gun Violence Report.
+King County Prosecuting Attorney’s Office, 2025 Year-End Gun Violence Report (February 2026).
 
-Oakland Department of Violence Prevention, Exhibit C: Practice-Based & Evidence-Informed Programs Research (2022).
+King County Prosecuting Attorney’s Office, Q2 2026 Gun Violence Report.
 
-Giffords Law Center, A Case Study in Hope: The Oakland Ceasefire Model and Violence Prevention Infrastructure (2019).
+Braga et al., Oakland Ceasefire Evaluation (2018).
 
-Advance Peace and Cure Violence Global evaluation summaries, 2018–2022.
+Mathematica, Oakland Unite evaluation reports (2016–2020).
 
-Northwestern University, Chicago CRED Evaluation Study (2023).
+Giffords Law Center, A Case Study in Hope: Lessons from Oakland’s Remarkable Reduction in Gun Violence (2019).
 
-“Evaluating Community Violence Intervention Programs: A Scoping Review,” Univ. of Washington / Am J Prev Med (2025).
+Matthay et al., Advance Peace evaluation in Richmond, California, American Journal of Public Health (2019).
+
+John Jay College Research and Evaluation Center, Cure Violence evaluation, New York City (2017).
+
+Northwestern University, Chicago CRED evaluation, Proceedings of the National Academy of Sciences (2023).
+
+“Evaluating Community Violence Intervention Programs: A Scoping Review,” Girma, Schleimer et al., Univ. of Washington / Inquiry 62 (2025).
 
 “Do Cure Violence Programs Reduce Gun Violence? Evidence from New York City,” arXiv (2024).
 
-“Medicaid Reimbursement for Community Violence Intervention,” Health & Justice Journal (2025).
+“Medicaid Reimbursement for Community Violence Intervention,” Health & Justice (April 2025).
 
-“Understanding Structural Violence in Community Interventions,” Social Science & Medicine (2024).
+“Understanding Structural Violence in Community Interventions,” Inquiry (2025).
 
-CVI Research & Evaluation Road Map, RTI International (2024).
+CVI Research & Evaluation Road Map, RTI International (2025).
 
 Opportunities for Innovation in Community Violence Intervention, Giffords Law Center (2025).
+
+Hureau et al., study of Chicago’s community violence intervention workforce, Science Advances (2022).
 
 ---
 
@@ -650,7 +664,7 @@ The Anatomy of Fragility
 
 We expect nonprofit leaders to manage multimillion-dollar missions while underpaying them, underfunding their infrastructure, and then holding them solely responsible when systems break. Fragility doesn’t begin with bad leadership—it begins with budgets that ignore infrastructure.
 
-Over half of nonprofits in the U.S. cite chronic underfunding of infrastructure as their greatest operational risk—not turnover or mission drift, according to the National Council of Nonprofits (2024). When oversight, HR, and finance are understaffed, ethical lapses stop being exceptions and start becoming survival strategies.
+More than half of nonprofits now run on three months of cash or less, and over a third ended 2024 in the red, according to Nonprofit Finance Fund. That is what a budget that ignores infrastructure looks like. When oversight, HR, and finance are understaffed, ethical lapses stop being exceptions and start becoming survival strategies.
 
 I’ve seen it up close: passion prioritized over process, duplication over coalition, and relationships valued more than results. Some organizations start with heart but not systems—no finance structure, HR compliance, or data integrity. Others grow faster than their capacity, chasing dollars that fund programs but never the departments that sustain them. The result is predictable: instability disguised as innovation, and charisma mistaken for competence.
 
@@ -664,7 +678,7 @@ Some argue that enforcing corporate-style governance on community organizations 
 
 But being the warden is lonely work. In fragile systems, courage often looks like control. And when culture confuses chaos with authenticity, structure becomes suspect.
 
-Nearly 40% of nonprofit employees who witness ethical breaches or harmful behavior never report it—most out of fear of retaliation or the belief that it won’t matter, according to the Stanford Social Innovation Review (2023). But “misconduct” itself is often defined by power. In too many organizations, the people punished for breaking the rules are the ones enforcing them, while those causing harm to go unnamed. And when young, lived-experience, or frontline staff don’t know their rights—or can’t safely raise concerns—that silence becomes structural. It isolates the wardens, those who speak up, and rewards the normalization of dysfunction as culture.
+Ethics surveys have long found that about four in ten employees who see misconduct never report it, most because they fear retaliation or believe nothing will change, according to the Ethics Resource Center. But “misconduct” itself is often defined by power. In too many organizations, the people punished for breaking the rules are the ones enforcing them, while those causing harm to go unnamed. And when young, lived-experience, or frontline staff don’t know their rights—or can’t safely raise concerns—that silence becomes structural. It isolates the wardens, those who speak up, and rewards the normalization of dysfunction as culture.
 
 Courage, in practice, means holding the line when the culture would rather blur it.
 
@@ -674,7 +688,7 @@ Another invisible thread in fragile nonprofits is weaponized incompetence—the 
 
 I’ve seen executives claim they “don’t understand the numbers” to sidestep accountability for budgets, or managers delay decisions until someone else takes the fall. Sometimes it isn’t intentional at first—it’s rewarded over time.
 
-A 2023 Bridgespan survey found that more than 60% of nonprofit leaders lacked the operational training required for their roles, while only 19% of funders offered leadership development support. This gap between responsibility and readiness creates a culture where incompetence isn’t just tolerated—it’s incentivized.
+Bridgespan has found that about two in three nonprofit leaders say their organizations are not good at growing future leaders, and most get little or no funder support to do it. This gap between responsibility and readiness creates a culture where incompetence isn’t just tolerated—it’s incentivized.
 
 Favoritism thrives here. Underqualified leaders are protected not despite their gaps, but because of them—less competence means less challenge to existing power. The cycle is self-reinforcing: fragile systems hire for loyalty, not literacy, and then reward the very weaknesses that make oversight impossible.
 
@@ -688,7 +702,7 @@ At the top of every nonprofit sits a board of directors—the body meant to safe
 
 Many leaders of color worry that naming dysfunction publicly feeds narratives that nonprofits—especially BIPOC-led ones—are unstable. I share that fear. But silence has never saved a system; it only prolongs fragility. Transparency isn’t betrayal—it’s repair.
 
-BoardSource’s 2023 study found that only 38% of nonprofit board members fully understand their fiduciary responsibilities, and nearly one in four boards never evaluate their own performance. Boards that rubber-stamp budgets without understanding them create the perfect cover for misuse. Boards that prioritize loyalty over literacy allow weaponized incompetence to flourish. And boards that confuse “supporting the CEO” with “shielding the CEO” become complicit in the fragility they’re supposed to prevent.
+Boards that rubber-stamp budgets without understanding them create the perfect cover for misuse. Boards that prioritize loyalty over literacy allow weaponized incompetence to flourish. And boards that confuse “supporting the CEO” with “shielding the CEO” become complicit in the fragility they’re supposed to prevent.
 
 Governance without grounding doesn’t just fail to protect staff and community—it erodes the integrity of the entire sector.
 
@@ -704,7 +718,7 @@ It sounds loving—until it becomes leverage.
 
 The family story softens the reality of low pay and overwork. It asks staff to sacrifice boundaries for belonging. Inside that story, cronyism hides under “trust,” favoritism becomes “care,” and nepotism is excused as “keeping it in the family.”
 
-A 2023 Nonprofit HR study found that 42% of nonprofit employees cite unclear boundaries or favoritism as their top reason for turnover—above pay or workload. Healthy organizations don’t need families; they need communities of practice.
+Healthy organizations don’t need families; they need communities of practice.
 
 Care looks like clarity, not codependence. Professional love shows up as fair pay, clear roles, and supervision that protects people instead of exploiting them. The family myth is one of the nonprofit industrial complex’s oldest survival stories—intimacy used to replace infrastructure.
 
@@ -714,7 +728,7 @@ The Nonprofit Glass Wall
 
 If there’s a glass ceiling in corporate America, there’s a glass wall in the nonprofit sector—the invisible barrier that keeps nonprofit professionals from crossing into for-profit roles or being seen as equally skilled.
 
-The Nonprofit Times and Bridgespan reported in 2024 that up to 45% of nonprofit employees experience chronic overwork, and 30% plan to leave the sector within two years. Women of color remain the most underpaid and overextended group in the field.
+In Candid’s 2025 research, about seven in ten nonprofit workers said they were looking for a new job or expected to be within a year. Research from the Building Movement Project shows women of color carry heavier loads with fewer resources and less support.
 
 When those employees try to transition out, they face skepticism from recruiters who see nonprofit experience as charity work, not strategy. Yet managing government contracts and grant compliance demands a rigor that rivals any private enterprise—the difference is that our revenue is called funding instead of sales.
 
@@ -730,7 +744,7 @@ Human resources is where culture meets compliance—and where underinvestment sh
 
 Without clear role definitions, equity checks, or performance standards, every decision becomes interpretive. Favoritism replaces fairness, burnout replaces belonging, and accountability becomes subjective.
 
-The 2024 Nonprofit HR Trends Report found that 58% of nonprofits lack dedicated HR capacity, and nearly half report no formal grievance or performance management process. Poor HR investment doesn’t just erode morale—it blocks funding.
+Too many nonprofits have no dedicated HR capacity, and many have no formal grievance or performance management process. Poor HR investment doesn’t just erode morale—it blocks funding.
 
 Federal and state contracts typically require written HR policies on nondiscrimination, workplace safety, whistleblower protection, and conflict resolution. Missing those policies can disqualify an organization from eligibility or result in clawbacks of previously awarded funds.
 
@@ -740,13 +754,13 @@ The Communication Gap
 
 When internal communication is weak, misinformation spreads faster than memos. Staff operate in silos, boards make decisions based on partial truths, and funders receive polished impact narratives masking operational instability.
 
-Stanford’s Center on Philanthropy reports that 70% of nonprofits admit to “strategic storytelling” that omits operational weaknesses to maintain funder confidence. It’s not deceit—it’s survival. But when messaging replaces meaning, transparency becomes performance art.
+Many nonprofits feel pressure to tell funders a polished story that leaves out operational weaknesses. It’s not deceit—it’s survival. But when messaging replaces meaning, transparency becomes performance art.
 
 Digital Infrastructure and Compliance
 
-Technology is the new backbone of trust. Yet TechSoup’s 2023 report found that three out of four nonprofits rely on outdated or unintegrated systems for HR, donor management, and compliance reporting.
+Technology is the new backbone of trust. Yet too many nonprofits still rely on outdated or unintegrated systems for HR, donor management, and compliance reporting.
 
-For organizations receiving federal funds, compliance with frameworks like NIST SP 800-171 and 2 CFR Part 200 is nonnegotiable. Without secure systems, data breaches and audit failures are inevitable—and costly.
+For organizations receiving federal funds, following the Uniform Guidance (2 CFR 200) is nonnegotiable, and anyone handling sensitive federal data may also need to meet security standards like NIST SP 800-171. Without secure systems, data breaches and audit failures are inevitable—and costly.
 
 Digital equity isn’t just external; it’s internal. When only the largest nonprofits can afford integrated systems, smaller organizations are left managing million-dollar missions through spreadsheets and goodwill.
 
@@ -762,7 +776,7 @@ Smaller organizations—especially those led by women and people of color—need
 
 Current grant and contract design often guarantees dysfunction by prioritizing audits and clawbacks over upfront assessment. Many government grants are structured to reimburse costs rather than pre-fund operations, forcing organizations to spend money they don’t have and hope reimbursement comes before payroll.
 
-Overhead caps compound the problem. When funders limit administrative spending to 10% or less, they effectively penalize the systems that keep organizations compliant. This is how scarcity becomes systemic: we starve the very scaffolding that accountability requires.
+Overhead caps compound the problem. Even after the federal government raised its default indirect rate from 10% to 15% in 2024, many funders still cap overhead at 10% or less, which punishes the systems that keep organizations compliant. This is how scarcity becomes systemic: we starve the very scaffolding that accountability requires.
 
 True reform means reframing compliance not as a barrier but as infrastructure for sustainability—and ensuring that capacity building is contextual, not copy-pasted.
 
@@ -828,9 +842,9 @@ Some founders see intermediaries as just another gatekeeper—another layer taki
 
 These aren’t theories—they’re models already proving what’s possible.
 
-Public accountability audits in cities like New York and Chicago now require public posting of nonprofit contracts and board affiliations tied to city funding.
+Cities like New York publish city contracts with nonprofits online, so anyone can see where public money goes.
 
-Shared service centers and intermediary hubs in Washington State and Minnesota pool HR, finance, and compliance functions across nonprofits to increase efficiency.
+Pooled support is not a new idea. Shared service alliances, where nonprofits combine back-office work like HR, finance, and compliance while keeping their independence, have been documented for more than a decade. Closer to home, the Together Center in Redmond houses more than 20 nonprofits on one shared campus.
 
 Emerging “equity with accountability” grant frameworks tie diversity goals to transparent reporting, preventing equity funding from becoming a shield for weak systems.
 
@@ -838,7 +852,7 @@ Participatory grantmaking models give residents real decision-making power over 
 
 Independent ethics channels reduce retaliation and strengthen reporting cultures.
 
-Capacity-based funding now appears in some state contracts, allocating 10–15% of grants specifically to infrastructure and compliance.
+The federal government now lets grantees claim up to 15% for indirect costs without a negotiated rate.
 
 Transparency isn’t punishment—it’s protection.
 
@@ -880,7 +894,11 @@ The goal isn’t to weaken nonprofits—it’s to strengthen the systems that ke
 
 The Bridge Forward
 
-Because when the scaffolds fail, the next collapse doesn’t just happen in our ledgers—it happens in our systems, digital and human alike. the next essay will discuss the fragility of IT.
+Because when the scaffolds fail, the next collapse doesn’t just happen in our ledgers—it happens in our systems, digital and human alike. The next essay will discuss the fragility of IT.
+
+A note on this update (October 21, 2026)
+
+One year after this series began, I went back through every number and source in this essay. I could not trace many of the statistics in the original version to the reports they were credited to. Where I found a reliable source for the same point, I replaced the figure and named the source. Where I did not, I removed the number and kept the point. I also updated the federal overhead rule, which rose from 10 to 15 percent in 2024, clarified which federal security standards apply to which organizations, and corrected the source list. The argument and the lived experience in this essay have not changed.
 
 References (Informal Sources)
 
@@ -888,23 +906,21 @@ These references reflect the research, lived perspectives, and sector analyses t
 
 Sector Data & Reports
 
-BoardSource. (2023). Leading with Intent: BoardSource’s National Index of Nonprofit Board Practices.
+BoardSource. (2023). Leading with Intent: BoardSource Index of Nonprofit Board Practices.
 
-Bridgespan Group. (2023). The State of Nonprofit Leadership Development.
+Bridgespan Group. Nonprofit Leadership Development (executive summary). bridgespan.org.
 
-Center for Effective Philanthropy. (2023). Workplace Well-Being and Burnout in the Social Sector.
+Building Movement Project. Race to Lead series.
 
-Gallup. (2023). Employee Burnout in Mission-Driven Work.
+Candid. (2025). Nonprofit Employees: Survey Data Suggests High Staff Turnover Ahead.
 
-National Council of Nonprofits. (2024). Infrastructure and Sustainability Survey.
+Ethics Resource Center. (2007–2011). National Nonprofit Ethics Survey and National Business Ethics Survey.
 
-Nonprofit HR. (2023). Nonprofit Workforce Trends Report.
+Nonprofit Finance Fund. (2025). State of the Nonprofit Sector Survey.
 
-Stanford Social Innovation Review. (2023). Ethical Culture and Accountability in Nonprofits.
+NYC Comptroller. Checkbook NYC (public contract data).
 
-TechSoup. (2023). Digital Readiness in the Nonprofit Sector.
-
-The Nonprofit Times. (2024). Workload, Turnover, and Equity in U.S. Nonprofits.
+U.S. Office of Management and Budget. (2024). Uniform Guidance, 2 CFR 200.414(f), indirect cost rate (effective October 1, 2024).
 
 Counter-Perspectives & BIPOC Sector Voices
 
@@ -916,7 +932,7 @@ Nivetha Nagarajan. (2024). “I Am More Valuable Than You Are: A Perspective on 
 
 – Challenges hierarchy and calls for participatory, worker-centered governance.
 
-Nonprofit Quarterly. (2023). “Should We Cancel Capacity Building?”
+Littles & DeShields (Frontline Solutions). (2024). “Should We Cancel Capacity-Building?” Nonprofit Quarterly.
 
 – Argues that traditional capacity-building frameworks perpetuate inequity rather than repair it.
 
@@ -934,7 +950,7 @@ Liberatory Governance Scholars & Movement Builders.
 
 Complementary Perspectives & Intermediary Models
 
-Shared-service hubs in Washington State and Minnesota (regional case studies, 2023–24) documenting pooled HR and finance systems across small nonprofits.
+Butzen, J. (2010). “Creatively Combining the Back Office: A Series on Shared Service Alliances.” Stanford Social Innovation Review. Together Center, Redmond, Washington: shared nonprofit campus, reopened in 2023 with 280 affordable homes above it (Daily Journal of Commerce, 2023).
 
 Participatory grantmaking initiatives in Chicago & New York, demonstrating how resident governance increases transparency.
 
@@ -1037,15 +1053,15 @@ Later, when the systems stabilized, the very structures I designed became the ba
 
 Compliance and Capacity: The Cost of Being the Fixer
 
-Government money comes with data expectations that most community nonprofits were never funded to meet. In Washington, agencies receiving public dollars must comply with 2 CFR Part 200, along with state-level requirements under RCW 43.09 (audit and accountability), RCW 42.56 (public records tied to public funds), RCW 19.255 (data breach notification), and newer digital privacy laws like My Health My Data. Local contracts add their own layers: quarterly dashboards, demographic reporting, service documentation, and multi-year record retention.
+Government money comes with data expectations that most community nonprofits were never funded to meet. In Washington, organizations that receive federal dollars must follow 2 CFR Part 200, the federal rulebook for grants, along with state-level requirements under RCW 43.09 (audit and accountability), RCW 42.56 (the Public Records Act, which reaches records that touch public agencies and public contracts), RCW 19.255 (data breach notification), and newer digital privacy laws like My Health My Data. Local contracts add their own layers: quarterly dashboards, demographic reporting, service documentation, and multi-year record retention.
 
 All of this assumes organizations have secure databases, reliable hardware, protected storage, and staff trained to manage sensitive information. But most nonprofits were never resourced for the systems this compliance model requires. They carry the transparency expectations of a public agency without the IT budget of one. We built a statewide compliance structure that runs on regulated data, then handed it to organizations still fighting for the infrastructure to protect, store, and report it.
 
 Compliance is not optional—it determines whether contracts are renewed, funding is released, and services continue. Nonprofits must maintain systems capable of tracking performance metrics, client histories, case notes, and audit trails. For-profit enterprises face their own pressures—e-commerce, supply chains, inventory, reconciliation—but the throughline is the same: modern operations require modern technology. The environments differ. The requirements do not.
 
-Yet organizations delay modernization because modernization is expensive. External IT support can exceed $100 per user or device per month, and far more for advanced security work. Hardware cycles are unfunded. Data governance is rarely written into grants. The result is predictable: fragile systems staffed by well-meaning people who are structurally set up to fail.
+Yet organizations delay modernization because modernization is expensive. External IT support commonly runs $100 or more per user each month, and far more for advanced security work. Hardware cycles are unfunded. Data governance is rarely written into grants. The result is predictable: fragile systems staffed by well-meaning people who are structurally set up to fail.
 
-This isn’t theoretical. The 2025 Nonprofit Technology Impact Report found that organizations across the sector face rising operational and technology strain, citing outdated systems, fragmented data, and chronic underinvestment as top barriers to stability and service delivery.
+This isn’t theoretical. Sage’s 2025 Nonprofit Technology Impact Report found that staffing is now the sector’s top concern, 41% of nonprofits still lack basic process automation, and only 9% call themselves highly data-driven.
 
 And delay is not neutral. It multiplies risk. With every year of postponement, staff fall further behind in readiness, confidence, and digital literacy. When leadership changes, when a new system is introduced, or when the environment shifts—as it always does—the people closest to the ground absorb the impact. Fragility accumulates quietly, and communities feel it loudly.
 
@@ -1053,7 +1069,7 @@ Visibility as Infrastructure
 
 The digital divide is no longer about who has a laptop. It’s about who can navigate digital life. When I mentored teens, I saw kids who were brilliant at video editing but intimidated by email. I saw youth who could manage three social media accounts but couldn’t upload a document to cloud storage. I saw smart, capable adult freeze at the sight of a new interface.
 
-Recent national data confirms what I saw firsthand. According to a 2023 report from the National Skills Coalition and Microsoft, 92% of U.S. jobs now require digital skills, yet one in three workers lack even the most basic proficiency. The gap isn’t just access to devices—it’s readiness, fluency, and confidence.
+Recent national data confirms what I saw firsthand. A 2023 study by the National Skills Coalition and the Federal Reserve Bank of Atlanta looked at 43 million job postings and found that 92% asked for digital skills. The newest national skills survey, released in December 2024, found about one in three adults struggle with basic problem solving, and low literacy jumped from 19% to 28% in six years. The gap isn’t just access to devices—it’s readiness, fluency, and confidence.
 
 Digital access is no longer a binary. It is a spectrum.
 
@@ -1077,7 +1093,7 @@ The promise was clear: learn to code and you will be ready for the future.
 
 That generation is now entering a labor market reshaped by automation, generative AI, a sharp decline and reshaping of entry-level coding pathways, and a widening mismatch between training and opportunity. Some are thriving. Many feel misled. Most never received the scaffolding required to turn coding into career mobility. Because coding was never the point. Systems literacy was.
 
-The World Economic Forum’s 2023 Future of Jobs report projects that 85 million jobs may be displaced by automation, while 97 million new roles will emerge—most requiring systems thinking, data literacy, cross-functional problem-solving, and human judgment. Coding alone was never the pathway. Systems fluency is.
+The World Economic Forum’s Future of Jobs Report 2025 expects 170 million new jobs and 92 million lost by 2030, with nearly 40% of today’s skills changing. The jobs are coming. The question is who will be ready. Coding alone was never the pathway. Systems fluency is.
 
 And now we’re watching another bubble form—AI accelerating faster than economic structures can absorb, just like the dot-com boom. When narratives outpace infrastructure, certain communities get left behind every single time.
 
@@ -1109,11 +1125,11 @@ There are bright spots. Libraries are becoming digital literacy hubs. Community 
 
 But these bright spots are exceptions, not evidence of system readiness. Many organizations are still waiting—waiting for budget cycles, executive transitions, economic recovery, or a mythical “right time” to confront operational debt. And as they wait, complexity rises, data deteriorates, staff burn out, and fragility deepens. The longer the wait, the harder the recovery.
 
-McKinsey’s recent operations research shows that outdated systems and operational inefficiencies can absorb 20–30% of an organization’s productivity, accelerating burnout and eroding institutional memory. When systems lag, people pay the price.
+McKinsey found companies estimate their tech debt at 20 to 40% of the value of all their technology, and up to a fifth of money meant for new tools goes to patching old ones. When systems lag, people pay the price.
 
 Why This Matters Now
 
-Former Microsoft CEO, Satya Nadella on stage opening their Build Conference 2023. This was the moment I realized our organization needed a pathway toward automation, data literacy, and eventually Microsoft Fabric. Inspiration is only useful if you can operationalize it.
+Microsoft CEO Satya Nadella on stage opening their Build Conference 2023. This was the moment I realized our organization needed a pathway toward automation, data literacy, and eventually Microsoft Fabric. Inspiration is only useful if you can operationalize it.
 
 Three intersecting forces make this moment urgent.
 
@@ -1147,23 +1163,35 @@ And we cannot afford to build it on fragile ground.
 
 Technology has been threaded through every chapter of my life—even the ones that began in crisis. Me, a new mom, holding my 24-week preemie son in the NICU
 
+A note on this update (October 21, 2026)
+
+One year after this series began, I went back through every number and source in this essay. The World Economic Forum figures I cited came from its 2020 report, so I replaced them with its 2025 report. The digital skills study was a partnership with the Federal Reserve Bank of Atlanta, not Microsoft. The 2025 nonprofit technology report was published by Sage, and its top finding was staffing. Satya Nadella is Microsoft's current CEO, not its former one. I replaced a McKinsey figure I could not locate with one I could, and updated the adult skills data to the newest national survey. The argument and the lived experience in this essay have not changed.
+
 Sources
 
-National Skills Coalition & Microsoft. (2023). Closing the Digital Skill Divide: The Payoff for Workers, Businesses, and the Economy.
+National Skills Coalition & Federal Reserve Bank of Atlanta. (2023). Closing the Digital Skill Divide: The Payoff for Workers, Businesses, and the Economy.
 
 https://nationalskillscoalition.org/news/press-releases/new-report-92-of-jobs-require-digital-skills-one-third-of-workers-have-low-or-no-digital-skills-due-to-historic-underinvestment-structural-inequities/
 
-Articulate Foundation. (2025). Nonprofit Technology Impact Report.
+Sage. (2025). 2025 Nonprofit Technology Impact Report.
+
+https://www.sage.com/en-us/blog/nonprofit-tech-impact-report/
+
+Summary: Articulate Foundation (2025).
 
 https://articulatefoundation.org/2025-nonprofit-technology-impact-report-reveals-urgent-priorities-financial-sustainability-and-ai-adoption/
 
-McKinsey & Company. (Recent operations analysis). Organizational Productivity, Operational Inefficiency, and Digital Transformation Benchmarks. https://www.mckinsey.com
+McKinsey & Company. (2020). Tech debt: Reclaiming tech equity.
 
-(referenced analysis)
+https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-debt-reclaiming-tech-equity
 
-World Economic Forum. (2023). Future of Jobs Report.
+World Economic Forum. (2025). The Future of Jobs Report 2025.
 
-https://www.weforum.org/publications/the-future-of-jobs-report-2023/digest/
+https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+
+National Center for Education Statistics. (2024). Program for the International Assessment of Adult Competencies (PIAAC) 2023: U.S. Results.
+
+https://nces.ed.gov/surveys/piaac/
 
 ---
 
@@ -3822,7 +3850,7 @@ Spot the red flag
 
 By Katoya PalmerMonday, October 26, 20267 min read, 30 sec skim
 
-The board meeting with three red flags, Late Bloom revisited, my Thanksgiving pie, 31 floors up, and a horror movie season dump.
+The board meeting with three red flags, Late Bloom revisited, my fall favorite pie, 31 floors up, and a horror movie season dump.
 
 This week, in one breath
 
@@ -3830,7 +3858,7 @@ ThoughtSpot the red flag: the board meeting where everything looked fine.
 
 WritingI'm revisiting Late Bloom, my short story about Noa.
 
-TasteMy Thanksgiving apple pie, and 31 floors up at Ascend.
+TasteMy fall favorite, apple pie, and 31 floors up at Ascend.
 
 Last week's answersWho spotted the red flag, and who guessed the spot.
 
@@ -3871,6 +3899,18 @@ It's not that you don't trust people. It's that you put things in place so every
 
 Even when it isn't public money, keeping integrity strong still matters. The fix is small: two people with account access, a monthly bank reconciliation a board member reviews, and at least one finance question at every meeting.
 
+Window 3, one year later
+
+On LinkedIn this week I wrote about being called "the warden." That was as the first COO in my role. I was hired to bring structure to the organization, and as a result of the new policies and procedures, the tools and software and all of those things, "the warden" was the analogy that got used. A year after writing Window 3, I'd say it plainer: fragility in the nonprofit sector isn't a flaw. It's a funding choice.
+
+Read Window 3 →
+
+How I built the ToyBox Brain
+
+Harvard Business Review (Oct. 2026) says the people getting the most from AI build systems around their strengths. That's been my experience. What I had to fix first wasn't the tech. It was getting organized and deciding what goes where.
+
+Read the post on LinkedIn →
+
 New at ToyBox
 
 Also new from ToyBox this week: change management for public agencies, the four money buckets, and why a hard week at work calls for a circle, not a memo.
@@ -3902,7 +3942,7 @@ Taste
 Pie at home, eggs in the sky
 
 SZND by Katoya
-My Thanksgiving apple pie
+My fall favorite: apple pie
 
 I cook my apples first, soft and smothered, like a turnover.
 
@@ -3919,6 +3959,8 @@ Ascend: 31 floors up
 
 Five kisses, dedicated to the chefs on site.
 
+Watching the video this morning, I thought: I could really use a steak and a nice cocktail from Ascend right now. The ambiance is great, it feels amazing, and the service just feels welcoming.
+
 Four visits on camera, from the Drowning in Silence premiere celebration to a solo lunch with a lake view. My standing order: the Nitamago deviled eggs with bacon-pea jam and braised pork belly. And that purple swirl? Okinawan sweet potato, ube's purple cousin.
 
 My standing order.
@@ -3932,14 +3974,34 @@ Who called it
 
 🚩 First to spot the red flag
 
-Shout-outs drop after Thursday's teaser.
+No correct answers yet, so the crown carries over. The first correct answer gets named here next Monday.
 
 💋 Guess the spot: Ascend
 
-Shout-outs drop after Thursday's teaser.
+Nobody cracked it this week. A new teaser drops Thursday.
+
+🍎 About the Red Apple
+
+A little more dialogue came in about the old Jackson Red Apple and the one on Beacon Hill, and I think the way I said it, people misunderstood. I wasn't saying the Jackson store was there first. I experienced the Jackson one first, on my after-church stops with my mom. Now we default to the one on Beacon Hill for our fixes.
+
+🥣 Split pea season
+
+On TikTok, a couple of you showed up for split pea soup. I see you. Get the recipe →
 
 Presence
 05
+
+Thankful, and caught up
+
+This has been a good week to chill and be really thankful.
+
+Especially for my family, who have been there through one of the most difficult transitions I've navigated: moving into full-time entrepreneurship. And for my son, for being such a bright, responsible and intuitive young man.
+
+We took some time to get housework and maintenance done. It felt really good to catch up that way and get set for fall, when I love to do more cooking.
+
+Coming Home, Friday 11/6
+
+This year, Coming Home means we keep supporting women experiencing homelessness on the way to a home of their own. I know how things can be when you're dealing with housing insecurity. As I've learned over many years, it doesn't just go away overnight, even while you're transitioning, trailblazing and class busting. Get your tickets
 
 Mindfulness in the Middle
 One full breath
@@ -3964,43 +4026,53 @@ Off the clock
 
 Horror movie season: the dump 🎃
 
-Halloween is close, so I've been on a horror run.
+Halloween is close, and I'm a horror film fanatic. Here's everything I watched this month, one line each.
 
-🔪 Crystal Lake, the new series
+🩸 Carrie (the series): Loved it. More, please.
 
-The new Friday the 13th series. I watched it this weekend. Super good, whatever the mixed reviews say. It showed me Mrs. Voorhees before Jason died, sent me back to the original, and left room for another season.
+🔪 Crystal Lake: Super good.
 
-⛺ Friday the 13th (the original)
+⛺ Friday the 13th (1980): Worth the rewatch.
 
-Rewatched it right after Crystal Lake. I'd forgotten a lot. Watching it again, I appreciated how much of the movie's opening the Crystal Lake finale replicates.
+🎃 Rob Zombie's Halloween: Disturbing. Loved it.
 
-🎃 Rob Zombie's Halloween (2007)
+🛏️ A Nightmare on Elm Street 1 & 4: Classic Freddy.
 
-The one that starts with Michael as a kid and follows him out of the asylum. Super disturbing to watch such a young kid do all of that, but I love Rob Zombie's take, and this one was no different. My son called it trash.
+🧛🏾 Vampires vs. the Bronx: Cute, surprisingly deep.
 
-🛏️ A Nightmare on Elm Street 1, and 4: The Dream Master
+🦇 Vampire in Brooklyn: Underrated. Redo it.
 
-Part 4 is the one with the waterbed scene. Classics. I had them on as background noise while I worked, just to get my Freddy in for the season.
+🪓 Frailty: Old classic.
 
-🧛🏾 Vampires vs. the Bronx
+💍 Bride of Chucky: Funny, gory.
 
-Kids versus vampires, and it's really about gentrification. Watched it over dinner. Cute, and deeper than you'd expect: gentrification through the eyes of the neighborhood kids, turned into a horror movie.
+📖 Evil Dead (2013): Sending me back.
 
-🪓 Frailty (2001)
+🔥 Evil Dead Burn: Over the top.
 
-Bill Paxton directed it and stars in it, with Matthew McConaughey. An old classic. I didn't finish it this time because I've seen it so many times. I do like a religious or psychological thriller.
+🎬 Scream 7: Pretty neat.
 
-💍 Bride of Chucky
+👻 Boo! A Madea Halloween: Funny. Growing on me.
 
-Funny as hell. To me, anyway. It's very gory, but once you understand how these movies work, it's a different watch. I picked this one because I play Dead by Daylight, and I like to be the bride for real.
+🖤 Meet the Blacks 2: Katt Williams. Classic.
 
-📖 Evil Dead Burn
+🧹 The Craft: Legacy: Nostalgic, good remake.
 
-Not too impressive to me, and I've been a fan since Evil Dead 1 and 2, Army of Darkness and Ash. Evil Dead Rise was cool. This one felt over the top. I finished it, but I didn't want to.
+🎰 Army of the Dead: Zombies with a plot.
 
-Honorable mention: the stick-figure zombie survival series on TikTok, where every episode is a different place to ride out the apocalypse. KFC, the airport, the farm, jail, and last night, Costco. I like it because it almost feels like it's teaching you what to really do. It's a whole genre now, with lots of creators; many credit @stickocalypse_shorts as the spark.
+Billy, Stu and Neve, live
 
-Fave game: Dead by Daylight. My favorite video game, and I've played it for about six years. It's cool to watch it change and evolve. I don't play killer often, but when I do, it's Chucky or the Bride. As a survivor I'm a Dwight, and since Lara Croft came out, I've been playing her pretty intently.
+I got to see the Scream cast chatting at Emerald City Comic Con a couple of years ago.
+
+Billy and Stu (Skeet Ulrich and Matthew Lillard) at Emerald City Comic Con, March 2023. Photo: Katoya Palmer.
+
+Neve Campbell on the Scream panel, with Matthew Lillard. Emerald City Comic Con, March 2023. Photo: Katoya Palmer.
+
+Horror fact of the week: the actors who play Carrie in the new Carrie series and young Jason Voorhees in Crystal Lake both grew up in the Chucky world. Summer H. Howell (Carrie) was Alice in Curse of Chucky (2013) and Cult of Chucky (2017), and Callum Vinson (young Jason) played Henry in season 3 of the Chucky TV series. And Matthew Lillard, Stu from Scream, plays Principal Grayle in Carrie.
+
+Honorable mention: the stick-figure zombie survival series on TikTok, a different place to ride out the apocalypse every episode. Many credit @stickocalypse_shorts.
+
+Fave game: Dead by Daylight. Killer: Chucky or the Bride. Survivor: Dwight or Lara Croft.
 
 What are you watching this October? Hit reply with your scariest pick.
 
@@ -4476,6 +4548,129 @@ More from SZND
 
 ---
 
+## Deviled eggs
+
+- URL: https://www.katoyapalmer.com/sznd/deviled-eggs.html
+- Section: SZND by Katoya
+- Published: Oct 17, 2026
+- Author: Katoya Raquell Palmer
+
+Skip to content
+
+KATYAPALMER
+
+Work with me
+Subscribe
+Menu
+
+KATYA
+
+Get my weekly letterWork with me
+
+Thought
+
+Five Windows The essay series on how systems hold, or fail
+
+Journal Reflections, stories and commentary
+
+ToyBox Consulting Operations for mission-driven organizations
+
+Taste
+
+SZND by Katoya Recipes, garden and DIY, in season
+
+Lipstick on My Fork My weekly restaurant column
+
+Presence
+
+Mindfulness in the Middle Practice for people in the thick of it
+
+Essays Ten essays on staying whole
+
+More
+
+Letters
+
+Media
+
+About
+
+Read everything
+
+Search
+
+TikTokInstagramFacebookLinkedInSubstackAll links
+
+SZND by Katoya / From My Kitchen
+
+Game day · Holidays
+
+Deviled eggs.
+
+The tray that never makes it to halftime. Eggs, mayo, mustard, relish and chives, seasoned to taste, then topped your way. My son carried this batch to the table on Thanksgiving 2025, his first time making them. My family in Arizona does theirs with jalapeños and bacon.
+
+24 halves
+Make ahead
+Top it your way
+
+Christmas 2019, bacon on top.
+
+Ingredients
+
+I season by taste, not by measuring. Start small and add.
+
+12 large eggs
+
+Mayonnaise
+
+Yellow mustard
+
+Sweet relish
+
+Fresh chives, chopped
+
+Salt and pepper, or Cajun seasoning (to taste)
+
+Red onion, finely diced (optional, for a little more kick)
+
+Toppings (pick yours)
+
+Bacon bits
+
+Green onion
+
+Fresh or pickled jalapeños
+
+Method
+
+Boil. Hard-boil the eggs, cool them, peel them and slice them in half lengthwise.
+
+Mix. Pop the yolks into a bowl and mash them with the mayo, mustard, relish and chopped chives. Season with salt and pepper or Cajun seasoning.
+
+Fill. Pipe or spoon the filling back into the whites.
+
+Top. Bacon, green onion, jalapeños, or all three. Chill until it's time to eat.
+
+Holiday make-aheadOn Thanksgiving I boil and peel the eggs on Tuesday and stuff them Wednesday, so Thursday is only the hot food.
+
+The Arizona versionJalapeños and bacon on every egg. My family there swears by it, and so do I.
+
+Thanksgiving 2025: his first batch.
+
+Print recipe
+
+Come cook with me
+
+A new SZND recipe every Saturday this fall.
+
+Follow along for soups, sides, and everything coming out of my kitchen this season.
+
+Follow @szndbykatoya
+Watch on TikTok
+More from SZND
+
+---
+
 ## Lattice apple pie
 
 - URL: https://www.katoyapalmer.com/sznd/lattice-apple-pie.html
@@ -4614,6 +4809,127 @@ Make aheadThe cooked filling keeps 3–5 days in the fridge, or 3–4 months fro
 Baking for a crowd?I mix three pies' worth of crust at once in my stand mixer, paddle attachment only, just until the butter is pea- to marble-sized.
 
 The lattice, before the egg wash.
+
+Print recipe
+
+Come cook with me
+
+A new SZND recipe every Saturday this fall.
+
+Follow along for soups, sides, and everything coming out of my kitchen this season.
+
+Follow @szndbykatoya
+Watch on TikTok
+More from SZND
+
+---
+
+## Game-day fried chicken
+
+- URL: https://www.katoyapalmer.com/sznd/fried-chicken.html
+- Section: SZND by Katoya
+- Published: Oct 27, 2026
+- Author: Katoya Raquell Palmer
+
+Skip to content
+
+KATYAPALMER
+
+Work with me
+Subscribe
+Menu
+
+KATYA
+
+Get my weekly letterWork with me
+
+Thought
+
+Five Windows The essay series on how systems hold, or fail
+
+Journal Reflections, stories and commentary
+
+ToyBox Consulting Operations for mission-driven organizations
+
+Taste
+
+SZND by Katoya Recipes, garden and DIY, in season
+
+Lipstick on My Fork My weekly restaurant column
+
+Presence
+
+Mindfulness in the Middle Practice for people in the thick of it
+
+Essays Ten essays on staying whole
+
+More
+
+Letters
+
+Media
+
+About
+
+Read everything
+
+Search
+
+TikTokInstagramFacebookLinkedInSubstackAll links
+
+SZND by Katoya / From My Kitchen
+
+Game day · Fall
+
+Game-day fried chicken.
+
+Fried chicken on game day is 2 for 2. At least the two I got pictures of. December 23, 2018: fried chicken in my kitchen, and the Seahawks beat the Chiefs 38 to 31. October 25, 2026: fried chicken again, and the Seahawks beat the Chiefs 20 to 3. I'm not saying my kitchen won either game. I'm not saying it didn't.
+
+Rest 1 hour
+Medium heat
+Paper bag toss
+
+October 25, 2026, plated by halftime.
+
+Ingredients
+
+The simple batch. I season by feel, so use as much as you like.
+
+Chicken pieces
+
+Morton Nature's Seasons
+
+Cajun seasoning
+
+Garlic powder and onion powder (a little extra)
+
+All-purpose flour (unseasoned)
+
+A few tablespoons buttermilk powder (my secret)
+
+Oil for frying
+
+A few whole jalapeños (optional)
+
+Method
+
+Season. Nature's Seasons, Cajun seasoning and a little extra garlic and onion powder on every piece. Let it sit about an hour.
+
+The flour. I don't season my flour. I stir a few tablespoons of buttermilk powder into it instead.
+
+Paper bag toss. Chicken in, flour in, shake until every piece is coated.
+
+Fry. Medium heat, until deep golden and cooked through (165°F inside). Drop a few jalapeños into the oil too.
+
+Rest. On a rack, so the bottoms stay crisp. Serve by halftime.
+
+Buttermilk powderSometimes I put it in the marinade instead of the flour. Either way it gives that buttermilk tang without the wet dredge.
+
+The jalapeñosInspired by @keith_lee125's Church's Chicken taste test. I missed that jalapeño juice on my chicken.
+
+Jalapeños in the oil with the chicken.
+
+December 23, 2018. Game one of 2 for 2.
 
 Print recipe
 
