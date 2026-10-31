@@ -237,12 +237,17 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd/cajun-pesto.html</loc>
     <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/sznd/cajun-potato-soup.html</loc>
+    <lastmod>2026-10-31</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
