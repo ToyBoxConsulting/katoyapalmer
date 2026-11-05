@@ -116,7 +116,7 @@ def header(rel, here, section, extra):
     return f'''{START}
 <header class="kp-h">
   <div class="kp-h-in">
-    <a class="kp-brand" href="/" aria-label="Katoya Palmer, home"><span class="kp-wm" aria-hidden="true"><span>KAT</span><i class="bo">{bamboo_o()}</i><span>YA</span></span><span class="kp-sur" aria-hidden="true">PALMER</span></a>
+    <a class="kp-brand" href="/" aria-label="Katoya Palmer, home"><span class="kp-wm" aria-hidden="true"><span>KAT</span><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap">O</span><i class="bo">{bamboo_o()}</i><span>YA</span></span><span class="kp-sur" aria-hidden="true">PALMER</span></a>
     <nav class="kp-main" aria-label="Main"><ul>{''.join(items)}</ul></nav>
     <div class="kp-act">
       <a class="kp-icon kp-search" href="/search/" aria-label="Search the site" title="Search">{SEARCH}</a>
@@ -128,7 +128,7 @@ def header(rel, here, section, extra):
   {subbar}
 </header>
 <div class="kp-sheet" id="kp-sheet" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
-  <div class="kp-sheet-top"><a class="kp-brand" href="/" aria-label="Katoya Palmer, home"><span class="kp-wm" aria-hidden="true"><span>KAT</span><i class="bo">{bamboo_o(22, 'kpog2')}</i><span>YA</span></span></a><button class="kp-icon kp-close" type="button" aria-label="Close menu"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="kp-sheet-top"><a class="kp-brand" href="/" aria-label="Katoya Palmer, home"><span class="kp-wm" aria-hidden="true"><span>KAT</span><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap">O</span><i class="bo">{bamboo_o(22, 'kpog2')}</i><span>YA</span></span></a><button class="kp-icon kp-close" type="button" aria-label="Close menu"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
   <div class="kp-sheet-cta"><a class="kp-btn cta" href="{sub_url(medium, 'menu')}">Get my weekly letter</a><a class="kp-btn ghost" href="{WORK}">Work with me</a></div>
   {''.join(sheet)}
   <div class="kp-social">{''.join(f'<a href="{esc(h)}">{t}</a>' for t, h in SOCIAL)}</div>
