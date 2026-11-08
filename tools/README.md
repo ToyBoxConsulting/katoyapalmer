@@ -29,6 +29,8 @@ If you skip the index step, search still works but will not find the new or chan
   fixed picks.
 - `/llms.txt`: the overview for AI assistants. Add a line for each new essay.
 - `/robots.txt`: allows every crawler, including AI crawlers, and points to the sitemap.
+- SZND pages (`/sznd.html` and `/sznd/*.html`): the "Watch on YouTube" button links to the Sznd By Katoya
+  playlist. Copy it next to "Watch on TikTok" on every new SZND recipe page.
 
 ## Reading time
 
