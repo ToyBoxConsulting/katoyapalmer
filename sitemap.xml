@@ -127,7 +127,7 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/letters/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -152,7 +152,12 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/letters/2026-11-09-issue-05.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/letters/2026-11-16-issue-06.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -247,7 +252,7 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -258,11 +263,6 @@
   <url>
     <loc>https://www.katoyapalmer.com/sznd/cajun-potato-soup.html</loc>
     <lastmod>2026-11-06</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.katoyapalmer.com/sznd/pot-roast.html</loc>
-    <lastmod>2026-11-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -291,13 +291,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.katoyapalmer.com/sznd/pot-roast.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.katoyapalmer.com/sznd/split-pea-soup.html</loc>
     <lastmod>2026-11-06</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd/table-szn.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
