@@ -11,6 +11,7 @@ recipe, review, letter or section page:
 ```
 python tools/build_search_index.py
 python tools/build_sitemap.py
+python tools/build_feed.py
 ```
 
 Then commit the outputs along with the page.
@@ -18,6 +19,7 @@ Then commit the outputs along with the page.
 | Script | Writes | What it is for |
 |---|---|---|
 | `build_search_index.py` | `search-index.json`, `llms-full.txt` | The on-site search (`/search/` and the box on `/read/`) and the full-text file for AI assistants |
+| `build_feed.py` | `feed.xml`, `letters/feed.xml` | The RSS feeds. `/feed.xml` is everything published, newest first; `/letters/feed.xml` is Thought, Taste & Presence only. A page is included when it has an `article:published_time` or a JSON-LD `datePublished`. It also adds the feed autodiscovery `<link>` to every public page, and running it twice changes nothing |
 | `build_sitemap.py` | `sitemap.xml` | Every public page with its last-modified date. Skips redirect stubs (`/recipes/*`, `/reviews/*`), `noindex` pages (`/search/`) and `404.html` |
 
 If you skip the index step, search still works but will not find the new or changed page.
