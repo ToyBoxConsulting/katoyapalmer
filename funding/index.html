@@ -157,14 +157,15 @@
   .f-facts{list-style:none;margin:0 0 14px;padding:0;font:400 15px/1.5 "Space Grotesk",system-ui,sans-serif}
   .f-facts li{display:flex;gap:12px;padding:6px 0;border-bottom:1px dotted var(--line)}
   .f-facts li:last-child{border-bottom:0}
-  .f-facts span{flex:0 0 6.5rem;font:600 11px/1.6 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+  .f-facts .v{flex:1 1 auto;min-width:0}
+  .f-facts>li>span:first-child{flex:0 0 6.5rem;font:600 11px/1.6 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
   .f-item p{font:400 15px/1.65 "Space Grotesk",system-ui,sans-serif;color:var(--ink-soft);margin:0 0 10px}
   .f-item p:last-child{margin-bottom:0}
   .f-flag{display:inline-block;background:#FBF0D8;border:1px solid var(--gold);color:var(--gold-deep);font:600 11px/1.4 Jost,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-right:8px}
   .f-none{font:400 15px/1.65 "Space Grotesk",system-ui,sans-serif;color:var(--ink-soft);max-width:48rem;margin:0 0 14px}
   .f-checked{font:600 11px/1.5 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:14px 0 0}
   .f-more{margin:clamp(28px,5vw,48px) 0 clamp(36px,6vw,64px);padding-top:24px;border-top:1px solid var(--line);font:400 15px/1.7 "Space Grotesk",system-ui,sans-serif;color:var(--ink-soft);max-width:48rem}
-  @media (max-width:560px){ .f-facts li{display:block} .f-facts span{display:block;margin-bottom:2px} }
+  @media (max-width:560px){ .f-facts li{display:block} .f-facts>li>span:first-child{display:block;margin-bottom:2px} }
 </style>
 
 <header class="f-hero">
@@ -193,9 +194,9 @@
     <div class="f-item">
       <h3>Gallery 4Culture, 2027&ndash;2028 season</h3>
       <ul class="f-facts">
-        <li><span>Who</span>King County visual artists, teams and groups, in any medium except performance art. Everyone on a team must live in King County. You cannot be represented by a commercial gallery, though artist-run collectives and co-ops are fine. If you have had a solo or two-person show there, you wait three seasons</li>
-        <li><span>Amount</span>$2,500 honorarium, plus curatorial direction and PR support</li>
-        <li><span>Deadline</span>December 10, 2026 at 4 PM PST</li>
+        <li><span>Who</span><span class="v">King County visual artists, teams and groups, in any medium except performance art. Everyone on a team must live in King County. You cannot be represented by a commercial gallery, though artist-run collectives and co-ops are fine. If you have had a solo or two-person show there, you wait three seasons</span></li>
+        <li><span>Amount</span><span class="v">$2,500 honorarium, plus curatorial direction and PR support</span></li>
+        <li><span>Deadline</span><span class="v">December 10, 2026 at 4 PM PST</span></li>
       </ul>
       <p>Seven shows of about six weeks each, running November 2027 through December 2028. You deliver, install and de-install your own work. Sales go straight between you and the collector, and 4Culture takes no commission.</p>
       <p>No intent form. This is the full application.</p>
@@ -205,9 +206,9 @@
     <div class="f-item">
       <h3>Public Artist Roster: 2D Design Opportunities</h3>
       <ul class="f-facts">
-        <li><span>Who</span>Individual artists and teams living in Washington State who work mostly in two dimensions, or whose practice suits 2D work. <b>No prior public art experience required</b></li>
-        <li><span>Amount</span>Design fees of $2,000 to $50,000 depending on the project. Fabrication and installation are budgeted separately</li>
-        <li><span>Deadline</span>January 14, 2027 at 4 PM PST</li>
+        <li><span>Who</span><span class="v">Individual artists and teams living in Washington State who work mostly in two dimensions, or whose practice suits 2D work. <b>No prior public art experience required</b></span></li>
+        <li><span>Amount</span><span class="v">Design fees of $2,000 to $50,000 depending on the project. Fabrication and installation are budgeted separately</span></li>
+        <li><span>Deadline</span><span class="v">January 14, 2027 at 4 PM PST</span></li>
       </ul>
       <p>A roster rather than a grant: it runs March 2027 to March 2030, and being on it makes you eligible to be selected for design work. Selection does not guarantee a commission.</p>
       <p>You may need to create an account first, and staff activate new accounts by hand during office hours, so register early rather than on deadline day.</p>
@@ -217,9 +218,9 @@
     <div class="f-item">
       <h3>Building for Equity: Native Cultural Facilities</h3>
       <ul class="f-facts">
-        <li><span>Who</span>King County federally recognized nonprofit arts, cultural, heritage, historic preservation or science and technology organizations; Tribal governments, public corporations and public agencies; or organizations fiscally sponsored by a 501(c)(3). You also need a two-year operating history and demonstrated long-term site control</li>
-        <li><span>What</span>Land acquisition, development, renovation and new construction for Native cultures</li>
-        <li><span>Amount</span>Not stated. 4Culture says the guidelines document still reflects last year&rsquo;s cycle</li>
+        <li><span>Who</span><span class="v">King County federally recognized nonprofit arts, cultural, heritage, historic preservation or science and technology organizations; Tribal governments, public corporations and public agencies; or organizations fiscally sponsored by a 501(c)(3). You also need a two-year operating history and demonstrated long-term site control</span></li>
+        <li><span>What</span><span class="v">Land acquisition, development, renovation and new construction for Native cultures</span></li>
+        <li><span>Amount</span><span class="v">Not stated. 4Culture says the guidelines document still reflects last year&rsquo;s cycle</span></li>
       </ul>
       <p><span class="f-flag">Invitation only</span>You will see a December 3 application date for this one. <b>It is closed to new applicants.</b> The demonstration of interest ran July 9 to September 3, invitations went out October 1, and invited organizations got a private application link on October 8. If you did not submit the interest form, December 3 is not a date you can use.</p>
       <p>It comes back around. The next Building for Equity Facilities cycle has an intent step on <b>June 3, 2027</b> and a final application on <b>June 17</b>. If this is your organization, the people to talk to now are Jayden Robles, Building for Equity Program Manager, at 206-263-2522, and Liz Reyes, Building for Equity Support Specialist, at 206-263-7870.</p>
@@ -245,9 +246,9 @@
     <div class="f-item">
       <h3>Best Starts for Kids: Workforce Development Mini Grants, round 3</h3>
       <ul class="f-facts">
-        <li><span>Who</span>King County organizations with no more than 25 employees: nonprofits, community-based organizations, tribes and tribal organizations, early childhood centers and licensed childcare programs</li>
-        <li><span>Amount</span>Up to $9,999 per grant, out of $300,000</li>
-        <li><span>Deadline</span>November 25, 2026 at 2 PM</li>
+        <li><span>Who</span><span class="v">King County organizations with no more than 25 employees: nonprofits, community-based organizations, tribes and tribal organizations, early childhood centers and licensed childcare programs</span></li>
+        <li><span>Amount</span><span class="v">Up to $9,999 per grant, out of $300,000</span></li>
+        <li><span>Deadline</span><span class="v">November 25, 2026 at 2 PM</span></li>
       </ul>
       <p>The money funds staff development for people serving children from prenatal through age five: healthy childhood development, infant and early childhood mental health, racial equity and disability justice. Free technical assistance is available.</p>
       <p><b>You need a DCHS Agiloft account to apply, so start that first.</b></p>
