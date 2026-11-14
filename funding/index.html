@@ -164,6 +164,10 @@
   .f-item p:last-child{margin-bottom:0}
   .f-flag{display:inline-block;background:#FBF0D8;border:1px solid var(--gold);color:var(--gold-deep);font:600 11px/1.4 Jost,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-right:8px}
   .f-none{font:400 15px/1.65 "Space Grotesk",system-ui,sans-serif;color:var(--ink-soft);max-width:48rem;margin:0 0 14px}
+  /* REFRESH, NOT AN EXPIRY: every "Checked <date>" line below is this page's freshness claim.
+     Advance it on any run that actually re-reads the funders' pages, even one that changes nothing
+     else, because leaving it stale understates a current page. Never advance it without re-reading,
+     because that is a false claim. Never delete one. */
   .f-checked{font:600 11px/1.5 Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:14px 0 0}
   .f-more{margin:clamp(28px,5vw,48px) 0 clamp(36px,6vw,64px);padding-top:24px;border-top:1px solid var(--line);font:400 15px/1.7 "Space Grotesk",system-ui,sans-serif;color:var(--ink-soft);max-width:48rem}
   @media (max-width:560px){ .f-facts li{display:block} .f-facts>li>span:first-child{display:block;margin-bottom:2px} }
@@ -189,6 +193,11 @@
 
     <h3 style="font:700 19px/1.3 Syne,sans-serif;margin:26px 0 8px" id="community-reinvestment">Community Reinvestment Program</h3>
     <p class="f-role"><b>My role:</b> I serve on King County&rsquo;s Community Reinvestment Program Local Advisory Team, which works with United Way of King County as the regional intermediary. Telling community organizations about this money is part of that role.</p>
+    <!-- OPEN-STATUS CLAIM, no expiry exists. This says nothing is open. It becomes false the moment
+         the RFP opens, on a date nobody has published, so no marker can catch it and only a source
+         check can. Highest-consequence claim in this section: a reader acts on it by not looking.
+         Every run re-checks uwkc.org/need-help/for-nonprofits/ and King County CRP, and replaces this
+         with a full listing the week it opens. Do not let the Checked date below stand in for that. -->
     <p class="f-none"><b>Nothing open right now.</b> The youth violence prevention request for proposals has not opened yet. When it does, it is expected to offer $25,000 to $48,000 for by-and-for organizations serving young people ages 14 to 24. Watch <a href="https://www.uwkc.org/need-help/for-nonprofits/">United Way of King County&rsquo;s funding alerts</a>, and I will post it here when it lands.</p>
     <p class="f-checked">Checked November 14, 2026</p>
   </div>
@@ -198,6 +207,8 @@
   <div class="f-wrap">
     <h3 style="font:700 19px/1.3 Syne,sans-serif;margin:0 0 8px" id="united-way">United Way of King County</h3>
     <p class="f-role"><b>My role:</b> United Way of King County is the regional intermediary for the Community Reinvestment Program I advise on, and my advisory stipend is administered through them. I have no role in their own grantmaking.</p>
+    <!-- OPEN-STATUS CLAIM, no expiry exists. Same shape as the CRP one above: it goes false on an
+         unpublished date and only a source check catches it. Re-check United Way every run. -->
     <p class="f-none"><b>Nothing open right now that fits this page.</b> When United Way opens a call that suits community organizations in King County, it will be listed here with the same detail as everything else. Their funding alerts are the fastest way to hear first: <a href="https://www.uwkc.org/need-help/for-nonprofits/">United Way of King County for nonprofits</a>.</p>
     <p class="f-checked">Checked November 14, 2026</p>
   </div>
@@ -284,6 +295,10 @@
          early or move a date, and the markup will not know. -->
     <p class="f-none">Open right now and worth knowing about: <b>Best Starts for Kids&rsquo; Workforce Development Mini Grants</b>, up to $9,999 for King County organizations with 25 employees or fewer, closing <b>November 25 at 2 PM</b>. You need a DCHS Agiloft account to apply, so start that first. <span class="f-flag">Heads up</span>Best Starts&rsquo; own post calls November 25 a Tuesday. It is a Wednesday. <a href="https://beststartsblog.com/2026/10/14/now-accepting-applications-for-the-workforce-development-mini-grants-apply-by-november-25/">Best Starts for Kids &rarr;</a></p>
     <p class="f-checked" style="margin:0 0 14px">This deadline confirmed with the funder on November 14, 2026</p>
+    <!-- SUPERSEDED, NOT EXPIRED. Best Starts publishes a new curated list roughly monthly. The
+         landing page link never goes stale; the sentence naming the "November and January" cycle and
+         the funders in it does, and it is superseded rather than wrong on a date. Rewrite that sentence
+         each cycle from the current list. Never delete the block. -->
     <p class="f-none">Best Starts also publishes a running list of <b>other funders&rsquo;</b> deadlines between November and January: the Emergent Fund, the Archibald Charitable Foundation, Grief Reach, the Murdock Trust, NW Children&rsquo;s Foundation, Seattle Foundation&rsquo;s Neighbor to Neighbor and Nordstrom. Best Starts is not involved in those applications or decisions, and the list is not a King County recommendation. <a href="https://beststartsblog.com/2026/11/09/non-best-starts-for-kids-funding-opportunities-list-november-to-january-deadlines-2/">See the full list &rarr;</a></p>
     <p class="f-none">The current calls in this group, with full eligibility, amounts and deadlines, are kept on my company&rsquo;s site so the help sits next to the opportunity: <a href="https://www.toyboxconsulting.net/funding.html"><b>opportunities I can help with, at toyboxconsulting.net</b></a>.</p>
     <p class="f-checked">Checked November 14, 2026</p>
