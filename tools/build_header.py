@@ -32,6 +32,7 @@ MENU = [
     ], ('All recipes and reviews', '/read/')),
     ('presence', 'Presence', [
         ('Mindfulness in the Middle', 'Practice for people in the thick of it', '/mindfulness.html'),
+        ('Episodes', 'The six-part series, watch or listen', '/mindfulness.html#episodes'),
         ('Essays', 'Ten essays on staying whole', '/mindfulness.html#essays'),
     ], None),
     ('letters', 'Letters', '/letters/', None),
