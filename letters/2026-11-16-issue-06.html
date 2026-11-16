@@ -34,6 +34,14 @@
 <script src="/tb-events.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 <link rel="stylesheet" href="/assets/letters.css" />
+<style>
+  /* Issue 6 cover crop. Below 900px the cover stacks and the headline sits ON the
+     photo, so the crop drops lower to keep Brenda's face clear of the type. The
+     split layout at 900px and up puts the type in its own panel, so it keeps the
+     higher crop that shows the chandelier. */
+  .tp-cover--split .tp-cover-img{object-position:50% 72%}
+  @media (min-width:900px){.tp-cover--split .tp-cover-img{object-position:50% 18%}}
+</style>
 <script src="/assets/letters.js" defer></script>
 <link rel="stylesheet" href="/assets/kp-music.css" />
 <script src="/assets/kp-music.js" defer></script>
@@ -88,7 +96,7 @@
 </header>
 
 <header class="tp-cover tp-cover--split">
-  <img class="tp-cover-img" style="object-position:45% 22%" src="/media/letters/covers/issue-06-paddle-raise.jpg" width="1440" height="1920" alt="Katoya's cousin Brenda, in a black sequined jacket, raises her bid paddle under the ballroom chandelier at Coming Home, The Sophia Way's gala at the Hilton Bellevue">
+  <img class="tp-cover-img" src="/media/letters/covers/issue-06-paddle-raise.jpg" width="1440" height="1920" alt="Katoya's cousin Brenda, in a black sequined jacket, raises her bid paddle under the ballroom chandelier at Coming Home, The Sophia Way's gala at the Hilton Bellevue">
   <span class="tp-credit">Photo: Katoya Palmer</span>
   <div class="tp-cover-txt">
     <p class="tp-no"><b>No. 6</b> The weekly letter</p>
