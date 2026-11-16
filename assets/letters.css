@@ -216,3 +216,14 @@ footer.tp-foot a{color:var(--tp-soft);margin:0 8px}
 @media (min-width:820px){.tp-subband{grid-template-columns:1fr auto}}
 .tp-subband h2{font-family:var(--tp-display);font-weight:800;font-size:clamp(26px,4vw,36px);line-height:1.1}
 .tp-subband p{color:var(--tp-soft)}
+
+/* ---------- Print ---------- */
+/* Printing or saving a letter as PDF should give the letter, not the furniture
+   around it. The consent banner in particular was landing on top of the copy. */
+@media print{
+  .kp-h,.tp-bar,.tp-progress,.kp-music,#tp-sheet,#kp-sheet,
+  #tb-cookie-banner,#tb-cookie-modal{display:none !important}
+  .tp-sec{break-inside:auto}
+  .tp-open,.tp-big{break-after:avoid}
+  figure,blockquote,.tp-sit{break-inside:avoid}
+}
