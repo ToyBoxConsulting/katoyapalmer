@@ -252,7 +252,7 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -263,6 +263,16 @@
   <url>
     <loc>https://www.katoyapalmer.com/sznd/cajun-potato-soup.html</loc>
     <lastmod>2026-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/sznd/collard-greens.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.katoyapalmer.com/sznd/cornbread.html</loc>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -296,6 +306,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.katoyapalmer.com/sznd/mac-and-cheese.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.katoyapalmer.com/sznd/pot-roast.html</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.6</priority>
@@ -312,12 +327,12 @@
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd/table-szn.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.katoyapalmer.com/sznd/thanksgiving-plan.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
